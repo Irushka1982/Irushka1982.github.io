@@ -1,0 +1,105 @@
+body {
+	margin: 40px 300px;
+}
+
+.nazva{
+	font-size: 50px;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+.nazva a {color: #303030;
+	text-decoration: none;
+}
+
+.first ul{
+	list-style:outside none none;
+	background-color: #4a4a4a;
+	padding: 0px;
+}
+
+.first li {
+	padding: 10px 0px 10px 0px;
+	display: inline-block;
+}
+
+.first li a {
+	padding: 10px 30px 10px 30px;
+	text-decoration: none;
+	color: white;
+}
+	
+.first a:hover {
+	background: #2d2d2b;
+}
+
+.second {
+	width: 250px;
+	float: left;
+}
+
+.second ul {
+	list-style:outside none none;
+	margin-top: 20px;
+	padding-left: 0px;
+}
+
+.second li {
+	display: inline-block;
+	display: block;
+	padding: 10px 60px 10px 20px;
+	border: 1px solid #b8b4b4;
+	margin-bottom:-1px; 
+}
+
+.second li a {
+	text-decoration: none;
+	color:#656363;
+}
+
+.third {
+	width: 770px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.third .third-foto {
+	display: inline-block;
+	border: 1px solid #b8b4b4;
+	padding: 40px 130px;
+	width: 500px;
+	float: right;
+}
+
+.third .third-napys {
+	display: inline-block;
+	padding-left: 30px;
+	padding-right:;
+	width: 740px;
+	margin-top:30px;  
+}
+
+.fourth {
+	margin-top:40px
+}
+
+.fourth ul{
+	list-style:outside none none;
+	background-color: #e1e1e1;
+}
+
+.fourth li{
+	display: inline-block;
+	padding: 10px 30px 10px 30px;
+}
+
+.fourth li a{
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	color:#2c2c2c;
+}
+
+.fourth .prava {
+	float:right;
+}
