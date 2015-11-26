@@ -46,7 +46,7 @@ background-color: yellow; }}
 
 
 
-.strelochka-left {
+/*.strelochka-left {
 	content: " ";
 	position: absolute;
 	background: url(navi_arrow_left.png) 2px 2px  no-repeat;
@@ -62,7 +62,7 @@ background-color: yellow; }}
  	width: 100%;
  	height: 60px;
 }
-
+*/
 .blok1 {
 	/*background-color: blue;*/
 	height: auto;
@@ -116,12 +116,13 @@ nav {
 	/*background-color: green;*/
 	padding-left: 0px;
 	margin-top:68px;
-	margin-left:78px;  }
+	margin-left:141px;  }
 
 @media(max-width:768px) {
 .menu {
 	display: block;
-	margin-left:5px;
+	margin-left:0px;
+	margin-top:2px;
 }}
 
 @media(max-width:480px) {
@@ -148,7 +149,11 @@ nav {
    border:1px solid red;
    text-align: center;
 }
-
+@media(max-width:768px) {
+.menu li {
+	text-align: left;
+	padding: 3px;
+ }}
 
 @media(max-width:480px) {
 .menu li {
@@ -171,7 +176,7 @@ nav {
 	text-decoration:none; 
 	text-transform: uppercase;
 	font-size: 24px;color: white;
-font-family: "league_gothicregular";width: 100%;
+    font-family: "league_gothicregular";width: 100%;
 
 }
 .menu li a:hover
@@ -187,26 +192,28 @@ font-family: "league_gothicregular";width: 100%;
 
 
 .blok2 {
-	background-color: green;
+background-color: green;
 height: auto;
 padding-top: 0px;
 margin-left:1px;
 position: relative;
-        z-index: 1;
+overflow: hidden;
 }
 
 .lorem {
 	width: 517px;
 	background-color: yellow;
 	height: auto;
-	display: inline-block;
+	display: block;
 }
 @media (max-width:768px) {
 .lorem {
 	background-color: red;
 	width:276px;
-	height: 230px;
+	height: 203px;
 	overflow: hidden;
+	margin-top: 166px;
+	margin-left:23px;  
  }}
 @media (max-width:480px) {
 .lorem {
@@ -248,12 +255,10 @@ position: relative;
 }
 @media (max-width:768px) {
 .lorem-zaglavie{
+	font-size: 45px;
 	overflow: hidden;
-	height: 56px;
+	height: 48px;
 }}
-
-
-
 .lorem-podzaglavie{
 	font-family: "league_gothicregular";
 	color:red;
@@ -265,16 +270,17 @@ position: relative;
 }
 @media (max-width:768px) {
 .lorem-podzaglavie{
-	overflow: hidden;
+overflow: hidden;
 height:31px;
-	}}
-
-
-@media (max-width:768px) {
-.lorem-podzaglavie{
-	overflow: hidden;
+font-size:23px;
+margin-top:4px; 
+margin-bottom:5px; 
 }}
 
+/*@media (max-width:768px) {
+.lorem-podzaglavie{
+	overflow: hidden;
+}}*/
 .lorem-napolnenie{
 	font-size: 17px;
 	font-family: 'Open Sans', sans-serif;
@@ -282,24 +288,48 @@ height:31px;
 	line-height:24px;
 	margin-top: 4px; 
 }
+@media (max-width:768px) {
+.lorem-napolnenie{
+	height: 102px;
+	overflow: hidden;
+	margin-top:8px; 
+}}
+
+
 @media (max-width:480px) {
 .lorem-napolnenie {
 	width:0px;
 	height: 0px;
 	overflow: hidden;
+		font-size: 17px;
  }}
 
 
+.telefon {content: " ";  
+       position: absolute;  
+   background: url(telefon.png) 0px 0px  no-repeat;  
+    height: auto;  
+    width: auto;
+   left:-26px; 
+   top:35px;   
+ 	bottom:71px;
+ 	right:100px;
+ 	}
+
+@media (max-width:768px){
+.telefon {content: " ";  
+       position: absolute;  
+   background: url(telefon.png) 0px 0px  no-repeat;  
+    height: auto;  
+    width: auto;
+   left:432px; 
+   top:44px;   
+ 	bottom:71px;
+ 	right:12px;
+ 	}}
 
 
 
-.telefon {
-	width: auto;
-	height: auto;
-	display: inline-block;
-	padding-top: 79px;
-	padding-left: 104px;
-}
 .radio-top {
 	margin-top:176px;
 	margin-right:162px;  
@@ -313,7 +343,10 @@ height:31px;
 
 @media (max-width:768px) {
 .radio-top{
-	float: none;
+	float: right;
+	margin-top:138px;
+margin-right:166px;  
+margin-bottom:102px; 
 }}
 
 .radio-top ul {
@@ -358,7 +391,7 @@ background-color: red; }}
 
 
 .about{
-	padding: 69px 23px 66px 64px;
+	padding: 67px 23px 66px 64px;
 	background-color:red;
 	width: 229px;
 	height: auto;
@@ -366,10 +399,13 @@ background-color: red; }}
 }
 @media (max-width:768px) {
 .about{
-	width:187px;
+	width:149px;
 	background-color: green;
 	height: 164px;
+	padding: 75px 23px 66px 64px;
 	overflow: hidden;
+	margin-right:12px; 
+	margin-bottom: 35px;
  }}
 
 
@@ -385,6 +421,13 @@ background-color: red; }}
 	margin-bottom:0px; 
 }
 
+@media (max-width:768px) {
+.about-zaglavie{
+	font-size: 24px;
+ }}
+
+
+
 .about-napolnenie{
 	font-family: 'Open Sans', sans-serif;
 	text-shadow: 1px 1px 2px black;
@@ -395,10 +438,13 @@ background-color: red; }}
 
 @media (max-width:768px) {
 .about-napolnenie{
-	width:187px;
+	width:173px;
 	background-color: green;
-	height: 118px;
+	height: 141px;
 	overflow: hidden;
+	margin-bottom:7px;
+	margin-top:-2px; 
+	font-size: 17px;
  }}
 
 .about a {
@@ -444,12 +490,17 @@ background-color: grey; }}
 	position: relative;
 	background-color: yellow;
 	padding: 38px 38px 19px 38px;
+	float: left;
 }
 @media(max-width:768px) {
 .pingbuller {
-	width:260px;
+	width:239px;
 	overflow: hidden;
-	height: 210px;
+	height: 224px;
+	padding: 38px 34px 19px 38px;
+	margin-bottom: 24px;
+	margin-right: 60px;
+}
  }}
 
 
@@ -459,12 +510,15 @@ background-color: grey; }}
 	height: auto;;
 	background-color: green;
 	padding: 89px 39px 39px 25px;
-	display: inline-block;
+	display:block;
 /*	margin: auto;*/
 }
 @media(max-width:768px) {
 .testimonial{
 	width:293px;
+	margin-top:87px;
+	margin-left:25px; 
+
  }}
 
 
@@ -478,12 +532,29 @@ background-color: grey; }}
 	width: auto;
 	padding-left: 4px;
 }
+@media(max-width:768px) {
+.pingbuller-zaglavie {
+	font-size: 23px;
+	width: 133px;
+	line-height: 25px;
+ }}
+
+
+
+
+
 .pingbuller-zaglavie-pink {
 	font-size: 28px;
 	font-family: "league_gothicregular";
 	text-transform: uppercase;
 	color:red;
 } 
+@media(max-width:768px) {
+.pingbuller-zaglavie-pink {
+	font-size: 23px;
+ }}
+
+
 .pingbuller-napolnenie {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -497,6 +568,7 @@ background-color: grey; }}
 	width: 257px;
 	height: 141px;
 	overflow: hidden;
+	margin-top:7px;
  }}
 
 .pingbuller:before { 
@@ -515,13 +587,16 @@ background-color: grey; }}
 	width:417px;
 	height: auto;
 	background-color: red;
-	display: inline-block;
+	display:block;
 	position: relative; 
 	overflow: hidden;
 	/*margin: auto;*/
 	padding-left: 52px;
  }
-
+@media(max-width:768px) {
+.blog{padding-left: 0px;
+	width:333px;
+	}}
 
 
 
@@ -533,11 +608,21 @@ background-color: grey; }}
 	margin-bottom:15px;
 	margin-top:0px  
 }
+
+
+@media(max-width:768px){
+	.recent{margin-bottom:0px;} 
+}
+
+
 blockquote {
 	margin-left: 0px;
 }
 
-
+@media(max-width:768px){
+blockquote {
+	margin-top: 8px;
+}}
 
 .posty {	
 	width: 283px;
@@ -552,30 +637,57 @@ blockquote {
 @media(max-width:768px) {
 .posty-napolnenie{
 	width:250px;
-		height: 30px;
-	overflow: hidden;}}
+		height: 26px;
+	overflow: hidden;
+	margin-top: 12px;
+	margin-top:1px; 
+	}}
 
 .posty-napolnenie-bold{
 	font-family: 'Passion One', cursive;
 	font-weight:900;
 	font-size: 19px;
 	margin-bottom: 0px; 
+	background-color: yellow;
 }
 
- 
+ @media(max-width:768px) {
+.posty-napolnenie-bold {
+	margin-top:15px;
+	margin-bottom:0px  
+	
+		}}
  
 
 .posty ul{
 	list-style: none;
 	padding-left: 0px;
 	width: 440px;
+	background-color: grey;
 }
+
+@media(max-width:768px) {
+.posty ul{
+	width:330px;
+	margin-top: 4px;
+		}}
+
+
+
 
 
 
 .posty li{
 	height: 45px;
 }
+
+@media(max-width:768px) {
+.posty li{
+	height:52px; 
+		}}
+
+
+
 
 .posty-napolnenie-bold:before{
 	content: " ";
@@ -613,11 +725,25 @@ blockquote {
 	padding-top: 8px;
 	padding-left:37px;
 }
+@media(min-width: 768px){
+.radio {margin-top: 16px;
+		margin-right: 97px;}
+}
+
+
+
 .radio ul {
 	list-style: none;
 	width: 90px;
 	padding-left: 0px;
 }
+
+@media(min-width: 768px){
+	.radio ul {margin-top: 0px;
+		margin-bottom: 0px;}
+}
+
+
 .radio ul li {
 	display: inline-block;
 	background-color: red;
@@ -636,7 +762,16 @@ blockquote {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-bottom:0px; 
+	border: 1px solid grey;
 }
+@media(max-width:768px) {
+.logotip {
+	text-align: left;
+	margin-top:72px;
+	width: 100%;}}
+
+
+
 .logotip ul {
 	padding-left: 0px;
 }
@@ -651,10 +786,15 @@ blockquote {
 
 @media(max-width:768px) {
 .logotip ul li{
-	padding-left: 20px;
-	padding-right: 15px;
+	padding-left: 00px;
+	padding-right: 45px;
 	background-color: red;}}
 
+
+
+
+@media(max-width:768px){
+figure{margin-left: 0px;}}
 
 .wrapper4 {
 	height: auto;
@@ -667,13 +807,10 @@ blockquote {
 	overflow: hidden;
 	position: relative;
 }
-.design-bold{
-	font-family: 'Passion One', cursive;
-	font-size: 10px;
-}
+
 .pingbuller-news {
 	background-color:red;
-	padding-top: 94px;
+	padding-top: 95px;
 	padding-bottom: 13px;
 	width: 289px;
 	height: auto;
@@ -695,22 +832,25 @@ blockquote {
 }
 .pingbuller-news-napolnenie{
 font-family: 'Open Sans', sans-serif;
-margin-top:7px; 
+margin-top:4px; 
 font-size: 17px;
+margin-bottom:60px; 
 }
+
+@media(max-width:768px) {
+.pingbuller-news {
+	display: none;
+}}
+
 .news{
 	background-color:red;
 	width: 289px;
 	height: auto;
 	display: inline-block;
-	padding-left: 20px;
+	padding-left: 0px;
+	margin-left:44px;
+	margin-right:0; 
 }
-@media(max-width:768px) {
-.news{
-	width: 212px;}}
-
-
-
 
 .news-zaglavie{
 	font-family: "league_gothicregular";
@@ -720,9 +860,17 @@ font-size: 17px;
 	margin-top:0px;
 	margin-bottom:0px;
 }
+
+@media(max-width:768px) {
+.news-zaglavie{
+font-size: 24px;
+}}
+
 .news-napolnenie{
 font-family: 'Open Sans', sans-serif;
 font-size: 17px;
+margin-top:4px; 
+margin-bottom:0px; 
 }
 
 @media(max-width:768px) {
@@ -731,11 +879,6 @@ font-size: 17px;
 	height: 190px;
 	overflow: hidden;
 	background-color: green;}}
-
-
-
-
-
 
 .wrapper5 {
 	height: auto;
@@ -769,4 +912,8 @@ background-color: blue; }}
 	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
 	margin-top:50px; 
+}
+.design-bold{
+	font-family: 'Passion One', cursive;
+	font-size: 10px;
 }
