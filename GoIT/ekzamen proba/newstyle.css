@@ -43,9 +43,11 @@ body{
 background-color: red; }}
 @media(max-width:480px) {
 .content1 {width: 480px;
-background-color: yellow; }}
+background-color: yellow;}}
 
-v
+@media(max-width:320px){
+.content1 {width: 320px;
+background-color: yellow; }}
 /*.strelochka-left {
 	content: " ";
 	position: absolute;
@@ -71,9 +73,6 @@ overflow: hidden;
 	/*position: relative;*/
 }
 
-
-
-
 .logo {
 	height: auto;
 	font-family: "league_gothicregular";
@@ -88,6 +87,7 @@ overflow: hidden;
     text-decoration: none;
     padding-bottom: 0px;
 }
+
 @media(max-width:768px) {
 .logo{
 	display: block;
@@ -99,6 +99,12 @@ overflow: hidden;
 .logo{ 
 	margin: 61px 158px 0px 158px;
 	}}
+@media(max-width:320px) {
+.logo{ 
+	margin: 61px 158px 0px 72px;
+	}}
+
+
 
 .logo__white {
 	color:white;
@@ -107,6 +113,8 @@ overflow: hidden;
  color: #75199d;
          -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(150,79,130,1)), color-stop(20%, rgba(0,0,0,.5)), to(rgba(52,38,59,1)));}
 }
+
+
 
 
 nav {
@@ -139,12 +147,17 @@ nav {
 .menu {position: absolute;
        z-index: 2;
        left:108px; 
-       top:128px;
+       top:115px;
        border-radius: 11px;
        border: 1px solid black;
 }}
+@media(max-width:320px) {
+.menu {display: none;
+}}
 
-.menu ul{display: inline-block;
+
+
+/*.menu ul{
 	position: absolute;
 	visibility: hidden;
 	top: 24px;
@@ -152,8 +165,7 @@ nav {
  }
 
 
-
-
+*/
 
 .menu__cell{
 	float: left;
@@ -182,10 +194,13 @@ nav {
 	text-align: center;
 	
  }}
-@media(max-width:480px) {
-.menu__cell{
-}}
 
+
+
+@media(max-width:480px) {
+.menu__cell:hover{
+	border-bottom: 2px solid green;
+}}
 
 .menu__cell a {
 	text-decoration:none; 
@@ -200,7 +215,98 @@ nav {
 @media(max-width:480px) {
 .menu__cell a:hover{
 	background-color: blue;
+	border-bottom: 2px solid yellow;
+	padding: 0 5px 3px 5px;
 }}
+
+
+
+
+.navigatsiya {
+	display: none;
+	height: 256px;
+	width: 245px;
+	position:absolute;
+	z-index: 3;
+	margin-left: 32px;
+	margin-top:9px; 
+}
+@media(max-width: 768px){
+.navigatsiya {
+	display: none;
+}}
+@media(max-width: 480px){
+.navigatsiya {
+	display: none;
+}}
+
+
+@media(max-width: 320px){
+.navigatsiya {
+	height: 256px;
+	width: 245px;
+	display: block;
+	position:absolute;
+	z-index: 3;
+	margin-left: 32px;
+	margin-top:9px; 
+}}
+
+.navig {margin:0px;}
+.navig li{
+  position: relative;
+  list-style: underline;
+  list-style: none;
+	float: left;
+	width: 150px;
+	padding: 2px;
+	font-size: 20px;
+	border:1px solid red;
+	text-align: center;
+height: 38px;
+top:10px;
+left: -3px;
+  }
+.navig ul{
+   position: absolute;
+padding-left: 0px;
+  visibility: hidden;
+  opacity: 0;
+   
+}
+.navig li:hover ul{
+  visibility: visible;
+  opacity: 1;
+  border-bottom: 2px solid green;
+}
+
+
+.navig a {
+	text-decoration:none; 
+	text-transform: uppercase;
+	font-size: 24px;color: white;
+    font-family: "league_gothicregular";width: 100%;
+}
+.navig a:hover{
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .blok2 {
@@ -239,7 +345,11 @@ nav {
 	z-index: 1;
 	margin-left:32px; 
  }}
-
+@media (max-width:320px) {
+.parent{
+	background-color: blue;
+	margin-top:164px; 
+ }}
 
 .parent__zaglavie{
 	font-family: "league_gothicregular";
@@ -264,6 +374,13 @@ nav {
 	line-height: 53px;
 	width: 269px
 }}
+@media (max-width:320px) {
+.parent__zaglavie{
+	height: 50px;
+	width: 250px
+}}
+
+
 
 /*.blok2:before {
 	content: " ";
@@ -313,7 +430,12 @@ nav {
 	margin-top: 0px;
 }}
 
-
+@media (max-width:320px) {
+.parent__podzaglavie{
+	height: 13px;
+	width: 217px;
+	overflow: hidden;
+}}
 /*@media (max-width:768px) {
 .lorem-podzaglavie{
 	overflow: hidden;
@@ -397,7 +519,7 @@ nav {
 
 @media (max-width:480px) {
 .radio{
-	margin: 86px 201px 59px 201px;
+	margin: 89px 201px 59px 201px;
 }}
 
 
@@ -529,6 +651,8 @@ padding-bottom: 68px;  }}
 .parent--about__napolnenie{
 	width:382px;
 	height: 78px;
+	margin-top: 0px;
+	margin-bottom: 2px; 
  }}
 
 
@@ -607,13 +731,15 @@ padding: 0 0 0 0;
 	margin-top:87px;
 	margin-left:25px; 
 height: 329px;
+z-index: 1;
  }}
 
 @media(max-width:480px) {
 .testimonial{
 	margin-top:68px;
-	width:442px;
-	margin-left: 45px
+	width:auto;
+	margin-left: 20px;
+	z-index: 2;
  }}
 .parent--testimonial{
 	width:375px;
@@ -645,6 +771,9 @@ height: 329px;
 	padding: 21px 30px 19px 31px;
 	margin-bottom:4px; 
 	margin-top:4px; 
+	position: relative;
+	display: block;
+	float: left;
  }}
 
 
@@ -749,11 +878,28 @@ height: 329px;
  	right:100px;
  	width: 60px;}
 
-@media(max-width:480px){
+/*@media(max-width:480px){
 .parent--testimonial:before { 
 	left:-33px; 
    top:15px;   
- 	}}
+ 	}}*/
+
+@media(max-width:480px){
+.parent--testimonial:before { 
+	content: " ";  
+    float: left;  
+    position: absolute;  
+    z-index: 3;
+   background: url(client.png) 2px 2px  no-repeat;  
+    height: 100px;  
+    width: 100px;
+   left:-26px; 
+   top:35px;   
+ 	bottom:71px;
+ 	right:100px;
+ 	width: 60px;}}
+
+
 
  .blog {
 	width:417px;
@@ -1253,6 +1399,7 @@ background-color: blue;
 	border-radius: 11px;
 	border: 1px solid black;
 	display: inline-block;
+	margin-top:28px; 
  }}
 
 .menu--bottom ul{
@@ -1287,20 +1434,33 @@ background-color: blue;
 @media(max-width:480px) {
 .menu--bottom__cell{
 	display:inline-block;
-	float: none;
 	height: 35px;
 	background-color: #3f3247;
 	opacity: 0.5;
-	width: 50px;
+	width: auto;
 	text-align: center;
+	top:0px;
+	position: static;
+	font-size: 19px;
+	padding-right: 20px;
+	padding-left: 4px;
 }}
 
 .menu--bottom__cell a {
 	text-decoration:none; 
 	text-transform: uppercase;
 	font-size: 24px;color: white;
-    font-family: "league_gothicregular";width: 100%;
+	font-family: "league_gothicregular";width: 100%;
 }
+
+
+@media(max-width:480px) {
+.menu--bottom__cell a{
+	font-size: 19px;
+}}
+
+
+
 .menu--bottom__cell a:hover{
 	background-color: red;
 }
@@ -1308,6 +1468,7 @@ background-color: blue;
 @media(max-width:480px) {
 .menu--bottom__cell a:hover{
 	background-color: blue;
+
 }}
 
 .prava {
