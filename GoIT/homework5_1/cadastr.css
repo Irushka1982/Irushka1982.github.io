@@ -81,10 +81,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', end
 
 .content {
 	position: absolute;
-	top: 0;
+	top: 245px;
 	text-align: center;
 	bottom: 0;
-	left: 0;
+	left: 45px;
 	right: 0;
 	width: 560px;
 	height: 613px;
@@ -96,8 +96,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', end
 .cadastre{
 	background-color: rgba(86, 85, 86, 0.7);
 	line-height: 40px;
-	font-size: 20px;
+	font-size: 25px;
 }
+.cadastre p {padding: 15px 0 8px 0}
 .blok {
 	background-color: rgba(86, 85, 86, 0.7);
 }
@@ -110,13 +111,31 @@ p {
 	background-color: #344a86;
 	width: 275px;
 }
+
+.FB {padding: 34px 0 20px 0;
+height: 40px;}
+.FB button {padding: 0  0 0 20px;
+height: 41px;}
+
+.ira span { font-size: 15px;
+font-weight: bold;
+padding: 2px;
+font-family: "Tahoma";
+}
 .ira span:before{
 	position:relative;
 	content:" ";
-	background: url(f.png) 2px 2px no-repeat;
-	width: 40px;
+	background: url(facebooklogo.png) 2px 2px no-repeat;
+	width: 21px;
 	height: 20px;
-	display: inline-block;}
+	padding: 12px 8px 0 8px;
+	
+	top:-2px;
+	/*bottom: 1px;*/
+	left: -28px;
+	/*right: 2px;*/
+	display: inline-block;
+border-right: 1px solid #1f3d71;}
 
 .ira span:after{
 	position:relative;
@@ -124,7 +143,9 @@ p {
 	background: url(ryska.png) 27px 2px no-repeat;
 	width: 40px;
 	height: 20px;
-	display: inline-block;}
+	display: inline-block;
+top:-5px;
+left:-6px;}
 
 
 .ou:before{
@@ -158,12 +179,16 @@ p {
 .blok {
 	padding-bottom: 15px;
 }
+.formaaa {margin-top:16px; }
 .formaaa input {
 	padding-left: 10px;
 	width: 275px;
-	height: 35px;
+	height: 31px;
 	padding-left: 14px;
 	color:red;
+	margin-top: 3px; 
+	margin-bottom:14px; 
+
 }
 .forma {
 margin: auto;
@@ -171,7 +196,7 @@ margin: auto;
  
 input{
 	line-height: 25px;
-	margin: 10px 0px; 
+	margin: 10px 0px 0px 0; 
 	padding-left: 5px;
 	background-color: black;
 	border: 1px solid black;
