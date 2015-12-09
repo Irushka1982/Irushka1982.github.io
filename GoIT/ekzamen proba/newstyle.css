@@ -40,14 +40,17 @@ body{
 }
 @media(max-width:768px) {
 .content1 {width: 768px;
-background-color: red; }}
+background-color: red;
+ }}
 @media(max-width:480px) {
 .content1 {width: 480px;
-background-color: yellow;}}
+background-color: yellow;
+}}
 
 @media(max-width:320px){
 .content1 {width: 320px;
-background-color: yellow; }}
+background-color: yellow;
+}}
 /*.strelochka-left {
 	content: " ";
 	position: absolute;
@@ -69,7 +72,7 @@ background-color: yellow; }}
 	/*background-color: blue;*/
 	height: auto;
 	width: 960px;
-overflow: hidden;
+	overflow: hidden;
 	/*position: relative;*/
 }
 
@@ -93,16 +96,16 @@ overflow: hidden;
 	display: block;
 	float:none;
 	z-index: 1;
-	}}
+}}
 
 @media(max-width:480px) {
 .logo{ 
 	margin: 61px 158px 0px 158px;
-	}}
+}}
 @media(max-width:320px) {
 .logo{ 
 	margin: 61px 158px 0px 72px;
-	}}
+}}
 
 
 
@@ -133,7 +136,8 @@ nav {
 	/*background-color: green;*/
 	padding-left: 0px;
 	margin-top:68px;
-	margin-left:141px;  }
+	margin-left:141px;
+}
 
 @media(max-width:768px) {
 .menu {
@@ -155,16 +159,12 @@ nav {
 .menu {display: none;
 }}
 
-
-
 /*.menu ul{
 	position: absolute;
 	visibility: hidden;
 	top: 24px;
 	opacity: 0;
  }
-
-
 */
 
 .menu__cell{
@@ -192,7 +192,6 @@ nav {
 	 opacity: 0.5;
 	width: 245px;
 	text-align: center;
-	
  }}
 
 
@@ -218,10 +217,6 @@ nav {
 	border-bottom: 2px solid yellow;
 	padding: 0 5px 3px 5px;
 }}
-
-
-
-
 .navigatsiya {
 	display: none;
 	height: 256px;
@@ -239,7 +234,6 @@ nav {
 .navigatsiya {
 	display: none;
 }}
-
 
 @media(max-width: 320px){
 .navigatsiya {
@@ -263,15 +257,15 @@ nav {
 	font-size: 20px;
 	border:1px solid red;
 	text-align: center;
-height: 38px;
-top:10px;
-left: -3px;
-  }
+	height: 38px;
+	top:10px;
+	left: -3px;
+ }
 .navig ul{
    position: absolute;
-padding-left: 0px;
-  visibility: hidden;
-  opacity: 0;
+   padding-left: 0px;
+   visibility: hidden;
+   opacity: 0;
    
 }
 .navig li:hover ul{
@@ -291,24 +285,6 @@ padding-left: 0px;
 	background-color: red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .blok2 {
 	background-color: green;
 	height: auto;
@@ -317,7 +293,7 @@ padding-left: 0px;
 	position: relative;
 	overflow: hidden;
 }
-.parent{
+.lorem{
 	width: 517px;
 	background-color: yellow;
 	height: auto;
@@ -327,7 +303,7 @@ padding-left: 0px;
 }
 
 @media (max-width:768px) {
-.parent{
+.lorem{
 	background-color: red;
 	width:276px;
 	height: 203px;
@@ -337,7 +313,7 @@ padding-left: 0px;
  }}
 
 @media (max-width:480px) {
-.parent{
+.lorem{
 	width:250px;
 	height: 100px;
 	overflow: hidden;
@@ -346,12 +322,12 @@ padding-left: 0px;
 	margin-left:32px; 
  }}
 @media (max-width:320px) {
-.parent{
+.lorem{
 	background-color: blue;
 	margin-top:164px; 
  }}
 
-.parent__zaglavie{
+.lorem__zaglavie{
 	font-family: "league_gothicregular";
 	font-size: 57px;
 	color: black;
@@ -360,7 +336,7 @@ padding-left: 0px;
 	margin:  1px 1px 0px 1px; 
 }
 @media (max-width:768px) {
-.parent__zaglavie{
+.lorem__zaglavie{
 	font-size: 45px;
 	overflow: hidden;
 	height: 48px;
@@ -368,19 +344,17 @@ padding-left: 0px;
 }}
 
 @media (max-width:480px) {
-.parent__zaglavie{
+.lorem__zaglavie{
 	font-size: 37px;
 	height: auto;
 	line-height: 53px;
 	width: 269px
 }}
 @media (max-width:320px) {
-.parent__zaglavie{
+.lorem__zaglavie{
 	height: 50px;
 	width: 250px
 }}
-
-
 
 /*.blok2:before {
 	content: " ";
@@ -402,10 +376,7 @@ padding-left: 0px;
  	height: 60px;
 }*/
 
-
-
-
-.parent__podzaglavie{
+.lorem__podzaglavie{
 	font-family: "league_gothicregular";
 	color:red;
 	font-size:31px;
@@ -416,7 +387,7 @@ padding-left: 0px;
 	margin:  0px 0px 0px 0px; 
 }
 @media (max-width:768px) {
-.parent__podzaglavie{
+.lorem__podzaglavie{
 	overflow: hidden;
 	height:31px;
 	font-size:23px;
@@ -424,14 +395,14 @@ padding-left: 0px;
 	margin-bottom:5px; 
 }}
 @media (max-width:480px) {
-.parent__podzaglavie{
+.lorem__podzaglavie{
 	font-size:18px;
 	line-height: 13px;
 	margin-top: 0px;
 }}
 
 @media (max-width:320px) {
-.parent__podzaglavie{
+.lorem__podzaglavie{
 	height: 13px;
 	width: 217px;
 	overflow: hidden;
@@ -440,7 +411,7 @@ padding-left: 0px;
 .lorem-podzaglavie{
 	overflow: hidden;
 }}*/
-.parent__napolnenie{
+.lorem__napolnenie{
 	font-size: 17px;
 	font-family: 'Open Sans', sans-serif;
 	line-height:24px;
@@ -448,15 +419,14 @@ padding-left: 0px;
 	margin:  4px 0px 0px 1px; 
 }
 @media (max-width:768px) {
-.parent__napolnenie{
+.lorem__napolnenie{
 	height: 102px;
 	overflow: hidden;
 	margin-top:8px; 
 }}
 
-
 @media (max-width:480px) {
-.parent__napolnenie{
+.lorem__napolnenie{
 	width:0px;
 	height: 0px;
 	overflow: hidden;
@@ -465,15 +435,15 @@ padding-left: 0px;
 
 
 .iphone{content: " ";  
-       position: absolute;  
-   background: url(telefon.png) 0px 0px  no-repeat;  
-    height: auto;  
-    width: auto;
-   left:630px; 
-   top:133px;   
- 	bottom:0px;
- 	right:26px;
- 	}
+       position: absolute;
+       background: url(telefon.png) 0px 0px  no-repeat;
+       height: auto;
+       width: auto;
+       left:630px;
+       top:133px;
+       bottom:0px;
+       right:26px;
+}
 
 @media (max-width:768px){
 .iphone {content: " ";  
@@ -485,7 +455,7 @@ padding-left: 0px;
    top:44px;   
  	bottom:71px;
  	right:12px;
- 	}}
+ }}
 @media (max-width:480px){
 .iphone{content: " ";  
        position: absolute;
@@ -507,7 +477,6 @@ padding-left: 0px;
 	display: block;
 	width: 80px;
 	height: 17px;
-	
 }
 
 @media (max-width:768px) {
@@ -565,15 +534,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 }
 @media(max-width:768px) {
 .content2 {width: 768px;
-background-color: blue; }}
+background-color: blue;
+}}
 @media(max-width:480px) {
 .content2 {width: 480px;
 background-color: red;
 padding-top:71px;
-padding-bottom: 68px;  }}
+padding-bottom: 68px;
+}}
 
 
-.parent--about{
+.about{
 	padding: 0px 2px 0px 75px;
 	margin: 68px 0px 0px 0px;
 	background-color:red;
@@ -584,7 +555,7 @@ padding-bottom: 68px;  }}
 	position: relative;
 }
 @media (max-width:768px) {
-.parent--about{
+.about{
 	width:156px;
 	background-color: green;
 	height: 233px;
@@ -593,7 +564,7 @@ padding-bottom: 68px;  }}
 	margin-bottom: 35px;
  }}
 @media (max-width:480px) {
-.parent--about{
+.about{
 	display: block;
 	width: 100%;
 	margin-left: 14px;
@@ -604,15 +575,15 @@ padding-bottom: 68px;  }}
  }}
 
 @media (max-width:320px) {
-.parent--about{
+.about{
 		padding: 0px 23px 5px 0px;
 		width: 230px;
 		margin-left: 62px; 
 		overflow: hidden;
-	position: relative;
-	 }}
+		position: relative;
+}}
 
-.parent--about:before {
+.about:before {
 	content: " ";  
     float: left;  
     position: absolute;  
@@ -622,20 +593,20 @@ padding-bottom: 68px;  }}
     width: 30px;
    left:10px; 
    top:35px;   
-  	}
+}
 
 
-.content2 > div.parent--about:before:nth-of-type(1){
-	background-position: -50px 0 }
-	.content2 > div.parent--about:before:nth-of-type(2){
-	background-position: -10px 0 }
+.content2 > div.about:before:nth-of-type(1){
+	background-position: -50px 0 
+}
+	.content2 > div.about:before:nth-of-type(2){
+	background-position: -10px 0 
+}
 
 /*.content2 > div.parent--about:nth-of-type(1){
 	background-position: -50px 0 }
 */
-
-
-.parent--about__zaglavie{
+.about__zaglavie{
 	font-family: "league_gothicregular";
 	font-size: 28px;
 	color: white;
@@ -649,18 +620,18 @@ padding-bottom: 68px;  }}
 }
 
 @media (max-width:768px) {
-.parent--about__zaglavie{
+.about__zaglavie{
 	font-size: 24px;
 	height: 40px;
 	width: 175px;
  }}
 
 @media (max-width:480px) {
-.parent--about__zaglavie{
+.about__zaglavie{
 	height: 33px;
  }}
 
-.parent--about__napolnenie{
+.about__napolnenie{
 	font-family: 'Open Sans', sans-serif;
 	text-shadow: 1px 1px 2px black;
 	color:white;
@@ -673,7 +644,7 @@ padding-bottom: 68px;  }}
 }
 
 @media (max-width:768px) {
-.parent--about__napolnenie{
+.about__napolnenie{
 	width:173px;
 	background-color: green;
 	height: 141px;
@@ -685,7 +656,7 @@ padding-bottom: 68px;  }}
 
 
 @media (max-width:480px) {
-.parent--about__napolnenie{
+.about__napolnenie{
 	width:382px;
 	height: 78px;
 	margin-top: 0px;
@@ -693,14 +664,10 @@ padding-bottom: 68px;  }}
  }}
 
 @media (max-width:320px) {
-.parent--about__napolnenie{
+.about__napolnenie{
 	width:248px;
-	
  }}
-
-
-
-.parent--about__ssylka{
+.about__ssylka{
 	text-decoration: none;
 	color: white;
 	display: block;
@@ -715,35 +682,23 @@ padding-bottom: 68px;  }}
 	margin: 0 0 64px 0; 
 }
 @media (max-width:768px) {
-.parent--about__ssylka{
+.about__ssylka{
 		height: 24px;
 		margin-bottom:0px; 
- }}
-
-
-
-
-
+}}
 @media(max-width: 480px){
-.parent--about__ssylka{
+.about__ssylka{
 	margin-left:311px;
 	float: none;
 }}
-
-
-
 @media(max-width: 320px){
-.parent--about__ssylka{
+.about__ssylka{
 	margin-left:171px;
-
 }}
-.parent--about__ssylka a:hover {
+.about__ssylka a:hover {
 	background-color: none;
 	text-shadow: 0px 0px 15px white;
 }
-
-
-
 .wrapper3 {
 	height: auto;
 	width: 100%;
@@ -759,12 +714,12 @@ padding-bottom: 68px;  }}
 @media(max-width:768px) {
 .content3 {
 	width: 768px;
-background-color: green;
+	background-color: green;
  }}
 @media(max-width:480px) {
 .content3 {
 	width: 480px;
-background-color: grey;
+	background-color: grey;
  }}
 .testimonial{
 	width: 475px;
@@ -772,17 +727,16 @@ background-color: grey;
 	background-color: green;
 	/*padding: 89px 39px 39px 25px;*/
 	display:inline-block;
-/*	margin: auto;*/
-padding: 0 0 0 0;
+	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 }
 @media(max-width:768px) {
 .testimonial{
 	width:293px;
 	margin-top:87px;
-	margin-left:25px; 
-height: 329px;
-z-index: 1;
+	margin-left:25px;
+	height: 329px;
+	z-index: 1;
  }}
 
 @media(max-width:480px) {
@@ -792,7 +746,8 @@ z-index: 1;
 	margin-left: 20px;
 	z-index: 2;
  }}
-.parent--testimonial{
+
+.about--testimonial{
 	width:375px;
 	display: block;
 	position: relative;
@@ -801,9 +756,10 @@ z-index: 1;
 	float: left;
 	margin: 91px 0 0 42px;
 	height: 226px;
+	overflow:visible;
 }
 @media(max-width:768px) {
-.parent--testimonial{
+.about--testimonial{
 	width:239px;
 	overflow: hidden;
 	height: 224px;
@@ -811,12 +767,12 @@ z-index: 1;
 	margin-bottom: 24px;
 	margin-right: 60px;
 	margin-top: 4px;
-	margin-left:0px;  
-
+	margin-left:0px;  overflow:visible;
+	overflow:visible;
  }}
 
 @media(max-width:480px) {
-.parent--testimonial{
+.about--testimonial{
 	width:340px;
 	height: auto;
 	padding: 21px 30px 19px 31px;
@@ -825,10 +781,16 @@ z-index: 1;
 	position: relative;
 	display: block;
 	float: left;
+	overflow:visible;
  }}
+@media(max-width:320px) {
+.about--testimonial{
+	margin-top:12px; 
+	padding: 27px 30px 19px 31px;
+	margin-left:16px; 
+}}
 
-
-.parent--testimonial__zaglavie{
+.about--testimonial__zaglavie{
 	font-size: 28px;
 	font-family: "league_gothicregular";
 	text-transform: uppercase;
@@ -839,25 +801,28 @@ z-index: 1;
 	margin: 0 0 0 0;
 }
 @media(max-width:768px) {
-.parent--testimonial__zaglavie{
+.about--testimonial__zaglavie{
 	font-size: 23px;
 	width: 133px;
 	line-height: 25px;
 	padding: 0px;
 	height: 60px;
- }}
+}}
 
 @media(max-width:480px) {
-.parent--testimonial__zaglavie{
+.about--testimonial__zaglavie{
 	width: auto;
 	height: 36px;
 	font-size: 29px;
 	line-height: 30px;
+}}
+@media(max-width:320px) {
+.about--testimonial__zaglavie{
+	width: 120;height: 49px;font-size: 24px;
+	line-height: 24px;
  }}
 
-
-
-.parent--testimonial__zaglavie--pink {
+.about--testimonial__zaglavie--pink {
 	font-size: 28px;
 	font-family: "league_gothicregular";
 	text-transform: uppercase;
@@ -869,13 +834,13 @@ z-index: 1;
 	display: inline-block;
 } 
 @media(max-width:768px) {
-.parent--testimonial__zaglavie--pink {
+.about--testimonial__zaglavie--pink {
 	font-size: 23px;
 	height: 60px;
  }}
 
 @media(max-width:480px) {
-.parent--testimonial__zaglavie--pink {
+.about--testimonial__zaglavie--pink {
 	display: inline-block;
 	width: 140px;
 	height: 30px;
@@ -883,9 +848,14 @@ z-index: 1;
 	line-height: 40px;
  }}
 
-
-
-.parent--testimonial__napolnenie{
+@media(max-width:320px) {
+.about--testimonial__zaglavie--pink {
+	display: block;
+	width: 150px;
+	font-size: 24px;
+	line-height: 24px;
+ }}
+.about--testimonial__napolnenie{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 20px;
@@ -897,7 +867,7 @@ z-index: 1;
 
 
 @media(max-width:768px) {
-.parent--testimonial__napolnenie{
+.about--testimonial__napolnenie{
 	width: 257px;
 	height: 141px;
 	overflow: hidden;
@@ -908,15 +878,19 @@ z-index: 1;
 
 
 @media(max-width:480px) {
-.parent--testimonial__napolnenie{
-	width: 367px;
+.about--testimonial__napolnenie{
+	width: 213px;
 	height: 201px;
 	margin-top: 15px; 
 	line-height: 20px;
  }}
 
-
-.parent--testimonial:before { 
+@media(max-width:480px) {
+.about--testimonial__napolnenie{
+	margin-top: 5px; 
+}}
+ 
+.about--testimonial:before { 
 	content: " ";  
     float: left;  
     position: absolute;  
@@ -924,10 +898,27 @@ z-index: 1;
     height: 100px;  
     width: 100px;
    left:-26px; 
-   top:35px;   
+   top:12px;   
  	bottom:71px;
  	right:100px;
- 	width: 60px;}
+ 	width: 60px;
+ }
+
+@media(max-width:678px){
+.about--testimonial:before { 
+	content: " ";  
+    float: left;  
+    position: absolute;  
+   background: url(client.png) 2px 2px  no-repeat;  
+    height: 100px;  
+    width: 100px;
+   left:-26px; 
+   /*top:35px;   */
+ 	bottom:71px;
+ 	right:100px;
+ 	width: 60px;
+ 	top:12px;
+ }}
 
 /*@media(max-width:480px){
 .parent--testimonial:before { 
@@ -936,7 +927,7 @@ z-index: 1;
  	}}*/
 
 @media(max-width:480px){
-.parent--testimonial:before { 
+.about--testimonial:before { 
 	content: " ";  
     float: left;  
     position: absolute;  
@@ -945,13 +936,12 @@ z-index: 1;
     height: 100px;  
     width: 100px;
    left:-26px; 
-   top:35px;   
+   /*top:35px;   */
  	bottom:71px;
  	right:100px;
- 	width: 60px;}}
-
-
-
+ 	width: 60px;
+ 	top:12px;
+ }}
  .blog {
 	width:417px;
 	height: 298px;
@@ -986,8 +976,8 @@ z-index: 1;
 
 
 @media(max-width:768px){
-	.blog__zaglavie{margin-bottom:0px;} 
-}
+	.blog__zaglavie{margin-bottom:0px;
+}}
 
 
 blockquote {
@@ -1016,7 +1006,7 @@ blockquote {
 	overflow: hidden;
 	margin-top: 12px;
 	margin-top:1px; 
-	}}
+}}
 
 .blog__posty__napolnenie--bold{
 	font-family: 'Passion One', cursive;
@@ -1065,7 +1055,7 @@ blockquote {
 }
 .blog__posty__readmore{
 	float: right;
-		display: inline-block;
+	display: inline-block;
 	height: auto;
 	padding-top: 13px;
 	padding-bottom: 16px;
@@ -1104,7 +1094,6 @@ blockquote {
 	margin: 0 212px 0 0;
 }}
 
-
 .radio--bottom__button-black{
 	margin:0 0 0 0 ;
 	
@@ -1124,8 +1113,9 @@ background:url(black.png) 0 0 no-repeat;
 }
 
 @media(max-width: 768px){
-	.radio--bottom ul {margin:0 0 0 0;}
-}
+	.radio--bottom ul {
+		margin:0 0 0 0;
+}}
 
 
 .radio--bottom ul li {
@@ -1166,17 +1156,13 @@ background:url(black.png) 0 0 no-repeat;
 	margin-bottom: 0px;
 }}
 
-
-
-
-
 .logotip ul {
 	padding-left: 0px;
 }
 
 @media(max-width:480px) {
 .logotip  ul {
-		margin: 10px 0 31px 0;
+	margin: 10px 0 31px 0;
 }}
 
 /*.logotip ul li {
@@ -1203,7 +1189,7 @@ background:url(black.png) 0 0 no-repeat;
 	padding-left: 00px;
 	padding-right: 45px;
 	background-color: red;
-	}}
+}}
 
 @media(max-width:480px) {
 
@@ -1213,11 +1199,9 @@ background:url(black.png) 0 0 no-repeat;
 	padding-top: 26px;
 }}
 
-
-
-
 @media(max-width:480px){
-figure{margin: 0px;}}
+figure{margin: 0px;
+}}
 
 .wrapper4 {
 	height: auto;
@@ -1258,7 +1242,7 @@ figure{margin: 0px;}}
 .content4 > div:nth-of-type(5) {display:block;}
 }
 
-.parent--pingbuller{
+.about--pingbuller{
 	width: 301px;
 	height: 220px;
 	display: inline-block;
@@ -1273,8 +1257,7 @@ figure{margin: 0px;}}
 	height: 150px;
 	width: 300px;
 }}*/
-
-.parent--pingbuller__zaglavie{
+.about--pingbuller__zaglavie{
 	font-family: "league_gothicregular";
 	font-size: 45px;
 	color: black;
@@ -1288,7 +1271,7 @@ figure{margin: 0px;}}
 	height: 65px;
 	/*padding: 2px 10px 5px 4px;*/
 }
-.parent--pingbuller__zaglavie--pink {
+.about--pingbuller__zaglavie--pink {
 	background-color: green;
 	margin: 0 0 0 0;  
 	padding: 0 0 0 0;
@@ -1296,10 +1279,7 @@ figure{margin: 0px;}}
 	display: inline-block;
 	height: 65px;
 }
-
-
-
-.parent--pingbuller__copyright{
+.about--pingbuller__copyright{
 	margin-top: 0px;
 	margin-bottom: 0px;
 	/*padding-top: 9px;*/
@@ -1310,7 +1290,7 @@ figure{margin: 0px;}}
 	padding: 0 0 0 0;
 	width: 300px;
 }
-.parent--pingbuller__napolnenie{
+.about--pingbuller__napolnenie{
 	font-family: 'Open Sans', sans-serif;
 	margin-top:4px; 
 	font-size: 17px;
@@ -1321,7 +1301,7 @@ padding: 2px 10px 5px 2px;*/
 	padding: 0 0 0 0;
 }
 
-.parent--news{
+.about--news{
 	background-color:green;
 	width: 301px;
 	height: auto;
@@ -1333,12 +1313,12 @@ padding: 2px 10px 5px 2px;*/
 }
 
 @media(max-width:768px) {
-.parent--news{
+.about--news{
 	width: 212px;
 	margin-right: 40px;
 }}
 @media(max-width:480px) {
-.parent--news{
+.about--news{
 	display: block;
 	height: 150px;
 	width: 446px;
@@ -1346,7 +1326,7 @@ padding: 2px 10px 5px 2px;*/
 }}
 
 
-.parent--news__zaglavie{
+.about--news__zaglavie{
 	font-family: "league_gothicregular";
 	font-size: 29px;
 	color: white;
@@ -1359,7 +1339,7 @@ padding: 2px 10px 5px 2px;*/
 }
 
 @media(max-width:768px) {
-.parent--news__zaglavie{
+.about--news__zaglavie{
 	font-size: 24px;
 	height: 40px;
 	margin: 0px;
@@ -1367,13 +1347,13 @@ padding: 2px 10px 5px 2px;*/
 }}
 
 @media(max-width:480px) {
-.parent--news__zaglavie{
+.about--news__zaglavie{
 	height: 35px;
 }}
 
 
 
-.parent--news__napolnenie {
+.about--news__napolnenie {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 17px;
 	margin-top:4px; 
@@ -1383,16 +1363,16 @@ padding: 2px 10px 5px 2px;*/
 }
 
 @media(max-width:768px) {
-.parent--news__napolnenie{
+.about--news__napolnenie{
 	width: 212px;
 	height: 190px;
 	overflow: hidden;
 	background-color: green;
 	margin: 0px;
-	}}
+}}
 
 @media(max-width:480px) {
-.parent--news__napolnenie{
+.about--news__napolnenie{
 	width: 445px;
 	height: 92px;
 }}
@@ -1412,12 +1392,12 @@ padding: 2px 10px 5px 2px;*/
 @media(max-width:768px) {
 .content5 {
 	width: 768px;
-background-color: yellow;
+	background-color: yellow;
 }}
 @media(max-width:480px) {
 .content5 {
 	width: 480px;
-background-color: blue;
+	background-color: blue;
 }}
 
 
@@ -1454,7 +1434,7 @@ background-color: blue;
  }}
 
 .menu--bottom ul{
- display: inline-block;
+display: inline-block;
    position: absolute;
   visibility: hidden;
   top: 24px;
