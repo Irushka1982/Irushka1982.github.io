@@ -206,6 +206,7 @@ margin-top:1px;
 .tryformy {
 	background-color: red;
 	clear: both;
+	margin-top:14px; 
 }
 .odyn{
 	height: 200px;
@@ -214,6 +215,7 @@ margin-top:1px;
 	background-color: blue;
 	display: inline-block;
 	border-radius: 15px;
+	margin-right: 11px; 
 }
 .dva{
 	height: 200px;
@@ -223,6 +225,7 @@ margin-top:1px;
 	width: 193px;
 	height: 135px;
 	border-radius: 15px;
+	margin-right: 7px; 
 }	
 .try{
 	height: 200px;
@@ -260,22 +263,28 @@ margin-top:1px;
 .shyny-left{}
 .shyny-naimenovanie{}
 .shyny-naimenovanie ul{
-	padding-left: 33px;
+	padding-left: 50px;
+	margin-top:1px; 
+	margin-bottom:0px; 
 }
 .shyny-naimenovanie ul li{
 	list-style: circle;
 }	
-.shyny-naimenovanie ul li a	{}
+.shyny-naimenovanie ul li a	{
+	font-size: 13px;
+	line-height: 25px;
+}
 
 .nazva {
 	width: 150px;
 	line-height: 26px;
 	background-color: red;
 	border: 1px solid #79878d;
-	border-radius: 10px;
+	border-radius: 14px;
 	text-align: left;
 	text-transform: uppercase;
 	color:#114165;
+	margin-top:0px; 
 }
 .nazva:before {  
     content: " ";  
@@ -288,57 +297,90 @@ margin-top:1px;
 
    
 .spysok{
-	width: 191px;
+	width: 179px;
 	line-height: 26px;
-	background-color: blue;
+	background-color: white;
 	border: 1px solid black;
-	border-radius: 10px;
+	border-radius: 14px;
 	text-align: left;
 	text-transform: uppercase;
+	margin-top:15px; 
+	font-size: 13px;
+	margin-bottom:12px; 
 }
+.spysok:before {
+	 content: " ";  
+    float: left;  
+    position: relative;  
+   background: url(katalog.png) 2px 2px  no-repeat;  
+    height: 25px;  
+    width: 25px; 
+    left: -2px;
+ 
+   }
+
+
+
 
 .dysky-naimenovanie{}
 .dysky-naimenovanie ul{
-	padding-left: 33px;
-}
+	padding-left: 50px;
+	margin: 0px;
+	}
 .dysky-naimenovanie ul li{
 	list-style: circle;
 }
-.dysky-naimenovanie ul li a{}
+.dysky-naimenovanie ul li a{
+	font-size: 13px;
+	line-height: 25px;
+}
 			
 .bolty{}
 .bolty-naimenovanie{}
 .bolty-naimenovanie ul{
-	padding-left: 33px;}
+	padding-left: 50px;
+	margin: 0px;
+}
 .bolty-naimenovanie ul li{
 	list-style: circle;
 }
-.bolty-naimenovanie ul li a{}
+.bolty-naimenovanie ul li a{
+	font-size: 13px;
+	line-height: 25px;
+}
 
 .blok-center {
 	background-color:red;
 	width: 525px;
 	display: block;
 	float: left;	
+	margin-bottom:58px; 
 }
 .tovar-foto-shyna{
 	float: left;
 	text-align: center;
 	background-color:#c7d0d4;
 	margin: 1px;
-	padding: 15px;
+	padding: 0px 0px;
+	margin-top:20px; 
+	margin-left:20px;
+	margin-right:7px;  
+
 }
 
-h2{}
+
 .tovar-foto-shyna p{
 	color:#1f2528;
 	margin-top:0px;
 	margin-bottom:0px;
+	font-size: 13px;
+	line-height: 12px
  }
 .tovar-foto-shyna span {
 	color: #206988;
-}
-
+	font-size: 16px;
+font-weight: bold;
+line-height: 16px;}
 
 .tsena {
 	font-weight: bold;
@@ -347,6 +389,7 @@ h2{}
 }			
 .tovar-foto-shyna .tsena {
 	color:#114165;
+	padding-left: 6px;
 }
 
 
@@ -368,22 +411,30 @@ span{}
 	display: block;
 	float: left;
 }
+.block-right .spysok{
+	margin-left:9px; 
+}
 .brendy	{}
-.perechen-right{}
+.perechen-right{margin-left: 23px;}
+.perechen-right .nazva{width: 136px;}
 .shyny-right{}
 .brendy-naimenovanie{}
 .brendy-naimenovanie ul{
+	margin: 5px 0 19px 0;
 	color:#79878d;
-	padding-left: 12px;
+	padding-left: 5px;
 }
 .brendy-naimenovanie ul li{
 	list-style: none;
 }
+.brendy-naimenovanie label {font-size: 13px;}
+
 .dysky-right{}
-.dysky-naimenovanie-right{}
+.dysky-naimenovanie-right label{font-size: 13px;}
 .dysky-naimenovanie-right ul{
-	padding-left: 12px;
+	padding-left: 5px;
 	color:#79878d;
+	margin-top:6px; 
 }
 .dysky-naimenovanie-right ul li{
 	list-style: none;
@@ -397,11 +448,12 @@ input[type="radio"] {}
 
 .vybrat{
 	padding-left: 12px;
+	padding-top: 10px;
 }					
 .vybrat input {
 	background: red;
 	border: 2px solid blue;
-	border-radius: 10px;
+	border-radius: 14px;
 	/*width: 80px;*/
 	height: 25px;
 	text-transform: uppercase;
@@ -411,6 +463,7 @@ input[type="radio"] {}
 	clear: both;
 	background-color: blue;
 	text-align: center;
+	margin-bottom:16px; 
 }
 
 .logo ul{
@@ -441,14 +494,31 @@ footer{
 .onas ul{
 	padding: 0px;
 	margin: 0px;
+	margin-left:16px; 
 }
 .onas ul li{
 	display: inline-block;
-	background-color: yellow;
 	font-size: 13px;
-	width: 75px;
+	width: 81px;
+}
+.onas ul li:first-child {
+	;}
+
+
+
+.onas ul li:before {content: " ";  
+    float: left;  
+    position: relative;  
+   background: url(ryska.png) 2px 2px  no-repeat;  
+    height: 22px;  
+    width: 10px; 
+    left: -2px;
+top:-4px;
 }
 
+.onas a {text-decoration: none;
+color: white;}
+.onas a:hover {color: #52abcb;}
 
 			
 .avtorskie-prava{
@@ -456,7 +526,7 @@ footer{
 	text-align: center;
 	color:#7f4740;
 }
-.avtorskie-prava {
+.avtorskie-prava span{font-size: 10px;}
 	
 
 
