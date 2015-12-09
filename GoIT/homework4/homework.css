@@ -7,7 +7,8 @@ body {
     width: 1280;
  }
 
-.ira {width:1004px;
+.ira {
+	width:1004px;
 	font-family: arial; 
 	background-color: white;
 	margin: auto;
@@ -61,8 +62,8 @@ body {
 .header .flag ul {
 	padding-left: 0px;
 	margin:0 0 0 14px;
-
 }
+
 .header .flag ul li {
 	display:inline-block;
 	padding: 0;
@@ -89,7 +90,6 @@ img {
 
 .menu ul {}
 
-
 .menu li {
 	float:left;
 	margin-right:0px;
@@ -97,7 +97,6 @@ img {
 	display:block;
 	padding-right: 12px;
 	padding-left: 14px;
-
 }
 .menu li a{
 	display:block;
@@ -107,13 +106,10 @@ img {
 	text-decoration:none;
 	margin-left: 30px;
 padding-right: 5px;
-
 }
-.menu>li:nth-of-type(2) {
-	
-	background: url(triangle.png)100% 50% no-repeat;
 
-
+.menu>li:nth-of-type(2) {	
+background: url(triangle.png)100% 50% no-repeat;
 }_ 
 
 
@@ -129,13 +125,12 @@ padding-right: 5px;
 	-webkit-transition:0.25s linear opacity; 
 	 z-index: 3;
 	 margin: 0px;
-	}
+}
 
 .menu ul li{
 	font-size: 14px;
 	float:none;
 	margin: 0px;
-
 }
 	
 .menu ul a{
@@ -153,24 +148,16 @@ padding-right: 5px;
 	margin-top: 1px;
 	padding-left: 0;
 	margin-left: 30px; 
-
-;
-
 }
 
 .menu li:hover a{
 	background:#313131;
 	text-decoration:none;
-
-	;
-
-;
 }
 .menu li:hover ul a{
 	text-decoration:none;
 	-webkit-transition:-webkit-transform 0.075s linear;
 	/*margin: 0px;*/
-	
 }
 
 .menu li:hover ul li a:hover{ 
@@ -178,10 +165,6 @@ padding-right: 5px;
 	background:rgba(51,51,51,0.75); 
 	text-decoration:none;
 }
-	
-
-
-
 .ira .content{
 	width: 1003px;
 	background: url(foncol.png) repeat-y;
@@ -190,14 +173,15 @@ padding-right: 5px;
 	z-index: 1;
 	text-align: center;
 	color: #424c43;
-
 }
 
 .content .first{
 	width: 207px;
 	float: left;
 }
-.content .first h3 {margin: 7px 0px 5px 0}
+.content .first h3 {
+	margin: 7px 0px 5px 0
+}
 
 p {
 	margin: 1px;
@@ -213,7 +197,9 @@ p {
 	width: 218px;
 	float: right;
 }	
-.content .third h3 {margin: 5px 0px 5px 0}
+.content .third h3 {
+	margin: 5px 0px 5px 0
+}
 .footer	{
 	background-color: #0c739e;
 	text-align: center;
