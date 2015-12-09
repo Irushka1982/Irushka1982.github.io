@@ -7,11 +7,10 @@ body {
 .nazva{
 	font-size: 50px;
 	display: inline-block;
-	margin-bottom:10px;  
+margin-bottom:10px;  
 }
 
-.nazva a {
-	color: #303030;
+.nazva a {color: #303030;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -21,19 +20,27 @@ body {
 	background-color: #4a4a4a;
 	padding: 0px;
 	margin-top: 17px;
+
 }
 
 .first li {
-	padding: 7px 6px 9px 0px;
+	/*padding: 7px 6px 9px 0px;*/
 	display: inline-block;
 }
 
 .first li a {
-	padding: 7px 55px 8px 24px;
+	/*padding: 7px 55px 8px 24px;*/
 	text-decoration: none;
 	color: white;
 	font-size: 15px;
+	line-height: 40px;
+	width:67px;
+	display:block; 
+	padding-left: 24px;
+	padding-right: 14px;
+	margin-right: 37px;
 }
+	
 .first a:hover {
 	background: #2d2d2b;
 	border-left: 1px solid #838383;
@@ -54,23 +61,28 @@ body {
 }
 
 .second li {
-	display: inline-block;
+	
 	display: block;
-	padding: 7px 60px 6px 22px;
+	/*padding: 7px 60px 6px 22px;*/
 	border: 1px solid #b8b4b4;
 	margin-bottom:-1px; 
-	height: 26px;
+	
 }
 
 .second li a {
 	text-decoration: none;
 	color:#656363;
 	font-size: 13px;
+	line-height: 39px;
+	width: 201px;
+	padding-left: 20px;
+	display: block;
 }
 .second li a:hover {
-	width: 400px;
-	padding:  0px 0 7px 14px;
+	padding-left:35px;
 	color: #2c2c2c;
+	background-color: #f9f9f9;
+
 }
 .third {
 	width: 645px;
@@ -102,6 +114,7 @@ body {
 
 .fourth {
 	margin-top:44px;
+
 }
 
 .fourth ul{
@@ -112,19 +125,22 @@ body {
 
 .fourth li{
 	display: inline-block;
-	padding: 8px 48px 10px 24px;
+	/*padding: 8px 48px 10px 24px;*/
 }
 
 .fourth li a{
-	padding: 8px 20px 10px 0px;
+	/*padding: 8px 20px 10px 0px;*/display:block; 
 	text-decoration: none;
 	color:#2c2c2c;
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
+	width: 100px;
+	line-height: 40px;
+	padding-left: 24px;
+	padding-right: 14px;
 }
 
-.fourth li a:hover{
-	text-decoration: underline;
+.fourth li a:hover{text-decoration: underline;
 }
 .fourth .prava {
 	float:right;
