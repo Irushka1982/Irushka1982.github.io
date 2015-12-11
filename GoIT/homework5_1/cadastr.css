@@ -115,47 +115,50 @@ p {
 .FB {padding: 34px 0 20px 0;
 height: 40px;}
 .FB button {padding: 0  0 0 20px;
-height: 41px;}
+height: 36px;
+border: none;}
 
 .ira span { font-size: 15px;
 font-weight: bold;
-padding: 2px;
 font-family: "Tahoma";
+vertical-align: center;
+display: inline-block;
+border-left: 1px solid #1f3d71;
+line-height: 31px;
 }
 .ira span:before{
 	position:relative;
 	content:" ";
 	background: url(facebooklogo.png) 2px 2px no-repeat;
 	width: 21px;
-	height: 20px;
-	padding: 12px 8px 0 8px;
-	
-	top:-2px;
-	/*bottom: 1px;*/
-	left: -28px;
-	/*right: 2px;*/
+	height: 24px;
+	left: -39px;
+	top:4px;
 	display: inline-block;
-border-right: 1px solid #1f3d71;}
+
+padding-right: 2px;}
 
 .ira span:after{
 	position:relative;
 	content:" ";
-	background: url(ryska.png) 27px 2px no-repeat;
-	width: 40px;
+	background: url(ryska.png) 2px 2px no-repeat;
+	width: 18px;
 	height: 20px;
 	display: inline-block;
-top:-5px;
-left:-6px;}
+top:4px;
+left:7px;}
 
+.ou span{font-size: 13px;
+text-transform: uppercase;}
 
 .ou:before{
 	content:"";
 	position:relative;
 	display: inline-block;
-	width: 100px;
+	width: 122px;
 	height: 1px;
 	background-color: black;
-	margin-right: 10px;
+	margin-right: 2px;
 	vertical-align: middle;
 }
 
@@ -165,11 +168,11 @@ left:-6px;}
 	content:"";
 	position:relative;
 	display: inline-block;
-	width: 100px;
+	width: 122px;
 	height: 1px;
 	background-color: black;
 	vertical-align: middle;
-	margin-left: 10px;
+	margin-left: 2px;
 }
 
 .ira {
@@ -182,14 +185,14 @@ left:-6px;}
 .formaaa {margin-top:16px; }
 .formaaa input {
 	padding-left: 10px;
-	width: 275px;
+	width: 263px;
 	height: 31px;
-	padding-left: 14px;
-	color:red;
+	padding-left: 18px;
 	margin-top: 3px; 
 	margin-bottom:14px; 
-
+	font-size: 14px;
 }
+
 .forma {
 margin: auto;
 }
@@ -204,6 +207,8 @@ input{
 	font-family: "Helvetica Neue Regular";
 	color:white;
 }
+.send {margin-left:-21px; }
+
 .forma input span {
 	padding-left:10px;
 }
@@ -213,12 +218,15 @@ input{
      box-shadow: 0 0 5px 1px #1b5288;
  }
 
+
+
 .forma .create input{
 	width: 150px;
 	padding: 3px 15px;
 	border-radius: 3px;
 	border-color:#67c6e6;
 	line-height: 30px;
+	margin-bottom:17px; 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,67c6e6+2,67c6e6+53,2989d8+100,2989d8+100,7db9e8+100 */
 background: #1e5799; /* Old browsers */
 background: -moz-linear-gradient(top, #1e5799 0%, #67c6e6 2%, #67c6e6 53%, #2989d8 100%, #2989d8 100%, #7db9e8 100%); /* FF3.6-15 */
