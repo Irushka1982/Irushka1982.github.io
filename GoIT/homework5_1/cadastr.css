@@ -22,7 +22,12 @@ body {
 .menu{
 	display:block;
 	overflow: hidden;
-	background-color: #074e8b;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#075595+0,084a86+100 */
+background: rgb(7,85,149); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(7,85,149,1) 0%, rgba(8,74,134,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(7,85,149,1) 0%,rgba(8,74,134,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(7,85,149,1) 0%,rgba(8,74,134,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#075595', endColorstr='#084a86',GradientType=1 ); /* IE6-9 */
 }
 
 .menu ul{
@@ -46,7 +51,8 @@ body {
 
 .menu li:hover {
 	cursor:pointer;
-	background-color: #4eabda;}
+	background-color: #4eabda;
+color: white;}
 
 .minhas {
 	background: url(flag2.png) 24% 50% no-repeat;*/
@@ -65,7 +71,13 @@ body {
 .minhas span {
 	padding-left: 60px;color: white;
 }
-
+.ola {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b1dc+35,2c539e+100 */
+background: #51b1dc; /* Old browsers */
+background: -moz-linear-gradient(top, #51b1dc 35%, #2c539e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #51b1dc 35%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #51b1dc 35%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */}
+}
 .ola:hover {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b1dc+35,2c539e+100 */
 background: #51b1dc; /* Old browsers */
@@ -116,7 +128,8 @@ p {
 height: 40px;}
 .FB button {padding: 0  0 0 20px;
 height: 36px;
-border: none;}
+border: none;
+cursor:pointer;}
 
 .ira span { font-size: 15px;
 font-weight: bold;
@@ -191,6 +204,7 @@ text-transform: uppercase;}
 	margin-top: 3px; 
 	margin-bottom:14px; 
 	font-size: 14px;
+
 }
 
 .forma {
@@ -206,6 +220,7 @@ input{
 	box-shadow:0px 2px 0px 0px #484948;
 	font-family: "Helvetica Neue Regular";
 	color:white;
+	cursor:pointer;
 }
 .send {margin-left:-21px; }
 
@@ -221,6 +236,7 @@ input{
 
 
 .forma .create input{
+	cursor:pointer;
 	width: 150px;
 	padding: 3px 15px;
 	border-radius: 3px;

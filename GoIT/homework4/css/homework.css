@@ -1,5 +1,5 @@
 body {
-	background-image: url(picture/fonpart2.png);
+	background-image: url(fonpart2.png);
 	background-repeat: repeat-x;
     margin:0px; 
     font-size: 15px;
@@ -115,8 +115,7 @@ padding-right: 5px;
 }
 .menu>li:nth-of-type(2) {
 	
-	background-image: url(picture/triangle.png)100% 50% no-repeat;
-
+	background: url(triangle.png)100% 50% no-repeat;
 
 
 }_ 
@@ -189,8 +188,7 @@ padding-right: 5px;
 
 .ira .content{
 	width: 1003px;
-	
-	background: url(picture/fonpol.png) repeat-y;
+	background: url(fonpol.png) repeat-y;
 	position:relative;
 	overflow:hidden;
 	z-index: 1;
