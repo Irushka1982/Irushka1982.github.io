@@ -18,7 +18,7 @@ body {
 	width:1220px;
 	height: 1080px;
 	margin:auto;
-	background: url(fon3.png) no-repeat;}
+	background: url(../image/fon3.png) no-repeat;}
 .menu{
 	display:block;
 	overflow: hidden;
@@ -55,7 +55,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#075595', end
 color: white;}
 
 .minhas {
-	background: url(flag2.png) 24% 50% no-repeat;*/
+	background: url(../image/flag2.png) 24% 50% no-repeat;*/
 	background-color: none;
 }
 .minhas::before {
@@ -117,7 +117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', end
 p {
 	margin: 2px;
 }
-.ira button {
+.log-in-with button {
 	font-family: "Helvetica Neue Regular";
 	color:white;
 	background-color: #344a86;
@@ -131,7 +131,7 @@ height: 36px;
 border: none;
 cursor:pointer;}
 
-.ira span { font-size: 15px;
+.log-in-with span { font-size: 15px;
 font-weight: bold;
 font-family: "Tahoma";
 vertical-align: center;
@@ -139,10 +139,10 @@ display: inline-block;
 border-left: 1px solid #1f3d71;
 line-height: 31px;
 }
-.ira span:before{
+.log-in-with span:before{
 	position:relative;
 	content:" ";
-	background: url(facebooklogo.png) 2px 2px no-repeat;
+	background: url(../image/facebooklogo.png) 2px 2px no-repeat;
 	width: 21px;
 	height: 24px;
 	left: -39px;
@@ -151,15 +151,15 @@ line-height: 31px;
 
 padding-right: 2px;}
 
-.ira span:after{
+.log-in-with span:after{
 	position:relative;
 	content:" ";
-	background: url(ryska.png) 2px 2px no-repeat;
+	background: url(../image/ryska.png) 2px 2px no-repeat;
 	width: 18px;
 	height: 20px;
 	display: inline-block;
-top:4px;
-left:7px;}
+	top:4px;
+	left:7px;}
 
 .ou span{font-size: 13px;
 text-transform: uppercase;}
@@ -188,15 +188,15 @@ text-transform: uppercase;}
 	margin-left: 2px;
 }
 
-.ira {
+.log-in-with {
 
 }
 
 .blok {
 	padding-bottom: 15px;
 }
-.formaaa {margin-top:16px; }
-.formaaa input {
+.forma {margin-top:16px; }
+.forma input {
 	padding-left: 10px;
 	width: 263px;
 	height: 31px;
@@ -207,7 +207,7 @@ text-transform: uppercase;}
 
 }
 
-.forma {
+.input-part {
 margin: auto;
 }
  
@@ -224,10 +224,10 @@ input{
 }
 .send {margin-left:-21px; }
 
-.forma input span {
+.input-part input span {
 	padding-left:10px;
 }
-.forma input:focus {
+.input-part input:focus {
     background:#1b5288; 
      border: 1px solid #689bcc; 
      box-shadow: 0 0 5px 1px #1b5288;
@@ -235,7 +235,7 @@ input{
 
 
 
-.forma .create input{
+.input-part .create input{
 	cursor:pointer;
 	width: 150px;
 	padding: 3px 15px;

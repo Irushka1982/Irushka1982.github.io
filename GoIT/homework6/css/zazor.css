@@ -23,7 +23,7 @@ header {
 	content: " ";  
      float: left;  
     position: relative;  
-     background: url(trubka.png) 2px 1px  no-repeat;  
+     background: url(../image/trubka.png) 2px 1px  no-repeat;  
      height: 25px;  
     width: 25px;  
 }  
@@ -78,7 +78,7 @@ header {
 	content: " ";  
     float: left;  
     position: relative;  
-    background: url(chel.png) 2px 1px  no-repeat;  
+    background: url(../image/chelovek.png) 2px 1px  no-repeat;  
     height: 25px;  
     width: 25px;  
 }
@@ -172,7 +172,7 @@ margin-top:1px;
 	content: " ";  
     float: left;  
     position: relative;  
-    background: url(korzina.png) 2px 1px  no-repeat;  
+    background: url(../image/korzina.png) 2px 1px  no-repeat;  
      height: 25px;  
     width: 25px;
 }
@@ -290,7 +290,7 @@ margin-top:1px;
     content: " ";  
     float: left;  
     position: relative;  
-   background: url(bublik.png) 2px 2px  no-repeat;  
+   background: url(../image/bublik.png) 2px 2px  no-repeat;  
     height: 25px;  
     width: 25px;  
 }  
@@ -312,7 +312,7 @@ margin-top:1px;
 	 content: " ";  
     float: left;  
     position: relative;  
-   background: url(katalog.png) 2px 2px  no-repeat;  
+   background: url(../image/katalog.png) 2px 2px  no-repeat;  
     height: 25px;  
     width: 25px; 
     left: -2px;
@@ -509,7 +509,7 @@ footer{
 .onas ul li:before {content: " ";  
     float: left;  
     position: relative;  
-   background: url(ryska.png) 2px 2px  no-repeat;  
+   background: url(../image/ryska.png) 2px 2px  no-repeat;  
     height: 22px;  
     width: 10px; 
     left: -2px;
