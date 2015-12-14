@@ -7,13 +7,13 @@ body {
 header {
 	overflow: hidden;
 	position: relative;
-	background: blue;
+	/*background: blue;*/
 	height: 53px;
 	padding-left: 8px;
 }
 
 .telefon {
-	background-color: red;
+	/*background-color: red;*/
 	display:inline-block;
 	width: 304px;
 	margin-top: 15px;
@@ -29,14 +29,14 @@ header {
 }  
 
 .telefon ul {
-	background-color: green;
+/*	background-color: green;*/
 	padding: 3px;
 	margin: 0px;
 }
 
 .telefon li {
 	display:inline-block;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	color:#5e696d;
 }
 .telefon li {
@@ -46,23 +46,30 @@ header {
 
 
 .forma {
-	background-color: green;
+/*	background-color: green;*/
 	display:inline-block;
 	margin-top: 0px; height: 21px;
 }
 
 .forma ul {
-	background-color: red;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6685+1,0c3357+100 */
+background: rgb(31,102,133); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(31,102,133,1) 1%, rgba(12,51,87,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(31,102,133,1) 1%,rgba(12,51,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(31,102,133,1) 1%,rgba(12,51,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6685', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+	
 	padding: 0px;
 	width: 496px;
 	margin: 0px;
+	border-radius: 4px;
 }
 
 .forma li {
 	display:inline-block;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	color: black;
-	height: 17px;
+	height: 24px;
 	font-size: 14px;
  }
 .forma li a {
@@ -70,9 +77,10 @@ header {
 }
 .forma input {
 	width: 112px;
-	background-color: green;
+	/*background-color: green;*/
 	font-size: 11px;
 	border: none;
+	color: #bfbfbf;
 }
 .forma:before {
 	content: " ";  
@@ -82,13 +90,29 @@ header {
     height: 25px;  
     width: 25px;  
 }
+.registratsiya:before {
+content: " ";  
+    float: left;  
+    position: relative;  
+    background: url(../image/ryska.png) 2px 1px  no-repeat;  
+    height: 25px;  
+    width: 12px; 
+    left:-4px; 
+    top:0px; 
+}
+.registratsiya {margin-right: 9px;}
+.forma li span {font-size: 12px;
+color: white;}
+
+.forma li a span {color: #bfbfbf;}
+
 .contact {
-	background-color: yellow;
+/*	background-color: yellow;*/
 	display:inline-block;
 	margin-left: 12px; 
 }
 .contact ul {
-	background-color: green;
+	/*background-color: green;*/
 	padding: 0px;
 	border: 1px solid #bdc4c7;
 	border-radius: 20px;
@@ -99,27 +123,31 @@ header {
 }
 .contact li {
 	display:inline-block;
-	background-color: red; 
+/*	background-color: red; */
 }
 .contact li a {color:#bfbfbf;}
 
 .banner {
-	background-color: red;
+/*	background-color: red;*/
 	height: 236px;
 	display: inline-block;
 	clear: both;
 	margin-top:2px; 
 }
 .podbaner{
-	background-color: yellow;
-	overflow: hidden;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#505860+6,505860+15,020202+51 */
+background: rgb(80,88,96); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(80,88,96,1) 6%, rgba(80,88,96,1) 15%, rgba(2,2,2,1) 51%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(80,88,96,1) 6%,rgba(80,88,96,1) 15%,rgba(2,2,2,1) 51%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(80,88,96,1) 6%,rgba(80,88,96,1) 15%,rgba(2,2,2,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505860', endColorstr='#020202',GradientType=0 ); /* IE6-9 */	overflow: hidden;
 	position: relative;
 	border-radius: 5px;
 	height: 31px;
 margin-top:1px;
 }
 .menu {
-	background-color: green;
+/*	background-color: green;*/
 	margin-left: 140px;
 	display: block;
 	/*padding-top: 4px;*/
@@ -135,19 +163,25 @@ margin-top:1px;
 	padding: 0px;
 	display: block;
 	font-size: 13px;
+	font-weight: bold;
 	line-height: 35px;
 }
 
 .menu a:hover {
-	background-color: yellow;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0c3357+100 */
+background: rgb(31,103,135); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
 	text-decoration: none;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	border-radius: 20px;
 	padding: 0px;
 }
 
 .menu ul {
-	background-color: red;
+	/*background-color: red;*/
 	float: left;
 	padding-left:0px;
 	margin: 0px;
@@ -157,12 +191,12 @@ margin-top:1px;
 .menu li {
 	width: 102px;
 	display: inline-block;
-	background-color: green;
+	/*background-color: green;*/
 /*	padding-top: 5px;*/
 	/*padding-bottom: 5px;*/
 }
 .tovar {
-	background-color: green;
+	/*background-color: green;*/
 	width: 244px;
 	float: right;
 	display: block;
@@ -180,7 +214,7 @@ margin-top:1px;
 }
 
 .tovar ul{
-	background-color: yellow;
+	/*background-color: yellow;*/
 	padding: 0px;	
 	margin: 0px;
 }
@@ -189,7 +223,7 @@ margin-top:1px;
 	display: inline-block;
 }
 .tovar ul li span {
-	background-color: green;
+	/*background-color: green;*/
 	font-size: 10px;
 	margin-left: 4px;
 }
@@ -199,14 +233,18 @@ margin-top:1px;
 }
 .cyfratovar {
 	width:35px;
+	color:#0d5a8f;
+
+
 }
 .cyfrasumma{
 	width: 50px;
+	color:#0d5a8f;
 }
 .content{
 }
 .tryformy {
-	background-color: red;
+	/*background-color: red;*/
 	clear: both;
 	margin-top:14px; 
 }
@@ -214,7 +252,7 @@ margin-top:1px;
 	height: 200px;
 	width: 415px;
 	height: 135px;
-	background-color: blue;
+	border: 1px solid black;
 	display: inline-block;
 	border-radius: 15px;
 	margin-right: 11px; 
@@ -222,7 +260,7 @@ margin-top:1px;
 .dva{
 	height: 200px;
 	width: 30%;
-	background-color: green;
+	border: 1px solid black;
 	display: inline-block;
 	width: 193px;
 	height: 135px;
@@ -232,7 +270,7 @@ margin-top:1px;
 .try{
 	height: 200px;
 	width: 20%;
-	background-color: black;
+	border: 1px solid black;
 	display: inline-block;
 	width: 267px;
 	height: 135px;
@@ -241,10 +279,10 @@ margin-top:1px;
 .napoln{
 	overflow: hidden;
 	position: relative;
-	background-color: black;
+/*	background-color: black;*/
 }
 .block-left {
-	background-color: yellow;
+	/*background-color: yellow;*/
 	width: 191px;
 	display: block;
 	float: left;
@@ -280,13 +318,15 @@ margin-top:1px;
 .nazva {
 	width: 150px;
 	line-height: 26px;
-	background-color: red;
+	/*background-color: red;*/
 	border: 1px solid #79878d;
 	border-radius: 14px;
 	text-align: left;
 	text-transform: uppercase;
 	color:#114165;
 	margin-top:0px; 
+	font-size: 14px;
+
 }
 .nazva:before {  
     content: " ";  
@@ -308,6 +348,8 @@ margin-top:1px;
 	text-transform: uppercase;
 	margin-top:15px; 
 	font-size: 13px;
+	font-weight: bold;
+	color:#0c3256;
 	margin-bottom:12px; 
 }
 .spysok:before {
@@ -353,7 +395,12 @@ margin-top:1px;
 }
 
 .blok-center {
-	background-color:red;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e7e8+0,93a7b0+100 */
+background: rgb(229,231,232); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(229,231,232,1) 0%, rgba(147,167,176,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(229,231,232,1) 0%,rgba(147,167,176,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(229,231,232,1) 0%,rgba(147,167,176,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0',GradientType=0 ); /* IE6-9 */
 	width: 525px;
 	display: block;
 	float: left;	
@@ -363,7 +410,7 @@ margin-top:1px;
 .tovar-foto-shyna{
 	float: left;
 	text-align: center;
-	background-color:#c7d0d4;
+	/*background-color:#c7d0d4;*/
 	margin: 1px;
 	padding: 0px 0px;
 	margin-top:20px; 
@@ -410,7 +457,7 @@ line-height: 16px;}
 }
 span{}
 .block-right{
-	background-color:green;
+	/*background-color:green;*/
 	width: 185px;
 	display: block;
 	float: left;
@@ -455,17 +502,26 @@ input[type="radio"] {}
 	padding-top: 10px;
 }					
 .vybrat input {
-	background: red;
-	border: 2px solid blue;
+	/*background: red;*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0c3357+100 */
+background: rgb(31,103,135); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+border: none;
 	border-radius: 14px;
+	color: white;
+	font-size: 11px;
 	/*width: 80px;*/
 	height: 25px;
 	text-transform: uppercase;
+	width: 81px;
 }
 					
 .logo {display: block;
 	clear: both;
-	background-color: blue;
+	/*background-color: blue;*/
 	text-align: center;
 	margin-bottom:16px; 
 }
@@ -476,7 +532,7 @@ margin: 0px;
 }
 .logo ul li{
 	display: inline-block;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 footer{
@@ -492,7 +548,7 @@ footer{
 	text-align: center;
 	padding-top: 6px;
 	padding-bottom: 3px;
-	background-color: green;
+	/*background-color: green;*/
 	clear: both;
 }
 .onas ul{
@@ -526,7 +582,7 @@ color: white;}
 
 			
 .avtorskie-prava{
-	background-color: red;
+/*	background-color: red;*/
 	text-align: center;
 	color:#7f4740;
 	
