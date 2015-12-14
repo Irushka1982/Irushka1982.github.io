@@ -16,7 +16,7 @@ header {
 	background-color: red;
 	display:inline-block;
 	width: 304px;
-	margin-top: 21px;
+	margin-top: 15px;
 }
 
 .telefon:before {
@@ -122,8 +122,8 @@ margin-top:1px;
 	background-color: green;
 	margin-left: 140px;
 	display: block;
-	padding-top: 4px;
-	font-size: 13px;
+	/*padding-top: 4px;*/
+	
 
 }
 .menu a {
@@ -131,18 +131,19 @@ margin-top:1px;
 	cursor: pointer;
 	color: white;
 	text-transform: uppercase;
-	height: 25px;
-	padding: 5px;
+	/*height: 25px;*/
+	padding: 0px;
+	display: block;
+	font-size: 13px;
+	line-height: 35px;
 }
 
 .menu a:hover {
 	background-color: yellow;
 	text-decoration: none;
-	border: 2px solid red;
+	border: 1px solid red;
 	border-radius: 20px;
-	height: 25px;
-	width: 122px;
-	padding: 5px;
+	padding: 0px;
 }
 
 .menu ul {
@@ -157,8 +158,8 @@ margin-top:1px;
 	width: 102px;
 	display: inline-block;
 	background-color: green;
-	padding-top: 5px;
-	padding-bottom: 5px;
+/*	padding-top: 5px;*/
+	/*padding-bottom: 5px;*/
 }
 .tovar {
 	background-color: green;
@@ -175,6 +176,7 @@ margin-top:1px;
     background: url(../image/korzina.png) 2px 1px  no-repeat;  
      height: 25px;  
     width: 25px;
+    margin-left:10px; 
 }
 
 .tovar ul{
@@ -188,7 +190,7 @@ margin-top:1px;
 }
 .tovar ul li span {
 	background-color: green;
-	font-size: 13px;
+	font-size: 10px;
 	margin-left: 4px;
 }
 
@@ -196,10 +198,10 @@ margin-top:1px;
 	border: none;
 }
 .cyfratovar {
-	width:23px;
+	width:35px;
 }
 .cyfrasumma{
-	width: 30px;
+	width: 50px;
 }
 .content{
 }
@@ -329,6 +331,7 @@ margin-top:1px;
 	}
 .dysky-naimenovanie ul li{
 	list-style: circle;
+
 }
 .dysky-naimenovanie ul li a{
 	font-size: 13px;
@@ -354,7 +357,8 @@ margin-top:1px;
 	width: 525px;
 	display: block;
 	float: left;	
-	margin-bottom:58px; 
+	margin-bottom:34px; 
+	padding-bottom: 23px;
 }
 .tovar-foto-shyna{
 	float: left;
@@ -434,7 +438,7 @@ span{}
 .dysky-naimenovanie-right ul{
 	padding-left: 5px;
 	color:#79878d;
-	margin-top:6px; 
+	margin-top:5px; 
 }
 .dysky-naimenovanie-right ul li{
 	list-style: none;
@@ -487,7 +491,7 @@ footer{
 .onas{
 	text-align: center;
 	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-bottom: 3px;
 	background-color: green;
 	clear: both;
 }
@@ -525,6 +529,7 @@ color: white;}
 	background-color: red;
 	text-align: center;
 	color:#7f4740;
+	
 }
 .avtorskie-prava span{font-size: 10px;}
 	
