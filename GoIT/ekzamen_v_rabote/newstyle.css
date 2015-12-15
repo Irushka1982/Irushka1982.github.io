@@ -747,7 +747,7 @@ padding-bottom: 68px;
 	z-index: 2;
  }}
 
-.about--testimonial{
+.testimonial-text{
 	width:375px;
 	display: block;
 	position: relative;
@@ -759,7 +759,7 @@ padding-bottom: 68px;
 	overflow:visible;
 }
 @media(max-width:768px) {
-.about--testimonial{
+.testimonial-text{
 	width:239px;
 	overflow: hidden;
 	height: 224px;
@@ -772,7 +772,7 @@ padding-bottom: 68px;
  }}
 
 @media(max-width:480px) {
-.about--testimonial{
+.testimonial-text{
 	width:340px;
 	height: auto;
 	padding: 21px 30px 19px 31px;
@@ -784,13 +784,13 @@ padding-bottom: 68px;
 	overflow:visible;
  }}
 @media(max-width:320px) {
-.about--testimonial{
+.testimonial-text{
 	margin-top:12px; 
 	padding: 27px 30px 19px 31px;
 	margin-left:16px; 
 }}
 
-.about--testimonial__zaglavie{
+.testimonial-text__zaglavie{
 	font-size: 28px;
 	font-family: "league_gothicregular";
 	text-transform: uppercase;
@@ -801,7 +801,7 @@ padding-bottom: 68px;
 	margin: 0 0 0 0;
 }
 @media(max-width:768px) {
-.about--testimonial__zaglavie{
+.testimonial-text__zaglavie{
 	font-size: 23px;
 	width: 133px;
 	line-height: 25px;
@@ -810,19 +810,19 @@ padding-bottom: 68px;
 }}
 
 @media(max-width:480px) {
-.about--testimonial__zaglavie{
+.testimonial-text__zaglavie{
 	width: auto;
 	height: 36px;
 	font-size: 29px;
 	line-height: 30px;
 }}
 @media(max-width:320px) {
-.about--testimonial__zaglavie{
+.testimonial-text__zaglavie{
 	width: 120;height: 49px;font-size: 24px;
 	line-height: 24px;
  }}
 
-.about--testimonial__zaglavie--pink {
+.testimonial-text__zaglavie--pink {
 	font-size: 28px;
 	font-family: "league_gothicregular";
 	text-transform: uppercase;
@@ -834,13 +834,13 @@ padding-bottom: 68px;
 	display: inline-block;
 } 
 @media(max-width:768px) {
-.about--testimonial__zaglavie--pink {
+.testimonial-text__zaglavie--pink {
 	font-size: 23px;
 	height: 60px;
  }}
 
 @media(max-width:480px) {
-.about--testimonial__zaglavie--pink {
+.testimonial-text__zaglavie--pink {
 	display: inline-block;
 	width: 140px;
 	height: 30px;
@@ -849,13 +849,13 @@ padding-bottom: 68px;
  }}
 
 @media(max-width:320px) {
-.about--testimonial__zaglavie--pink {
+.testimonial-text__zaglavie--pink {
 	display: block;
 	width: 150px;
 	font-size: 24px;
 	line-height: 24px;
  }}
-.about--testimonial__napolnenie{
+.testimonial-text__napolnenie{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 20px;
@@ -867,7 +867,7 @@ padding-bottom: 68px;
 
 
 @media(max-width:768px) {
-.about--testimonial__napolnenie{
+.testimonial-text__napolnenie{
 	width: 257px;
 	height: 141px;
 	overflow: hidden;
@@ -878,7 +878,7 @@ padding-bottom: 68px;
 
 
 @media(max-width:480px) {
-.about--testimonial__napolnenie{
+.testimonial-text__napolnenie{
 	width: 213px;
 	height: 201px;
 	margin-top: 15px; 
@@ -886,11 +886,11 @@ padding-bottom: 68px;
  }}
 
 @media(max-width:480px) {
-.about--testimonial__napolnenie{
+.testimonial-text__napolnenie{
 	margin-top: 5px; 
 }}
  
-.about--testimonial:before { 
+.testimonial-text:before { 
 	content: " ";  
     float: left;  
     position: absolute;  
@@ -905,7 +905,7 @@ padding-bottom: 68px;
  }
 
 @media(max-width:678px){
-.about--testimonial:before { 
+.testimonial-text:before { 
 	content: " ";  
     float: left;  
     position: absolute;  
@@ -927,7 +927,7 @@ padding-bottom: 68px;
  	}}*/
 
 @media(max-width:480px){
-.about--testimonial:before { 
+.testimonial-text:before { 
 	content: " ";  
     float: left;  
     position: absolute;  
