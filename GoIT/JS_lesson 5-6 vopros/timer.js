@@ -1,9 +1,6 @@
-
-
  var a = document.createElement('div');
   a.className = 'wrapper';
    document.body.appendChild(a);
-
 
 var b = document.createElement('div');
   b.className = "ciferblat";
@@ -13,15 +10,9 @@ var c = document.createElement('div');
   c.className = "startbutton";
   a.appendChild(c);
 
-  var d = document.createElement('div');
+var d = document.createElement('div');
   d.className = "clearbutton";
   a.appendChild(d);
-
-
-
-
-
-
 
 
 var timer = document.createElement('p');
@@ -49,19 +40,15 @@ start.addEventListener('click', startTimer);
 	
 }*/
 
-
-
 var clear = document.createElement('p');
 d.appendChild(clear);
 clear.innerHTML = 'Clear';
 clear.addEventListener('click', stop);
 
-
 function stop(){
 clearInterval(id);
 timer.innerHTML = '00:00:00:00';
 }
-
 
 var milliseconds = 0;
 var seconds = 0;
@@ -98,6 +85,6 @@ if (hours >= 60) {
  }
 
   ++milliseconds;
-return  minutes + ':' + seconds + ':' + milliseconds;
+return  hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
 
 }
