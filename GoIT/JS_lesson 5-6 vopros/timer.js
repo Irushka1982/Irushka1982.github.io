@@ -1,10 +1,36 @@
+
+
+ var a = document.createElement('div');
+  a.className = 'wrapper';
+   document.body.appendChild(a);
+
+
+var b = document.createElement('div');
+  b.className = "ciferblat";
+  a.appendChild(b);
+
+var c = document.createElement('div');
+  c.className = "startbutton";
+  a.appendChild(c);
+
+  var d = document.createElement('div');
+  d.className = "clearbutton";
+  a.appendChild(d);
+
+
+
+
+
+
+
+
 var timer = document.createElement('p');
-document.body.appendChild(timer);
+b.appendChild(timer);
 timer.innerHTML = '00:00:00:00';
 
 
 var start = document.createElement('p');
-document.body.appendChild(start);
+c.appendChild(start);
 start.innerHTML = 'Start';
 start.addEventListener('click', ira);
 /*start.addEventListener('click', contin)*/
@@ -26,7 +52,7 @@ start.addEventListener('click', startTimer);
 
 
 var clear = document.createElement('p');
-document.body.appendChild(clear);
+d.appendChild(clear);
 clear.innerHTML = 'Clear';
 clear.addEventListener('click', stop);
 
