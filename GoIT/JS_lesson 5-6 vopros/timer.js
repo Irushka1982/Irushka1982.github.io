@@ -10,16 +10,22 @@ start.addEventListener('click', ira);
 
 function startTimer(){
 	timer.style.color = "red";
-	timer.innerHTML = time;
+	setInterval(function () {
+timer.innerHTML = ira();
+}, 1);
+
 }
 	start.addEventListener('click', startTimer);
+
+
+
+function ira(){
 
 var milliseconds = 0;
 var seconds = 0;
 var minutes = 0;
-var time;
 
-function ira(){
+
 
 if (milliseconds === 999) {
 	++seconds;
@@ -30,7 +36,9 @@ if (seconds < 10){
 if (seconds >= 60) {
 	seconds = 0;
 	++minutes;
-}
-time = minutes + ':' + seconds + ':' + milliseconds;
-timer.innerHTML = time;
+ }
+
+  
+return  minutes + ':' + seconds + ':' + milliseconds;
+
 }
