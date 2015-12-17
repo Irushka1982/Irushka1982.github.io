@@ -24,6 +24,7 @@ var start = document.createElement('p');
 c.appendChild(start);
 start.innerHTML = 'Start';
 start.addEventListener('click', ira);
+/*start.addEventListener('click', startPovtorno);*/
 
 
 function startTimer(){
@@ -33,6 +34,11 @@ function startTimer(){
 
 }
 start.addEventListener('click', startTimer);
+/*
+function startPovtorno(){
+	start.removeEventListener('click', ira);
+}*/
+
 
 
 var clear = document.createElement('p');
