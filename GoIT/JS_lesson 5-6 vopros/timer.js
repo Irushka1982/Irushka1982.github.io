@@ -24,7 +24,7 @@ var start = document.createElement('p');
 c.appendChild(start);
 start.innerHTML = 'Start';
 start.addEventListener('click', ira);
-start.addEventListener('click', contin);
+
 
 function startTimer(){
 	id = setInterval(function () {
@@ -34,11 +34,6 @@ function startTimer(){
 }
 start.addEventListener('click', startTimer);
 
-function contin(){
-	clearInterval(id);
-	start.innerHTML = 'Pause'
-	
-}
 
 var clear = document.createElement('p');
 d.appendChild(clear);
@@ -48,15 +43,17 @@ clear.addEventListener('click', stop);
 function stop(){
 clearInterval(id);
 timer.innerHTML = '00:00:00:00';
+start.innerHTML = 'Start'
 }
 
 var milliseconds = 0;
 var seconds = 0;
 var minutes = 0;
 var hours = 0;
+var id;
 
 function ira(){
-
+start.innerHTML = 'Pause';
 if (milliseconds === 999) {
 	milliseconds = 0;
 	++seconds;
