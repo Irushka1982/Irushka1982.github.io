@@ -24,7 +24,7 @@ var start = document.createElement('p');
 c.appendChild(start);
 start.innerHTML = 'Start';
 start.addEventListener('click', ira);
-/*start.addEventListener('click', contin)*/
+start.addEventListener('click', contin);
 
 function startTimer(){
 	id = setInterval(function () {
@@ -34,11 +34,11 @@ function startTimer(){
 }
 start.addEventListener('click', startTimer);
 
-/*function contin(){
-	clearInterval(id)
-	timer.innerHTML = minutes + ':' + seconds + ':' + milliseconds;
+function contin(){
+	clearInterval(id);
+	start.innerHTML = 'Pause'
 	
-}*/
+}
 
 var clear = document.createElement('p');
 d.appendChild(clear);
