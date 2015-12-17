@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: 'league_gothicregular';
-    src: url('fonts/leaguegothic-regular-webfont.eot');
-    src: url('fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +19,7 @@ body{
 .wrapper1 {
 	height: auto;
 	width:100%;
-	background: url(background.png) 0 0 no-repeat;
+	background: url(../image/background.png) 0 0 no-repeat;
 }
 .transparent {
 	width: 100%;
@@ -436,7 +436,7 @@ nav {
 
 .iphone{content: " ";  
        position: absolute;
-       background: url(telefon.png) 0px 0px  no-repeat;
+       background: url(../image/telefon.png) 0px 0px  no-repeat;
        height: auto;
        width: auto;
        left:630px;
@@ -448,7 +448,7 @@ nav {
 @media (max-width:768px){
 .iphone {content: " ";  
     position: absolute;  
-   background: url(telefon.png) 0px 0px  no-repeat;  
+   background: url(../image/telefon.png) 0px 0px  no-repeat;  
     height: auto;  
     width: auto;
    left:432px; 
@@ -459,7 +459,7 @@ nav {
 @media (max-width:480px){
 .iphone{content: " ";  
        position: absolute;
-       background: url(iphone480+.png) 0px 0px  no-repeat;
+       background: url(../image/iphone480+.png) 0px 0px  no-repeat;
        height: auto;
        width: auto;
        left:257px;
@@ -510,10 +510,10 @@ nav {
 	height: 16px;
 }
 .radio__button-black{
-background:url(black.png) 0 0 no-repeat;
+background:url(../image/black.png) 0 0 no-repeat;
 }
 .radio__button-black--button-white {
-	background: url(white.png) 0 0 no-repeat;
+	background: url(../image/white.png) 0 0 no-repeat;
 }
 
 .wrapper2 {
@@ -583,12 +583,12 @@ padding-bottom: 68px;
 		position: relative;
 }}
 
-.about:before {
+/*.about:before {
 	content: " ";  
     float: left;  
     position: absolute;  
     overflow: hidden;
-   background: url(sprite.png) 0px 0px  no-repeat;  
+   background: url(../image/sprite.png) 0px 0px  no-repeat;  
     height: 30px;  
     width: 30px;
    left:10px; 
@@ -894,7 +894,7 @@ padding-bottom: 68px;
 	content: " ";  
     float: left;  
     position: absolute;  
-   background: url(client.png) 2px 2px  no-repeat;  
+   background: url(../image/client.png) 2px 2px  no-repeat;  
     height: 100px;  
     width: 100px;
    left:-26px; 
@@ -909,7 +909,7 @@ padding-bottom: 68px;
 	content: " ";  
     float: left;  
     position: absolute;  
-   background: url(client.png) 2px 2px  no-repeat;  
+   background: url(../image/client.png) 2px 2px  no-repeat;  
     height: 100px;  
     width: 100px;
    left:-26px; 
@@ -932,7 +932,7 @@ padding-bottom: 68px;
     float: left;  
     position: absolute;  
     z-index: 3;
-   background: url(client.png) 2px 2px  no-repeat;  
+   background: url(../image/client.png) 2px 2px  no-repeat;  
     height: 100px;  
     width: 100px;
    left:-26px; 
@@ -1049,7 +1049,7 @@ blockquote {
 	content: " ";
 	float: left;  
     position: relative;  
-   background: url(round_bokeh_1-top.png) 2px 1px  no-repeat;  
+   background: url(../image/round_bokeh_1-top.png) 2px 1px  no-repeat;  
     height: 50px;  
     width: 70px;  
 }
@@ -1097,11 +1097,11 @@ blockquote {
 .radio--bottom__button-black{
 	margin:0 0 0 0 ;
 	
-background:url(black.png) 0 0 no-repeat;
+background:url(../image/black.png) 0 0 no-repeat;
 }
 .radio--bottom__button-black--button-white{
 	margin: 0 0 0 0; 
-	background: url(white.png) 0 0 no-repeat;
+	background: url(../image/white.png) 0 0 no-repeat;
 }
 
 .radio--bottom ul {
@@ -1382,7 +1382,7 @@ padding: 2px 10px 5px 2px;*/
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	background: url(backgroundbottom.png) 0 0 no-repeat;
+	background: url(../image/backgroundbottom.png) 0 0 no-repeat;
 }
 .content5 {
 	margin: auto;
