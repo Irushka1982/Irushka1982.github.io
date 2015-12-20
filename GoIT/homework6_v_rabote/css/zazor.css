@@ -221,6 +221,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', end
 .tovar li {
 	color: white;
 	display: inline-block;
+
 }
 .tovar ul li span {
 	/*background-color: green;*/
@@ -230,10 +231,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', end
 
 .tovar input {
 	border: none;
+	background-color: rgba(0,0,0,0);
+	padding-left: 10px;
 }
 .cyfratovar {
-	width:35px;
+	width:38px;
 	color:#0d5a8f;
+	padding-top: 3px;
 
 
 }
@@ -564,7 +568,7 @@ footer{
 .onas ul li:first-child {
 	;}
 
-
+.onas ul li:first-child:before {content:none;}
 
 .onas ul li:before {content: " ";  
     float: left;  
