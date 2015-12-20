@@ -73,7 +73,7 @@ function ira(){
 
 if (milliseconds === 999) {
 	milliseconds = 0
-	millisecondsTime = "000" ; /*что тут надо было написать?*/
+	millisecondsTime = "000" ;
 	++seconds;
 }
 	if (milliseconds >= 100){
