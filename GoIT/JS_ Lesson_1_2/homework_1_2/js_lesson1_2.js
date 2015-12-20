@@ -6,13 +6,16 @@ for (var i = 0; i < 5; i++ ) {
 
 var name = prompt('Введите имя пользователя');
    var isPresentInTheList = false;
+
     for (var i = 0; i < arr.length; i++){
      if ( arr[i] === name ){ 
      	isPresentInTheList = true;
-     	alert( name + 'вы успешно вошли' );
-     	   } break;
-} 
+     	break;
+     	} 
+}
 
-if (isPresentInTheList = false);
-{ alert( 'Ошибка' );
+if (isPresentInTheList){
+     	alert(name + 'вы успешно вошли');
+ }else{
+ alert( 'Ошибка' );
 }
