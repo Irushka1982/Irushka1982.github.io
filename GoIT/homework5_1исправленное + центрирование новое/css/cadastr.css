@@ -18,7 +18,9 @@ body {
 	width:1220px;
 	height: 1080px;
 	margin:auto;
-	background: url(../image/fon3.png) no-repeat;}
+	background: url(../image/fon3.png) no-repeat;
+
+}
 .menu{
 	display:block;
 	overflow: hidden;
@@ -43,16 +45,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#075595', end
 	padding-left:13px;
 	padding-right:13px;
 	color:#4eabda;	
+
 }
+a {}
 .menu li a {
 	color:white;
 	font-size: 14px;
-	}
+	text-decoration: none;cursor: normal;
+}
 
 .menu li:hover {
-	cursor:pointer;
 	background-color: #4eabda;
-color: white;}
+	color: white;}
 
 .minhas {
 	background: url(../image/flag2.png) 24% 50% no-repeat;*/
@@ -71,13 +75,15 @@ color: white;}
 .minhas span {
 	padding-left: 60px;color: white;
 }
-.ola {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b1dc+35,2c539e+100 */
+.ola {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b1dc+35,2c539e+100 */
 background: #51b1dc; /* Old browsers */
 background: -moz-linear-gradient(top, #51b1dc 35%, #2c539e 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #51b1dc 35%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #51b1dc 35%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */}
-}
+
+
 .ola:hover {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b1dc+35,2c539e+100 */
 background: #51b1dc; /* Old browsers */
@@ -86,24 +92,25 @@ background: -webkit-linear-gradient(top, #51b1dc 35%,#2c539e 100%); /* Chrome10-
 background: linear-gradient(to bottom, #51b1dc 35%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */}
 
-.ola a{ 
+.ola span a{
+text-decoration: underline;
+cursor: pointer;}
 
+.ola span{color: white;
+ float: left;
+ display: block;
 }
-.ola span{color: white;}
-
-.content {
-	position: absolute;
-	top: 245px;
+.content { }
+.center-info {
 	text-align: center;
-	bottom: 0;
-	left: 45px;
-	right: 0;
 	width: 560px;
 	height: 613px;
 	margin: auto;
-	line-height: 30px;
 	color: white;
-	}
+display: block;
+  vertical-align: middle;
+}
+
 
 .cadastre{
 	background-color: rgba(86, 85, 86, 0.7);
@@ -113,6 +120,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', end
 .cadastre p {padding: 15px 0 8px 0}
 .blok {
 	background-color: rgba(86, 85, 86, 0.7);
+
 }
 p {
 	margin: 2px;
@@ -129,7 +137,7 @@ height: 40px;}
 .FB button {padding: 0  0 0 20px;
 height: 36px;
 border: none;
-cursor:pointer;}
+}
 
 .log-in-with span { font-size: 15px;
 font-weight: bold;
@@ -220,7 +228,7 @@ input{
 	box-shadow:0px 2px 0px 0px #484948;
 	font-family: "Helvetica Neue Regular";
 	color:white;
-	cursor:pointer;
+	cursor:default;
 }
 .send {margin-left:-21px; }
 
@@ -236,7 +244,7 @@ input{
 
 
 .input-part .create input{
-	cursor:pointer;
+	cursor:normal;
 	width: 150px;
 	padding: 3px 15px;
 	border-radius: 3px;

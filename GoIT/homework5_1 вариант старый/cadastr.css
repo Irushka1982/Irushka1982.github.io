@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('fonts/helveticaneue-thin-webfont.eot');
+    src: url('fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {	
+	font-family: "Helvetica Neue Regular";
+	margin: 0px;
+}
+
+.wrapper {
+	width:1220px;
+	height: 1080px;
+	margin:auto;
+	background: url(fon3.png) no-repeat;}
+.menu{
+	display:block;
+	overflow: hidden;
+	background-color: #074e8b;
+}
+
+.menu ul{
+	list-style:none;
+	margin: 0px;
+	float:right;
+}
+.menu ul li {
+	display: block;
+	float: left;
+	background-color: none;
+	line-height: 40px;
+	padding-left:13px;
+	padding-right:13px;
+	color:#4eabda;	
+}
+.menu li a {
+	color:white;
+	font-size: 14px;
+	}
+
+.menu li:hover {
+	cursor:pointer;
+	background-color: #4eabda;}
+
+.minhas {
+	background: url(flag2.png) 24% 50% no-repeat;*/
+	background-color: none;
+}
+.minhas::before {
+	position:absolute;
+	content:"";
+	top:2px;
+	bottom:2px;
+	width: 1px;
+	background-color: #4eabda;
+	height: 36px;
+	display: block;
+}
+.minhas span {
+	padding-left: 60px;color: white;
+}
+
+.ola:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b1dc+35,2c539e+100 */
+background: #51b1dc; /* Old browsers */
+background: -moz-linear-gradient(top, #51b1dc 35%, #2c539e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #51b1dc 35%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #51b1dc 35%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */}
+
+.ola a{ 
+
+}
+.ola span{color: white;}
+
+.content {
+	position: absolute;
+	top: 245px;
+	text-align: center;
+	bottom: 0;
+	left: 45px;
+	right: 0;
+	width: 560px;
+	height: 613px;
+	margin: auto;
+	line-height: 30px;
+	color: white;
+	}
+
+.cadastre{
+	background-color: rgba(86, 85, 86, 0.7);
+	line-height: 40px;
+	font-size: 25px;
+}
+.cadastre p {padding: 15px 0 8px 0}
+.blok {
+	background-color: rgba(86, 85, 86, 0.7);
+}
+p {
+	margin: 2px;
+}
+.ira button {
+	font-family: "Helvetica Neue Regular";
+	color:white;
+	background-color: #344a86;
+	width: 275px;
+}
+
+.FB {padding: 34px 0 20px 0;
+height: 40px;}
+.FB button {padding: 0  0 0 20px;
+height: 36px;
+border: none;}
+
+.ira span { font-size: 15px;
+font-weight: bold;
+font-family: "Tahoma";
+vertical-align: center;
+display: inline-block;
+border-left: 1px solid #1f3d71;
+line-height: 31px;
+}
+.ira span:before{
+	position:relative;
+	content:" ";
+	background: url(facebooklogo.png) 2px 2px no-repeat;
+	width: 21px;
+	height: 24px;
+	left: -39px;
+	top:4px;
+	display: inline-block;
+
+padding-right: 2px;}
+
+.ira span:after{
+	position:relative;
+	content:" ";
+	background: url(ryska.png) 2px 2px no-repeat;
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+top:4px;
+left:7px;}
+
+.ou span{font-size: 13px;
+text-transform: uppercase;}
+
+.ou:before{
+	content:"";
+	position:relative;
+	display: inline-block;
+	width: 122px;
+	height: 1px;
+	background-color: black;
+	margin-right: 2px;
+	vertical-align: middle;
+}
+
+
+
+.ou:after{
+	content:"";
+	position:relative;
+	display: inline-block;
+	width: 122px;
+	height: 1px;
+	background-color: black;
+	vertical-align: middle;
+	margin-left: 2px;
+}
+
+.ira {
+
+}
+
+.blok {
+	padding-bottom: 15px;
+}
+.formaaa {margin-top:16px; }
+.formaaa input {
+	padding-left: 10px;
+	width: 263px;
+	height: 31px;
+	padding-left: 18px;
+	margin-top: 3px; 
+	margin-bottom:14px; 
+	font-size: 14px;
+}
+
+.forma {
+margin: auto;
+}
+ 
+input{
+	line-height: 25px;
+	margin: 10px 0px 0px 0; 
+	padding-left: 5px;
+	background-color: black;
+	border: 1px solid black;
+	box-shadow:0px 2px 0px 0px #484948;
+	font-family: "Helvetica Neue Regular";
+	color:white;
+}
+.send {margin-left:-21px; }
+
+.forma input span {
+	padding-left:10px;
+}
+.forma input:focus {
+    background:#1b5288; 
+     border: 1px solid #689bcc; 
+     box-shadow: 0 0 5px 1px #1b5288;
+ }
+
+
+
+.forma .create input{
+	width: 150px;
+	padding: 3px 15px;
+	border-radius: 3px;
+	border-color:#67c6e6;
+	line-height: 30px;
+	margin-bottom:17px; 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,67c6e6+2,67c6e6+53,2989d8+100,2989d8+100,7db9e8+100 */
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #67c6e6 2%, #67c6e6 53%, #2989d8 100%, #2989d8 100%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #1e5799 0%,#67c6e6 2%,#67c6e6 53%,#2989d8 100%,#2989d8 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #1e5799 0%,#67c6e6 2%,#67c6e6 53%,#2989d8 100%,#2989d8 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.policy{
+	width:310px;
+	background-color: none;
+	font-size: 11px;
+	text-align: center;
+	margin: auto;
+	line-height: 15px;
+	margin-bottom: 20px;
+
+}
