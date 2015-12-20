@@ -10,10 +10,9 @@ var name = prompt('Введите имя пользователя');
      if ( arr[i] === name ){ 
      	isPresentInTheList = true;
      	alert( name + 'вы успешно вошли' );
-     	break;
-      } 
-}
+     	   } break;
+} 
 
-if (isPresentInTheList);
+if (isPresentInTheList = false);
 { alert( 'Ошибка' );
 }

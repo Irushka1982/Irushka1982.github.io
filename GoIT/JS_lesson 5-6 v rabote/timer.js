@@ -23,22 +23,29 @@ timer.innerHTML = '00:00:00:00';
 var start = document.createElement('p');
 c.appendChild(start);
 start.innerHTML = 'Start';
-start.addEventListener('click', ira);
-/*start.addEventListener('click', startPovtorno);*/
+/*start.addEventListener('click', ira);*/
+
 
 
 function startTimer(){
+	start.innerHTML = 'Pause';
 	id = setInterval(function () {
 		timer.innerHTML = ira();
 }, 1);
-
+	start.removeEventListener('click', startTimer);
+	start.addEventListener('click', pauseTimer);
+	start.innerHTML = "Cont..";
 }
-start.addEventListener('click', startTimer);
-/*
-function startPovtorno(){
-	start.removeEventListener('click', ira);
-}*/
 
+start.addEventListener('click', startTimer);
+
+
+function pauseTimer(){
+	clearInterval(id);
+	start.innerHTML = 'Cont..';
+	start.addEventListener('click', startTimer);
+	start.innerHTML = 'Pause';
+}
 
 
 var clear = document.createElement('p');
@@ -49,7 +56,11 @@ clear.addEventListener('click', stop);
 function stop(){
 clearInterval(id);
 timer.innerHTML = '00:00:00:00';
-start.innerHTML = 'Start'
+start.innerHTML = 'Start';
+milliseconds = 0;
+seconds = 0;
+minutes = 0;
+hours = 0;
 }
 
 var milliseconds = 0;
@@ -57,13 +68,26 @@ var seconds = 0;
 var minutes = 0;
 var hours = 0;
 var id;
-
+var millisecondsTime;
 function ira(){
-start.innerHTML = 'Pause';
+
 if (milliseconds === 999) {
-	milliseconds = 0;
+	milliseconds = 0
+	millisecondsTime = "000" ; /*что тут надо было написать?*/
 	++seconds;
 }
+	if (milliseconds >= 100){
+		millisecondsTime = milliseconds;
+	}
+
+if (milliseconds < 100){
+	millisecondsTime = "0" + Number(milliseconds);
+}
+if (milliseconds < 10){
+	millisecondsTime = "0" + "0" + Number(milliseconds);
+}
+
+
 if (seconds < 10){
 	seconds = "0" + Number(seconds);
 }
@@ -88,6 +112,6 @@ if (hours >= 60) {
  }
 
   ++milliseconds;
-return  hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
+return  hours + ':' + minutes + ':' + seconds + ':' + millisecondsTime;
 
 }
