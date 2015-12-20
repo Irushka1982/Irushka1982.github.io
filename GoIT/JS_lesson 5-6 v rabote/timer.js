@@ -34,7 +34,7 @@ function startTimer(){
 }, 1);
 	start.removeEventListener('click', startTimer);
 	start.addEventListener('click', pauseTimer);
-	start.innerHTML = "Cont..";
+	start.innerHTML = "Pause..";
 }
 
 start.addEventListener('click', startTimer);
@@ -42,9 +42,8 @@ start.addEventListener('click', startTimer);
 
 function pauseTimer(){
 	clearInterval(id);
-	start.innerHTML = 'Cont..';
 	start.addEventListener('click', startTimer);
-	start.innerHTML = 'Pause';
+	start.innerHTML = 'Cont..';
 }
 
 
@@ -57,6 +56,7 @@ function stop(){
 clearInterval(id);
 timer.innerHTML = '00:00:00:00';
 start.innerHTML = 'Start';
+start.addEventListener('click', startTimer);
 milliseconds = 0;
 seconds = 0;
 minutes = 0;
