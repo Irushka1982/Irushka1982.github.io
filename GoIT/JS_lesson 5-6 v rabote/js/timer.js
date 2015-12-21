@@ -23,7 +23,7 @@ timer.innerHTML = '00:00:00:00';
 var start = document.createElement('p');
 c.appendChild(start);
 start.innerHTML = 'Start';
-/*start.addEventListener('click', ira);*/
+
 
 
 
@@ -31,7 +31,7 @@ function startTimer(){
 	start.innerHTML = 'Pause';
 	id = setInterval(function () {
 		timer.innerHTML = calculate();
-}, 1);
+}, 4);
 	start.removeEventListener('click', startTimer);
 	start.addEventListener('click', pauseTimer);
 	start.innerHTML = "Pause..";
@@ -53,6 +53,7 @@ clear.innerHTML = 'Clear';
 clear.addEventListener('click', stop);
 
 function stop(){
+
 clearInterval(id);
 timer.innerHTML = '00:00:00:00';
 start.innerHTML = 'Start';
@@ -61,23 +62,30 @@ milliseconds = 0;
 seconds = 0;
 minutes = 0;
 hours = 0;
+zero = new Date(0, 0);
 }
 
+var zero; 
 var milliseconds = 0;
 var seconds = 0;
 var minutes = 0;
 var hours = 0;
 var id;
 var millisecondsTime;
+var zero = new Date(0, 0);
+
 function calculate(){
 
-if (milliseconds === 999) {
+zero.setMilliseconds( zero.getMilliseconds() + 4);
+	var milliseconds = zero.getMilliseconds();
+
+if (milliseconds === 996) {
 	milliseconds = 0;
 	millisecondsTime = "000" ;
 	++seconds;
 }
-	if (milliseconds >= 100){
-		millisecondsTime = milliseconds;
+if (milliseconds >= 100){
+	millisecondsTime = milliseconds;
 	}
 
 if (milliseconds < 100){
@@ -86,15 +94,13 @@ if (milliseconds < 100){
 if (milliseconds < 10){
 	millisecondsTime = "0" + "0" + Number(milliseconds);
 }
-
-
 if (seconds < 10){
 	seconds = "0" + Number(seconds);
 }
 if (seconds >= 60) {
 	seconds = 0;
 	++minutes;
- }
+}
 
 if (minutes < 10){
 	minutes = "0" + Number(minutes);
@@ -110,7 +116,6 @@ if (hours < 10){
 if (hours >= 60) {
 	hours = 0;
  }
-
   ++milliseconds;
 return  hours + ':' + minutes + ':' + seconds + ':' + millisecondsTime;
 
