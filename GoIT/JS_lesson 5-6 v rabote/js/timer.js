@@ -62,22 +62,22 @@ milliseconds = 0;
 seconds = 0;
 minutes = 0;
 hours = 0;
-zero = new Date(0, 0);
+date = new Date(0, 0);
 }
 
-var zero; 
+var date; 
 var milliseconds = 0;
 var seconds = 0;
 var minutes = 0;
 var hours = 0;
 var id;
 var millisecondsTime;
-var zero = new Date(0, 0);
+var date = new Date(0, 0);
 
 function calculate(){
 
-zero.setMilliseconds( zero.getMilliseconds() + 4);
-	var milliseconds = zero.getMilliseconds();
+date.setMilliseconds(date.getMilliseconds() + 4);
+	var milliseconds = date.getMilliseconds();
 
 if (milliseconds === 996) {
 	milliseconds = 0;
