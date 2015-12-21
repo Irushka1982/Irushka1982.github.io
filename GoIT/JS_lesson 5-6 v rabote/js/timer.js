@@ -30,7 +30,7 @@ start.innerHTML = 'Start';
 function startTimer(){
 	start.innerHTML = 'Pause';
 	id = setInterval(function () {
-		timer.innerHTML = ira();
+		timer.innerHTML = calculate();
 }, 1);
 	start.removeEventListener('click', startTimer);
 	start.addEventListener('click', pauseTimer);
@@ -69,10 +69,10 @@ var minutes = 0;
 var hours = 0;
 var id;
 var millisecondsTime;
-function ira(){
+function calculate(){
 
 if (milliseconds === 999) {
-	milliseconds = 0
+	milliseconds = 0;
 	millisecondsTime = "000" ;
 	++seconds;
 }
