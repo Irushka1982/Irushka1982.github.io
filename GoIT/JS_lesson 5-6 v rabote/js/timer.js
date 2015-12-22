@@ -31,7 +31,7 @@ function startTimer(){
 	start.innerHTML = 'Pause';
 	id = setInterval(function () {
 		timer.innerHTML = calculate();
-}, 4);
+}, 1);
 	start.removeEventListener('click', startTimer);
 	start.addEventListener('click', pauseTimer);
 	start.innerHTML = "Pause..";

@@ -1,0 +1,41 @@
+ #wrapper{
+ 	width: 590px;
+ 	height: 350px;
+ 	border: 1px solid red;
+ }
+  
+#content {
+	width: 570px;
+ 	height: 200px;
+ 	border: 1px solid green;
+ 	border-radius: 3px;
+ 	margin: 10px 10px 140px 10px;
+ }
+
+ul {
+	background-color: red;
+	margin: 5px;
+}
+.tabs li.tab-current {
+	color: white;
+}
+.tabs li {
+	display:inline-block;
+	text-decoration: none;
+	width: 105px;
+	height: 26px;
+	border: 1px solid blue;
+ 	border-radius: 3px;}
+
+p {width: 400px;
+}
+div.t11{
+	width: 500px;
+}
+div.t12,div.t13 {display: none;}
+
+
+
+
+
+
