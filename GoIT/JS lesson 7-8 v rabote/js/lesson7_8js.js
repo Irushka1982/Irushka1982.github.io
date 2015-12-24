@@ -76,16 +76,25 @@ var $j = jQuery.noConflict();
 $j(document).ready(function() {
 
 
-
 $j('ul.tabs li').click(function(){
-	var f = this.className.slice(0,2);
+	var thisClass = this.className.slice(0,2);
 	$j('div.t1').hide();
 	$j('div.t2').hide();
 	$j('div.t3').hide();
-	$j('div.' + f).show();
+	$j('div.' + thisClass).show();
 	$j('ul.tabs li').removeClass('tab-current');
 	$j(this).addClass('tab-current');
 	});
-
+	/*
+$j('ul.tabs li').click(function(){
+	var thisClass = this.className.slice(0,2);
+	$j('div.t11').hide();
+	$j('div.t12').hide();
+	$j('div.t13').hide();
+	$j('div.' + thisClass).show();
+	$j('ul.tabs li').removeClass('tab-current');
+	$j(this).addClass('tab-current');
+	});
+*/
 });
 
