@@ -1,37 +1,49 @@
  #wrapper{
  	width: 590px;
  	height: 350px;
- 	border: 1px solid red;
+ 	border: 1px solid #f37506;
  }
   
 #content {
 	width: 570px;
- 	height: 200px;
- 	border: 1px solid green;
+ 	height: auto;
+ 	border: 1px solid #f37506;
  	border-radius: 3px;
  	margin: 10px 10px 140px 10px;
  }
 
 ul {
-	background-color: red;
+	background-color: #ed9a50;
 	margin: 5px;
+	border-radius: 3px;
 }
 .tabs li.tab-current {
-	color: white;
+	
 }
 .tabs li {
 	display:inline-block;
 	text-decoration: none;
-	width: 105px;
-	height: 26px;
-	border: 1px solid blue;
- 	border-radius: 3px;}
+	width: 140px;
+	
+	background-color: #e77107;
+ 	border-radius: 3px;
+ 	margin: 2px 4px 0px 4px;
+ 	cursor: default;
+ 	text-align: center;
+ 	line-height: 30px;
+ }
+li:hover {
+	background-color: #ec8b36;
+}
+p {
+	width:540px;
+	padding: 5px 10px;
+}
 
-p {width: 400px;
-}
-div.t1{
-	width: 500px;
-}
+
+ div {}
+div .t1 {}
+
 div.t2,div.t3 {display: none;}
 
 
