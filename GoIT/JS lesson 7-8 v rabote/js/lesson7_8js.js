@@ -71,20 +71,26 @@ $('div.t3').append(thirdP);
 
 
 
-var $j = jQuery.noConflict();
+var $ = jQuery.noConflict();
 
-$j(document).ready(function() {
+$(document).ready(function() {
 
 
-$j('ul.tabs li').click(function(){
+$('ul.tabs li').click(function(){
 	var thisClass = this.className.slice(0,2);
-	$j('div.t1').hide();
-	$j('div.t2').hide();
-	$j('div.t3').hide();
-	$j('div.' + thisClass).show();
-	$j('ul.tabs li').removeClass('tab-current');
-	$j(this).addClass('tab-current');
+	$('div.t1').hide();
+	$('div.t2').hide();
+	$('div.t3').hide();
+	$('div.' + thisClass).show();
+	$('ul.tabs li').removeClass('tab-current');
+	$('div').addClass('tab-current');
+	$(this).addClass('tab-current');
 	
-	});
+	
+	
+	
+});
+
+
 });
 

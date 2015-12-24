@@ -10,6 +10,7 @@
  	border: 1px solid #f37506;
  	border-radius: 3px;
  	margin: 10px 10px 140px 10px;
+ 	background-color: #f5d495;
  }
 
 ul {
@@ -17,14 +18,18 @@ ul {
 	margin: 5px;
 	border-radius: 3px;
 }
-.tabs li.tab-current {
-	
-}
+.t3.tab-current {background-color: #f5c467;}	
+
+.t2.tab-current {background-color: #f5c467;}	
+
+.t1.tab-current {background-color: #f5c467;}
+
+
+
 .tabs li {
 	display:inline-block;
 	text-decoration: none;
 	width: 140px;
-	
 	background-color: #e77107;
  	border-radius: 3px;
  	margin: 2px 4px 0px 4px;
