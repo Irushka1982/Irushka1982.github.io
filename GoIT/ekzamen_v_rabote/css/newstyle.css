@@ -1214,6 +1214,7 @@ figure{margin: 0px;
 	overflow: hidden;
 	position: relative;
 	padding-top: 103px;
+	background-color: blue;
 }
 
 @media(max-width: 768px){
@@ -1242,7 +1243,7 @@ figure{margin: 0px;
 .content4 > div:nth-of-type(5) {display:block;}
 }
 
-.about--pingbuller{
+.pingbuller{
 	width: 301px;
 	height: 220px;
 	display: inline-block;
@@ -1257,7 +1258,7 @@ figure{margin: 0px;
 	height: 150px;
 	width: 300px;
 }}*/
-.about--pingbuller__zaglavie{
+.pingbuller__zaglavie{
 	font-family: "league_gothicregular";
 	font-size: 45px;
 	color: black;
@@ -1271,7 +1272,7 @@ figure{margin: 0px;
 	height: 65px;
 	/*padding: 2px 10px 5px 4px;*/
 }
-.about--pingbuller__zaglavie--pink {
+.pingbuller__zaglavie--pink {
 	background-color: green;
 	margin: 0 0 0 0;  
 	padding: 0 0 0 0;
@@ -1279,7 +1280,7 @@ figure{margin: 0px;
 	display: inline-block;
 	height: 65px;
 }
-.about--pingbuller__copyright{
+.pingbuller__copyright{
 	margin-top: 0px;
 	margin-bottom: 0px;
 	/*padding-top: 9px;*/
@@ -1290,7 +1291,7 @@ figure{margin: 0px;
 	padding: 0 0 0 0;
 	width: 300px;
 }
-.about--pingbuller__napolnenie{
+.pingbuller__napolnenie{
 	font-family: 'Open Sans', sans-serif;
 	margin-top:4px; 
 	font-size: 17px;
