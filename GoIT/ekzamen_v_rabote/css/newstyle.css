@@ -558,8 +558,9 @@ background-color: blue;
 	width: 239px;
 	height: auto;
 	display: inline-block;
-	overflow: hidden;
-	position: relative;
+	/*overflow: hidden;
+	position: relative;*/
+	vertical-align: top;
 }
 @media (max-width:768px) {
 .about{
@@ -589,28 +590,65 @@ background-color: blue;
 		overflow: hidden;
 		position: relative;
 }}
-
 /*.about:before {
 	content: " ";  
     float: left;  
-    position: absolute;  
+    position: relative;  
+    overflow: hidden;
+   background: url(../image/sprite.png)no-repeat;  
+    height: 30px;  
+    width: 30px;
+   left:-38px; 
+   top:32px;   
+   background-position: 0px 0px;
+}*/
+
+.about--block1:before {
+	content: " ";  
+    float: left;  
+    position: relative;  
     overflow: hidden;
    background: url(../image/sprite.png) 0px 0px  no-repeat;  
     height: 30px;  
     width: 30px;
-   left:10px; 
-   top:35px;   
+   left:-38px; 
+   top:32px;   
+   background-position: 0px 0px;
 }
 
+.about--block2:before {
+	content: " ";  
+    float: left;  
+    position: relative;  
+    overflow: hidden;
+   background: url(../image/sprite.png) 0px 0px  no-repeat;  
+    height: 30px;  
+    width: 30px;
+   left:-38px; 
+   top:32px;   
+   background-position: -30px 0px;
+}
+.about--block3:before {
+	content: " ";  
+    float: left;  
+    position: relative;  
+    overflow: hidden;
+   background: url(../image/sprite.png) 0px 0px  no-repeat;  
+    height: 30px;  
+    width: 30px;
+   left:-38px; 
+   top:32px;   
+   background-position: -60px 0px
+}
 
-.content2 > div.about:before:nth-of-type(1){
+/*.content2 > div.about:before:nth-of-type(1){
 	background-position: -50px 0 
 }
 	.content2 > div.about:before:nth-of-type(2){
 	background-position: -10px 0 
 }
 
-/*.content2 > div.parent--about:nth-of-type(1){
+.content2 > div.parent--about:nth-of-type(1){
 	background-position: -50px 0 }
 */
 .about__zaglavie{
@@ -638,7 +676,7 @@ background-color: blue;
 	height: 33px;
  }}
 
-.about__zaglavie--grey{color:blue;}
+.about__zaglavie--grey{color:grey;}
 
 .about__napolnenie{
 	font-family: 'Open Sans', sans-serif;
