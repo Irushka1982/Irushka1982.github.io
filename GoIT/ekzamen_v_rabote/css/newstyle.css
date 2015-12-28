@@ -590,7 +590,7 @@ background-color: blue;
 		overflow: hidden;
 		position: relative;
 }}
-/*.about:before {
+.about:before {
 	content: " ";  
     float: left;  
     position: relative;  
@@ -601,7 +601,7 @@ background-color: blue;
    left:-38px; 
    top:32px;   
    background-position: 0px 0px;
-}*/
+}
 
 .about--block1:before {
 	content: " ";  
