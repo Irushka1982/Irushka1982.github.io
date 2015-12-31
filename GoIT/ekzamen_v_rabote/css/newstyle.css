@@ -595,7 +595,7 @@ background-color: blue;
 @media (max-width:480px) {
 .about{
 	display: block;
-	width: 204px;
+	width: 203px;
 	margin-left: 14px;
 	margin-bottom:0px; 
 	padding: 0px 23px 5px 64px;
