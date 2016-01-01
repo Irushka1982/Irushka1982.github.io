@@ -46,16 +46,16 @@ body{
 }
 @media(max-width:768px) {
 .content1 {width: 768px;
-background-color: red;
+/*background-color: red;*/
  }}
 @media(max-width:480px) {
 .content1 {width: 480px;
-background-color: yellow;
+/*background-color: yellow;*/
 }}
 
 @media(max-width:320px){
 .content1 {width: 320px;
-background-color: yellow;
+/*background-color: yellow;*/
 }}
 /*.strelochka-left {
 	content: " ";
@@ -91,10 +91,12 @@ background-color: yellow;
 	display: block;
 	float:left;
 	width: 148px;
-	background-color:blue;
+	/*background-color:blue;*/
 	text-transform: uppercase;
     text-decoration: none;
     padding-bottom: 0px;
+    	text-shadow: 1px 1px 2px #181819;
+	font-weight:lighter;
 }
 
 @media(max-width:768px) {
@@ -159,7 +161,7 @@ nav {
        left:108px; 
        top:115px;
        border-radius: 11px;
-       border: 1px solid black;
+       border: 1px solid #101a21;
 }}
 @media(max-width:320px) {
 .menu {display: none;
@@ -177,9 +179,9 @@ nav {
 	float: left;
 	list-style: none;
 	width: 105px;
-	padding: 2px;
+	/*padding: 2px;*/
 	font-size: 20px;
-	border:1px solid red;
+	/*border:1px solid #523f5a;*/
 	text-align: center;
 }
 @media(max-width:768px) {
@@ -195,11 +197,14 @@ nav {
 	float: none;
 	height: 35px;
 	display: block;
-	background-color: #3f3247;
-	 opacity: 0.5;
+	background-color: #3c3044;
+	opacity: 0.5;
 	width: 245px;
 	text-align: center;
 	padding-right: 0px;
+	border-top:1px solid #523e5a;
+	border-bottom:1px solid #523e5a;
+	/*border-radius: 3px;*/
  }}
 /*
 .menu--modif__cell--black {
@@ -223,15 +228,15 @@ nav {
     font-family: "league_gothicregular";
     width: 100%;
     display: block;
-}
-/*.menu__cell a:hover{
-	background-color: red;
-	/*text-decoration:underline; */
+    text-shadow: 1px 1px 2px grey,
 }
 @media(max-width:480px) {
-.menu__cell:hover{
-	border-bottom: 2px solid green;
+.menu__cell a:hover {
+background-color:#29212f;
+border-bottom:2px solid #edbfff;
 }}
+
+
 /*@media(max-width:480px) {
 .menu__cell a:hover{
 	background-color: blue;
@@ -267,6 +272,12 @@ nav {
 	margin-top:9px; 
 }}
 
+
+.navig .underline320{
+	text-decoration:underline; 
+}
+
+
 .navig {margin:0px;}
 .navig li{
   position: relative;
@@ -276,7 +287,7 @@ nav {
 	width: 150px;
 	padding: 2px;
 	font-size: 20px;
-	border:1px solid red;
+	/*border:1px solid red;*/
 	text-align: center;
 	height: 38px;
 	top:10px;
@@ -292,9 +303,9 @@ nav {
 .navig li:hover ul{
   visibility: visible;
   opacity: 1;
-  border-bottom: 2px solid green;
+  
 }
-
+/*.navig ul li:hover{border-bottom: 2px solid #edbfff;}*/
 
 .navig a {
 	text-decoration:none; 
@@ -303,11 +314,11 @@ nav {
     font-family: "league_gothicregular";width: 100%;
 }
 .navig a:hover{
-	background-color: red;
+	/*background-color: red;*/
 }
 
 .blok2 {
-	background-color: green;
+	/*background-color: green;*/
 	height: auto;
 	padding-top: 0px;
 	margin-left:1px;
@@ -316,7 +327,7 @@ nav {
 }
 .lorem{
 	width: 517px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	height: auto;
 	display: block;
 	padding: 0px 0px 0px 0px;
@@ -325,7 +336,7 @@ nav {
 
 @media (max-width:768px) {
 .lorem{
-	background-color: red;
+	/*background-color: red;*/
 	width:276px;
 	height: 203px;
 	overflow: hidden;
@@ -344,24 +355,27 @@ nav {
  }}
 @media (max-width:320px) {
 .lorem{
-	background-color: blue;
+	/*background-color: blue;*/
 	margin-top:164px; 
+	margin-left:43px; 
  }}
 
 .lorem__zaglavie{
 	font-family: "league_gothicregular";
 	font-size: 57px;
-	color: black;
+	color: white;
 	line-height:55px; 
 	padding: 1px 1px 1px 1px;
 	margin:  1px 1px 0px 1px; 
+	text-shadow: 1px 1px 2px #181819;
+	font-weight:lighter;
 }
 @media (max-width:768px) {
 .lorem__zaglavie{
 	font-size: 45px;
 	overflow: hidden;
 	height: 48px;
-	width: 166px;
+	width: 167px;
 }}
 
 @media (max-width:480px) {
@@ -406,6 +420,7 @@ nav {
 	line-height: 36px;
 	padding: 0px 0px 0px 0px;
 	margin:  0px 0px 0px 0px; 
+	font-weight:lighter;
 }
 @media (max-width:768px) {
 .lorem__podzaglavie{
@@ -438,6 +453,7 @@ nav {
 	line-height:24px;
 	padding: 0px 0px 0px 0px;
 	margin:  4px 0px 0px 1px; 
+	color: white;
 }
 @media (max-width:768px) {
 .lorem__napolnenie{
@@ -516,7 +532,7 @@ nav {
 
 @media (max-width:320px) {
 .radio{
-	margin: 48px 127px 59px 205px;
+	margin: 48px 127px 67px 205px;
 }}
 .radio ul {
 	list-style: none;
@@ -555,24 +571,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 }
 @media(max-width:768px) {
 .content2 {width: 768px;
-background-color: blue;
+/*background-color: blue;*/
 }}
 @media(max-width:480px) {
 .content2 {width: 480px;
-background-color: red;
-padding-top:71px;
+/*background-color: red;*/
+padding-top:60px;
 padding-bottom: 68px;
 }}
 @media(max-width:320px) {
 .content2 {width: 320px;
-background-color: blue;
+/*background-color: blue;*/
+padding-top:51px;
 }}
 
 
 .about{
 	padding: 0px 0px 0px 0px;
 	margin: 40px 31px 0px 60px;
-	background-color:red;
+	/*background-color:red;*/
 	width: 226px;
 	height: auto;
 	display: inline-block;
@@ -583,7 +600,7 @@ background-color: blue;
 @media (max-width:768px) {
 .about{
 	width:156px;
-	background-color: green;
+	/*background-color: green;*/
 	height: 233px;
 	overflow: hidden;
 	margin-right:44px; 
@@ -595,12 +612,12 @@ background-color: blue;
 @media (max-width:480px) {
 .about{
 	display: block;
-	width: 203px;
+	width: 349px;
 	margin-left: 14px;
 	margin-bottom:0px; 
 	padding: 0px 23px 5px 64px;
 	height: auto;
-	margin-top:10px; 
+	margin-top:15px; 
  }}
 
 @media (max-width:320px) {
@@ -684,6 +701,7 @@ background-color: blue;
 	margin: 0px 0px 0px 0px;
 	width: 223px;
 	line-height: 33px;
+	font-weight:lighter;
 }
 
 @media (max-width:768px) {
@@ -705,7 +723,7 @@ background-color: blue;
 	text-shadow: 1px 1px 2px black;
 	color:white;
 	font-size: 15px;
-	background-color: black;
+	/*background-color: black;*/
 	padding: 0px 0px 0px 0px;
 	margin: 5px 0px 0px 0px;
 	height: 138px;
@@ -716,7 +734,7 @@ background-color: blue;
 @media (max-width:768px) {
 .about__napolnenie{
 	width:173px;
-	background-color: green;
+/*	background-color: green;*/
 	height: 141px;
 	overflow: hidden;
 	margin-bottom:7px;
@@ -727,7 +745,7 @@ background-color: blue;
 
 @media (max-width:480px) {
 .about__napolnenie{
-	width:270px;
+	width:367px;
 	height: 78px;
 	margin-top: 0px;
 	margin-bottom: 2px; 
@@ -736,6 +754,7 @@ background-color: blue;
 @media (max-width:320px) {
 .about__napolnenie{
 	width:248px;
+	margin-bottom: 6px; 
  }}
 .about__ssylka{
 	text-decoration: none;
@@ -765,14 +784,14 @@ background-color: blue;
 .about__ssylka{
 	margin-left:171px;
 }}
-.about__ssylka a:hover {
-	background-color: none;
+.about a:hover {
+	/*background-color: red;*/
 	text-shadow: 0px 0px 15px white;
 }
 .wrapper3 {
 	height: auto;
 	width: 100%;
-	background-color: blue;
+	background-color: #f9f9f9;
 }
 .content3 {
 	height:auto;
@@ -784,27 +803,27 @@ background-color: blue;
 @media(max-width:768px) {
 .content3 {
 	width: 768px;
-	background-color: green;
+	/*background-color: green;*/
  }}
 @media(max-width:480px) {
 .content3 {
 	width: 480px;
-	background-color: grey;
+	/*background-color: grey;*/
  }}
 
  @media(max-width:320px) {
 .content3 {
 	width: 320px;
-	background-color: grey;
+	/*background-color: grey;*/
  }}
 .testimonial{
 	width: 475px;
 	height: 404px;
-	background-color: green;
+	/*background-color: green;*/
 	/*padding: 89px 39px 39px 25px;*/
 	display:inline-block;
 	padding: 0 0 0 0;
-	margin: 0 0 0 0;
+	margin: 0 0 8px 0;
 }
 @media(max-width:768px) {
 .testimonial{
@@ -817,17 +836,23 @@ background-color: blue;
 
 @media(max-width:480px) {
 .testimonial{
-	margin-top:68px;
+	margin-top:69px;
 	width:auto;
-	margin-left: 20px;
+	margin-left: 45px;
 	z-index: 2;
  }}
+
+ @media(max-width:320px) {
+.testimonial{
+	margin-top:53px;
+	margin-left: 18px;
+	 }}
 
 .testimonial-text{
 	width:375px;
 	display: block;
 	position: relative;
-	background-color: yellow;
+	background-color: white;
 	padding: 38px 30px 19px 30px;
 	float: left;
 	margin: 91px 0 0 42px;
@@ -862,8 +887,9 @@ background-color: blue;
 @media(max-width:320px) {
 .testimonial-text{
 	margin-top:12px; 
-	padding: 27px 30px 19px 31px;
+	padding: 27px 30px 28px 31px;
 	margin-left:16px; 
+	margin-bottom:24px; 
 }}
 
 .testimonial-text__zaglavie{
@@ -874,7 +900,7 @@ background-color: blue;
 	margin-bottom: 0px; 
 	width: auto;
 	padding: 0 0 0 0;
-	margin: 0 0 5 0;
+	margin: 0 0 5px 0;
 	color: #454545;
 	line-height: 34px;
 }
@@ -893,11 +919,13 @@ background-color: blue;
 	height: 36px;
 	font-size: 29px;
 	line-height: 30px;
+	margin: 0 0 16px 0;
 }}
 @media(max-width:320px) {
 .testimonial-text__zaglavie{
 	width: 120;height: 49px;font-size: 24px;
 	line-height: 24px;
+	margin-bottom:0px; 
  }}
 
 .testimonial-text__zaglavie--pink {
@@ -944,6 +972,7 @@ background-color: blue;
 	margin: 5px 0 0 0;
 	width: 383px;
 	margin-top:0px; 
+	color: #454545;
 }
 
 
@@ -960,16 +989,20 @@ background-color: blue;
 
 @media(max-width:480px) {
 .testimonial-text__napolnenie{
-	width: 213px;
+	width: 365px;
 	height: 201px;
-	margin-top: 15px; 
+	margin-top: 5px;
 	line-height: 20px;
  }}
-
-@media(max-width:480px) {
+ @media(max-width:320px) {
 .testimonial-text__napolnenie{
-	margin-top: 5px; 
-}}
+		line-height: 23px;
+		margin-top: 2px;
+		width: 205px;
+		height: 166px;
+ }}
+
+
  
 .testimonial-text:before { 
 	content: " ";  
@@ -1026,7 +1059,7 @@ background-color: blue;
  .blog {
 	width:440px;
 	height: 298px;
-	background-color: red;
+	/*background-color: red;*/
 	display: inline-block;
 	position: relative; 
 	overflow: hidden;
@@ -1040,7 +1073,7 @@ background-color: blue;
 }}
 @media(max-width:480px) {
 .blog{
-	margin-left:23px;
+	margin-left:73px;
 	margin-top:19px;
 	width:343px;
 }}
@@ -1060,6 +1093,7 @@ background-color: blue;
 	display: block;
 	margin-bottom:15px;
 	margin-top:18px;  
+	color:#454545;
 }
 
 
@@ -1086,6 +1120,7 @@ blockquote {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	margin-top:0px; 
+	color:#454545;
 }
 
 @media(max-width:768px) {
@@ -1109,7 +1144,8 @@ blockquote {
 	font-weight:900;
 	font-size: 19px;
 	margin-bottom: 0px; 
-	background-color: yellow;
+		color:#454545;
+	/*background-color: yellow;*/
 }
 
  @media(max-width:768px) {
@@ -1129,7 +1165,7 @@ blockquote {
 	list-style: none;
 	padding-left: 0px;
 	width: 440px;
-	background-color: grey;
+	/*background-color: grey;*/
 }
 
 @media(max-width:768px) {
@@ -1192,11 +1228,12 @@ blockquote {
 .blog__posty__readmore a {
 	text-decoration: none;
 	display: inline-block;
+	color:#454545;
 	text-transform: uppercase;
 	font-size: 19px;
 	font-family: "league_gothicregular";
 	/*width: 90px;*/
-	background-color: green;
+	/*background-color: green;*/
 }
 
 .radio--bottom{
@@ -1216,7 +1253,10 @@ blockquote {
 .radio--bottom {
 	margin: 0 212px 0 0;
 }}
-
+@media(max-width: 320px){
+.radio--bottom {
+	margin: 0 271px 0 0;
+}}
 .radio--bottom__button-black{
 	margin:0 0 0 0 ;
 	
@@ -1250,17 +1290,19 @@ background:url(../image/black.png) 0 0 no-repeat;
 
 
 .logotip{
-	width:960px;
+	width:100%;
 	height: auto;
-	background-color: green;
+	/*background-color: #f9f9f9;*/
 	display: block;
 	text-align: center;
 	/*margin: auto;*/
-	margin-top:82px;
+	/*margin-top:82px;*/
 	padding-top: 0px;
 	padding-bottom: 0px;
 	margin-bottom:0px; 
-	border: 1px solid grey;
+	/*background-color: red;*/
+	border: 1px solid #e6e6e6;
+	margin-top:74px; 
 }
 @media(max-width:768px) {
 .logotip {
@@ -1312,7 +1354,7 @@ background:url(../image/black.png) 0 0 no-repeat;
 	display: inline-block;
 	padding-left: 40px;
 	padding-right: 25px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	text-align: center;
 }
 
@@ -1321,7 +1363,7 @@ background:url(../image/black.png) 0 0 no-repeat;
 .logotip__cell{
 	padding-left: 00px;
 	padding-right: 45px;
-	background-color: red;
+/*	background-color: red;*/
 }}
 
 @media(max-width:480px) {
@@ -1350,7 +1392,7 @@ figure{margin: 0px;
 .wrapper4 {
 	height: auto;
 	width: 100%;
-	background-color: yellow;
+background-color:#ececec;
 }
 .content4 {
 	margin: auto;
@@ -1359,7 +1401,7 @@ figure{margin: 0px;
 	overflow: hidden;
 	position: relative;
 	padding-top: 103px;
-	background-color: blue;
+	
 }
 
 @media(max-width: 768px){
@@ -1427,7 +1469,7 @@ width: 320px;
 	/*padding: 2px 10px 5px 4px;*/
 }
 .pingbuller__zaglavie--grey {
-	background-color: green;
+	/*background-color: green;*/
 	margin: 0 0 0 0;  
 	padding: 0 0 0 0;
 	width: 100px;
@@ -1445,6 +1487,7 @@ width: 320px;
 	margin: 0 0 0 0;  
 	padding: 0 0 0 0;
 	width: 300px;
+	color: #c5c5c5;
 }
 .pingbuller__napolnenie{
 	font-family: 'Open Sans', sans-serif;
@@ -1455,10 +1498,11 @@ width: 320px;
 padding: 2px 10px 5px 2px;*/
 	margin: 0 0 0 0;  
 	padding: 0 0 0 0;
+	color: #787878;
 }
 
 .about--news{
-	background-color:green;
+	/*background-color:green;*/
 	width: 301px;
 	height: auto;
 	display: inline-block;
@@ -1532,6 +1576,7 @@ padding: 2px 10px 5px 2px;*/
 	padding: 0px;
 	width: 294px;
 	line-height: 24px;
+	color: #787878;
 }
 
 @media(max-width:768px) {
@@ -1539,7 +1584,7 @@ padding: 2px 10px 5px 2px;*/
 	width: 212px;
 	height: 190px;
 	overflow: hidden;
-	background-color: green;
+	/*background-color: green;*/
 	margin: 0px;
 }}
 
@@ -1564,24 +1609,24 @@ padding: 2px 10px 5px 2px;*/
 @media(max-width:768px) {
 .content5 {
 	width: 768px;
-	background-color: yellow;
+/*	background-color: yellow;*/
 }}
 @media(max-width:480px) {
 .content5 {
 	width: 480px;
-	background-color: blue;
+	/*background-color: blue;*/
 }}
 @media(max-width:320px) {
 .content5 {
 	width: 320px;
-	background-color: blue;
+	/*background-color: blue;*/
 }}
 
 .menu--bottom{
 	height: auto;
 	width: auto;
 	display: inline-block;
-	background-color: green;
+	/*background-color: green;*/
 	padding-left: 0px;
 	margin-top:38px;
 	margin-left:2px;
@@ -1602,11 +1647,12 @@ padding: 2px 10px 5px 2px;*/
 	left:10px;
 	top:10px;
 	/*right: 10px;*/
-		border-radius: 11px;
-	border: 1px solid black;
+	/*	border-radius: 11px;*/
+	/*border: 1px solid black;*/
 	display: block;
 	margin-top:33px; 
-	margin-bottom:0px 
+	margin-bottom:0px; 
+	border:none;
  }}
 
 
@@ -1631,13 +1677,12 @@ display: inline-block;
    width: auto;
    padding: 2px;
    font-size: 20px;
-   border:1px solid red;
+  /* border:1px solid red;*/
    text-align: left;
    margin-left: 0px;
    margin-top:0px;
    padding-left: 10px;
    padding-right: 21px;
-
 }
 
 @media(max-width:768px) {
@@ -1651,7 +1696,7 @@ display: inline-block;
 .menu--bottom__cell{
 	display:inline-block;
 	height: 22px;
-	background-color: #3f3247;
+	background-color: none;
 	opacity: 0.5;
 	width: auto;
 	text-align: center;
@@ -1660,6 +1705,7 @@ position: static;
 	font-size: 19px;
 	padding-right: 23px;
 	padding-left: 4px;
+	border: none;
 }}
 
 
@@ -1671,7 +1717,8 @@ position: static;
 	color: white;
 	font-family: "league_gothicregular";
 	display: block;
-	width: 100%
+	width: 100%;
+	 	text-shadow: 1px 1px 2px #181819;
 }
 @media(max-width:768px) {
 .menu--bottom__cell a{
@@ -1682,6 +1729,7 @@ position: static;
 .menu--bottom__cell a{
 	font-size: 17px;
 	text-align: center;
+	color: white;
 }}
 
 
@@ -1700,11 +1748,12 @@ position: static;
 	float: right;
 	width: 148px;
 	display: inline-block;
-	background-color: green;
+	/*background-color: green;*/
 	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
 	margin-top:54px; 
 	margin-bottom:52px; 
+	 	text-shadow: 1px 1px 2px #181819;
 }
 @media (max-width:768px){
 .prava	{
