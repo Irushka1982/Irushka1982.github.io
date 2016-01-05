@@ -32,7 +32,7 @@ $(function(){
        
      $('.submenu-activ').mouseout(function(){  
            $( '.sub2' ).hide();
-                                    });  
+         });  
             });  
 
 
