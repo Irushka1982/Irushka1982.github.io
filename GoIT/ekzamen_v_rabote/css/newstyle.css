@@ -116,7 +116,6 @@ body{
 }}
 
 
-
 .logo__white {
 	color:white;
 }
@@ -124,9 +123,6 @@ body{
  color: #75199d;
          -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(150,79,130,1)), color-stop(20%, rgba(0,0,0,.5)), to(rgba(52,38,59,1)));}
 }
-
-
-
 
 nav {
 	width: auto;

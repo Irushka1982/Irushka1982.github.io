@@ -1,0 +1,20 @@
+  .menu{
+  	background-color: red;
+  }
+.menu li {
+	display: inline-block;
+background-color: blue;
+}
+.submenu li {
+	display: block;
+}
+
+.sub2 li {
+	display: block;
+}
+
+.sub3 li {
+	display: block;
+}
+.s {
+	background-color: green}
