@@ -1,0 +1,66 @@
+.jcarousel {
+  position: relative;
+  overflow: hidden;}
+
+  ul{width: 10000em;
+    position: relative;
+    background-color: red;
+}
+
+    li{
+      float: left;
+    }
+
+.wrap_jcarousel{
+  width: 600px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.jcarousel-prev {position: absolute;
+	top:200px;
+	left: -110px;
+	width: 60px;
+ 	height: 30px;
+ 	font-size: 30px;
+ 	display: block;
+ 	border:2px solid black;
+ 	padding: 5px 5px; 
+ 	text-align: center;
+ }
+
+ .jcarousel-next {
+ 	position: absolute;
+ 	top:200px;
+ 	right: -110px;
+ 	width: 60px;
+ 	height: 30px;
+ 	font-size: 30px;
+ 	display: block;
+ 	border:2px solid black;
+ 	padding: 5px 5px; 
+ 	text-align: center;
+ }
+
+
+
+  .jcarousel-pagination{
+    background-color: transparent;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+
+    a{
+      text-decoration: none;
+      text-align: center;
+      line-height: 20px;
+      color: black;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border: 1px solid black;
+      border-radius: 26px;
+      padding: 1px;
+    }

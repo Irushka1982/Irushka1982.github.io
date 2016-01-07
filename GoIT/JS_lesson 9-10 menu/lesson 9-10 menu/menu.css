@@ -1,8 +1,7 @@
   *{margin:0;
   	padding: 0;}
   .menu{
-  	background-color: red;
-  	height: 500px;
+    	height: 500px;
   }
 .menu li {
 	display: inline-block;
