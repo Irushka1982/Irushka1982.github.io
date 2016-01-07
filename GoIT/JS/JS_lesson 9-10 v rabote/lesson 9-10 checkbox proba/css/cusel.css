@@ -36,10 +36,11 @@
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-	font-size: 12px;
+	font-size: 17px;
 	position: absolute;
 	top: 0;
 	left: 0;
+
 }
 .cusel-scroll-pane{
     padding: 0 3px;
@@ -73,6 +74,7 @@
 .cusel:focus,
 .cusel:focus .cuselFrameRight {
 	background-image: url(../img/select_bg_focus.png);
+
 }
 
 
@@ -82,9 +84,10 @@
 .cusel.classDisCusel,
 .cusel.classDisCusel .cuselFrameRight {
 	background-image: url(../img/select_bg.png);
-  filter: alpha(opacity=65);
+ filter: alpha(opacity=65);
   opacity: .65;
 	cursor: default;
+	
 }
 .classDisCusel .cuselText {
 	cursor: default;
@@ -94,8 +97,11 @@
 #cuselBox {
   position: absolute;
   z-index: 9999;
-}
-
+  color: black;
+  font-size: 17px;
+  border: 2px solid blue;
+  width: 200px
+ }
 
 /*
 	styles for scrollbar
