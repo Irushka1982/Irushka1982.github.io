@@ -6,7 +6,7 @@
 jQuery(document).ready(function(){
 
 var params = {
-        changedEl: ".lineForm select",
+        changedEl: "#idSelect",
         visRows: 5,
         scrollArrows: true
     }

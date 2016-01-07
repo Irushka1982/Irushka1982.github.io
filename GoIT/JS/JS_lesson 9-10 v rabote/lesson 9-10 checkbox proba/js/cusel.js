@@ -106,11 +106,11 @@ function cuSel(params) {
       что произошла корректная обработка value должно быть последний атрибутом option,
       например <option class="country" id="ukraine" value="/ukrane/">Украина</option>
     */
-    if($.browser.msie && parseInt($.browser.version) < 9)
+  /*  if($.browser.msie && parseInt($.browser.version) < 9)
     {
       var pattern = /(val=)(.*?)(>)/g;
       itemStr = itemStr.replace(pattern, "$1'$2'$3");
-    }
+    }*/
     
     /* каркас стильного селекта */
     var cuselFrame = '<div class="cusel '+chElClass+' '+classDisCusel+'"'+
