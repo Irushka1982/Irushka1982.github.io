@@ -1,5 +1,5 @@
 
-/*
+
 $(function(){  
        
      $('.s').mouseover(function(){  
@@ -16,7 +16,7 @@ $(function(){
                                     });  
             });  
 
-*/
+
 
 
 
@@ -24,7 +24,6 @@ $(function(){
        
      $('.submenu-activ').mouseover(function(){  
            $( '.sub2' ).show();
-           $( '.sub3' ).hide();
                });  
           });  
 
@@ -49,4 +48,3 @@ $(function(){
            $( '.sub3' ).hide();
                                     });  
             });  
-  

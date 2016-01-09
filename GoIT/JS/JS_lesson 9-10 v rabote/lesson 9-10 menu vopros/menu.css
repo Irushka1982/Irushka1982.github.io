@@ -11,7 +11,7 @@ width: 200px;
 .submenu{position: absolute;
 
 	top:20px;
-	left: 60px;
+	left: 1px;
 	z-index: 1}
 .submenu li {
 	display: block;
@@ -27,13 +27,13 @@ width: 200px;
 	display: block;
 /*	width: 100px;*/
 	background-color: yellow;
-	
+	height: 40px;
 		}
 .sub3 {position: absolute;
-	overflow: hidden;
+	
 	top:38px;
 	left: 101px;
-	z-index: 3}}
+	z-index: 3;}}
 .sub3 li {
 	display: block;
 	width: 100px;
