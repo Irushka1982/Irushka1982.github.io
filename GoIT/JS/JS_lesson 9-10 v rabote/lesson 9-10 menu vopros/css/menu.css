@@ -1,7 +1,31 @@
+div {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    }
+#c1 {
+    background: red;
+    }
+#c2 {
+    background: hsl(205, 66%, 40%);
+    cursor: pointer;
+    }
+
+div {
+background-color:#bada55;
+width:100px;
+border:1px solid green;
+}
+
   *{
   	margin:0;
   	padding: 0;
   }
+
+  div{ width: 120px;
+  	height: 120px;
+	    background-color:#0CF;
+	}
   .menu{
     	height: 500px;
     }
@@ -11,9 +35,7 @@
   	font-size: 20px;
   	line-height: 30px;
   }
-  a:hover {
-  	color:red;
-  }
+  a:hover {color:red}
 .menu li {
 	display: inline-block;
 	background-color: grey;
