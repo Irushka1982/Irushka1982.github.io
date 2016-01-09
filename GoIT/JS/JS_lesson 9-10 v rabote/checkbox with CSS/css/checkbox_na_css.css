@@ -1,5 +1,12 @@
-
-.check{margin: 5px;
+.wrapper {
+  padding: 10px;
+}
+.check{
+  padding: 2px;
+  background-color: #8ee1ff;
+}
+label{
+  line-height: 25px;
 }
 .checkbox {
   vertical-align: top;
@@ -13,25 +20,24 @@
 }
 .checkbox:not(checked) + label {
   position: relative; 
-  padding: 0 0 0 30px;
+  padding: 0 0 0 10px;
 }
-.checkbox:not(checked) + label:after {
+.checkbox:not(checked) + label:before {
   content: ' ';
   position: absolute;
   top: 0px;
-  left: 92px;
+  left: 60px;
   width: 17px;
   height: 17px;
-  border: 1px solid grey;
-  
+  background: url(.//images/of.png);
 }
 
 .checkbox:checked + label:before {
-   content: '\2713';
+   content: '';
   position: absolute;
   top: 0px;
-  left:92px;
+  left:60px;
   width: 17px;
   height: 17px;
-  border: 1px solid grey;
+   background: url(.//images/on.png);
 }
