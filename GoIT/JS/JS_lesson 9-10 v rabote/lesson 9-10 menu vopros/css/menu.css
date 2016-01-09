@@ -35,6 +35,8 @@ border:1px solid green;
   	font-size: 20px;
   	line-height: 30px;
   }
+  
+}
   a:hover {color:red}
 .menu li {
 	display: inline-block;
@@ -59,7 +61,7 @@ border:1px solid green;
 
 .sub2 li {
 	display: block;
-	background-color: yellow;
+	background-color: red;
 			}
 .sub3 {
 	position: absolute;
@@ -74,5 +76,33 @@ border:1px solid green;
 }
 .s {
 	width: 200px;
-	background-color: yellow;
+	background-color: red;
 }
+.s:after {
+	content: '';
+	position: absolute;
+	background: url(../img/triangle.png) no-repeat;
+	width: 10px;
+	height:10px;
+	top:13px;
+	left: 124px;
+}
+
+.submenu-activ:after {
+	content: '';
+	position: absolute;
+	background: url(../img/triangleright.png) no-repeat;
+	width: 10px;
+	height:10px;
+	top:71px;
+	left: 124px;
+}
+.sub2-active:after {
+	content: '';
+	position: absolute;
+	background: url(../img/triangleright.png) no-repeat;
+	width: 10px;
+	height:10px;
+	top:73px;
+	left: 124px;
+};
