@@ -1,9 +1,7 @@
-.wrapper {
-  padding: 10px;
-}
+
 .check{
   padding: 2px;
-  background-color: #8ee1ff;
+background-color: #8ee1ff;
 }
 label{
   line-height: 25px;
@@ -27,9 +25,9 @@ label{
   position: absolute;
   top: 0px;
   left: 60px;
-  width: 17px;
-  height: 17px;
-  background: url(.//images/of.png);
+  width: 18px;
+  height: 18px;
+  background: url(.//img/of.png);
 }
 
 .checkbox:checked + label:before {
@@ -37,7 +35,7 @@ label{
   position: absolute;
   top: 0px;
   left:60px;
-  width: 17px;
-  height: 17px;
-   background: url(.//images/on.png);
+  width: 18px;
+  height: 18px;
+   background: url(.//img/on.png);
 }
