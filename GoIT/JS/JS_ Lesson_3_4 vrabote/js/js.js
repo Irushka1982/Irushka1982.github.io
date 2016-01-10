@@ -50,7 +50,7 @@ if (parametr.style) {
           var checkbox = this.createElement({
                 tagName:'input',
                 inputType:'checkbox',
-                /*className: 'checka'*/
+               className: 'cheka'
 
             });
 

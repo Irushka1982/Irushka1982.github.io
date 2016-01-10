@@ -7,21 +7,22 @@ input[type=checkbox] {
 .checkbox label:before {
     border-radius: 3px;
 }*/
-label:before {
-    content:'';
-    color: red;
-    text-align: center;
+
+
+input[type=checkbox] + label:before {
+    content: '';
+        text-align: center;
     line-height: 15px;
-    display: inline-block;
+    border: 1px solid black;
     width: 20px;
     height: 20px;
-    background-color: green;
-    border: 1px solid red;
+    display: inline-block;}
+
 }
+
 input[type=checkbox]:checked + label:before {
     content: '\2713';
-    color: red;
-    text-align: center;
+      text-align: center;
     line-height: 15px;
     border: 1px solid black;
     width: 20px;
