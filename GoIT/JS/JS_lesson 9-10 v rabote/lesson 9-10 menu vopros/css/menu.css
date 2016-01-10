@@ -1,31 +1,10 @@
-div {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 10px;
-    }
-#c1 {
-    background: red;
-    }
-#c2 {
-    background: hsl(205, 66%, 40%);
-    cursor: pointer;
-    }
 
-div {
-background-color:#bada55;
-width:100px;
-border:1px solid green;
-}
 
   *{
   	margin:0;
   	padding: 0;
   }
 
-  div{ width: 120px;
-  	height: 120px;
-	    background-color:#0CF;
-	}
   .menu{
     	height: 500px;
     }
@@ -37,22 +16,27 @@ border:1px solid green;
   }
   
 }
-  a:hover {color:red}
+  li:hover {color:red}
 .menu li {
 	display: inline-block;
-	background-color: grey;
+	background-color: #e69a02;
 	width: 150px;
+
 }
 .submenu{position: absolute;
 	top:28px;
 	left: 1px;
 	z-index: 1;
+	/*display: none;*/
 }
+
+.submenu .submenu-activ {/*background-color: #ffd520;*/}
 .submenu li {
 	display: block;
 	width: 150px;
-	background-color: green;
+border-bottom: 1px solid red;
 }
+.sub2 .sub2-active{/*background-color:#e06b01;*/}
 .sub2{position: absolute;
 	top:60px;
 	left: 150px;
@@ -61,7 +45,7 @@ border:1px solid green;
 
 .sub2 li {
 	display: block;
-	background-color: red;
+	/*background-color: #e06b01;*/
 			}
 .sub3 {
 	position: absolute;
@@ -72,11 +56,11 @@ border:1px solid green;
 .sub3 li {
 	display: block;
 	width: 150px;
-	background-color: grey;
+	/*background-color: #d03b06;*/
 }
 .s {
-	width: 200px;
-	background-color: red;
+	width: 150px;
+	
 }
 .s:after {
 	content: '';

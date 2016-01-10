@@ -1,16 +1,39 @@
-(function animate() {
-    var block = $('#c1');
-    block.animate({backgroundColor: $.Color(block.css('backgroundColor')).hue('+=179')}, 3000, animate);
-})();
 
-// Flash highlight
-$('#c2').click(function(e) {
-    var block = $(e.target);
-    var color = $.Color(block.css('backgroundColor'));
-    block.animate({backgroundColor: color.lightness('+=0.4')}, 300, function() {
-        block.animate({backgroundColor: color}, 300);
-    });
-});
+jQuery(document).ready(function(){
+  jQuery(".submenu-activ").mouseenter(
+    function () {
+      jQuery('.sub2 li').animate({
+          backgroundColor:"#eb7702",
+      }, 500 );
+  });
+  jQuery(".submenu-activ").mouseleave(function() {
+      jQuery(this).animate({
+          backgroundColor:"#e69a02",
+      }, 500 );
+  });
+  });
+jQuery(document).ready(function(){
+  jQuery(".sub2-active").mouseenter(
+    function () {
+      jQuery('.sub3 li').animate({
+          backgroundColor:"#fff117",
+      }, 500 );
+  });
+  jQuery(".sub2-active").mouseleave(function() {
+      jQuery(this).animate({
+          backgroundColor:"#eb7702",
+      }, 100 );
+  });
+  });
+
+
+
+
+
+
+
+
+
 
 
 
