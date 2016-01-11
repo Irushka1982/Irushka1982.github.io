@@ -66,23 +66,43 @@ body{
 .content1 {width: 320px;
 /*background-color: yellow;*/
 }}
-/*.strelochka-left {
+.strelochka-left {
 	content: " ";
 	position: absolute;
-	background: url(navi_arrow_left.png) 2px 2px  no-repeat;
-	left:111px; top:360px;
+	background: url(../image/navi_arrow_left.png) 2px 2px  no-repeat;
+	left:154px; top:422px;
  	width: 100%;
  	height: 60px;
 }
+@media(max-width:768px) {
+.strelochka-left{left:-5px; top:442px;
+ }}
+
+ @media(max-width:480px) {
+.strelochka-left{left:-6px; top:304px;
+ }}
+
+
+ @media(max-width:320px) {
+.strelochka-left{left:-12px; top:304px;
+ }}
 .strelochka-right {
 	content: " ";
 	position: absolute;
-	background: url(navi_arrow_right.png) 2px 2px  no-repeat;
+	background: url(../image/navi_arrow_right.png) 2px 2px  no-repeat;
 	left:1466px; top:320px;
  	width: 100%;
  	height: 60px;
 }
-*/
+@media(max-width:768px) {
+.strelochka-right{left:728px; top:442px;}}
+
+@media(max-width:480px) {
+.strelochka-right{left:449px; top:304px;}}
+@media(max-width:320px) {
+.strelochka-right{left:283px; top:304px;}}
+
+
 .blok1 {
 	/*background-color: blue;*/
 	height: auto;
@@ -200,7 +220,7 @@ nav {
 .menu__cell{
 	display:block;
 	float: none;
-	height: 35px;
+	height: 43px;
 	display: block;
 	background-color: #3c3044;
 	opacity: 0.5;
@@ -524,7 +544,7 @@ border-bottom:2px solid #edbfff;
 @media (max-width:768px) {
 .radio{
 	float: right;
-	margin-top:138px;
+	margin-top:146px;
 	margin-right:166px;
 	margin-bottom:102px; 
 }}
@@ -581,13 +601,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 @media(max-width:480px) {
 .content2 {width: 480px;
 /*background-color: red;*/
-padding-top:60px;
-padding-bottom: 68px;
+padding-top:48px;
+padding-bottom: 52px;
 }}
 @media(max-width:320px) {
 .content2 {width: 320px;
-/*background-color: blue;*/
-padding-top:51px;
+padding-top:37px;
+padding-bottom: 39px;
+
 }}
 
 
@@ -620,9 +641,9 @@ padding-top:51px;
 	width: 349px;
 	margin-left: 14px;
 	margin-bottom:0px; 
-	padding: 0px 23px 5px 64px;
+	padding: 0px 23px 0px 64px;
 	height: auto;
-	margin-top:15px; 
+	margin-top:0px; 
  }}
 
 @media (max-width:320px) {
@@ -1080,7 +1101,7 @@ padding-top:51px;
 @media(max-width:480px) {
 .blog{
 	margin-left:73px;
-	margin-top:19px;
+	margin-top:9px;
 	width:343px;
 }}
 
@@ -1088,7 +1109,7 @@ padding-top:51px;
 .blog{
 	margin-left:0px;
 	padding-left: 8px;
-		margin-top:30px;
+		margin-top:22px;
 }}
 
 

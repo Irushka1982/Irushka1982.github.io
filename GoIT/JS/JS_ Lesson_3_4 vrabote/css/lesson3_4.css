@@ -3,10 +3,7 @@ label{display: block;}
 
 input[type=checkbox] {
     display: none;
-}/*
-.checkbox label:before {
-    border-radius: 3px;
-}*/
+}
 
 
 input[type=checkbox] + label:before {
@@ -30,19 +27,7 @@ input[type=checkbox]:checked + label:before {
     display: inline-block;
   
 }
-   
-   
- /*input[type="checkbox"] {
-    background-color: #c9e4f9;
-    height: 14px;
-    width: 14px; 
-    -webkit-appearance: none; 
-    cursor: pointer;
-    border: 1px solid grey;
-    border-radius: 2px;
-    margin-left:20px; 
-    vertical-align: middle;
-   }*/
+ 
    input[type="submit"]{
    	background-color: #cfe1f5;
 width: 325px; 
@@ -51,10 +36,3 @@ border: 2px solid black;
 font-size: 16px;
 margin: 20px 70px;
    }
-  /*.check {
-    width: 14px;
-    height: 14px;
-   background-color: #c9e4f9;
-   cursor: pointer;
-    border: 1px solid grey;
-    border-radius: 2px;}
