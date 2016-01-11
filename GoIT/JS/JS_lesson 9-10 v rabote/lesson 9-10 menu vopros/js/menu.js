@@ -29,14 +29,6 @@ jQuery(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
 $(function(){  
        
      $('.s').mouseover(function(){  
@@ -52,9 +44,6 @@ $(function(){
               $( '.submenu' ).hide();
                                     });  
             });  
-
-
-
 
 
 

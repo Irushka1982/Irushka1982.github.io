@@ -36,6 +36,15 @@ body{
 	margin-top:246px; 
 }}
 
+@media(max-width:480px) {
+.transparent {
+	height: 248px;
+	margin-top:199px; 
+}}
+@media(max-width:320px) {
+.transparent {
+	display: none;
+}}
 
 .content1 {
 	margin: auto;
@@ -710,6 +719,7 @@ padding-top:51px;
 @media (max-width:480px) {
 .about__zaglavie{
 	height: 33px;
+	text-align: left; width: 100%;
  }}
 
 /*.about__zaglavie--grey{color:grey;}*/

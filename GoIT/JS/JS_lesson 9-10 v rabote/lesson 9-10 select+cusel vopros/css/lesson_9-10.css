@@ -12,11 +12,13 @@
  }
 span {
 	font-size: 18px;
+	
 }
+.chiselnist{display: block;
+	text-align: center;}
  .towns {
- 	background-color: blue;
- 	width: 300px;
- 	border: 1px solid black;
- }
+  	width: 300px;
+ 	border-top: 2px solid blue;
+  }
 
 label {font-size: 20px;}
