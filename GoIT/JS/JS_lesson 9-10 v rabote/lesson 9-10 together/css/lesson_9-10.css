@@ -1,0 +1,146 @@
+*{margin: 0px;
+padding: 0px;}
+.content {/*overflow: hidden;*/
+}
+
+.content-carusel{width: 866px;
+height: 572px;
+background-color: red;}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+ .jcarousel  ul{width: 10000em;
+    position: relative;
+    background-color: red;
+}
+
+ .jcarousel    li{
+      float: left;
+    }
+
+.wrap_jcarousel{
+  width: 600px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.jcarousel-prev {position: absolute;
+	top:200px;
+	left: -110px;
+	width: 60px;
+ 	height: 30px;
+ 	font-size: 30px;
+ 	display: block;
+ 	border:2px solid black;
+ 	padding: 5px 5px; 
+ 	text-align: center;
+ }
+
+ .jcarousel-next {
+ 	position: absolute;
+ 	top:200px;
+ 	right: -110px;
+ 	width: 60px;
+ 	height: 30px;
+ 	font-size: 30px;
+ 	display: block;
+ 	border:2px solid black;
+ 	padding: 5px 5px; 
+ 	text-align: center;
+ }
+
+
+
+  .jcarousel-pagination{
+    background-color: transparent;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+
+ .jcarousel-pagination  a{
+      text-decoration: none;
+      text-align: center;
+      line-height: 20px;
+      color: black;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border: 1px solid black;
+      border-radius: 26px;
+      padding: 1px;
+    }
+
+
+    /*label на Сss*/
+.content-label-na-css {width: 866px;
+height: 200px;
+overflow: hidden;}
+.content-label-na-css .check{
+  padding: 2px;
+background-color: #8ee1ff;
+}
+.content-label-na-css label{
+  line-height: 25px;
+}
+.content-label-na-css .checkbox-css {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.content-label-na-css .checkbox-css:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.content-label-na-css .checkbox-css:not(checked) + label {
+  position: relative; 
+  padding: 0 0 0 10px;
+}
+.content-label-na-css .checkbox-css:not(checked) + label:before {
+  content: ' ';
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/of.png);
+}
+
+.content-label-na-css .checkbox-css:checked + label:before {
+   content: '';
+  position: absolute;
+  top: 0px;
+  left:60px;
+  width: 18px;
+  height: 18px;
+   background: url(../img/on.png);
+}
+  /*JQ*/
+.labeljq {width: 900px;
+height: 200px;
+background-color: blue;
+clear: both;
+}
+
+ .labeljq .checkbox{
+  float:left;
+  clear:both;
+  margin: 6px;
+  }
+.labeljq .checka {margin: 5px;
+  background-color: #8ee1ff;}
+
+.labeljq label {
+  display:inline-block;
+  line-height:  31px;
+  font-size:    15px;
+  padding-left: 1px;
+  color:      black;
+  text-shadow:  1px 2px 4px rgba(255,255,255, 1);
+  font-family:  Arial, Helvetica, sans-serif;
+  }
