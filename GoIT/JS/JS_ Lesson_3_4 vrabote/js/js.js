@@ -42,27 +42,25 @@ if (parametr.style) {
  var checkbox = this.createElement({
                 tagName:'input',
                 inputType:'checkbox',
-             glavnyi: form
+                id: 'check' + (k + 1),
+                glavnyi: form
 
             });
           var label = this.createElement({
               tagName: 'label',
               content: 'Ответ #' + (k + 1),
               glavnyi: form
-           });
-
-
+                                     });
          
-
-       /*   label.insertAdjacentElement('afterBegin', checkbox);*/
-     
+label.for = 'check' + (k + 1);
+   
       }
-    };
+    }
 
   }
 
-}
-  
+};
+ 
 
 
 
