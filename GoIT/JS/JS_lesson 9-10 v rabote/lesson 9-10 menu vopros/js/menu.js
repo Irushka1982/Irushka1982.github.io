@@ -33,8 +33,8 @@ $(function(){
        
      $('.s').mouseover(function(){  
            $( '.submenu' ).show();
-           $( '.sub2' ).hide();
-           $( '.sub3' ).hide();
+
+           
                });  
           });  
 
@@ -42,6 +42,8 @@ $(function(){
        
      $('.s').mouseout(function(){  
               $( '.submenu' ).hide();
+                $( '.sub2' ).hide();
+                 $( '.sub3' ).hide();
                                     });  
             });  
 
@@ -52,6 +54,7 @@ $(function(){
        
      $('.submenu-activ').mouseover(function(){  
            $( '.sub2' ).show();
+
                });  
           });  
 

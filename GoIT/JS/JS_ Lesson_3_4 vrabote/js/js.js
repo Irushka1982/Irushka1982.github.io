@@ -39,7 +39,12 @@ if (parametr.style) {
        });
 
       for (var k = 0; k < otvet; k++) {
+ var checkbox = this.createElement({
+                tagName:'input',
+                inputType:'checkbox',
+             glavnyi: form
 
+            });
           var label = this.createElement({
               tagName: 'label',
               content: 'Ответ #' + (k + 1),
@@ -47,15 +52,10 @@ if (parametr.style) {
            });
 
 
-          var checkbox = this.createElement({
-                tagName:'input',
-                inputType:'checkbox',
-               className: 'cheka'
+         
 
-            });
-
-          label.insertAdjacentElement('afterBegin', checkbox);
-      
+       /*   label.insertAdjacentElement('afterBegin', checkbox);*/
+     
       }
     };
 
