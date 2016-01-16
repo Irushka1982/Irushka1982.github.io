@@ -23,7 +23,7 @@ $('.jcarousel-pagination').jcarouselPagination({
       autostart: true
   });
 });
-/*menu*/
+
 
 jQuery(document).ready(function(){
   jQuery(".submenu-activ").mouseenter(
@@ -51,7 +51,67 @@ jQuery(document).ready(function(){
       }, 100 );
   });
   });
-/*label JQ*/
+
+
+
+
+$(function(){  
+       
+     $('.s').mouseover(function(){  
+           $( '.submenu' ).show();
+
+           
+               });  
+          });  
+
+$(function(){  
+       
+     $('.s').mouseout(function(){  
+              $( '.submenu' ).hide();
+                $( '.sub2' ).hide();
+                 $( '.sub3' ).hide();
+                                    });  
+            });  
+
+
+
+
+$(function(){  
+       
+     $('.submenu-activ').mouseover(function(){  
+           $( '.sub2' ).show();
+
+               });  
+          });  
+
+$(function(){  
+       
+     $('.submenu-activ').mouseout(function(){  
+           $( '.sub2' ).hide();
+         });  
+            });  
+
+
+$(function(){  
+       
+     $('.sub2-active').mouseover(function(){  
+               $( '.sub3' ).show();
+                          });  
+            });  
+
+   $(document).ready(function(){  
+       
+     $('.sub2-active').mouseout(function(){  
+           $( '.sub3' ).hide();
+                                    });  
+            });  
+
+
+
+
+
+
+
  $(document).ready(function(){
          
           $('input:checkbox').screwDefaultButtons({
