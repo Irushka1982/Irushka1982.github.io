@@ -3,12 +3,12 @@ $(function(){
 	var html = $('#test').html();
 	var articles = [
 	{
-		title: 'ira',
-		content: 'horoshaya devochka.'
+		title: 'lesson 1',
+		content: 'lesson 1'
 	},
 	{
-		title: 'irushechka',
-		content: 'plushechka'
+		title: 'lesson 2',
+		content: 'lesson 2'
 	}
 	];
 
