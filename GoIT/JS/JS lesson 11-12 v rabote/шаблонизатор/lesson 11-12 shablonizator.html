@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shablonizator</title>
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src=".//js/shablonizator.js"></script>
+	<script src=".//js/template.js"></script>
+</head>
+<body>
+	<script type="text/template" id="test">
+	<% for (var i = 0; i < data.lenght; i++) { %>
+	<h1><%= data[i].title %></h1>
+	<p><%= data[i].content %></p>
+	<% } %>
+	</script>
+</body>
+</html>
