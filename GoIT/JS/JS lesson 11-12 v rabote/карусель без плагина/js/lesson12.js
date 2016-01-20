@@ -1,8 +1,6 @@
 
-
-
-(function( $ ){ 
-$(document).ready(function() {
+(function($){ 
+$.fn.myFunction = function() {
     var leftUIEl = $('.carousel-arrow-left');
     var rightUIEl = $('.carousel-arrow-right');
     var elementsList = $('.carousel-list');
@@ -26,5 +24,6 @@ $(document).ready(function() {
             elementsList.animate({ left : currentLeftValue + "px"}, 500);
         }        
     });
-});
+};
   })( jQuery );
+
