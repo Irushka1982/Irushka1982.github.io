@@ -1,3 +1,9 @@
+$(document).ready(function() { 
+    $(".carousel-list").myFunction()
+});
+
+
+
 
 (function($){ 
 $.fn.myFunction = function() {
@@ -25,5 +31,5 @@ $.fn.myFunction = function() {
         }        
     });
 };
-  })( jQuery );
+  })(jQuery);
 
