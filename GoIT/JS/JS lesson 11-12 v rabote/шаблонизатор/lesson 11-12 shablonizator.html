@@ -4,26 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Shablonizator</title>
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="./js/shablonizator.js"></script>
-	<script src="./js/template.js"></script>
+	<link rel="stylesheet" href=".//css/shablonizator.css">
+	<script src=".//js/template.js"></script>
 </head>
 <body>
 	<script type="text/template" id="test">
 	<% for (var i = 0; i < data.length; i++) { %>
 		<div class="blok">
-	<h1><%= data[i].title %></h1>
-	<p><%= data[i].content %></p>
+	<h3><%= data[i].title %></h3>
+	<ul><li><%= data[i].content %></li>
+	<li><%= data[i].more %></li></ul>
+	
 	</div>
 	<% } %>
 	</script>
 
 <script type="text/template" id="test2">
 	<% for (var i = 0; i < data.length; i++) { %>
-		<ul class="vst">
 		<li><%= data[i].title %></li>
-		</ul>
-	<% } %>
+			<% } %>
 	</script>
-
+<script src=".//js/shablonizator.js"></script>
 </body>
 </html>
