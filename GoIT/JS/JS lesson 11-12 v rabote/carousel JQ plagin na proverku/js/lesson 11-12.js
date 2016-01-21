@@ -2,9 +2,6 @@ $(document).ready(function() {
     $(".carousel-list").myFunction()
 });
 
-
-
-
 (function($){ 
 $.fn.myFunction = function() {
     var leftUIEl = $('.carousel-arrow-left');
