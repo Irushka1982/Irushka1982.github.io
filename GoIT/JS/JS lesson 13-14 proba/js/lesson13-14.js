@@ -28,3 +28,4 @@ var vstavka = tmpl(html, {
 
 
 $('body').append(vstavka);
+});
