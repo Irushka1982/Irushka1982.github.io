@@ -34,7 +34,7 @@ if (parametr.style) {
     for (var y = 0; y < vopros; y++) {
       this.createElement({
         tagName: 'h3',
-        content: (y + 1)+ '.' + 'Вопрос №'+ (y + 1),
+        content: (y + 1) + '.' + 'Вопрос №'+ (y + 1),
         glavnyi: form
        });
 
@@ -42,17 +42,16 @@ if (parametr.style) {
  var checkbox = this.createElement({
                 tagName:'input',
                 inputType:'checkbox',
-                id: 'check' + (k + 1),
+                id:'check' + y + (k + 1),
                 glavnyi: form
-
             });
           var label = this.createElement({
               tagName: 'label',
               content: 'Ответ #' + (k + 1),
               glavnyi: form
-                                     });
-         
-label.setAttribute('for', 'check' + y + (k + 1)); 
+               });
+    
+label.setAttribute('for','check' + y + (k + 1)); 
       }
     }
 

@@ -1,4 +1,6 @@
+
 $(function(){
+
 	var html = $('#blok').html();
 	
 	var about = [
