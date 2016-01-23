@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson 13-14</title>
+	<script src=".//js/lesson13-14.js"></script>
+	<script src=".//js/template.js"></script>
+</head>
+<body>
+
+	<script type="text/template" id="blok">
+	<% for (var i = 0; i < data.length; i++) { %>
+ <h1>data[I].question </h1>
+    <% for (var key in data[I].answer) { %>
+     var about = data[I].answer;
+    <input type="checkbox" id='check' + (i + 1)>
+     <label for= id>about[key]</label>
+     <% } %>
+ <% } %>
+
+
+	</script>
+	
+</body>
+</html>
