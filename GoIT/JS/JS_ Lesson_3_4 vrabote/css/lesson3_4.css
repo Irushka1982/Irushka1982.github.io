@@ -15,7 +15,6 @@ input[type=checkbox] + label:before {
     height: 20px;
     display: inline-block;}
 
-}
 
 input[type=checkbox]:checked + label:before {
     content: '\2713';

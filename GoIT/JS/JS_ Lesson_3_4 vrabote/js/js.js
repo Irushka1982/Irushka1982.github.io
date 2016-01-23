@@ -52,8 +52,7 @@ if (parametr.style) {
               glavnyi: form
                                      });
          
-label.for = 'check' + (k + 1);
-   
+label.setAttribute('for', 'check' + y + (k + 1)); 
       }
     }
 
