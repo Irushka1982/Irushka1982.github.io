@@ -27,4 +27,4 @@ var vstavka = tmpl(html, {
 	});
 
 
-('body').append(vstavka);
+$('body').append(vstavka);
