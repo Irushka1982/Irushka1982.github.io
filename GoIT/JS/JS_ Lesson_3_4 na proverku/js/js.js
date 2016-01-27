@@ -15,6 +15,10 @@ var app = {
     if (parametr.content){
       irochka.innerHTML = parametr.content;
     }
+if (parametr.id){
+      irochka.id = parametr.id;
+    }
+
 
 if (parametr.value){
   irochka.value = parametr.value; /* Это самостоятельно*/
@@ -84,3 +88,5 @@ app.createElement({
 value: 'Проверить мои результаты', 
  glavnyi: body
 });
+
+

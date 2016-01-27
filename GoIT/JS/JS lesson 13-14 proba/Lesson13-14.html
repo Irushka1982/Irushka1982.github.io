@@ -11,14 +11,22 @@
 </head>
 <body>
 	<script type="text/template" id="blok">
-	<% for (var i = 0; i < data.length; i++) { %>
- <h1>data[I].question </h1>
-    <% for (var key in data[I].answer) { %>
-     var about = data[I].answer;
-    <input type="checkbox" id='check' + (i + 1)>
-     <label for= id>about[key]</label>
-     <% } %>
- <% } %>
+	
+
+
+<% for (var i = 0; i < data.length; i++) { %>
+      <h1><%= data[i].question %></h1>
+          <% var answersArray = data[i].answer; %>
+      <% for (var key in answersArray) { %>
+           <%  var answer = answersArray[key]; %>
+           <%  var id = 'check' + (i + 1); %>
+         <input type="checkbox" id = <%= id%>/>
+          <label for=  <%= id %>> <%= answer %></label>
+        <% } %> 
+   <% } %>
+
+
+
 	</script>
 	
 </body>
