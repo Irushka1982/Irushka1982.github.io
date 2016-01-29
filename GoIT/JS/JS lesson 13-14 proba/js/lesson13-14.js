@@ -6,20 +6,20 @@ $(function(){
 	var about = [
 	{
 		"question": "Какое из государств  не находится в Европе?",
-		"answer":{"value1": 'Греция',
-		"value2": 'Мальта',
-		"value3": 'Испания'}
+		"answer":{"europe1": 'Греция',
+		"europe2": 'Мальта',
+		"europe3": 'Испания'}
 	},
 	{
 		"question": "Какое из государств не находится в Африке?",
-		"answer":{"value1": 'Ливия',
-		"value2": 'Тунис',
-		"value3": 'Парагвай'}
+		"answer":{"africa1": 'Ливия',
+		"africa2": 'Тунис',
+		"africa3": 'Парагвай'}
 	},
 	{"question": "Какое из государств не находится в Азии?",
-		"answer":{"value1": 'Таиланд',
-		"value2": 'Армения',
-		"value3": 'Намибия'}
+		"answer":{"asia1": 'Таиланд',
+		"asia2": 'Армения',
+		"asia3": 'Намибия'}
 	}
 
 	];
@@ -32,27 +32,23 @@ var vstavka = tmpl(html, {
 $('body').append(vstavka);
 });
 
- 
-
+ var count
+/*
 var checkboxArray = $('input[type="checkbox"]:checked');
-
-var rightAnswer = ['check1', 'check2', 'check3' ];
-
-var currentID =  $(document).ready(function() {
-    $("checkbox")
-        alert($(checkboxArray[i]).attr("id"));
-    });
+*/
+var rightAnswer = ['checkvalue1', 'checkvalue02', 'checkvalue003' ];
 
 
+$(document).on('click', 'button', function() {
+ var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 
-for (var i = 0; i < checkboxArray.length; i++) {
-  if (rightAnswers.indexOf(currentID) + 1) {
-   alert('правильно')}
-   else {
-   	alert('неверно')}
-  };
-
-
-
+ $(allCheckedCheckboxes).each(function(i, el) {
+   var currentId = $(el).attr("id"),
+   count = 0;
+if (rightAnswers.indexOf(currentID) + 1) {
+   count++}
+    })
+});
+console.log(count);
 
  

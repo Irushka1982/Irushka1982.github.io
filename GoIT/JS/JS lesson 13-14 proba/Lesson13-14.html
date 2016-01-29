@@ -12,22 +12,18 @@
 <body>
 	<script type="text/template" id="blok">
 	
-
-
 <% for (var i = 0; i < data.length; i++) { %>
       <h1><%= data[i].question %></h1>
           <% var answersArray = data[i].answer; %>
       <% for (var key in answersArray) { %>
            <%  var answer = answersArray[key]; %>
-           <%  var id = 'check' + (i + 1); %>
+           <%  var id = 'id' + '-' + key; %>
          <input type="checkbox" id = <%= id%>/>
           <label for=  <%= id %>> <%= answer %></label>
         <% } %> 
    <% } %>
 
-
-
 	</script>
-	
+	<input type="submit" value="Проверить результаты теста" id="button">
 </body>
 </html>
