@@ -1,0 +1,11 @@
+#button{height: 40px;}
+.modal-good {width: 200px;
+height: 50px;
+border: 1px solid black;
+display:none;
+}
+.modal-bad {width: 200px;
+height: 50px;
+border: 1px solid black;
+display:none;
+ }
