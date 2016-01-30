@@ -1,11 +1,35 @@
-#button{height: 40px;}
-.modal-good {width: 200px;
-height: 50px;
+#button{height: 40px;
+width: 300px}
+.modal-good {width: 400px;
+height: 250px;
 border: 1px solid black;
-display:none;
+
 }
-.modal-bad {width: 200px;
-height: 50px;
+.modal-bad{width: 400px;
+height: 250px;
 border: 1px solid black;
-display:none;
+
+}
+
+ span{text-align: center;
+ 	font-size: 20px;
+ 	color: red;
+ 	display: block;
+ 	padding: 30px
  }
+
+ 	.again{width: 350px;
+ 		font-size: 20px;
+ 	display: block;
+ 	margin: auto}
+
+ 	 
+ input{
+ 	width: 20px;
+ 	display: block;
+ 	}
+ label {
+ 	width: 200px;
+ 	display: inline-block;
+ 	}
+ 
