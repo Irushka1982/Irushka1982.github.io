@@ -23,10 +23,10 @@ border: 1px solid black;
  	display: block;
  	margin: auto}
 
- 	 
+
  input{
  	width: 20px;
- 	display: block;
+ 	display: inline-block;
  	}
  label {
  	width: 200px;
