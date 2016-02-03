@@ -1,6 +1,19 @@
 
-var pole = document.getElementById('#poletext');
-pole.addEventListener('click', GoogleCallback);
+var pole = document.getElementById('#poleotpravka');
+pole.addEventListener('click', //тут по логике должен быть наш запрос $.getJSON(key blablabla)
+    //но как на него тут сослаться? что конкретно прописать?);
+
+var enter = document.getElementById('#poletext');
+
+$enter.submit(function(e) {
+    //тут по логике должен быть наш запрос $.getJSON(key blablabla)
+    //но как на него тут сослаться? что конкретно прописать?
+});
+
+
+
+$.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='+ 'dance' +'&callback=GoogleCallback&rsz=large&context=?')
+
 
 function GoogleCallback (func, zapros) {
    
@@ -29,7 +42,8 @@ var s = document.createElement("div");
     
 }
 
-$.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='+ 'dance' +'&callback=GoogleCallback&rsz=large&context=?')
+
+
 
 
 
