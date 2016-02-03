@@ -36,3 +36,36 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 
 
 
+var human = {
+ name: 'Vasya',
+ age: 25,
+ sex: 'men',
+ weight: 65,
+ height: 170
+};
+
+
+ var worker = {
+ company: 'editor',
+ salary: 500,
+ work: function(){
+ 	alert('I am frontend developer and i am cool');
+ }
+};
+worker.__proto__ = human;
+
+ var student = {
+ education: 'editor',
+ grant: 500,
+ watchTVseries:function(){alert('I like horor movees');
+}
+};
+
+student.__proto__ = human;
+
+
+var newWorker = new worker();
+console.log('new', newWorker);
+
+var newStudent = new student();
+console.log('new', newStudent);
