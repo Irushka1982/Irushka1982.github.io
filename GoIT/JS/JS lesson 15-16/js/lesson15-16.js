@@ -7,26 +7,23 @@ function GoogleCallback (func, zapros) {
     var div = document.createElement("div")
     div.className = 'main';
 
-
     $.each(zapros.results, function(i, val){
 		         
 var s = document.createElement("div");
 		s.className = 'result';
-		           
-		            div.appendChild(s);
+		div.appendChild(s);
 
 		var b = document.createElement("a");
 		b.className = 'sylka';
-		            b.innerHTML = '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+'</a>';                            
-		            s.appendChild(b);
+		b.innerHTML = '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+'</a>';                            
+		s.appendChild(b);
 		   
 
 		var f = document.createElement("p");
 		f.className = 'content';
-		            f.innerHTML = '<span>'+val.content+'</span>'; 
-		            s.appendChild(f);
-		   
-		        });
+		f.innerHTML = '<span>'+val.content+'</span>'; 
+		s.appendChild(f);
+	});
 
     $('body').html(div);
     
