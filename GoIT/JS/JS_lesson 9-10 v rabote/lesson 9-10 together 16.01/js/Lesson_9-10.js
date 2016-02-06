@@ -114,7 +114,7 @@ $(function(){
 
  $(document).ready(function(){
          
-          $('input:checkbox').screwDefaultButtons({
+          $( '.checka input[type=«checkbox»]').screwDefaultButtons({
              checked: "url(.//img/on.png)",
              unchecked: "url(.//img/of.png)",
              width: 20,
