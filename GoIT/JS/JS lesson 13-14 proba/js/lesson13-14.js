@@ -72,7 +72,7 @@ againbutton.addEventListener('click', startAgain);
 function startAgain(){  
      againbutton.removeEventListener('click', showMessage);//сначала думала при клике закрыть лишь модальное окно//
      againbutton.removeEventListener('click', check);//потом решила что надо бы ещё все все чекнутые чекбоксы обнулить//
-  //но должно существовать одно общее обнуление всей страницы, всех функций? какое?
+  //но должно существовать одно общее обнуление всей страницы, всех функций?
 $(allCheckedCheckboxes).removeAttr('checked');//или таким способом..
 //ВОПРОС: какую технику избрать и что прописать?
   }
