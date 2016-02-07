@@ -33,7 +33,7 @@ $('body').append(vstavka);
 
 
 
-
+$(function() { /*кстати этот ряд 36 нужен или можно без него?*/
 $('#button').click(function check(){
 var count
 var rightAnswer = ['id-europe2', 'id-africa3', 'id-asia3' ];
@@ -57,7 +57,7 @@ $(function showMessage(count){
        }
       if(count === 3) {
           $('.modalbad').show();
-  });
+  });/*ряд 60 консоль не признает Unexpected token ) но она ведь тут нужна!
 /*можно ли в JQ использовать конструкцию if?
 в интернете есть такой пример, он верен? нужно ли её перекраивать под
  наш вариант
@@ -73,10 +73,11 @@ else
  */
 
 
-$(function() {
+$(function() { /*кстати этот ряд 76 нужен или можно без него?*/
 $('.again').click(function startAgain (){
 $(allCheckedCheckboxes).removeAttr('checked');
  $('.modalgood', '.modalbad').hide;
 });
-});/*на ряд 81 консоль возмущается Unexpected end of input, но по-моему});  здесь нужны
+});/*на ряд 81 консоль возмущается Unexpected end of input, но по-моему}); здесь нужны
 /*а даже если их убрать все равно ошибка.
+
