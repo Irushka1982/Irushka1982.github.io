@@ -1,5 +1,5 @@
 
-$(function content(){
+$(document).ready(function content(){
 
 	var html = $('#blok').html();
 	
@@ -32,7 +32,9 @@ $('body').append(vstavka);
 });
 
 
-function check(){
+
+
+$('#button').click(function check(){
 var count
 var rightAnswer = ['id-europe2', 'id-africa3', 'id-asia3' ];
 
@@ -46,34 +48,35 @@ if (rightAnswers.indexOf(currentID) + 1) {
    count++}
     })
 });
+  showMessage(count); });
+		
 
-    showMessage(count); //это мы тут обозначаем что должна показываться функцию showMessage?
-}
-
-
-function showMessage(count){  
+$(function showMessage(count){  
       if (count < 3){
-           document.getElementById(".modal-bad").style.display = "block";
+          $('.modalgood').show();
        }
-           if(count == 3) {
-           document.getElementById(".modal-good").style.display = "block";
-      }
-  }
+      if(count === 3) {
+          $('.modalbad').show();
+  });
+/*можно ли в JQ использовать конструкцию if?
+в интернете есть такой пример, он верен? нужно ли её перекраивать под
+ наш вариант
+не очень представляю как
+if( $('#add').size() > 0 )
+{
+// усл
+}
+else
+{
+// усл
+}
+ */
 
 
-var knopka = document.getElementById('#button');
-knopka.addEventListener('click', check);
-
-
-var againbutton = document.getElementById('.again');
-againbutton.addEventListener('click', startAgain);
-
-
-function startAgain(){  
-     againbutton.removeEventListener('click', showMessage);//сначала думала при клике закрыть лишь модальное окно//
-     againbutton.removeEventListener('click', check);//потом решила что надо бы ещё все все чекнутые чекбоксы обнулить//
-  //но должно существовать одно общее обнуление всей страницы, всех функций?
-$(allCheckedCheckboxes).removeAttr('checked');//или таким способом..
-//ВОПРОС: какую технику избрать и что прописать?
-  }
-
+$(function() {
+$('.again').click(function startAgain (){
+$(allCheckedCheckboxes).removeAttr('checked');
+ $('.modalgood', '.modalbad').hide;
+});
+});/*на ряд 81 консоль возмущается Unexpected end of input, но по-моему});  здесь нужны
+/*а даже если их убрать все равно ошибка.
