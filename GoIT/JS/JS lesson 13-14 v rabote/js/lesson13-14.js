@@ -58,7 +58,7 @@ function showMessage(count){
       if(count === 3) {
           $('.modalgood').show();
   }
-
+}
 
 $('.again').click(function startAgain (){
 $(allCheckedCheckboxes).removeAttr('checked');
