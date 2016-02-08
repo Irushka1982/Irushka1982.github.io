@@ -23,8 +23,7 @@ $(document).ready(function content(){
 	}
 
 	];
-console.log(count);
-console.log(showMessage);
+
 var vstavka = tmpl(html, {
 		data: about
 	});
@@ -32,25 +31,24 @@ var vstavka = tmpl(html, {
 $('body').append(vstavka);
 });
 
-console.log(count);
+
 $('#button').click(function check(){
 
 var rightAnswer = ['#ideurope2', '#idafrica3', '#idasia3' ];
-console.log(count);
+
 $(document).on('click', '#button', function() {
  var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 
  $(allCheckedCheckboxes).each(function(i, el) {
    var currentId = $(el).attr("id"),
    count = 0;
-if (rightAnswers.indexOf(currentID) + 1) {
+if (rightAnswer.indexOf(currentId) + 1) {
    count++}
-    })
+    });
 });
 
-  showMessage(count); });
-console.log(showMessage);
-console.log(count);
+  showMessage(); });
+
 function showMessage(count){  
       if (count < 3){
           $('.modalbad').show();
@@ -58,14 +56,11 @@ function showMessage(count){
       if(count === 3) {
           $('.modalgood').show();
   }
-  console.log(count);
-  console.log(showMessage);
+ 
 }
 
 $('.again').click(function startAgain (){
 $(allCheckedCheckboxes).removeAttr('checked');
  $('.modalgood', '.modalbad').hide();
-console.log(count);
+
 });
-console.log(count);
-console.log(showMessage);
