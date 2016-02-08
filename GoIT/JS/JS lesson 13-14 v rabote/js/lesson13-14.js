@@ -35,7 +35,7 @@ $('body').append(vstavka);
 $('#button').click(function check(){
 
 var rightAnswer = ['#ideurope2', '#idafrica3', '#idasia3' ];
-var count
+
 $(document).on('click', '#button', function() {
  var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 
@@ -48,7 +48,7 @@ if (rightAnswers.indexOf(currentID) + 1) {
 });
 
   showMessage(count); });
-	
+
 
 function showMessage(count){  
       if (count < 3){
@@ -62,5 +62,5 @@ function showMessage(count){
 $('.again').click(function startAgain (){
 $(allCheckedCheckboxes).removeAttr('checked');
  $('.modalgood', '.modalbad').hide();
-console.log(count);
+
 });
