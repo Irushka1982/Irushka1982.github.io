@@ -19,7 +19,7 @@
        <% var answersArray = data[i].answer; %>
       <% for (var key in answersArray) { %>
         <div>   <%  var answer = answersArray[key]; %>
-           <%  var id = 'id' + '-' + key; %>
+           <%  var id = 'id' + key; %>
          <input type="checkbox" id = <%= id%>>
           <label for=  <%= id %>> <%= answer %></label> </div>
         <% } %> 

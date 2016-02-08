@@ -32,12 +32,11 @@ $('body').append(vstavka);
 });
 
 
-
 $('#button').click(function check(){
-var count
-var rightAnswer = ['id-europe2', 'id-africa3', 'id-asia3' ];
 
-$(document).on('click', 'button', function() {
+var rightAnswer = ['#ideurope2', '#idafrica3', '#idasia3' ];
+var count
+$(document).on('click', '#button', function() {
  var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 
  $(allCheckedCheckboxes).each(function(i, el) {
@@ -47,9 +46,9 @@ if (rightAnswers.indexOf(currentID) + 1) {
    count++}
     })
 });
+
   showMessage(count); });
 	
-
 
 function showMessage(count){  
       if (count < 3){
@@ -63,6 +62,5 @@ function showMessage(count){
 $('.again').click(function startAgain (){
 $(allCheckedCheckboxes).removeAttr('checked');
  $('.modalgood', '.modalbad').hide();
-
+console.log(count);
 });
-
