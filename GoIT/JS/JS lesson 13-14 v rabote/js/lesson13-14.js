@@ -1,4 +1,4 @@
-
+debugger
 $(document).ready(function content(){
 
 	var html = $('#blok').html();
@@ -34,7 +34,7 @@ $('body').append(vstavka);
 
 $('#button').click(function check(){
 
-var rightAnswer = ['#ideurope2', '#idafrica3', '#idasia3' ];
+var rightAnswer = ['europe2', 'africa3', 'asia3' ]; // или тут верно ['#ideurope2', '#idafrica3', '#idasia3'в чем сомневаюсь сильно ]? d xtv jxt
 
 $(document).on('click', '#button', function() {
  var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
