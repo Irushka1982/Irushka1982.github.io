@@ -33,23 +33,24 @@ $(document).ready(function content(){
 
 
 
-		$('#button').click(function check(){
+		
 		
 			var rightAnswer = ['#ideurope2', '#idafrica3', '#idasia3'];
 
-			$(document).on('click', '#button', function() {
-				
+			$(document).on('click', '#button', function check() {
+				var count = 0;
 				var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 				 $(allCheckedCheckboxes).each(function(i, el) {
-					  var currentId = $(el).attr("id"),
-					   count = 0;
+					  var currentId = $(el).attr("id")
+					  
 					if (rightAnswer.indexOf(currentId) + 1) {
 						   count++}
 					});
-				});
+		
+			showMessage(count); 
+					});
 
-			showMessage(); 
-		});
+		
 
 
 
@@ -64,7 +65,7 @@ $(document).ready(function content(){
 			}
 
 		$('.again').click(function startAgain (){
-			
+			var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 			$(allCheckedCheckboxes).removeAttr('checked');
 			$('.modalgood, .modalbad').hide();
 
