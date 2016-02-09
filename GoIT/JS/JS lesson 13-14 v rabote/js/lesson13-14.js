@@ -1,6 +1,6 @@
-debugger
-$(document).ready(function content(){
 
+$(document).ready(function content(){
+console.log('функция запустилась');	
 	var html = $('#blok').html();
 	
 	var about = [
@@ -16,7 +16,8 @@ $(document).ready(function content(){
 		"africa2": 'Тунис',
 		"africa3": 'Парагвай'}
 	},
-	{"question": "Какое из государств не находится в Азии?",
+
+{"question": "Какое из государств не находится в Азии?",
 		"answer":{"asia1": 'Таиланд',
 		"asia2": 'Армения',
 		"asia3": 'Намибия'}
@@ -27,13 +28,14 @@ $(document).ready(function content(){
 var vstavka = tmpl(html, {
 		data: about
 	});
-
+console.log('функция запустилась');	
 $('body').append(vstavka);
 });
 
+console.log('функция запустилась');	
 
 $('#button').click(function check(){
-
+console.log('функция запустилась');	
 var rightAnswer = ['europe2', 'africa3', 'asia3' ]; // или тут верно ['#ideurope2', '#idafrica3', '#idasia3'в чем сомневаюсь сильно ]? d xtv jxt
 
 $(document).on('click', '#button', function() {
@@ -46,7 +48,7 @@ if (rightAnswer.indexOf(currentId) + 1) {
    count++}
     });
 });
-
+console.log('функция запустилась');	
   showMessage(); });
 
 function showMessage(count){  
@@ -56,11 +58,12 @@ function showMessage(count){
       if(count === 3) {
           $('.modalgood').show();
   }
- 
+ console.log('функция запустилась');	
 }
 
 $('.again').click(function startAgain (){
 $(allCheckedCheckboxes).removeAttr('checked');
  $('.modalgood', '.modalbad').hide();
-
+console.log('функция запустилась');	
 });
+console.log('функция запустилась');	
