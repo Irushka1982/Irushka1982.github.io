@@ -1,8 +1,10 @@
+'use strict';
+
 
 $(document).ready(function content(){
 
 	var html = $('#blok').html();
-					
+			
 		var about = [
 			 {
 				"question": "Какое из государств  не находится в Европе?",
@@ -32,7 +34,10 @@ $(document).ready(function content(){
 		$('body').append(vstavka);
 
 
-
+localStorage.setItem('ab', JSON.stringify(about));
+var test = localStorage.getItem('ab');
+test = JSON.parse(test);
+console.log(test);
 		
 		
 			var rightAnswer = ['#ideurope2', '#idafrica3', '#idasia3'];

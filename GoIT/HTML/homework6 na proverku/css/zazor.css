@@ -4,6 +4,7 @@ body {
 	margin: 0 43px;
 	font-family: Arial;
 }
+
 header {
 	overflow: hidden;
 	position: relative;
@@ -42,8 +43,6 @@ header {
 .telefon li {
 	width: 132px;
 }
-
-
 
 .forma {
 /*	background-color: green;*/
@@ -151,8 +150,6 @@ margin-top:1px;
 	margin-left: 140px;
 	display: block;
 	/*padding-top: 4px;*/
-	
-
 }
 .menu a {
 	text-decoration: none;
@@ -186,7 +183,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', end
 	padding-left:0px;
 	margin: 0px;
 	text-align: center;
-
 }
 .menu li {
 	width: 102px;
@@ -221,7 +217,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', end
 .tovar li {
 	color: white;
 	display: inline-block;
-
 }
 .tovar ul li span {
 	/*background-color: green;*/
@@ -238,8 +233,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', end
 	width:38px;
 	color:#0d5a8f;
 	padding-top: 3px;
-
-
 }
 .cyfrasumma{
 	width: 50px;
@@ -276,7 +269,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', end
 	width: 20%;
 	border: 1px solid black;
 	display: inline-block;
-	width: 267px;
+	width: 249px;
 	height: 135px;
 	border-radius: 15px;
 }	

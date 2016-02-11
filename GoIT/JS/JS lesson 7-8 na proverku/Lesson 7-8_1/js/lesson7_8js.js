@@ -27,28 +27,28 @@ var secondLi = $('<li/>',{
 	class: 't2',
 	text: 'Proin dolor'
 });
-$('ul').append(secondLi)
+$('ul').append(secondLi);
 
 
 var thirdLi = $('<li/>',{
 	class: 't3',
 	text: 'Aenean lacinia'
 });
-$('ul').append(thirdLi)
+$('ul').append(thirdLi);
 
 
 var firstDiv = $('<div/>',{
-	class: 't1',
-		})
+	class: 't1'
+		});
 $('#content').append(firstDiv);
 
 var secondDiv = $('<div/>',{
-	class: 't2',
+	class: 't2'
 	});
 $('#content').append(secondDiv);
 
 var thirdDiv = $('<div/>',{
-	class: 't3',
+	class: 't3'
 	});
 $('#content').append(thirdDiv);
 
@@ -68,13 +68,7 @@ var thirdP = $('<p/>',{
 $('div.t3').append(thirdP);
 
 
-
-
-
-var $ = jQuery.noConflict();
-
 $(document).ready(function() {
-
 
 $('ul.tabs li').click(function(){
 	var thisClass = this.className.slice(0,2);
@@ -86,11 +80,7 @@ $('ul.tabs li').click(function(){
 	$('div').addClass('tab-current');
 	$(this).addClass('tab-current');
 	
-	
-	
-	
 });
-
 
 });
 

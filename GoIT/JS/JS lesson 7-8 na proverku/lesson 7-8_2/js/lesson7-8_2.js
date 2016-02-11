@@ -1,15 +1,15 @@
 var content = $('<div/>', {
-    id:'content',
+    id:'content'
    });
 $('body').append(content);
 
 var form = $('<form/>', {
-    html:'<fieldset></fieldset>',
+    html:'<fieldset></fieldset>'
    });
 $('#content').append(form);
 
 var firstDiv = $('<div/>',{
-    class: 'first',
+    class: 'first'
 });
 $('fieldset').append(firstDiv);
 
@@ -21,19 +21,19 @@ $('.first').append(firstLabel);
 
 var firstInput = $('<input type="text">')
 .attr({id: 'firstname',
- name: 'firstname',
+ name: 'firstname'
  });
 $('.first').append(firstInput);
 
 var secondDiv = $ ('<div/>',{
-    class: 'second',
+    class: 'second'
 });
 $('fieldset').append(secondDiv);
 
 
 var secondLabel = $('<label/>',{
     for: 'lastname',
-text: 'Last name:',
+text: 'Last name:'
 });
 $('.second').append(secondLabel);
 
@@ -41,21 +41,21 @@ $('.second').append(secondLabel);
 var secondInput = $('<input/>',{
     type: 'text',
 id: 'lastname',
- name: 'lastname',
+ name: 'lastname'
   });
 $('.second').append(secondInput);
 
 
 
 var thirdDiv = $ ('<div/>',{
-    class: 'third',
+    class: 'third'
 });
 $('fieldset').append(thirdDiv);
 
 
 var thirdLabel = $('<label/>',{
     for: 'address',
-text: 'Address:',
+text: 'Address:'
 });
 $('.third').append(thirdLabel);
 
@@ -63,52 +63,59 @@ $('.third').append(thirdLabel);
 var thirdInput = $('<input/>',{
     type: 'text',
 id: 'address',
- name: 'address',
+ name: 'address'
       });
 $('.third').append(thirdInput);
 
 var firstTooltip = $('<p/>',{
     class: 'firsttooltip',
-    text: 'Please provide your firstname.',
+    text: 'Please provide your firstname.'
 });
 $('.first').append(firstTooltip);
 
 var secondTooltip = $('<p/>',{
     class: 'secondtooltip',
-    text: 'Please provide also your lastname.',
+    text: 'Please provide also your lastname.'
 });
 $('.second').append(secondTooltip);
 
 var thirdTooltip = $('<p/>',{
     class: 'thirdtooltip',
-    text: 'Your home or work address.',
+    text: 'Your home or work address.'
 });
 $('.third').append(thirdTooltip);
 
 var mybutton = $('<button/>',{
- text: 'Show help',
-click: (function() {
-$('p').animate ({opacity:1})
-})
-}).appendTo('#content');
+  class: 'mybut',
+ text: 'Show help'
+});
+$('#content').append(mybutton);
+
+$('.mybut').click(function(){
+     $('p').animate ({opacity:1});
+      });
+
+
+
+
 
 $('#firstname').mouseover(function() {
- $('.firsttooltip').animate ({opacity:1})
+ $('.firsttooltip').animate ({opacity:1});
 });
 $('#firstname').mouseleave(function() {
- $('.firsttooltip').animate ({opacity:0})
+ $('.firsttooltip').animate ({opacity:0});
 });
 
 $('#lastname').mouseover(function() {
- $('.secondtooltip').animate ({opacity:1})
+ $('.secondtooltip').animate ({opacity:1});
 });
 $('#lastname').mouseleave(function() {
- $('.secondtooltip').animate ({opacity:0})
+ $('.secondtooltip').animate ({opacity:0});
 });
 
 $('#address').mouseover(function() {
- $('.thirdtooltip').animate ({opacity:1})
+ $('.thirdtooltip').animate ({opacity:1});
 });
 $('#address').mouseleave(function() {
- $('.thirdtooltip').animate ({opacity:0})
+ $('.thirdtooltip').animate ({opacity:0});
 });
