@@ -1,47 +1,52 @@
 
-var pole = document.getElementById('#poleotpravka');
-pole.addEventListener('click', //тут по логике должен быть наш запрос $.getJSON(key blablabla)
-    //но как на него тут сослаться? что конкретно прописать?);
-
-var enter = document.getElementById('#poletext');
-
-$enter.submit(function(e) {
-    //тут по логике должен быть наш запрос $.getJSON(key blablabla)
-    //но как на него тут сослаться? что конкретно прописать?
-});
+/*ВОПРОС: при клике должет отправляться запрос на сервер. как верно его вписать в функцию? просто перенести ряд 5-37 в середину функции?
+так не работает
+$('#poleotpravka').click(function (){});
+			*/
+$.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='+ 'dance' +'&callback=GoogleCallback&rsz=large&context=?');
 
 
-
-$.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='+ 'dance' +'&callback=GoogleCallback&rsz=large&context=?')
-
-
-function GoogleCallback (func, zapros) {
+function GoogleCallback (func, data) {
    
-    var div = document.createElement("div")
-    div.className = 'main';
+    var div = $('<div/>',{
+    	class: 'main'
+    });
+    $('body').html(div);
 
-    $.each(zapros.results, function(i, val){
+    $.each(data.results, function(i, val){
 		         
-var s = document.createElement("div");
-		s.className = 'result';
-		div.appendChild(s);
+		var s = $ ('<div/>',{
+			class: 'result'});
+		    $('.main').append(s);
+			
 
-		var b = document.createElement("a");
-		b.className = 'sylka';
-		b.innerHTML = '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+'</a>';                            
-		s.appendChild(b);
+		var b = $('<a/>',{
+			class: 'sylka',
+		html: '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+'</a>'
+		  });		                      
+		$('.result').append(b);
 		   
 
-		var f = document.createElement("p");
-		f.className = 'content';
-		f.innerHTML = '<span>'+val.content+'</span>'; 
-		s.appendChild(f);
-	});
+		var f = $('<p/>',{
+			class: 'content',
+	html: '<span>'+val.content+'</span>'
+		});
+		$('.result').append(f);
+	
+       });
 
-    $('body').html(div);
-    
-}
+};
+/* ВОПРОС: при создании элементов много раз дублируются class: 'sylka' и class: 'content' при вставке в .result.
+ В то время как в каждом из .result (а их 8 штук) должно быть лишь одна пара 'sylka' и class: 'content'. Как исправить? */
 
+
+
+/*
+над этим работаю
+$('#poletext').submit(function(e){
+			
+			});
+*/
 
 
 
