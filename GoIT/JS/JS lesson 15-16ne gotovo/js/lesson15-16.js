@@ -1,11 +1,10 @@
 
 $(document).ready(function(){
-$('#poleotpravka').click(function fhgh(){alert('proverka');
-	
-});
-});
+$('#poleotpravka').click(function otpravka(){
+$.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=PHP&callback=GoogleCallback&rsz=large&context=?');
 
-$.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q='+ 'dance' +'&callback=GoogleCallback&rsz=large&context=?');
+});
+});
 
 
 function GoogleCallback (func, data) {
