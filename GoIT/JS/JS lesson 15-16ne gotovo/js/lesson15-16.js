@@ -33,16 +33,9 @@ function GoogleCallback (func, data) {
 	html: '<span>'+val.content+'</span>'
 		});
 		$('.result').append(f);
-	
-       });
-
-
+	       });
 
 };
-
-
-
-
 
 
 $('#poletext').submit(function(e){
