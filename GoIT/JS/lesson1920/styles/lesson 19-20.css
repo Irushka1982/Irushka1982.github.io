@@ -2,13 +2,73 @@
   margin: 0;
   padding: 0; }
 
+.content1 {
+  overflow: hidden;
+  position: relative; }
+
+header {
+  overflow: hidden;
+  position: relative; }
+
+.logo {
+  float: left; }
+
 .logo__title {
-  color: grey; }
+  color: #2a2d32;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px; }
 
-h2 {
-  background: green; }
+.logo__subtitle {
+  font-family: "Ubuntu Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: #2a2d32; }
 
-h1 {
-  background: green; }
+.socialnetwork ul {
+  float: right; }
+.socialnetwork li {
+  height: 50px;
+  float: left;
+  list-style: none; }
+.socialnetwork a {
+  display: block; }
+
+nav {
+  position: relative;
+  height: 55px;
+  background-color: #2a2d32; }
+
+.menu {
+  float: left; }
+  .menu li {
+    display: inline-block;
+    list-style: none;
+    width: 126px;
+    border: 2px solid black; }
+  .menu a {
+    display: block;
+    background-color: #2a2d32;
+    color: white;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 51px;
+    cursor: pointer; }
+  .menu a:hover {
+    color: #f4b60d; }
+
+#forma {
+  float: right;
+  height: 40px;
+  width: 200px;
+  background-color: transparent;
+  border: 2px solid black; }
+
+.slider {
+  width: 1000px;
+  height: 40px; }
 
 /*# sourceMappingURL=lesson%2019-20.css.map */
