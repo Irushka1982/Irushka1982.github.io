@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAEX,YAAa;EACZ,KAAK,EARO,IAAI;;AAUjB,EAAG;EACF,UAAU,EAAC,KAAK;;AAGjB,EAAG;EAAC,UAAU,EAAC,KAAK",
+"sources": ["lesson%2019-20.scss"],
+"names": [],
+"file": "lesson%2019-20.css"
+}

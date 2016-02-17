@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 19-20</title>
+<link rel="stylesheet" href="styles/lesson 19-20.css">
+</head>
+<body>
+	<div class="wrapper1">
+		<div class="content1">
+			<header>
+				<div class="logo">
+					<h1 class="logo__title">Build Home</h1>
+					<h3 class="logo__subtitle">industrial theme</h3>
+				</div>			
+				<div class="socialnetwork">
+					<ul><!--здесь будет спрайт-->
+						<li class="socialnetwork__cell"><a href=""><img src="" alt="foto"></a></li>
+						<li class="socialnetwork__cell"><a href=""><img src="" alt="foto"></a></li>
+						<li class="socialnetwork__cell"><a href=""><img src="" alt="foto"></a></li>
+						<li class="socialnetwork__cell"><a href=""><img src="" alt="foto"></a></li>
+						<li class="socialnetwork__cell"><a href=""><img src="" alt="foto"></a></li>
+					</ul>
+				</div>
+			</header>
+			
+            <nav>
+				<ul class="menu">
+					<li class="menu__cell"><a href="#">home</a></li>
+					<li class="menu__cell"><a href="#">features</a></li>
+					<li class="menu__cell"><a href="#">services</a></li>
+					<li class="menu__cell"><a href="#">news</a></li>
+					<li class="menu__cell"><a href="#">shop</a></li>
+				</ul>
+			</nav>	
+			<form>
+				<input type="search" placeholder="Search..."> 
+			</form>
+			
+			<div class="slider"></div><!--здесь будет плагин слайдер-->
+			<article>
+				<div class="cont1block">
+					<div class="cont1block__number"><img src="image/01.png" alt=""></div>
+					<div class="cont1block__article">
+						<h3 class="cont1block__title--icon1">Power Inside</h3><!--
+						1)я приписываю модификатор icon1 icon2 icon3.(такой случай был в экзамене. Когда блоки идентичны, но у каждого разный спрайт мы писали каждому модификатор, ты так исправила мне).картинка у каждого блока разная -->
+
+						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p><!--олег на вебинаре сказал что такой синтаксис БЄМ верен. получается что в cont1block__article лежит cont1block__text и это норм, главное чтобы небыло cont1block__article__text. я удивилась, исправила. Ниже по верстке есть ещё такой случай-->
+						<a class="cont1block__read more"href="">Read More</a>
+					</div>
+				</div>
+				<div class="cont1block">
+					<div class="cont1block__number"><img src="image/02.png" alt=""></div>
+					<div class="cont1block__article">
+						<h3 class="cont1block__title--icon2">New Technologies</h3>
+						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+						<a class="cont1block__read more"href="">Read More</a>
+					</div>
+				</div>
+				<div class="cont1block">
+					<div class="cont1block__number"><img src="image/03.png" alt=""></div>
+					<div class="cont1block__article">
+						<h3 class="cont1block__title--icon1">Fast Support</h3>
+						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+						<a class="cont1block__read more"href="">Read More</a>
+					</div>
+				</div>
+			</article>
+
+		</div>
+	</div>
+	<div class="wrapper2">
+		<div class="content2">
+			
+			<div class="servis">Our Services</div>
+			<figure>
+				<div class="picture"><!--1)здесь 4 идентичных picture, модификаций нету.
+				2) При ховере на picture одновременно изменяет img (покрывается синим полупрозрачным) и span-подпись к рисунку(подсвечивается желтым). Как это лучше реализовать? может вложить img+span в ссылку? а потом при ховере на эту ссылку ещё синепрозрачный фон сделать? но тогда синепрозрачный фон будет и на текст наводится. -->
+					<img class="picture__foto"src="image/foto1.png" alt="">
+					<span class="picture__caption">Schedule Services</span>
+				</div>
+				<div class="picture">
+					<img class="picture__foto"src="image/foto2.png" alt="">
+					<span class="picture__caption">Preventive Maintence</span>
+				</div>
+				<div class="picture">
+					<img class="picture__foto"src="image/foto3.png" alt="">
+					<span class="picture__caption">Tire & Wheel Services</span>
+				</div>
+				<div class="picture">
+					<img class="picture__foto"src="image/foto4.png" alt="">
+					<span class="picture__caption">Repair Services</span>
+				</div>
+			</figure>
+
+		</div>
+	</div>
+	<div class="wrapper3">
+		<div class="content3">
+			<div class="cont3block1">
+				<h2 class="Latestnews">Latest News</h2>
+				<div class="news">
+					<img class="news__image--jan23" src="" alt="">
+					<h3 class="news__title">Advanced Machinery Helps Improve Quality</h3>
+					<span class="news__subtitle">by <a href="">cmsmasters</a>Comments (<a href="">6</a>)</span>
+					<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+				</div>
+				<div class="news">
+					<img class="news__image--jan21" src="" alt="">
+					<h3 class="news__title">Powerful Techniques for Advanced Service</h3>
+					<span class="news__subtitle">by <a href="">cmsmasters</a> Comments (<a href="">3</a>)</span>
+					<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+				</div>
+			</div>
+		<div class="cont3block2">
+			<h2 class="bannersplace">Banners Place</h2>
+				<div class="accordion">
+					<span class="accordion__title">Accordion Panel 1</span>
+					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p>
+				</div>
+				<div class="accordion">
+					<span class="accordion__title">Accordion Panel 2</span><!--этот и далее - модификаторы, так как перед accordion необходимо менять изображение минус на плюсик-->
+					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p></div>
+				<div class="accordion">
+					<span class="accordion__title">Accordion Panel 3</span>
+					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p></div>
+				<div class="accordion">
+					<span class="accordion__title">Accordion Panel 4</span>
+					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p></div>
+				</div>
+		</div>
+	</div>
+	<div class="wrapper4">
+		<div class="content4">
+				<ul class="menulogo">
+					<li class="menulogo__cell"><img src="image/rbplogo.png" alt=""></li>
+					<li class="menulogo__cell"><img src="image/motometallogo.png" alt=""></li>
+					<li class="menulogo__cell"><img src="image/2cravelogo.png" alt=""></li>
+					<li class="menulogo__cell"><img src="image/atxlogo.png" alt=""></li>
+					<li class="menulogo__cell"><img src="image/cruieser.png" alt=""></li>
+					<li class="menulogo__cell"><img src="image/gearlogo.png" alt=""></li>		
+				</ul>
+		</div>
+	</div>
+
+<div class="wrapper5">
+	<div class="content5">
+		<div class="about">
+		<!--1)все четыре блока about идентичны, потому им модификаций не присваиваю.
+			2) или лучше сделать весь блок about в менюшке. Т.е. и title тоже вписать в li-->
+			<div class="about__title">Socials</div>
+				<ul class="about__menu">
+					<li class="about__cell"><a href="#">Facebook</a></li>
+					<li class="about__cell"><a href="#">Flickr</a></li>
+					<li class="about__cell"><a href="#">Twitter</a></li>
+					<li class="about__cell"><a href="#">Vimeo</a></li>
+				
+				</ul>
+			</div>
+
+		<div class="about">
+			<div class="about__title">Links</div>
+			<ul class="about__menu">
+				<li class="about__cell"><a href="#">How to Write a Blog</a></li>
+				<li class="about__cell"><a href="#">Create a Blog in 4 Steps</a></li>
+				<li class="about__cell"><a href="#">15 Tips to Increase Traffic</a></li>
+				<li class="about__cell"><a href="#">20 Blog Post Ideas</a></li>
+			</ul>
+		</div>
+		<div class="about">
+			<div class="about__title">Blogroll</div>
+			<ul class="about__menu">
+				<li class="about__cell"><a href="#">Blogs Blog</a></li>
+				<li class="about__cell"><a href="#">Roll Up Roll Up</a></li>
+				<li class="about__cell"><a href="#">Blog Free</a></li>
+				<li class="about__cell"><a href="#">Wordpress Blog</a></li>
+			</ul>
+		</div>
+		<div class="about">
+			<div class="about__title">About us</div>
+			<ul class="about__menu">
+				<li class="about__cell"><a href="#">Agriculture</a></li>
+				<li class="about__cell"><a href="#">Harvest</a></li>
+				<li class="about__cell"><a href="#">Company news</a></li>
+				<li class="about__cell"><a href="#">Investor relations</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<div class="wrapper6">
+	<div class="content6">
+		<div class="address">BuildHomeLtd. Street Name 123 23 45 Cityname</div>
+		<div class="telephon">+123 900 123 456</div>
+		<div class="mail">info@buildhome.web</div>
+		<div class="copyright">© 2014 Build Home</div>
+
+	</div>
+</div>
+	
+	
+</body>
+</html>
