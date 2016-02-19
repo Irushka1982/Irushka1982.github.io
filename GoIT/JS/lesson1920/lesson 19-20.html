@@ -7,6 +7,13 @@
 <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="styles/owl.theme.css">
+<link rel="stylesheet" href="styles/owl.carousel.css">
+<link rel="stylesheet" href="styles/lesson 19-20.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/lesson19-20.js"></script>
 </head>
 <body>
 	<div class="wrapper1">
@@ -40,39 +47,56 @@
 				<input type="search" id="forma" placeholder="Search..."> 
 			</form>
 			</nav>	
-		</div>
+		
 		<div class="contentslider">
-			<div class="slider"></div><!--здесь будет плагин слайдер-->
+			<div class="slider">
+				
+
+
+    <div id="owl-demo" class="owl-carousel owl-theme">
+     
+      <div class="item"><img src="image/carusel1.png" alt="The Last of us"></div>
+      <div class="item"><img src="image/carusel2.png" alt="The Last of us"></div>
+      <div class="item"><img src="image/carusel3.png" alt="The Last of us"></div>
+      <div class="item"><img src="image/carusel4.png" alt="The Last of us"></div>
+       <div class="item"><img src="image/carusel5.png" alt="The Last of us"></div>
+       <div class="item"><img src="image/carusel6.png" alt="The Last of us"></div>
+         <div class="item"><img src="image/carusel7.png" alt="The Last of us"></div>
+
+    </div>
+
+
+			</div><!--здесь будет плагин слайдер-->
 			</div>
 			<article>
 				<div class="cont1block">
-					<div class="cont1block__number"><img src="image/01.png" alt=""></div>
+					<div class="cont1block__number"><img src="image/01.png" alt="01"></div>
 					<div class="cont1block__article">
 						<h3 class="cont1block__title--icon1">Power Inside</h3><!--
-						1)я приписываю модификатор icon1 icon2 icon3.(такой случай был в экзамене. Когда блоки идентичны, но у каждого разный спрайт мы писали каждому модификатор, ты так исправила мне).картинка у каждого блока разная -->
+						1)я приписываю модификатор icon1 icon2 icon3.(такой случай был в экзамене. Когда блоки идентичны, но у каждого разный спрайт мы писали каждому модификатор, ты так исправила мне) -->
 
-						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p><!--олег на вебинаре сказал что такой синтаксис БЄМ верен. получается что в cont1block__article лежит cont1block__text и это норм, главное чтобы небыло cont1block__article__text. я удивилась, исправила. Ниже по верстке есть ещё такой случай-->
-						<a class="cont1block__read more"href="">Read More</a>
+						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique. </p><!--олег на вебинаре сказал что такой синтаксис БЄМ верен. получается что в cont1block__article лежит cont1block__text и это норм, главное чтобы небыло cont1block__article__text. я удивилась, исправила. Ниже по верстке есть ещё такой случай-->
+						<a class="cont1block__readmore--srelka1"href="">Read More</a>
 					</div>
 				</div>
 				<div class="cont1block">
 					<div class="cont1block__number"><img src="image/02.png" alt=""></div>
 					<div class="cont1block__article">
 						<h3 class="cont1block__title--icon2">New Technologies</h3>
-						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
-						<a class="cont1block__read more"href="">Read More</a>
+						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique.</p>
+						<a class="cont1block__readmore--srelka2"href="">Read More</a>
 					</div>
 				</div>
 				<div class="cont1block">
 					<div class="cont1block__number"><img src="image/03.png" alt=""></div>
 					<div class="cont1block__article">
-						<h3 class="cont1block__title--icon1">Fast Support</h3>
-						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
-						<a class="cont1block__read more"href="">Read More</a>
+						<h3 class="cont1block__title--icon3">Fast Support</h3>
+						<p class="cont1block__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique.</p>
+						<a class="cont1block__readmore--srelka3"href="">Read More</a>
 					</div>
 				</div>
 			</article>
-
+</div>
 		</div>
 	</div>
 	<div class="wrapper2">
@@ -105,34 +129,44 @@
 		<div class="content3">
 			<div class="cont3block1">
 				<h2 class="Latestnews">Latest News</h2>
+				<div class="todaynews">
+					<img class="image-for-news__jan23" src="image/wrap2foto1.png" alt="">
 				<div class="news">
-					<img class="news__image--jan23" src="" alt="">
 					<h3 class="news__title">Advanced Machinery Helps Improve Quality</h3>
 					<span class="news__subtitle">by <a href="">cmsmasters</a>Comments (<a href="">6</a>)</span>
-					<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem.</p>
 				</div>
+				</div>
+				<div class="todaynews">
+					<img class="image-for-news__jan21" src="image/wrap2foto2.png" alt="">
 				<div class="news">
-					<img class="news__image--jan21" src="" alt="">
 					<h3 class="news__title">Powerful Techniques for Advanced Service</h3>
 					<span class="news__subtitle">by <a href="">cmsmasters</a> Comments (<a href="">3</a>)</span>
-					<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem .</p>
+				</div>
 				</div>
 			</div>
 		<div class="cont3block2">
 			<h2 class="bannersplace">Banners Place</h2>
 				<div class="accordion">
-					<span class="accordion__title">Accordion Panel 1</span>
-					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p>
+					<div class="accordion__title--1">
+					<span class="first">Accordion Panel 1</span></div>
+					<p class="accordion__text--1">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
 				</div>
 				<div class="accordion">
-					<span class="accordion__title">Accordion Panel 2</span><!--этот и далее - модификаторы, так как перед accordion необходимо менять изображение минус на плюсик-->
-					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p></div>
+					<div class="accordion__title--2">
+					<span class="second">Accordion Panel 2</span></div><!--этот и далее - модификаторы, так как перед accordion необходимо менять изображение минус на плюсик-->
+					<p class="accordion__text--2">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p>
+				</div>
 				<div class="accordion">
-					<span class="accordion__title">Accordion Panel 3</span>
-					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p></div>
+					
+					<div class="accordion__title--3"><span class="third">Accordion Panel 3</span></div>
+					<p class="accordion__text--3">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</p></div>
 				<div class="accordion">
-					<span class="accordion__title">Accordion Panel 4</span>
-					<p class="accordion__text">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p></div>
+						<div class="accordion__title--4">
+					<span class="fourth">Accordion Panel 4</span></div>
+					
+					<p class="accordion__text--4">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p></div>
 				</div>
 		</div>
 	</div>
