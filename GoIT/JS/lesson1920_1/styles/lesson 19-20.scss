@@ -24,17 +24,19 @@ header{
 }
 .logo {
 	float:left;
+	margin: 24px 0px 31px 50px;
+
 }
 .logo__title {
 	color: $light-grey;
 	font-family: $font-title;
-	font-size: 22px;
+	font-size: 30px;
 }
 .logo__subtitle{
 	font-family: $font-nav;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	font-size: 10px;
+	font-size: 11px;
 	color: $color-fongrey;
 }
 .socialnetwork{
@@ -58,6 +60,7 @@ nav {
 }
 .menu {
 		float:left;
+		margin-bottom: 37px;
 
 		ul{}
 		li{
@@ -87,7 +90,7 @@ nav {
 	background-color:rgba(0,0,0,0);
 	border:2px solid black;
 }
-
+.contentslider {margin-bottom: 83px}
 .slider {
 	width:1200px;
 	height:500px;
@@ -98,7 +101,9 @@ margin:auto;
 .cont1block{
 	display:inline-block;
 	height:250px;
-	width:360px;
+	width:380px;
+	padding-bottom:9px;
+
 
 }
 .cont1block__number{
@@ -109,12 +114,13 @@ margin:auto;
 .cont1block__article {
 	display:block;
 	float:left;
-	width:250px;
+	width:239px;
+padding-left:30px;
 
 }
 .cont1block__title--icon1 {
-	padding-top:20px;
-	padding-bottom:20px;
+	padding-top:44px;
+	padding-bottom:16px;
 }
 .cont1block__title--icon2 {
 	@extend .cont1block__title--icon1;
@@ -133,8 +139,9 @@ margin:auto;
     height: 40px;  
     width: 50px;
    left:97px; 
-   top:150px;   
-   background-position: 0px 0px;}
+   top:740px;   
+   background-position: 0px 0px;
+}
 
 .cont1block__title--icon2:before {
 	@extend .cont1block__title--icon1:before;
@@ -147,7 +154,7 @@ margin:auto;
 	 background: url(../image/settings.png)no-repeat;  
     left:824px; 
 }
-.cont1block__text{padding-bottom:20px;
+.cont1block__text{padding-bottom:0px;
 color:$light-grey;}
 
 .cont1block__readmore--srelka1:hover{
@@ -188,8 +195,9 @@ color:$light-grey;}
 
 .servis {
 	padding-top:50px;
-	font-size:20px;
+	font-size:25px;
 	color: $color-white;
+	margin-bottom:45px;
 }
 .picture {
 	display:block;
@@ -200,13 +208,13 @@ color:$light-grey;}
 }
 
 .picture__foto{
-	padding: 0px 10px 36px 0px;
+	padding: 0px 10px 25px 0px;
 }
 
 .picture__caption{
 	display:block;
 	padding-bottom:50px;
-	font-size:14px;
+	font-size:18px;
 	color: $color-white;
 }
 .picture__caption:hover{
@@ -219,23 +227,34 @@ color:$light-grey;}
 	background-color: #f7f7f7;
 }
 
-.cont3block1 {width:560px;
-float:left;}
-.todaynews {width:532px;}
+.cont3block1 {
+	width:530px;
+	float:left;
+	padding-right:0px;
+}
+
+
+.todaynews {
+	width:532px;
+}
 .Latestnews{
 	display:inline-block;
-padding:64px 0px 45px 0px;
-font-size:16px;
+	padding:64px 0px 45px 0px;
+	font-size:24px;
 }
-.image-for-news__jan23 {display: inline-block;
+.image-for-news__jan23 {
+	display: inline-block;
 	width:170px;
 }
 .image-for-news__jan21{
-display: inline-block;
+	display: inline-block;
 	width:170px;
 }
-.news {display:inline-block;
-width:340px;}
+.news {
+	display:inline-block;
+	width:340px;
+	padding-left:11px;
+}
 
 .news__text{color: $light-grey;}
 .news__title{color:$color-fongrey;}
@@ -250,7 +269,7 @@ width:340px;}
 .accordion__title--1{
 	background-color:$color-white;
 	display:block;
-	width:560px;
+	width:501px;
 	height:40px;
 	font-family:$font-title;
 	text-transform:uppercase;
@@ -263,7 +282,7 @@ width:340px;}
    background: url(../image/plus.png)no-repeat;  
     height: 13px;  
     width: 13px;
-   left:593px; 
+   left:580px; 
    top:131px;   
    background-position: 0px 0px;}
 .second:before{@extend .first:before;
@@ -290,7 +309,7 @@ width:340px;}
 .accordion__title--4:hover{background-color: $color-yellow;}
 
 .accordion__text--1{
-	width:515px;
+	width:500px;
 	padding:20px;
 	display:none;
 	color:$light-grey;
@@ -317,19 +336,20 @@ width:340px;}
 
 .content5 {
 	@extend .content1;
-	height:325px;
+	height:290px;
 	background-color: $color-fongrey;
-	padding:50px 0px;
+	padding:50px  0px 0px 0px;
 }
 .content6 {
 	@extend .content1;
 	height:60px;
 	background-color: #35383c;
+	padding:0px;
 }
 
 
 .about{
-	width:260px;
+	width:280px;
 	float:left;
 }
 
@@ -352,10 +372,10 @@ width:340px;}
 
 .address {
 	display:inline-block;
-padding-right:20px;
-color: $light-grey;
+	padding-right:20px;
+	color: $light-grey;
 }
-.telephon {@extend .address }
-.mail{@extend .address }
+.telephon {@extend .address; }
+.mail{@extend .address; }
 .copyright{@extend .address;
 float:right; }
