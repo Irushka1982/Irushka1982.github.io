@@ -16,6 +16,18 @@ header {
   float: left;
   margin: 24px 0px 31px 50px; }
 
+.logo:before {
+  content: " ";
+  float: left;
+  position: absolute;
+  overflow: hidden;
+  background: url(../image/params.png) no-repeat;
+  height: 40px;
+  width: 50px;
+  left: 0px;
+  top: 28px;
+  background-position: 0px 0px; }
+
 .logo__title {
   color: #9e9e9e;
   font-family: "Ubuntu", sans-serif;
@@ -28,14 +40,44 @@ header {
   font-size: 11px;
   color: #2a2d32; }
 
-.socialnetwork ul {
-  float: right; }
-.socialnetwork li {
-  height: 50px;
-  float: left;
-  list-style: none; }
-.socialnetwork a {
-  display: block; }
+.socialnetwork .twitter {
+  background-position: -32px 0px; }
+
+.socialnetwork .twitter:hover {
+  background-position: -32px -32px; }
+
+.socialnetwork .rss {
+  background-position: -64px 0px; }
+
+.socialnetwork .rss:hover {
+  background-position: -64px -32px; }
+
+.socialnetwork .linkedin {
+  background-position: -96px 0px; }
+
+.socialnetwork .linkedin:hover {
+  background-position: -96px -32px; }
+
+.socialnetwork .skype {
+  background-position: -128px 0px; }
+
+.socialnetwork .skype:hover {
+  background-position: -128px -32px; }
+
+.socialnetwork {
+  margin-top: 30px; }
+  .socialnetwork ul {
+    float: right; }
+  .socialnetwork li {
+    float: left;
+    list-style: none; }
+  .socialnetwork a {
+    display: block;
+    height: 30px;
+    width: 32px;
+    background: url(../image/spr.png) 0 0 no-repeat; }
+  .socialnetwork a:hover {
+    background-position: 0 -32px; }
 
 nav {
   position: relative;
@@ -76,12 +118,12 @@ nav {
 
 .slider {
   width: 1200px;
-  height: 500px;
+  height: 584px;
   margin: auto; }
 
 .cont1block {
   display: inline-block;
-  height: 250px;
+  height: 163px;
   width: 380px;
   padding-bottom: 9px; }
 
@@ -99,7 +141,7 @@ nav {
   padding-top: 44px;
   padding-bottom: 16px; }
 
-.cont1block__title--icon1:before, .cont1block__title--icon2:before, .cont1block__title--icon3:before, .cont1block__readmore--srelka1:after, .cont1block__readmore--srelka2:after, .cont1block__readmore--srelka3:after {
+.cont1block__title--icon1:before, .cont1block__title--icon2:before, .cont1block__title--icon3:before, .cont1block__readmore--srelka1:after, .cont1block__readmore--srelka2:after, .cont1block__readmore--srelka3:after, .address:before, .telephon:before, .mail:before, .copyright:before {
   content: " ";
   float: left;
   position: absolute;
@@ -108,7 +150,7 @@ nav {
   height: 40px;
   width: 50px;
   left: 97px;
-  top: 740px;
+  top: 738px;
   background-position: 0px 0px; }
 
 .cont1block__title--icon2:before {
@@ -173,12 +215,12 @@ nav {
   background-color: #f7f7f7; }
 
 .cont3block1, .cont3block2 {
-  width: 530px;
+  width: 600px;
   float: left;
   padding-right: 0px; }
 
 .todaynews {
-  width: 532px; }
+  width: 565px; }
 
 .Latestnews, .bannersplace {
   display: inline-block;
@@ -195,7 +237,7 @@ nav {
 
 .news {
   display: inline-block;
-  width: 340px;
+  width: 376px;
   padding-left: 11px; }
 
 .news__text {
@@ -206,6 +248,9 @@ nav {
 
 .news__subtitle {
   color: #9e9e9e; }
+
+.cont3block2 {
+  width: 500px; }
 
 .accordion__title--1, .accordion__title--2, .accordion__title--3, .accordion__title--4 {
   background-color: white;
@@ -298,7 +343,23 @@ nav {
 .address, .telephon, .mail, .copyright {
   display: inline-block;
   padding-right: 20px;
-  color: #9e9e9e; }
+  color: #9e9e9e;
+  padding-left: 20px; }
+
+.address:before, .telephon:before, .mail:before, .copyright:before {
+  height: 25px;
+  width: 25px;
+  left: 5px;
+  top: 2px;
+  background: url(../image/location.png) no-repeat; }
+
+.telephon:before {
+  left: 350px;
+  background: url(../image/phone.png) no-repeat; }
+
+.mail:before {
+  left: 519px;
+  background: url(../image/mail.png) no-repeat; }
 
 .copyright {
   float: right; }
