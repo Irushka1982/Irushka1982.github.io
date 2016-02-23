@@ -5,7 +5,7 @@ $('#poleotpravka').click(function otpravka(){
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
 }); 
 }); /*Вопрос 1) этот синтаксис из рядка 7 закрывает $(document).ready(function(){. Но необходимо, чтобы весь код был обернут в $(document).ready(function(){
-	Если перенести эти )}; в конец кода т.е. в ряд 51 тогда в консоли ошибка
+	Если перенести эти )}; в конец кода т.е. в ряд 43 тогда в консоли ошибка
 Но сли оставить текущий синтаксис запрос отправляется без ошибки (хотя и получает значение undefind , 
 	но об этой проблеме в другом вопросе вопросе.) Почему и как исправить?*/
 
@@ -49,9 +49,8 @@ function GoogleCallback (func, data) {/* при создании дом элем
 $('#poletext').submit(function(e){/* Вопрос 3. сюда нам надо внести function otpravka т.е. выполнение нашего запроса.}); 
  правильно ли я понимаю что именно сюда вписать и как это верно прописать?*/});
 
-//далее следует часть 2 ДЗ
+//далее следует часть 2 ДЗ. Она закомментирвоана чтобы не влияла при работе с аяксом
 
-/*
 var human = {
  name: 'Vasya',
  age: 25,
@@ -84,4 +83,4 @@ var newWorker = new worker();
 console.log('new', newWorker);
 
 var newStudent = new student();
-console.log('new', newStudent);*/
+console.log('new', newStudent);
