@@ -46,12 +46,12 @@ console.log(test);
 				var count = 0;
 				var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 				 $(allCheckedCheckboxes).each(function(i, el) {
-					  var currentId = $(el).attr("id")
+					  var currentId = $(el).attr("id");
 					  
 					if (rightAnswer.indexOf(currentId) + 1) {
 						   count++}
-					});
-		
+										});
+	
 			showMessage(count); 
 					});
 
@@ -67,6 +67,7 @@ console.log(test);
 		      if(count === 3) {
 		          $('.modalgood').show();
 		 		 }
+		 		
 			}
 
 		$('.again').click(function startAgain (){

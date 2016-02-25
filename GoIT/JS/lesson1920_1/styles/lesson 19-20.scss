@@ -257,10 +257,11 @@ color:$light-grey;}
 	height:300px;
 	text-align:center;
 }
+ img:hover {color: $color-blue;
 
-.picture__foto{
-	padding: 0px 10px 25px 0px;
-}
+ }
+ img:hover + span {
+		color: $color-yellow;}
 
 .picture__caption{
 	display:block;
@@ -268,9 +269,7 @@ color:$light-grey;}
 	font-size:18px;
 	color: $color-white;
 }
-.picture__caption:hover{
-	color:$color-yellow;
-}
+
 
 .content3 {
 	@extend .content1;
@@ -326,26 +325,28 @@ color:$light-grey;}
 	font-family:$font-title;
 	text-transform:uppercase;
 }
+
+
 .first:before{
 	content: " ";  
     float: left;  
-    position: absolute;  
+    position: relative;  
     overflow: hidden;
    background: url(../image/plus.png)no-repeat;  
     height: 13px;  
     width: 13px;
-   left:580px; 
-   top:131px;   
+   left:0px; 
+   top:0px;   
    background-position: 0px 0px;}
 .second:before{@extend .first:before;
-	   top:200px;
+
 
 }
 .third:before{@extend .first:before;
-	   top:250px;
+	
 }
 .fourth:before{@extend .first:before;
-	   top:300px;
+	
 }
 
 .accordion__title--2{@extend .accordion__title--1;}
@@ -363,8 +364,8 @@ color:$light-grey;}
 .accordion__text--1{
 	width:500px;
 	padding:20px;
-	display:none;
 	color:$light-grey;
+	display:none;
 }
 .accordion__text--2{@extend .accordion__text--1;}
 .accordion__text--3{@extend .accordion__text--1;}

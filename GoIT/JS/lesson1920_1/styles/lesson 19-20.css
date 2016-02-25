@@ -198,17 +198,17 @@ nav {
   height: 300px;
   text-align: center; }
 
-.picture__foto {
-  padding: 0px 10px 25px 0px; }
+img:hover {
+  color: #248cec; }
+
+img:hover + span {
+  color: #f4b60d; }
 
 .picture__caption {
   display: block;
   padding-bottom: 50px;
   font-size: 18px;
   color: white; }
-
-.picture__caption:hover {
-  color: #f4b60d; }
 
 .content3 {
   height: 540px;
@@ -263,23 +263,14 @@ nav {
 .first:before, .second:before, .third:before, .fourth:before {
   content: " ";
   float: left;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   background: url(../image/plus.png) no-repeat;
   height: 13px;
   width: 13px;
-  left: 580px;
-  top: 131px;
+  left: 0px;
+  top: 0px;
   background-position: 0px 0px; }
-
-.second:before {
-  top: 200px; }
-
-.third:before {
-  top: 250px; }
-
-.fourth:before {
-  top: 300px; }
 
 .accordion__title--1:hover, .accordion__title--2:hover, .accordion__title--3:hover, .accordion__title--4:hover {
   background-color: #f4b60d; }
@@ -296,8 +287,8 @@ nav {
 .accordion__text--1, .accordion__text--2, .accordion__text--3, .accordion__text--4 {
   width: 500px;
   padding: 20px;
-  display: none;
-  color: #9e9e9e; }
+  color: #9e9e9e;
+  display: none; }
 
 .content4 {
   height: 240px; }

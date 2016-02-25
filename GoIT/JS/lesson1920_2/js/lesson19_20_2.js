@@ -274,7 +274,7 @@ var users = [
   }
 ]
 
-/*Массив скиллов (поле skills) всех людей, не должно быть повторяющихся скиллов, так же они должны быть отсортированы по алфавиту;*/
+/*Часть 1. Массив скиллов (поле skills) всех людей, не должно быть повторяющихся скиллов, так же они должны быть отсортированы по алфавиту;*/
 var mapSkills = _.map(users, 'skills');
 console.log('mapSkills',mapSkills);
 
@@ -290,7 +290,7 @@ var sortAlfSkills = (uniqSkills);
 document.write(sortAlfSkills.sort());
 console.log('sortAlfSkills',sortAlfSkills);
 
-/*Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends); */
+/*Часть 2 Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends); */
 
 var mapName = _.map(users, 'name');
 console.log('mapName', mapName);
@@ -298,24 +298,24 @@ console.log('mapName', mapName);
 
 var flattenName = _.flatten(mapName);
 console.log('flattenName',flattenName);
-/*
 
-var sortName = _.sortBy(users, ['friends', '???']); как отсортировать по количеству?
-console.log('sortName',sortName);*/
 
-/*Массив всех друзей всех пользователей, не должно быть повторяющихся людей*/
+var sortName = _.sortBy(users, ['users', 'friends']);
+console.log('sortName',sortName); /*В консоли: массив объектов
+
+ЧАсть 3 Массив всех друзей всех пользователей, не должно быть повторяющихся людей*/
 
 var mapFriends = _.map(users, 'friends');
 console.log('mapFriends', mapFriends);
 
 
 var flattenFriends = _.flatten(mapFriends);
-console.log('flattenFriends',flattenFriends);
+console.log('flattenFriends',flattenFriends); /*В консоли: массив объектов
 
 
 var flattenira = _.flatten(flattenFriends);
 console.log('flattenira',flattenira);
-/*
+
 var uniqFriends= _.uniq(flattenFriends);
 console.log('uniqFriends',uniqFriends);
 */
