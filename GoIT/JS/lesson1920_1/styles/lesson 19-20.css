@@ -252,39 +252,19 @@ img:hover + span {
 .cont3block2 {
   width: 500px; }
 
-.accordion__title--1, .accordion__title--2, .accordion__title--3, .accordion__title--4 {
-  background-color: white;
+.accordion__title {
   display: block;
   width: 501px;
   height: 40px;
   font-family: "Ubuntu", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background: url(../image/plus.png) white no-repeat;
+  padding-left: 20px; }
 
-.first:before, .second:before, .third:before, .fourth:before {
-  content: " ";
-  float: left;
-  position: relative;
-  overflow: hidden;
-  background: url(../image/plus.png) no-repeat;
-  height: 13px;
-  width: 13px;
-  left: 0px;
-  top: 0px;
-  background-position: 0px 0px; }
+.active {
+  background: url(../image/minus.png) #f4b60d no-repeat; }
 
-.accordion__title--1:hover, .accordion__title--2:hover, .accordion__title--3:hover, .accordion__title--4:hover {
-  background-color: #f4b60d; }
-
-.accordion__title--2:hover {
-  background-color: #f4b60d; }
-
-.accordion__title--3:hover {
-  background-color: #f4b60d; }
-
-.accordion__title--4:hover {
-  background-color: #f4b60d; }
-
-.accordion__text--1, .accordion__text--2, .accordion__text--3, .accordion__text--4 {
+.accordion__text {
   width: 500px;
   padding: 20px;
   color: #9e9e9e;

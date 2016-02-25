@@ -317,59 +317,26 @@ color:$light-grey;}
 .bannersplace {
 	@extend .Latestnews
 }
-.accordion__title--1{
-	background-color:$color-white;
+.accordion__title{
 	display:block;
 	width:501px;
 	height:40px;
 	font-family:$font-title;
 	text-transform:uppercase;
+ background: url(../image/plus.png) $color-white no-repeat;
+ padding-left:20px;
 }
 
-
-.first:before{
-	content: " ";  
-    float: left;  
-    position: relative;  
-    overflow: hidden;
-   background: url(../image/plus.png)no-repeat;  
-    height: 13px;  
-    width: 13px;
-   left:0px; 
-   top:0px;   
-   background-position: 0px 0px;}
-.second:before{@extend .first:before;
-
-
-}
-.third:before{@extend .first:before;
-	
-}
-.fourth:before{@extend .first:before;
-	
+.active{
+	 background: url(../image/minus.png) $color-yellow no-repeat;
 }
 
-.accordion__title--2{@extend .accordion__title--1;}
-.accordion__title--3{@extend .accordion__title--1;}
-.accordion__title--4{@extend .accordion__title--1;}
-
-.accordion__title--1:hover {
-	background-color: $color-yellow;
-
-}
-.accordion__title--2:hover{background-color: $color-yellow;}
-.accordion__title--3:hover{background-color: $color-yellow;}
-.accordion__title--4:hover{background-color: $color-yellow;}
-
-.accordion__text--1{
+.accordion__text{
 	width:500px;
 	padding:20px;
 	color:$light-grey;
 	display:none;
 }
-.accordion__text--2{@extend .accordion__text--1;}
-.accordion__text--3{@extend .accordion__text--1;}
-.accordion__text--4{@extend .accordion__text--1;}
 
 .content4 {
 	@extend .content1;

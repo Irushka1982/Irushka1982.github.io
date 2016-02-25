@@ -40,7 +40,7 @@ test = JSON.parse(test);
 console.log(test);
 		
 		
-			var rightAnswer = ['#ideurope2', '#idafrica3', '#idasia3'];
+			var rightAnswer = ['ideurope2', 'idafrica3', 'idasia3'];
 
 			$(document).on('click', '#button', function check() {
 				var count = 0;
@@ -67,7 +67,7 @@ console.log(test);
 		      if(count === 3) {
 		          $('.modalgood').show();
 		 		 }
-		 		
+		 	
 			}
 
 		$('.again').click(function startAgain (){

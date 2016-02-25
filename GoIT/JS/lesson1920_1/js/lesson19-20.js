@@ -1,5 +1,20 @@
 
-$(document).ready(function() {
+
+  $(document).ready(function(){
+   $('.accordion').click(function(){
+$('.accordion').find('.accordion__title').removeClass('active');    
+$('.accordion').find('.accordion__text').hide();    
+
+$(this).find('.accordion__title').addClass('active');
+$(this).find('.accordion__text').show();
+
+
+  });
+
+});
+
+
+/*$(document).ready(function() {
      
      $('.accordion__title--1').mouseover(function(){  
       $('.accordion__text--1').show();
@@ -74,6 +89,8 @@ $(function(){
 });
 
 
+
+
     $(document).ready(function() {
      
       $("#owl-demo").owlCarousel({
@@ -94,3 +111,4 @@ $(function(){
      
     });
 
+*/

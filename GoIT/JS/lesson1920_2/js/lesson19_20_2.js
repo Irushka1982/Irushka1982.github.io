@@ -276,15 +276,15 @@ var users = [
 
 /*Часть 1. Массив скиллов (поле skills) всех людей, не должно быть повторяющихся скиллов, так же они должны быть отсортированы по алфавиту;*/
 var mapSkills = _.map(users, 'skills');
-console.log('mapSkills',mapSkills);
+
 
 
 var flattenSkills = _.flatten(mapSkills);
-console.log('flattenSkills',flattenSkills);
+
 
 
 var uniqSkills = _.uniq(flattenSkills);
-console.log('uniqSkills',uniqSkills);
+
 
 var sortAlfSkills = (uniqSkills);
 document.write(sortAlfSkills.sort());
@@ -292,18 +292,37 @@ console.log('sortAlfSkills',sortAlfSkills);
 
 /*Часть 2 Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends); */
 
-var mapName = _.map(users, 'name');
-console.log('mapName', mapName);
+
+var usersAndFriends = _.map(users, function(newObj) {
+  return {"name" : newObj.name, "friends" : newObj.friends.length};
+});
 
 
-var flattenName = _.flatten(mapName);
-console.log('flattenName',flattenName);
+var sortedNames = _.map(_.orderBy(usersAndFriends, ["friends", "name"], ['asc', "asc"]), "name");
+console.log('sortedNames',sortedNames);
+/*------*/
+
+var friendsObj = _.map(users, 'friends');
+friendsNamesObj = _.flatten(friendsObj);
+friendsNames = _.map(friendsNamesObj, 'name');
+friendsNamesSorted = _.sortBy(friendsNames);
+friendsNamesUniq = _.sortedUniq(friendsNames);
 
 
-var sortName = _.sortBy(users, ['users', 'friends']);
+
+console.log('friendsNamesUniq',friendsNamesUniq);
+
+
+
+
+
+
+
+
+/*var sortName = _.sortBy(users, ['users', 'friends']);
 console.log('sortName',sortName); /*В консоли: массив объектов
 
-ЧАсть 3 Массив всех друзей всех пользователей, не должно быть повторяющихся людей*/
+ЧАсть 3 Массив всех друзей всех пользователей, не должно быть повторяющихся людей
 
 var mapFriends = _.map(users, 'friends');
 console.log('mapFriends', mapFriends);
