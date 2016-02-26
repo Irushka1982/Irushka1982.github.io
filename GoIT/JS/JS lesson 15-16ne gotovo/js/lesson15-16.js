@@ -11,10 +11,8 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 
 
 
- var name = $('#poleotpravka').val();  /*Вопрос 2. В запрос аякс передаю значение из #poleotpravka, но оно не работает.
-  В то же время если передать просто  var name = 'проба' то запрос отрабатывает верно. Как исправить?*/
-
-function GoogleCallback (func, data) {/* при создании дом элементов елементы sylka и content в .result 
+ var name = $('.poletext').val();  
+ function GoogleCallback (func, data) {/* при создании дом элементов елементы sylka и content в .result 
 	вписывается не одна пара, а много. как исправить?*/ 
    
     var div = $('<div/>',{
@@ -45,12 +43,12 @@ function GoogleCallback (func, data) {/* при создании дом элем
 
 }
 
+/*
+$('#poletext').submit(function(e){ Вопрос 3. сюда нам надо внести function otpravka т.е. выполнение нашего запроса.}); 
+ правильно ли я понимаю что именно сюда вписать и как это верно прописать?});
 
-$('#poletext').submit(function(e){/* Вопрос 3. сюда нам надо внести function otpravka т.е. выполнение нашего запроса.}); 
- правильно ли я понимаю что именно сюда вписать и как это верно прописать?*/});
 
-//
-/*далее следует часть 2 ДЗ. Она закомментирвоана чтобы не влияла при работе на часть 1, с аяксом
+далее следует часть 2 ДЗ. Она закомментирвоана чтобы не влияла при работе на часть 1, с аяксом
 var human = {
  name: 'Vasya',
  age: 25,
@@ -86,4 +84,4 @@ console.log('new', newWorker); /*Вопрос4. в консоли: "worker is no
 
 
 var newStudent = new student();
-console.log('new', newStudent);
+console.log('new', newStudent);*/
