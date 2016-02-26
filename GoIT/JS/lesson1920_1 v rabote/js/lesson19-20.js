@@ -9,12 +9,12 @@ $(this).find('.accordion__title').addClass('active');
 $(this).find('.accordion__text').show();
   });
 
-});
 
 
 
 
-    $(document).ready(function() {
+
+    $(function() {
      
       $("#owl-demo").owlCarousel({
      
@@ -34,3 +34,4 @@ $(this).find('.accordion__text').show();
      
     });
 
+});
