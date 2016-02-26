@@ -3,13 +3,17 @@
 $(document).ready(function(){
 $('html').keydown(function(eventObject){ 
   if (eventObject.keyCode == 13) { 
- $('#poleotpravka').click(function otpravka(){
 	var name = $('.poletext').val();  
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
-});
   }
 });
- 
+
+
+
+$('#poleotpravka').click(function otpravka(){
+	var name = $('.poletext').val();  
+$.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
+}); 
 }); 
  
  function GoogleCallback (func, data) {
