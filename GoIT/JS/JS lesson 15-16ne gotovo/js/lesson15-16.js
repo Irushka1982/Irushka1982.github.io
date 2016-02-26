@@ -5,7 +5,7 @@ $(document).ready(function(){
 $('#poleotpravka').click(function otpravka(){
 	var name = $('.poletext').val();  
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
-
+}); 
 }); 
  
  function GoogleCallback (func, data) {
@@ -37,7 +37,6 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 	       });
 
 }
-}); 
 
 /*
 $('#poletext').submit(function(e){ Вопрос 3. сюда нам надо внести function otpravka т.е. выполнение нашего запроса.}); 
