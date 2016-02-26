@@ -1,20 +1,15 @@
 
 
 $(document).ready(function(){
+
 $('#poleotpravka').click(function otpravka(){
+	var name = $('.poletext').val();  
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
+
 }); 
-}); /*Вопрос 1) этот синтаксис из рядка 7 закрывает $(document).ready(function(){. Но необходимо, чтобы весь код был обернут в $(document).ready(function(){
-	Если перенести эти )}; в конец кода т.е. в ряд 48 тогда в консоли ошибка
-Но сли оставить текущий синтаксис запрос отправляется без ошибки (хотя и получает значение undefind , 
-	но об этой проблеме в другом вопросе вопросе.) Почему и как исправить?*/
+ 
+ function GoogleCallback (func, data) {
 
-
-
- var name = $('.poletext').val();  
- function GoogleCallback (func, data) {/* при создании дом элементов елементы sylka и content в .result 
-	вписывается не одна пара, а много. как исправить?*/ 
-   
     var div = $('<div/>',{
     	class: 'main'
     });
@@ -42,6 +37,7 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 	       });
 
 }
+}); 
 
 /*
 $('#poletext').submit(function(e){ Вопрос 3. сюда нам надо внести function otpravka т.е. выполнение нашего запроса.}); 
