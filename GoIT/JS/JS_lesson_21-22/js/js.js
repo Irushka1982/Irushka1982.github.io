@@ -14,3 +14,6 @@ return result;
 var resultat = pow(x, n);
 console.log ('Ваш результат = ', resultat);
 
+function min (x, n){}
+var z = Math.min(x, n);
+console.log(z);
