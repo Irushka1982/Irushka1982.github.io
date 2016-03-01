@@ -3,9 +3,7 @@
 $(document).ready(function(){
 $('html').keydown(function(eventObject){ 
   if (eventObject.keyCode == 13) { 
-
-$('main').empty();
-
+$('.main').empty();
 	var name = $('.poletext').val();  
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
   }
@@ -14,10 +12,7 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 
 
 $('#poleotpravka').click(function otpravka(){
-
-$('main').empty();
-
-
+$('.main').empty();
 	var name = $('.poletext').val();  
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
 }); 
@@ -32,7 +27,7 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 
     $.each(data.results, function(i, val){
 		         
-		var s = $ ('<div/>',{
+		var s = $('<div/>',{
 			class: 'result'});
 		    $('.main').append(s);
 			
@@ -50,7 +45,6 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 		});
 		$('.result').append(f);
 	       });
-
 
 
 }
