@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 $('html').keydown(function(eventObject){ 
   if (eventObject.keyCode == 13) { 
