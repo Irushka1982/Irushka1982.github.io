@@ -6,6 +6,7 @@ $(this).find('.accordion__title').addClass('active');
 $(this).find('.accordion__text').show();
   });
 
+
     $(function() {
            $("#owl-demo").owlCarousel({
      
