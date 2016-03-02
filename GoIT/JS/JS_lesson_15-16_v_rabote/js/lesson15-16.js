@@ -7,8 +7,6 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
   }
 });
 
-
-
 $('#poleotpravka').click(function otpravka(){
 $('.main').empty();
 	var name = $('.poletext').val();  
