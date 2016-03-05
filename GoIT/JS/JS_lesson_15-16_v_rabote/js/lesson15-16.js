@@ -8,40 +8,37 @@ $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAA
 });
 
 $('#poleotpravka').click(function otpravka(){
-$('.main').empty();
+$('.result').empty();
+console.log('dsfsf');
 	var name = $('.poletext').val();  
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
 }); 
 }); 
  
  function GoogleCallback (func, data) {
-
-    var div = $('<div/>',{
-    	class: 'main'
+if ($('.main').length === 0){
+	var div = $('<div/>',{
+    	class: 'main',
+    	html:'<div class="result"></div>'
     });
     $('body').append(div);
+}
 
-    $.each(data.results, function(i, val){
-		         
-		var s = $('<div/>',{
-			class: 'result'});
-		    $('.main').append(s);
-			
-
-		var b = $('<a/>',{
-			class: 'sylka',
+$.each(data.results, function(i, val){
+	        
+	var b = $('<a/>',{
+		class: 'sylka',
 		html: '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+'</a>'
-		  });		                      
-		$('.result').append(b);
+	});		                      
+	$('.result').append(b);
 		   
 
-		var f = $('<p/>',{
+	var f = $('<p/>',{
 			class: 'content',
-	html: '<span>'+val.content+'</span>'
-		});
+			html: '<span>'+val.content+'</span>'
+	});
 		$('.result').append(f);
 	       });
-
 
 }
 
