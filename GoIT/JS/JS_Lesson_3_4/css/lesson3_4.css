@@ -9,20 +9,22 @@ input[type=checkbox] {
 input[type=checkbox] + label:before {
     content: ' ';
     text-align: center;
-
     border: 1px solid black;
     width: 15px;
     height: 15px;
-    display: inline-block;
+    display: block;
+    float: left;
+    line-height:15px;
 }
 
 input[type=checkbox]:checked + label:before {
     content: '\2713';
-      text-align: center;
- 
+    text-align: center;
     width: 15px;
     height: 15px;
-    display: inline-block;
+    display: block;
+    border: 1px solid black;
+    line-height:15px;
 }
     input[type=submit]{
    	background-color: #cfe1f5;
