@@ -6,7 +6,6 @@ input[type=checkbox] {
    display: none;
 }
 
-
 input[type=checkbox] + label:before {
     content: ' ';
     text-align: center;
@@ -16,7 +15,6 @@ input[type=checkbox] + label:before {
     height: 15px;
     display: inline-block;
 }
-
 
 input[type=checkbox]:checked + label:before {
     content: '\2713';
