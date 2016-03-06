@@ -26,8 +26,7 @@ input[type=checkbox]:checked + label:before {
     height: 15px;
     display: inline-block;
 }
- 
-   input[type=submit]{
+    input[type=submit]{
    	background-color: #cfe1f5;
     width: 325px; 
     height: 55px; 
