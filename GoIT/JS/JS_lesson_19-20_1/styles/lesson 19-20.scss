@@ -7,7 +7,6 @@ $font-nav:  'Ubuntu Condensed', sans-serif;
 $font-title: 'Ubuntu', sans-serif;
 $font-article: 'Ubuntu', sans-serif;
 
-
 *{
 	margin: 0;
 	padding: 0;
@@ -25,8 +24,8 @@ header{
 .logo {
 	float:left;
 	margin: 24px 0px 31px 50px;
-
 }
+
 .logo:before {
 content: " ";  
     float: left;  
@@ -39,7 +38,6 @@ content: " ";
    top:28px;   
    background-position: 0px 0px;
 }
-
 
 .logo__title {
 	color: $light-grey;
@@ -68,8 +66,6 @@ content: " ";
 .socialnetwork .rss:hover{
 	background-position: -64px -32px;
 }
-
-
 .socialnetwork .linkedin{
 	background-position: -96px 0px;
 }
@@ -102,7 +98,6 @@ margin-top:30px;
 		}
 		a:hover{background-position: 0 -32px}
 }
-
 
 nav {
 	position:relative;
@@ -248,18 +243,27 @@ color:$light-grey;}
 	color: $color-white;
 	margin-bottom:45px;
 }
+.picture__hover {
+	width:280px;
+	height:256px;
+	display:none;
+		content:"";
+	position:absolute;
+	opacity:0.5;
+	background: url(../image/plushover.png) no-repeat $color-blue;
+
+}
 .picture {
 	display:block;
 	float:left;
 	width:290px;
 	height:300px;
 	text-align:center;
-}
- img:hover {background-color: $color-blue;
-  }
- img:hover + span {
-		color: $color-yellow;}
 
+}
+
+.picture:hover .picture__hover {display:block;}
+.picture:hover .picture__caption{color:$color-yellow;}
 .picture__caption{
 	display:block;
 	padding-bottom:50px;

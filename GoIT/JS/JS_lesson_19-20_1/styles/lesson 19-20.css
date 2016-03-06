@@ -191,6 +191,15 @@ nav {
   color: white;
   margin-bottom: 45px; }
 
+.picture__hover {
+  width: 280px;
+  height: 256px;
+  display: none;
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  background: url(../image/plushover.png) no-repeat #248cec; }
+
 .picture {
   display: block;
   float: left;
@@ -198,10 +207,10 @@ nav {
   height: 300px;
   text-align: center; }
 
-img:hover {
-  background-color: #248cec; }
+.picture:hover .picture__hover {
+  display: block; }
 
-img:hover + span {
+.picture:hover .picture__caption {
   color: #f4b60d; }
 
 .picture__caption {
