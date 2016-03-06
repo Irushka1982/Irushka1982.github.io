@@ -1,1 +1,0 @@
-console.log('this is first file for concatenation');;console.log('this is second file for concatenation');

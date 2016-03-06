@@ -1,0 +1,37 @@
+
+label{
+    display: block;
+}
+input[type=checkbox] {
+   display: none;
+}
+
+
+input[type=checkbox] + label:before {
+    content: ' ';
+    text-align: center;
+
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+
+input[type=checkbox]:checked + label:before {
+    content: '\2713';
+      text-align: center;
+ 
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+ 
+   input[type=submit]{
+   	background-color: #cfe1f5;
+    width: 325px; 
+    height: 55px; 
+    border: 1px solid black;
+    font-size: 16px;
+    margin: 20px 70px;
+}
