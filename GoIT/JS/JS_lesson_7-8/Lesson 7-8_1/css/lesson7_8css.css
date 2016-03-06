@@ -26,7 +26,7 @@ ul {
 
 
 
-.tabs li {
+.tabs li{
 	display:inline-block;
 	text-decoration: none;
 	width: 140px;
@@ -40,14 +40,14 @@ ul {
 li:hover {
 	background-color: #ec8b36;
 }
-p {
+p{
 	width:540px;
 	padding: 5px 10px;
 }
 
 
- div {}
-div .t1 {}
+div {}
+div.t1 {}
 
 div.t2,div.t3 {display: none;}
 

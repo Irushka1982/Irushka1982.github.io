@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 var mydiv = $('<div/>', {
     id:     'wrapper'
    });
@@ -68,7 +68,11 @@ var thirdP = $('<p/>',{
 $('div.t3').append(thirdP);
 
 
-$(document).ready(function() {
+
+$(function(){
+	$('.t1').show();
+	$('.t1').addClass('tab-current');
+});
 
 $('ul.tabs li').click(function(){
 	var thisClass = this.className.slice(0,2);
