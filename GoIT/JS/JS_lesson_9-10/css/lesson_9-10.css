@@ -1,0 +1,240 @@
+*{margin: 0px;
+padding: 0px;}
+.content {/*overflow: hidden;*/
+}
+
+.content-carusel{width: 866px;
+height: 572px;
+background-color: red;}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+ .jcarousel  ul{width: 10000em;
+    position: relative;
+    background-color: red;
+}
+
+ .jcarousel    li{
+      float: left;
+    }
+
+.wrap_jcarousel{
+  width: 600px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.jcarousel-prev {position: absolute;
+	top:200px;
+	left: -110px;
+	width: 60px;
+ 	height: 30px;
+ 	font-size: 30px;
+ 	display: block;
+ 	border:2px solid black;
+ 	padding: 5px 5px; 
+ 	text-align: center;
+ }
+
+ .jcarousel-next {
+ 	position: absolute;
+ 	top:200px;
+ 	right: -110px;
+ 	width: 60px;
+ 	height: 30px;
+ 	font-size: 30px;
+ 	display: block;
+ 	border:2px solid black;
+ 	padding: 5px 5px; 
+ 	text-align: center;
+ }
+
+
+
+  .jcarousel-pagination{
+    background-color: transparent;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+
+ .jcarousel-pagination  a{
+      text-decoration: none;
+      text-align: center;
+      line-height: 20px;
+      color: black;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border: 1px solid black;
+      border-radius: 26px;
+      padding: 1px;
+    }
+
+
+    /*label на Сss*/
+.content-label-na-css {width: 866px;
+height: 200px;
+overflow: hidden;}
+.content-label-na-css .check{
+  padding: 2px;
+background-color: #8ee1ff;
+}
+.content-label-na-css label{
+  line-height: 25px;
+}
+.content-label-na-css .checkbox-css {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.content-label-na-css .checkbox-css:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.content-label-na-css .checkbox-css:not(checked) + label {
+  position: relative; 
+  padding: 0 0 0 10px;
+}
+.content-label-na-css .checkbox-css:not(checked) + label:before {
+  content: ' ';
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/of.png);
+}
+
+.content-label-na-css .checkbox-css:checked + label:before {
+   content: '';
+  position: absolute;
+  top: 0px;
+  left:60px;
+  width: 18px;
+  height: 18px;
+   background: url(../img/on.png);
+}
+  /*JQ*/
+.labeljq {width: 900px;
+height: 200px;
+background-color: blue;
+clear: both;
+}
+
+ .labeljq .checkbox{
+  float:left;
+  clear:both;
+  margin: 6px;
+  }
+.labeljq .checka {margin: 5px;
+  background-color: #8ee1ff;}
+
+.labeljq label {
+  display:inline-block;
+  line-height:  31px;
+  font-size:    15px;
+  padding-left: 1px;
+  color:      black;
+  text-shadow:  1px 2px 4px rgba(255,255,255, 1);
+  font-family:  Arial, Helvetica, sans-serif;
+  }
+/*menu*/
+
+.content-menu {width: 900px;
+height: 500px;
+clear: both;}
+
+
+ .content-menu .menu{
+      height: 500px;
+    }
+ .content-menu  a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+}
+.content-menu   li:hover {color:red}
+.content-menu .menu li {
+  display: inline-block;
+  background-color: #e69a02;
+  width: 150px;
+
+
+}
+.content-menu .submenu{position: absolute;
+  top:1017px;
+  left: 1px;
+  z-index: 1;
+  display: none;
+
+}
+
+.content-menu .submenu .submenu-activ {/*background-color: #ffd520;*/}
+.content-menu .submenu li {
+  display: block;
+  width: 150px;
+border-bottom: 1px solid red;
+}
+.content-menu .sub2 .sub2-active{/*background-color:#e06b01;*/}
+.content-menu .sub2{position: absolute;
+  top:65px;
+  left: 150px;
+  z-index: 2
+}
+
+.content-menu .sub2 li {
+  display: block;
+  /*background-color: #e06b01;*/
+      }
+.content-menu .sub3 {
+  position: absolute;
+  top:66px;
+  left: 150px;
+  z-index: 3;
+}
+.content-menu .sub3 li {
+  display: block;
+  width: 150px;
+  /*background-color: #d03b06;*/
+}
+.content-menu .s {
+  width: 150px;
+  
+}
+.content-menu .s:after {
+  content: '';
+  position: absolute;
+  background: url(../img/triangle.png) no-repeat;
+  width: 10px;
+  height:10px;
+  top:13px;
+  left: 124px;
+}
+
+.content-menu .submenu-activ:after {
+  content: '';
+  position: absolute;
+  background: url(../img/triangleright.png) no-repeat;
+  width: 10px;
+  height:10px;
+  top:71px;
+  left: 124px;
+}
+.content-menu .sub2-active:after {
+  content: '';
+  position: absolute;
+  background: url(../img/triangleright.png) no-repeat;
+  width: 10px;
+  height:10px;
+  top:73px;
+  left: 124px;
+};
