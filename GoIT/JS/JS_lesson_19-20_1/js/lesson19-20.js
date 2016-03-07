@@ -1,8 +1,13 @@
+  
+
   $(document).ready(function(){
-      $('.accordion').click(function(){
-$('.accordion').find('.accordion__title').removeClass('active');    
+     
+
+
+$('.accordion').click(function(){
+$('.accordion').find('.accordion__title').removeClass('accordactive');    
 $('.accordion').find('.accordion__text').hide();    
-$(this).find('.accordion__title').addClass('active');
+$(this).find('.accordion__title').addClass('accordactive');
 $(this).find('.accordion__text').show();
   });
 
