@@ -67,8 +67,6 @@ var thirdP = $('<p/>',{
 });
 $('div.t3').append(thirdP);
 
-
-
 $(function(){
 	$('.t1').show();
 	$('.t1').addClass('tab-current');

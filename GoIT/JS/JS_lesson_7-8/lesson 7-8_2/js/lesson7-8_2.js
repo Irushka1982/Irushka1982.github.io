@@ -100,22 +100,22 @@ $('.mybut').click(function(){
 
 
 $('#firstname').mouseover(function() {
- $('.firsttooltip').animate ({opacity:1});
+ $('.firsttooltip').animate ({opacity:1},10);
 });
 $('#firstname').mouseleave(function() {
- $('.firsttooltip').animate ({opacity:0});
+ $('.firsttooltip').animate ({opacity:0},10);
 });
 
 $('#lastname').mouseover(function() {
- $('.secondtooltip').animate ({opacity:1});
+ $('.secondtooltip').animate ({opacity:1},10);
 });
 $('#lastname').mouseleave(function() {
- $('.secondtooltip').animate ({opacity:0});
+ $('.secondtooltip').animate ({opacity:0},10);
 });
 
 $('#address').mouseover(function() {
- $('.thirdtooltip').animate ({opacity:1});
+ $('.thirdtooltip').animate ({opacity:1},10);
 });
 $('#address').mouseleave(function() {
- $('.thirdtooltip').animate ({opacity:0});
+ $('.thirdtooltip').animate ({opacity:0},10);
 });
