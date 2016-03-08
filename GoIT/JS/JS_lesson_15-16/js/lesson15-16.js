@@ -1,7 +1,7 @@
 $(document).ready(function(){
 $('html').keydown(function(eventObject){ 
   if (eventObject.keyCode == 13) { 
-$('.main').empty();
+$('.result').empty();
 	var name = $('.poletext').val();  
 $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q=' + name + '&callback=GoogleCallback&rsz=large&context=?');
   }
@@ -42,44 +42,48 @@ $.each(data.results, function(i, val){
 
 }
 
+/*часть 2*/
 
-
-
-/*далее следует часть 2 ДЗ. Она закомментирвоана чтобы не влияла при работе на часть 1, с аяксом
-var human = {
- name: 'Vasya',
- age: 25,
- sex: 'men',
- weight: 65,
- height: 170
+function Human(){
+this.name = 'Vasya';
+this.age = 25;
+this.sex = 'men';
+this.weight = 65;
+this.height = 170
 };
 
+var newHuman = new Human();
 
- var worker = {
- company: 'editor',
- salary: 500,
- work: function(){
+console.log('Human', Human);
+console.log('newHuman',newHuman)
+
+
+ function Worker() {
+ this.company = 'editor';
+ this.salary = 500;
+ this.work = function(){
  	alert('I am frontend developer and i am cool');
  }
 };
-worker.__proto__ = human;
 
- var student = {
- education: 'editor',
- grant: 500,
- watchTVseries:function(){alert('I like horor movees');
+Worker.prototype = newHuman;
+var newWorker = new Worker();
+
+console.log('Worker', Worker);
+console.log('newWorker', newWorker)
+console.log('newWorker.age', newWorker.age);
+
+function Student() {
+this.education = 'editor';
+this.grant = 500;
+this.watchTVseries = function(){alert('I like horor movees');
 }
 };
 
-student.__proto__ = human;
+Student.prototype = newHuman;
+var newStudent = new Student();
 
+console.log('Student', Student)
+console.log('newStudent', newStudent);
+console.log('newStudent.sex', newStudent.sex)ж
 
-var newWorker = new worker();
-console.log('new', newWorker); */
-/*Вопрос4. в консоли: "worker is not a function". Разве чтобы создавать экземпляры классов необходимо чтобы класс был функцией?
-. но c помощью чего тогда переписать дочерние классы worker и student чтобы они были функциями?
-
-
-
-var newStudent = new student();
-console.log('new', newStudent);*/
