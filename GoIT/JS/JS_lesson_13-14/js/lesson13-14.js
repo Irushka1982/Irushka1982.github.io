@@ -1,6 +1,5 @@
 'use strict';
 
-
 $(document).ready(function content(){
 
 	var html = $('#blok').html();
@@ -39,9 +38,11 @@ var test = localStorage.getItem('ab');
 test = JSON.parse(test);
 /*console.log(test);*/
 		
-		
-			var rightAnswer = ['ideurope2', 'idafrica3', 'idasia3'];
-
+var rightAnswer = ['ideurope2', 'idafrica3', 'idasia3'];
+localStorage.setItem('answerright', JSON.stringify(rightAnswer));
+var testAnswerRight = localStorage.getItem('answerright');
+testAnswerRight = JSON.parse(testAnswerRight);
+/*console.log(testAnswerRight);*/
 			$(document).on('click', '#button', function check() {
 				var count = 0;
 				
@@ -55,22 +56,14 @@ test = JSON.parse(test);
 	
 			showMessage(count); 
 					});
-
-		
-
-
-
-
 		function showMessage(count){
 		      if (count < 3){
 		          $('.modalbad').show();
 		      	 }
 		      if(count === 3) {
 		          $('.modalgood').show();
-		 		 }
-		 	
+		 		 }	
 			}
-
 		$('.again').click(function startAgain (){
 			var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 			$(allCheckedCheckboxes).removeAttr('checked');
