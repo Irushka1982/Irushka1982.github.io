@@ -3,14 +3,18 @@
   $(document).ready(function(){
      
 
-
 $('.accordion').click(function(){
-$('.accordion').find('.accordion__title').removeClass('accordactive');    
-$('.accordion').find('.accordion__text').hide();    
-$(this).find('.accordion__title').addClass('accordactive');
-$(this).find('.accordion__text').show();
-  });
 
+$('.accordion').find('.accordion__title').removeClass('accordactive');    
+$('.accordion').find('.accordion__text').hide();  
+
+if (!$('.accordion__title').hasClass('accordactive'))  {
+$('.accordion__title').addClass('accordactive');
+$(this).find('.accordion__text').show();
+
+}
+
+ });
 
     $(function() {
            $("#owl-demo").owlCarousel({
