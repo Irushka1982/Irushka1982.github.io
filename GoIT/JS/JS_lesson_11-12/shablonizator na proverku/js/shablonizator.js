@@ -1,4 +1,40 @@
-var content = $('<div/>',{
+
+  $(document).ready(function(){
+
+$(function(){
+	var html = $('#blok').html();
+
+	var about = [
+	{
+		title: 'Мой контактный телефон',
+		content: '+38097222222',
+		more: '+38067222222'
+	},
+	{
+		title: 'Мой профиль в соцсетях',
+		content: 'vk.com',
+		more: 'facebook'
+	},
+	{
+		title: 'Мой фидбек',
+		content: 'Если нужно, могу играть на свадьбах',
+		more: 'Если нужно, могу построить вам забор'
+	}
+
+	];
+
+	var vstavka2	= tmpl(html, {
+		data: about
+	});
+
+
+	$('.content').append(vstavka2);
+});
+
+});
+
+
+/*var content = $('<div/>',{
 	class: 'content',
 });
 $('body').append(content);
@@ -37,11 +73,22 @@ $('.why').append(whyUl);
 
 
 
-
-
 $(function(){
 	var html = $('#napolnenie').html();
-	var napolnenieLi = [
+	
+	var vstavka	= tmpl(html, {
+		data: napolnenieLi
+	});
+
+
+
+	$('.whyUl').append(vstavka);
+});
+
+
+
+
+var napolnenieLi = [
 	{
 		text: 'Я красивый',
 		
@@ -57,59 +104,17 @@ $(function(){
 
 	{
 		text: 'Умею шить на машинке',
-		
+	
 	},
 	{
 		text: 'В детстве красиво рисовал бабочек',
 		
 	},
 	
-
 	];
 
-	var vstavka	= tmpl(html, {
-		data: napolnenieLi
-	});
 
+*/
 
-
-	$('.whyUl').append(vstavka);
-});
-
-
-
-
-
-
-
-
-$(function(){
-	var html = $('#blok').html();
-	var about = [
-	{
-		title: 'Мой контактный телефон',
-		content: '+38097222222',
-		more: '+38067222222'
-	},
-	{
-		title: 'Мой профиль в соцсетях',
-		content: 'vk.com',
-		more: 'facebook'
-	},
-	{
-		title: 'Мой фидбек',
-		content: 'Если нужно, могу играть на свадьбах',
-		more: 'Если нужно, могу построить вам забор'
-	}
-
-	];
-
-	var vstavka2	= tmpl(html, {
-		data: about
-	});
-
-
-	$('.content').append(vstavka2);
-});
 
 
