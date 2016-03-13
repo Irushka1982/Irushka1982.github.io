@@ -15,7 +15,7 @@ var name = prompt('Введите имя пользователя');
 }
 
 if (isPresentInTheList){
-     	alert(name + 'вы успешно вошли');
+     	alert(name + ',' + ' ' + 'вы успешно вошли');
  }else{
  alert( 'Ошибка' );
 }
