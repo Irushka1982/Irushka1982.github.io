@@ -1,4 +1,4 @@
-
+/*я пробую прописать єлементарній запрос, чтобы он работал и записывался в штмл*/
 $(document).ready(function(){
 
 	$('#poleotpravka').click(function otpravka(){
@@ -48,5 +48,12 @@ $.each(data.results, function(i, val){
 	  itemSelector: '.grid-item',
 	  columnWidth: 150
 	});
+
+
+
+     $(window).load(function() {
+         $('.featured').orbit();
+     });
+
 
 });
