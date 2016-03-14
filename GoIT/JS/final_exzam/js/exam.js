@@ -1,13 +1,11 @@
 
 $(document).ready(function(){
 
-
 $('.grid').masonry({
   // options...
   itemSelector: '.grid-item',
   columnWidth: 100
 });
-
 
 $('html').keydown(function(eventObject){ 
   if (eventObject.keyCode == 13) { 
