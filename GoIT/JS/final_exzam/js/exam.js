@@ -38,11 +38,6 @@ $.each(data.results, function(i, val){
 
 
 
-
-
-
-
-
 	$('.grid').masonry({
 	  // options...
 	  itemSelector: '.grid-item',
