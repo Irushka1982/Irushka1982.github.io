@@ -68,7 +68,7 @@ nav{
 
 
 .grid-item { width: 300px;
-  height: 120px; background-color:red; }
+  height: 120px; background-color:red; margin:5px}
 .grid-item--width2 { width: 300px;
   height: 120px;}
 
@@ -77,3 +77,19 @@ nav{
   width:310px;
 height:250px;
 }
+
+.partner{
+  display: block;
+width:210px;
+height:230px;
+background-color:blue;
+margin:auto;
+text-align:center;
+margin-bottom:2px;
+}
+
+.other-button{width:280px;
+height:40px;
+background-color:white;
+border:2px solid red;
+border-radius:50px;}

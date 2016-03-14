@@ -171,7 +171,7 @@ div.slider-nav span.left {
 /* BULLET NAV
    ================================================== */
 
-.orbit-bullets {
+/*.orbit-bullets {
     position: absolute;
     z-index: 1000;
     list-style: none;
@@ -202,4 +202,4 @@ div.slider-nav span.left {
 
 .orbit-bullets li.active.has-thumb {
     background-position: 0 0;
-    border-top: 2px solid #000; }
+    border-top: 2px solid #000; }*/
