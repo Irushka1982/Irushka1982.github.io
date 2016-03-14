@@ -40,7 +40,7 @@ $.each(data.results, function(i, val){
 		/*html: '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+'</a>'*/
 	});		                      
 	$('.result').append(b);
-		   
+	   
 /*
 	var f = $('<div/>',{
 			class: 'content',
@@ -48,7 +48,6 @@ $.each(data.results, function(i, val){
 	});
 		$('.result').append(f);*/
 	       });
-
 
 
 };
