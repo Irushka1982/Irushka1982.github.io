@@ -11,7 +11,7 @@ $('html').keydown(function(eventObject){
   if (eventObject.keyCode == 13) { 
 $('.result').empty();
 	/*var name = $('.poletext').val();  */
-$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l');
+$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l&callback=GoogleCallback&context=?');
   }
 });
 
@@ -19,7 +19,7 @@ $('#poleotpravka').click(function otpravka(){
 $('.result').empty();
 
 /*	var name = $('.poletext').val();  */
-$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l');
+$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l&callback=GoogleCallback&context=?');
 }); 
 }); 
 
