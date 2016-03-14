@@ -96,9 +96,6 @@ $('.mybut').click(function(){
       });
 
 
-
-
-
 $('#firstname').mouseover(function() {
  $('.firsttooltip').animate ({opacity:1},10);
 });
