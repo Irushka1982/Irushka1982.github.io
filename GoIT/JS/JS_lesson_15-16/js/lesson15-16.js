@@ -85,5 +85,5 @@ var newStudent = new Student();
 
 console.log('Student', Student)
 console.log('newStudent', newStudent);
-console.log('newStudent.sex', newStudent.sex)ж
+console.log('newStudent.sex', newStudent.sex);
 
