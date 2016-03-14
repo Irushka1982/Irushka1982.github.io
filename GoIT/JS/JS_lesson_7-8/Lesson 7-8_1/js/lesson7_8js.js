@@ -72,6 +72,10 @@ $(function(){
 	$('.t1').addClass('tab-current');
 });
 
+
+
+
+
 $('ul.tabs li').click(function(){
 	var thisClass = this.className.slice(0,2);
 	$('div.t1').hide();
