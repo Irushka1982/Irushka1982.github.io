@@ -3,7 +3,9 @@ $(document).ready(function(){
 
 	$('#poleotpravka').click(function otpravka(){
 $('.result').empty();
-$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', function(data){console.log(data);
+$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', 
+	function(data){
+	console.log(data);
  });
 	});
 
@@ -19,14 +21,14 @@ if ($('.main').length === 0){
 $.each(data.results, function(i, val){
 	        
 	var b = $('<div/>',{
-		class: 'sylka',
+		class: 'grid-item',
 		html: '<div>'+val+'</div>'
 	});		                      
 	$('.result').append(b);
 		   
 
 	var f = $('<div/>',{
-			class: 'content',
+			class: 'grid-item',
 			html: '<div>'+val+'</div>'
 	});
 		$('.result').append(f);
@@ -37,15 +39,14 @@ $.each(data.results, function(i, val){
 
 
 
-});
 
 
 
-/*
 
 	$('.grid').masonry({
 	  // options...
 	  itemSelector: '.grid-item',
-	  columnWidth: 100
+	  columnWidth: 150
 	});
-*/
+
+});
