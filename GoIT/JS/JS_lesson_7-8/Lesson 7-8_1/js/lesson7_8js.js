@@ -38,7 +38,7 @@ $('ul').append(thirdLi);
 
 
 var firstDiv = $('<div/>',{
-	class: 't1'
+	class: 't1 .tab-current'
 		});
 $('#content').append(firstDiv);
 
