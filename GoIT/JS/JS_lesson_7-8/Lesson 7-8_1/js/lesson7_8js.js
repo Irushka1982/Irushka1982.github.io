@@ -4,12 +4,10 @@ var mydiv = $('<div/>', {
    });
 $('body').append(mydiv);
 
-
 var content = $('<div/>', {
     id:     'content',
    });
 $('#wrapper').append(content);
-
 
 var ul = $ ('<ul/>',{
 	class: 'tabs'
