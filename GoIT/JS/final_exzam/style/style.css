@@ -1,8 +1,42 @@
+.content {
+  width: 950px; }
+
+header {
+  height: 700px; }
+
+#wrapper1 {
+  height: 510px; }
+
+#wrapper2 {
+  height: 480px; }
+
+#wrapper3 {
+  height: 1100px; }
+
+#wrapper4 {
+  height: 300px; }
+
+nav {
+  height: 200px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
 .grid-item {
-  width: 200px;
-  color: blue; }
+  width: 20px;
+  height: 20px;
+  background-color: red; }
 
 .grid-item--width2 {
-  width: 400px; }
+  width: 40px; }
+
+.foto {
+  width: 200px;
+  height: 200px; }
 
 /*# sourceMappingURL=style.css.map */

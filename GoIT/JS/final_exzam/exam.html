@@ -4,56 +4,58 @@
 	<meta charset="UTF-8">
 	<title>Exam</title>
 	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="style/style.scss">
-	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 	<script src="js/exam.js"></script>
 	<script src="js/masonry.pkgd.js"></script>
-	<script src="gruntfile.js"></script>
-
+	
 </head>
 <body>
-	<header>
-		<div class="logo"></div>
-		<div class="sign up"></div>
-		<hgroup>
-			<h1></h1>
+	<div class="content">
+		<header>
+				<div class="logo">URLAUBSGLÜCK</div>
+				<div class="sign up">
+					<input type="submit" value="Log in">
+					<input type="submit" value="Sign up">
+				</div>
+			<hgroup>
+				<h1>share your holiday dreams</h1>
+				<h2>And find the perfect partner to fullfill it</h2>
+				<input type="submit" id="find_partner" value="Find your holiday partner">
+			</hgroup>		
+		</header>
+		<section id="wrapper1">
+			<h2>How Urlaubsglück works</h2>
+			<div class="carusel1"></div>
+		</section>
+		<section  id="wrapper2">
+			<h2>Meet a partner for your best holiday</h2>
+			<div class="carusel2"></div>
+			<button></button>
+		</section>
+		<section  id="wrapper3">
 			<h2></h2>
-			<h3></h3>
-		</hgroup>		
-	</header>
-	<section>
-		<h2></h2>
-		<div class="carusel1"></div>
-	</section>
-	<section>
-		<h2></h2>
-		<div class="carusel2"></div>
-		<button></button>
-	</section>
-	
-	<section>
-		<h2></h2>
-		<div class="plitka">
-			
+			<div class="plitka">
 <div class="grid">
-  <div class="grid-item">...</div>
+  <div class="grid-item"></div>
   <div class="grid-item grid-item--width2">...</div>
   <div class="grid-item">...</div>
- 
+  <div class="grid-item">...</div>
+  <div class="grid-item">...</div>
+  <div class="grid-item">...</div>
+  ...
 </div>
 
-
-		</div>
-	</section>
-
-	<section>
-		<h2></h2>
-		<h3></h3>
-		<div class="search">
-			<button></button>
-		</div>
-	</section>
-	<nav></nav>
+		</section>
+		<section  id="wrapper4">
+			<h2>Discover holiday activity ideas</h2>
+			<h3>Hi! What are your holiday interests?</h3>
+			<div class="search">
+				<input type="text" class="poletext" placeholder="Enter your interests">
+				<input type="submit" id="poleotpravka"value="Search partners">
+			</div>
+		</section>
+		<nav></nav>
+	</div>
 	</body>
 </html>

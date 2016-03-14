@@ -1,13 +1,13 @@
 
 $(document).ready(function(){
 
- /*
-$('.grid').isotope({
-  // options
+
+$('.grid').masonry({
+  // options...
   itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+  columnWidth: 100
 });
-*/
+
 
 $('html').keydown(function(eventObject){ 
   if (eventObject.keyCode == 13) { 
@@ -31,7 +31,7 @@ $.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l');
 if ($('.main').length === 0){
 	var div = $('<div/>',{
     	class: 'main',
-    	/*html:'<div class="result"></div>'*/
+    	html:'<div class="result"></div>'
     });
     $('#wrapper4').append(div);
 }
