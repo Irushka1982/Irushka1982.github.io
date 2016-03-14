@@ -1,29 +1,13 @@
 
 $(document).ready(function(){
 
-$('.grid').masonry({
-  // options...
-  itemSelector: '.grid-item',
-  columnWidth: 100
-});
-
-$('html').keydown(function(eventObject){ 
-  if (eventObject.keyCode == 13) { 
+	$('#poleotpravka').click(function otpravka(){
 $('.result').empty();
-	/*var name = $('.poletext').val();  */
-$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l&callback=GoogleCallback&context=?');
-  }
-});
+$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', function(data){console.log(data);
+ });
+	});
 
-$('#poleotpravka').click(function otpravka(){
-$('.result').empty();
-
-/*	var name = $('.poletext').val();  */
-$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l&callback=GoogleCallback&context=?');
-}); 
-}); 
-
- function GoogleCallback (func, data) {
+ $(function (func, data) {
 if ($('.main').length === 0){
 	var div = $('<div/>',{
     	class: 'main',
@@ -31,22 +15,37 @@ if ($('.main').length === 0){
     });
     $('#wrapper4').append(div);
 }
+
 $.each(data.results, function(i, val){
-	       
+	        
 	var b = $('<div/>',{
-		class: 'foto',
-		/*html: '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+'</a>'*/
+		class: 'sylka',
+		html: '<div>'+val+'</div>'
 	});		                      
 	$('.result').append(b);
-	   
-/*
+		   
+
 	var f = $('<div/>',{
 			class: 'content',
-			html: '<span>'+val.content+'</span>'
+			html: '<div>'+val+'</div>'
 	});
-		$('.result').append(f);*/
+		$('.result').append(f);
 	       });
 
+});
 
-};
 
+
+
+});
+
+
+
+/*
+
+	$('.grid').masonry({
+	  // options...
+	  itemSelector: '.grid-item',
+	  columnWidth: 100
+	});
+*/
