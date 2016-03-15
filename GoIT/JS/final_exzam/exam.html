@@ -14,7 +14,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<!--<script type="text/template" id="foto-ayax">
+	<!--проба применить шаблонизатор резига, отказалась-
+	<script type="text/template" id="foto-ayax">
 	<% for (var i = 0; i < data.length; i++) { %>
 	<div class="grid-item">
 	<img><%= data[i].image %>
@@ -24,23 +25,23 @@
 
 
 	<section class="content">
-		<header>
-				<div class="logo">URLAUBSGLÜCK</div>
-				<div class="sign up">
-					<input type="submit" value="Log in">
-					<input type="submit" value="Sign up">
+		<header><div class="enter">
+					<input class="enter__log_in" type="submit" value="Log in">
+					<input class="enter__sign_up" type="submit" value="Sign up">
 				</div>
+				<div class="logo">URLAUBSGLÜCK</div>
+				
 			<hgroup>
-				<h1>share your holiday dreams</h1>
-				<h2>And find the perfect partner to fullfill it</h2>
-				<input type="submit" id="find_partner" value="Find your holiday partner">
+				<h1 class="title">share your holiday dreams</h1>
+				<h2 class="subtitle">And find the perfect partner to fullfill it</h2>
+				<input class="find_partner" type="submit"  value="Find your holiday partner">
 			</hgroup>		
 		</header>
 		<section id="wrapper1">
 			<h2>How Urlaubsglück works</h2>
 			<div class="carusel1">
 				<div class="featured">
-				     <img src="image/mobile/slider1M.png" alt="foto" />
+				     <img src="image/mobile/slider1M.png" alt="foto"/>
 				     <img src="image/mobile/slaider2M.png"  alt="foto" />
 				     <img src="image/mobile/slaider3M.png" alt="foto" />
 			    </div>
@@ -100,11 +101,14 @@
 			<h2>Discover holiday activity ideas</h2>
 			<h3>Hi! What are your holiday interests?</h3>
 			<div class="search">
-				<input type="text" class="poletext" placeholder="Enter your interests">
-				<input type="submit" id="poleotpravka"value="Search partners">
+				<input class="search__poletext" type="text"  placeholder="Enter your interests">
+				<input id="search__poleotpravka" type="submit"  value="Search partners">
 			</div>
 		</section>
-		<nav></nav>
+		<nav>
+			
+			
+		</nav>
 	</section>
 	</body>
 </html>

@@ -1,14 +1,16 @@
 
 
 				$(document).ready(function(){
-$('#poleotpravka').click(function otpravka(){
+$('#search__poleotpravka').click(function otpravka(){
 			/*$('.grid').empty();*/
 			$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', 
 				function(data){	console.log(data);
                       });
 	}); /* этот код возвращает значение Object {images: Array[5], status: "success", count: 5}*/
 		
-				/* вставка полученного запроса в штмл
+
+
+				/* -------вставка полученного запроса в штмл-----
 
 				 $(function (func, data) {
 					if ($('.plitka').length === 0){
@@ -16,7 +18,7 @@ $('#poleotpravka').click(function otpravka(){
 					    	class: 'plitka',
 					    	html:'<div class='grid'></div>'
 					    });
-					    $('#wrapper4').append(div);
+					    $('#wrapper3').append(div);
 					}
 
 						$.each(data.results, function(i, val){

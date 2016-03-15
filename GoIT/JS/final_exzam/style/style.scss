@@ -1,3 +1,7 @@
+$color-white:#ffffff;
+$color-pink:#ff4e50;
+$color-grey:#333333;
+
 *{margin:0;
   padding:0;
 }
@@ -32,6 +36,7 @@ background:url(../image/desktop/backgroundD.png)0 0 no-repeat;
 
 header{
 	height:540px;
+
 }
 @media(min-width:768px) {
 header {height:700px;
@@ -41,8 +46,30 @@ header {height:700px;
 header {height:670px;
 /*background-color: yellow;*/
 }}
+.logo{display:block;
+  width: 134px;
+margin:auto;
+}
+.enter{display:block;
+margin:auto;width:93px;
+}
+.enter__log_in{border:none;
+background:transparent;
+color:$color-white;}
+.enter__sign_up{border-radius:50px;
+border:2px solid $color-white;
+background:transparent;
+color:$color-white;}
 
-
+.logo{
+  color:$color-white;
+}
+.title{color:$color-white;}
+.subtitle{color:$color-white;}
+.find_partner{color:$color-white;
+border:transparent;
+border-radius:50px;
+background:$color-pink;}
 
 
 #wrapper1{
@@ -88,8 +115,9 @@ text-align:center;
 margin-bottom:2px;
 }
 
-.other-button{width:280px;
+#search__poleotpravka{width:280px;
 height:40px;
-background-color:white;
-border:2px solid red;
-border-radius:50px;}
+background-color:transparent;
+border:2px solid $color-pink;;
+border-radius:50px;
+color:$color-pink;}
