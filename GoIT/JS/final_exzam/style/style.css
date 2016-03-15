@@ -18,22 +18,22 @@ body {
 @media (min-width: 768px) {
   .content {
     width: 768px;
-    /*background-color: yellow;*/ } }
+    } }
 @media (min-width: 1440px) {
   .content {
     width: 1440px;
-    /*background-color: yellow;*/ } }
+ } }
 header {
   height: 540px; }
 
 @media (min-width: 768px) {
   header {
     height: 700px;
-    /*background-color: yellow;*/ } }
+   } }
 @media (min-width: 1440px) {
   header {
     height: 670px;
-    /*background-color: yellow;*/ } }
+  } }
 #wrapper1 {
   height: 820px; }
 
