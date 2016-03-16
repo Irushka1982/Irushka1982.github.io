@@ -16,7 +16,7 @@ var d = document.createElement('div');
 
 var timer = document.createElement('p');
 b.appendChild(timer);
-timer.innerHTML = '00:00:00:00';
+timer.innerHTML = '00:00:00:000';
 
 
 var start = document.createElement('p');
@@ -53,7 +53,7 @@ clear.addEventListener('click', stop);
 function stop(){
 
 clearInterval(id);
-timer.innerHTML = '00:00:00:00';
+timer.innerHTML = '00:00:00:000';
 start.innerHTML = 'Start';
 start.addEventListener('click', startTimer);
 milliseconds = 0;
