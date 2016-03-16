@@ -17,12 +17,10 @@ body {
 
 @media (min-width: 768px) {
   .content {
-    width: 768px;
-    /*background-color: yellow;*/ } }
+    width: 768px; } }
 @media (min-width: 1440px) {
   .content {
-    width: 1440px;
-    /*background-color: yellow;*/ } }
+    width: 1440px; } }
 header {
   height: 540px; }
 
@@ -31,8 +29,7 @@ header {
     height: 700px; } }
 @media (min-width: 1440px) {
   header {
-    height: 670px;
-    /*background-color: yellow;*/ } }
+    height: 670px; } }
 .enter {
   display: block;
   margin-bottom: 115px; }
@@ -153,7 +150,7 @@ header {
   .featured {
     display: inline-block; } }
 #wrapper2 {
-  height: 1120px;
+  height: 1091px;
   text-align: center; }
 
 .persons {
@@ -161,7 +158,8 @@ header {
 
 @media (min-width: 768px) {
   .persons {
-    width: 500px; } }
+    width: 500px;
+    margin: 0 0 0 32px; } }
 .partner {
   display: block;
   width: 215px;
@@ -193,11 +191,18 @@ header {
   height: 1000px; }
 
 #wrapper4 {
-  height: 234px; }
+  height: 234px;
+  border-bottom: 2px solid #ff4e50; }
 
+@media (min-width: 768px) {
+  #wrapper4 {
+    height: 259px; } }
 nav {
   height: 200px; }
 
+@media (min-width: 768px) {
+  nav {
+    padding: 37px 0 0 0; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -224,28 +229,48 @@ nav {
   font-weight: bold;
   font-size: 14px; }
 
+.discover, .discover2 {
+  margin-top: 0; }
+
+.discover2 {
+  margin: 0 0 9px 0; }
+
+@media (min-width: 768px) {
+  .discover2 {
+    margin: 0 0 29px 0; } }
 .interests {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 0 0 17px 20px; }
 
 @media (min-width: 768px) {
   .interests {
-    text-align: center; } }
+    text-align: center;
+    margin: 0 0 37px 0; } }
+.search {
+  text-align: center;
+  width: 310px;
+  margin: 0 0 0 18px; }
+
 @media (min-width: 768px) {
   .search {
-    text-align: center; } }
+    text-align: center;
+    margin: 0 0 0 5px;
+    width: 760px; } }
 .search__poletext {
   display: block;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 14px;
   width: 280px;
-  height: 37px; }
+  height: 37px;
+  margin: 0 0 11px 0; }
 
 @media (min-width: 768px) {
   .search__poletext {
-    display: inline-block; } }
+    display: inline-block;
+    width: 243px; } }
 #search__poleotpravka {
   width: 280px;
   height: 40px;
@@ -260,31 +285,38 @@ nav {
 
 @media (min-width: 768px) {
   #search__poleotpravka {
-    display: inline-block; } }
+    display: inline-block;
+    width: 163px; } }
 .logo-nav {
   color: #ff4e50;
   font-size: 16px;
-  margin-bottom: 19px; }
+  margin: 15px 0 11px 90px; }
 
 @media (min-width: 768px) {
   .logo-nav {
     display: block;
-    float: left; } }
+    float: left;
+    width: 200px;
+    margin: 0 0 0 40px; } }
 .menu {
-  width: 120px; }
+  width: 320px;
+  text-align: center;
+  margin: 0 0 0 0; }
 
 @media (min-width: 768px) {
   .menu {
     display: block;
     width: 120px;
-    text-align: none;
-    float: left; } }
+    text-align: left;
+    float: left;
+    margin: 0 0 0 25px; } }
 nav {
   margin: auto; }
   nav ul {
     margin-bottom: 12px; }
     nav ul li {
-      display: inline-block; }
+      display: inline-block;
+      width: 51px; }
       nav ul li a {
         text-decoration: none; }
 
@@ -296,28 +328,33 @@ nav {
       display: block;
       width: 100px; }
       nav ul li a {
-        display: block; } }
+        display: block;
+        line-height: 23px; } }
 .contacts {
-  margin: 0; }
+  margin: 0 0 0 0; }
 
 @media (min-width: 768px) {
   .contacts {
     display: inline-block;
-    width: 100px; } }
+    width: 100px;
+    margin: 0 0 11px 0; } }
+.Partnerstitle {
+  margin: 0 0 0 128px; }
+
 @media (min-width: 768px) {
   .Partnerstitle {
     display: block;
     float: left;
     height: 100px;
-    margin-top: 0; } }
+    margin: 0 122px 0 51px; } }
 .desighn_by {
-  margin: 32px 0 0 0;
+  margin: 32px 0 0 105px;
   display: block;
   float: left; }
 
 @media (min-width: 768px) {
   .desighn_by {
-    margin: 0px 0 0 0;
+    margin: 4px 0 0 0;
     display: inline-block; } }
 
 /*# sourceMappingURL=style.css.map */
