@@ -93,26 +93,34 @@ $('#content').append(mybutton);
 
 $('.mybut').click(function(){
      $('p').animate ({opacity:1});
-      });
+   });
 
 
-$('#firstname').mouseover(function() {
- $('.firsttooltip').animate ({opacity:1},10);
-});
-$('#firstname').mouseleave(function() {
- $('.firsttooltip').animate ({opacity:0},10);
-});
 
-$('#lastname').mouseover(function() {
- $('.secondtooltip').animate ({opacity:1},10);
-});
-$('#lastname').mouseleave(function() {
- $('.secondtooltip').animate ({opacity:0},10);
-});
+$( '#firstname' )
+  .mouseout(function() {
+   $('.firsttooltip').animate ({opacity:0},10);
+  })
+  .mouseover(function() {
+    $('.firsttooltip').animate ({opacity:1},10);
+  });
 
-$('#address').mouseover(function() {
- $('.thirdtooltip').animate ({opacity:1},10);
-});
-$('#address').mouseleave(function() {
- $('.thirdtooltip').animate ({opacity:0},10);
-});
+
+
+$( '#lastname')
+  .mouseout(function() {
+  $('.secondtooltip').animate ({opacity:0},10);
+  })
+  .mouseover(function() {
+    $('.secondtooltip').animate ({opacity:1},10);
+  });
+
+
+
+$( '#address')
+  .mouseout(function() {
+$('.thirdtooltip').animate ({opacity:0},10);
+  })
+  .mouseover(function() {
+    $('.thirdtooltip').animate ({opacity:1},10);
+  });

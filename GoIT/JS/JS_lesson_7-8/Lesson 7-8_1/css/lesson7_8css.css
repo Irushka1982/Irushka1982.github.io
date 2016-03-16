@@ -24,7 +24,7 @@ ul {
 
 .t1.tab-current {background-color: #f5c467;}
 
-
+.tabs li .t1.tab-current{display: block;}
 
 .tabs li{
 	display:inline-block;
