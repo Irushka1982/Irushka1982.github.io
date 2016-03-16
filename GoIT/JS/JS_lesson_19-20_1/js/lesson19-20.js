@@ -1,21 +1,20 @@
   
-
   $(document).ready(function(){
      
-
 $('.accordion').click(function(){
 
-$('.accordion').find('.accordion__title').removeClass('accordactive');    
-$('.accordion').find('.accordion__text').hide();  
-
-if (!$('.accordion__title').hasClass('accordactive'))  {
-$('.accordion__title').addClass('accordactive');
+if (!$(this).find('.accordion__title').hasClass('accordactive'))  {
+  $('.accordion .accordion__title').removeClass('accordactive');    
+$('.accordion .accordion__text').hide();  
+$(this).find('.accordion__title').addClass('accordactive');
 $(this).find('.accordion__text').show();
 
+} else {
+  $('.accordion .accordion__title').removeClass('accordactive');    
+$('.accordion .accordion__text').hide();  
 }
 
  });
-
     $(function() {
            $("#owl-demo").owlCarousel({
      
