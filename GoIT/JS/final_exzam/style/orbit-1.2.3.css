@@ -14,6 +14,13 @@
 	/*background: #000 url(../image/loading.gif) no-repeat center center;*/
 	overflow: hidden;
     margin: 10px; }
+
+
+@media(min-width:768px) {/*'это я прописала*/
+    .featured {display: inline-block;
+       }
+}
+
 .featured>img,  
 .featured>div,
 .featured>a { display: none; }
