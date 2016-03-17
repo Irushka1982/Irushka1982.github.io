@@ -2,7 +2,7 @@
 /*	1)	--разные пробы запроса--
 		$(document).ready(function(){
 $('#search__poleotpravka').click(function otpravka(){
-			jQuery.ajax({
+	jQuery.ajax({
     type: "POST",
     url:'http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l',
     data: ajax_data,
@@ -12,11 +12,11 @@ $('#search__poleotpravka').click(function otpravka(){
             jQuery("#body").append(html);
         }
     }
-});console.log(data)
+});
+console.log(data)
 		});
 });
 */
-
 
 
 
@@ -29,34 +29,17 @@ $(document).ready(function(){
     })
 });*/
 
-
-/* 3) такой код работает :
-$(document).ready(function(){                          
-    $('#search__poleotpravka').click(function(){   
- 		
-$.ajax({
-        url: 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m',
-        success: function(data){
-            console.log(data)
-        }
-    })
-	});*/	 //этот код возвращается значение Object {images: Array[7], status: "success", count: 7}*/
-
-
+/*3)  этот код в консоли отображается значение Object {images: Array[5], status: "success", count: 5}*/
 $(document).ready(function(){                          
     $('#search__poleotpravka').click(function(){    /*$('.grid').empty();*/
 		$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', 
 				function(data)
 				{console.log(data);
                       });
-	});  /*этот код в консоли отображается значение Object {images: Array[5], status: "success", count: 5}*/
-		
-
-
-				/* -------вставка полученного запроса в штмл/ Ошибка в консоли Cannot read property 'results' of undefined-----
+	}); 
+	/* -------вставка полученного запроса в штмл/ Ошибка в консоли Cannot read property 'results' of undefined-----
 				но запрос отрабатывает*/
-
-				 $(function (func, data) {
+			/*	$(function (func, data) {
 					if ($('.plitka').length === 0)
 
 					{
@@ -78,7 +61,29 @@ $(document).ready(function(){
 								   
 							       });
 
-					});
+					});*/
+/*----пробовала и так, плюс скрипт в штмл
+	(function(){
+    $.getJSON('http://api.pixplorer.co.uk/image?word=Sport+activity&amount=7&size=l', 
+  	  function (data) {
+  	  	$.each(data.foto, function(i,foto){
+          var template = $('#template').html();   
+          var vstavka = {
+          	foto: foto
+          };
+          var content = tmpl(template, {
+          	data: vstavka
+          });
+
+          $('.shablon').append(content);
+
+         
+        });
+  });
+
+});
+*/
+
 
 				 
 
@@ -92,10 +97,9 @@ $(document).ready(function(){
 				  itemSelector: '.grid-item',
 				  columnWidth: 150
 				});
-	}); 
 
-
-
+	
+});
 
 
 
