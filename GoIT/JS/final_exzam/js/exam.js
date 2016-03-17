@@ -1,45 +1,17 @@
 
-/*	1)	--разные пробы запроса--
-		$(document).ready(function(){
-$('#search__poleotpravka').click(function otpravka(){
-	jQuery.ajax({
-    type: "POST",
-    url:'http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l',
-    data: ajax_data,
-    cache: false,
-    success: function (html) {
-        if (html.length > 0) {
-            jQuery("#body").append(html);
-        }
-    }
-});
-console.log(data)
-		});
-});
-*/
-
-
-
-/*	2) --разные пробы запроса--
-$(document).ready(function(){                          
-    $('#search__poleotpravka').click(function(){                   
-        $.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', {}, function(json){  
-            $('#body').append(html);                           
-        });                
-    })
-});*/
-
-/*3)  этот код в консоли отображается значение Object {images: Array[5], status: "success", count: 5}*/
+ 
 $(document).ready(function(){                          
     $('#search__poleotpravka').click(function(){    /*$('.grid').empty();*/
 		$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', 
 				function(data)
-				{console.log(data);
+				{console.log(data); /*этот код в консоли отображается значение Object {images: Array[5], status: "success", count: 5}*/
                       });
 	}); 
-	/* -------вставка полученного запроса в штмл/ Ошибка в консоли Cannot read property 'results' of undefined-----
+	/* -------вставка полученного запроса в штмл по аналогии с 
+	домашкой 15-16.
+	 Ошибка в консоли Cannot read property 'results' of undefined-----
 				но запрос отрабатывает*/
-			/*	$(function (func, data) {
+				$(function (func, data) {
 					if ($('.plitka').length === 0)
 
 					{
@@ -61,9 +33,11 @@ $(document).ready(function(){
 								   
 							       });
 
-					});*/
-/*----пробовала и так, плюс скрипт в штмл
-	(function(){
+					});
+
+
+/*----пробовала и так, плюс скрипт в штмл/
+	 $('#search__poleotpravka').click(function(){
     $.getJSON('http://api.pixplorer.co.uk/image?word=Sport+activity&amount=7&size=l', 
   	  function (data) {
   	  	$.each(data.foto, function(i,foto){

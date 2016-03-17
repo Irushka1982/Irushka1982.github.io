@@ -16,12 +16,8 @@
     margin: 10px; }
 
 
-@media(min-width:768px) {/*'это я прописала*/
-    .featured {display: inline-block;
-       }
-}
 
-.featured>img,  
+.featured>img 
 .featured>div,
 .featured>a { display: none; }
 

@@ -21,10 +21,10 @@
   <!--<script type ="text/template" id = "template">
 	  <div class = "grid">
 		  <%for(var i in data){%>
-			  <div class = "grid-item">
-				  <img src="<%= data[i].imageurl %>" class="grid--image" alt="">
-             <p class="image--text"><%= data[i].word%></p>
-				</div>
+			  <div class="grid-item">
+				  <img src="<%= data[i].foto %>"
+				   class="grid--foto">
+          		</div>
 			<%}%>
 		</div>
 	</script>-->
@@ -46,21 +46,29 @@
 		<section id="wrapper1">
 			<h2 class="how-works">How Urlaubsglück works?</h2>
 			<div class="carusel1"> 
-				<div class="featured">
-					 <img src="image/mobile/slider1M.png" alt="foto"/>
-				     <img src="image/mobile/slaider2M.png"  alt="foto" />
-				     <img src="image/mobile/slaider3M.png" alt="foto" />
-			    </div>
-	            <div class="featured">
-				     <img src="image/mobile/slaider2M.png"  alt="foto" />
-				     <img src="image/mobile/slaider3M.png" alt="foto" />
-				      <img src="image/mobile/slider1M.png" alt="foto" />
-			    </div>
-	            <div class="featured">
-				      <img src="image/mobile/slaider3M.png" alt="foto" />
-				     <img src="image/mobile/slaider2M.png"  alt="foto" />
-				      <img src="image/mobile/slider1M.png" alt="foto" />
-			    </div>
+				<ul>
+					<li>
+						<div class="featured">
+							 <img src="image/desktop/slaider1D.png" alt="foto"/>
+						     <img src="image/desktop/slaider2D.png"  alt="foto" />
+						     <img src="image/desktop/slaider3D.png" alt="foto" />
+				   		 </div>
+				   	</li>
+				    <li>
+			        	<div class="featured">
+						     <img src="image/desktop/slaider2D.png"  alt="foto" />
+						     <img src="image/desktop/slaider3D.png" alt="foto" />
+						      <img src="image/desktop/slaider1D.png" alt="foto" />
+					    </div>
+					</li>
+					<!--<li>
+			            <div class="featured">
+						      <img src="image/mobile/slaider3M.png" alt="foto" />
+						     <img src="image/mobile/slaider2M.png"  alt="foto" />
+						      <img src="image/mobile/slider1M.png" alt="foto" />
+					    </div>
+					</li>-->
+				</ul>
 			</div>
 		</section>
 		<section  id="wrapper2">
