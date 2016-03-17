@@ -1,5 +1,4 @@
 
- 
 $(document).ready(function(){                          
     $('#search__poleotpravka').click(function(){    /*$('.grid').empty();*/
 		$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', 

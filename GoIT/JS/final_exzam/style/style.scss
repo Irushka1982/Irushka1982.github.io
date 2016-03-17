@@ -269,20 +269,51 @@ width: 450px;
   }
 }
 
+.block-text{
+  width:270px;
+  background-color:grey;
+  height:174px;
+    span{
+      font-family: $montserrat;
+      font-weight:normal;
+      font-size:10px;
+      text-transform:uppercase;
+      color:$color-white;
+      display:block;
+      width:70px;
+      height:20px;
+      border-radius:50px;
+      background-color:$color-pink;
+      text-align:center;}
+
+    h1{
+      font-family: $montserrat;
+      font-weight:bold;
+      font-size:24px;
+    color:$color-white;
+  }
+    p{
+      font-family:  $roboto;
+      font-weight:lighter;
+      font-size:14px;
+    color:$color-white;
+  }
+}
+
+                
+                
 
 
-
-
-.featured {img{width:auto;
-height:240px;}}
+.featured {img{width:300px;
+height:auto;}}
 
 @media(min-width:768px) {
 .featured {img{width:237px;
-height:401px;}
+height:auto;}
 }}
 @media(min-width:1440px){
 .featured {img{width:300px;
-height:404px;}
+height:auto;}
 }}
 
 

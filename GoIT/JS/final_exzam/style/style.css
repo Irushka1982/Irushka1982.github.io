@@ -192,18 +192,45 @@ header {
       .carusel1 ul li {
         display: inline-block;
         height: 402px; } }
+.block-text {
+  width: 270px;
+  background-color: grey;
+  height: 174px; }
+  .block-text span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    width: 70px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #ff4e50;
+    text-align: center; }
+  .block-text h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff; }
+  .block-text p {
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #ffffff; }
+
 .featured img {
-  width: auto;
-  height: 240px; }
+  width: 300px;
+  height: auto; }
 
 @media (min-width: 768px) {
   .featured img {
     width: 237px;
-    height: 401px; } }
+    height: auto; } }
 @media (min-width: 1440px) {
   .featured img {
     width: 300px;
-    height: 404px; } }
+    height: auto; } }
 #wrapper2 {
   height: 1091px;
   text-align: center; }
