@@ -344,7 +344,8 @@ height:auto;}
 }}
 @media(min-width:1440px){
   .persons{width: 950px;
-    margin: 0 0 0 -17px;}
+    margin: 0 0 9px -17px;
+    overflow: hidden;}
 }
 
 
@@ -387,7 +388,79 @@ height:auto;}
 .meet-partners{margin: 34px 0 31px 237px;}
 
 }
+.partner--sprite1:before{
+ content: " ";  
+    float:left;  
+    position: relative;  
+   background: url(../image/sprite.png) 0px 0px  no-repeat;  
+    height:38px;  
+    width: 40px;
+   left:164px; 
+   top:77px;   
+  bottom:71px;
+  right:10px;
+  z-index: 2;
+   background-position: 0px 0px;
+}
 
+.partner--sprite2:before{
+ content: " ";  
+    float:left;  
+    position: relative;  
+   background: url(../image/sprite.png) 0px 0px  no-repeat;  
+     height: 38px;  
+    width: 40px;
+   left:150px; 
+   top:80px;   
+  bottom:71px;
+  right:10px;
+  z-index: 2;
+   background-position: -38px 0px;
+}
+.partner--sprite3:before{
+ content: " ";  
+    float:left;  
+    position: relative;  
+   background: url(../image/sprite.png) 0px 0px  no-repeat;  
+    height: 39px;  
+    width: 40px;
+   left:164px; 
+   top:77px;   
+  bottom:71px;
+  right:10px;
+  z-index: 2;
+   background-position: -79px 0px;
+
+}
+.partner--sprite4:before{
+ content: " ";  
+    float:left;  
+    position: relative;  
+   background: url(../image/sprite.png) 0px 0px  no-repeat;  
+    height: 40px;  
+    width: 42px;
+   left:164px; 
+   top:77px;   
+  bottom:71px;
+  right:10px;
+  z-index: 2;
+   background-position: -119px 0px;
+}
+ .partner--sprite1:hover:before{
+    background-position: 0px -43px;
+} 
+
+.partner--sprite2:hover:before{
+    background-position: -38px -43px;
+}
+
+
+.partner--sprite3:hover:before{
+    background-position: -79px -42px;
+}
+.partner--sprite4:hover:before{
+    background-position: -119px -43px;
+}
 
 .partner__name{
   font-family: $montserrat;
@@ -425,9 +498,8 @@ height:auto;}
 @media(min-width:1440px){
    .other-button{
      width:195px;
-     margin: 36px 0 0 0;
-     float:left;
-     display: block;
+     margin: auto;
+          display: block;
   }
 }
 
@@ -435,7 +507,8 @@ height:auto;}
 
 
 #wrapper3{
-height:1000px;	
+height:1000px;
+border:1px solid black;	
 }
 @media(min-width:768px) {
 #wrapper3{height:1126px;}}
