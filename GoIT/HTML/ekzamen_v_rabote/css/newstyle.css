@@ -108,6 +108,7 @@ body{
 	height: auto;
 	width: 960px;
 	overflow: hidden;
+	margin-bottom:6px; 
 	/*position: relative;*/
 }
 
@@ -168,15 +169,16 @@ nav {
 	display: inline-block;
 	/*background-color: green;*/
 	padding-left: 0px;
-	margin-top:68px;
+	margin-top:72px;
 	margin-left:141px;
+	margin-bottom:0px;
 }
 
 @media(max-width:768px) {
 .menu {
 	display: inline-block;
 	margin-left:0px;
-	margin-top:17px;
+	margin-top:20px;
 	margin-bottom: 0px;
 }}
 
@@ -187,6 +189,7 @@ nav {
        top:115px;
        border-radius: 11px;
        border: 1px solid #101a21;
+    margin-top:17px;
 }}
 @media(max-width:320px) {
 .menu {display: none;
@@ -203,7 +206,7 @@ nav {
 .menu__cell{
 	float: left;
 	list-style: none;
-	width: 105px;
+	width: 107px;
 	/*padding: 2px;*/
 	font-size: 20px;
 	/*border:1px solid #523f5a;*/
@@ -381,7 +384,7 @@ border-bottom:2px solid #edbfff;
 @media (max-width:320px) {
 .lorem{
 	/*background-color: blue;*/
-	margin-top:164px; 
+	margin-top:159px; 
 	margin-left:43px; 
  }}
 
@@ -407,7 +410,7 @@ border-bottom:2px solid #edbfff;
 .lorem__zaglavie{
 	font-size: 37px;
 	height: auto;
-	line-height: 53px;
+	line-height: 47px;
 	width: 269px
 }}
 @media (max-width:320px) {
@@ -531,11 +534,12 @@ border-bottom:2px solid #edbfff;
 @media (max-width:320px){
 .iphone{display: none;
 }}
+
 .radio {
 	margin-top:176px;
 	margin-right:162px;  
 	float: right;
-	margin-bottom:62px; 
+	margin-bottom:51px; 
 	display: block;
 	width: 80px;
 	height: 17px;
@@ -544,7 +548,7 @@ border-bottom:2px solid #edbfff;
 @media (max-width:768px) {
 .radio{
 	float: right;
-	margin-top:146px;
+	margin-top:138px;
 	margin-right:166px;
 	margin-bottom:102px; 
 }}
@@ -601,20 +605,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 @media(max-width:480px) {
 .content2 {width: 480px;
 /*background-color: red;*/
-padding-top:48px;
-padding-bottom: 52px;
+padding-top:68px;
+padding-bottom: 46px;
 }}
 @media(max-width:320px) {
 .content2 {width: 320px;
-padding-top:37px;
-padding-bottom: 39px;
+padding-top:65px;
+padding-bottom: 63px;
 
 }}
 
 
 .about{
 	padding: 0px 0px 0px 0px;
-	margin: 40px 31px 0px 60px;
+	margin: 80px 20px 0px 69px;
 	/*background-color:red;*/
 	width: 226px;
 	height: auto;
@@ -630,8 +634,8 @@ padding-bottom: 39px;
 	height: 233px;
 	overflow: hidden;
 	margin-right:44px; 
-	margin-bottom: 64px;
-	margin-top: 43px;
+	margin-bottom: 39px;
+	margin-top: 71px;
 	margin-left:9px;
 	padding-left: 42px; 
  }}
@@ -640,7 +644,7 @@ padding-bottom: 39px;
 	display: block;
 	width: 349px;
 	margin-left: 14px;
-	margin-bottom:0px; 
+	margin-bottom:18px; 
 	padding: 0px 23px 0px 64px;
 	height: auto;
 	margin-top:0px; 
@@ -648,62 +652,121 @@ padding-bottom: 39px;
 
 @media (max-width:320px) {
 .about{
-		padding: 0px 23px 5px 0px;
+		padding: 0px 6px 5px 72px;
 		width: 222px;
-		margin-left: 62px; 
+		margin-left: 0px; 
 		overflow: hidden;
 		position: relative;
+		margin-bottom:11px; 
 }}
-/*.about:before {
-	content: " ";  
-    float: left;  
-    position: relative;  
-    overflow: hidden;
-   background: url(../image/sprite.png)no-repeat;  
-    height: 30px;  
-    width: 30px;
-   left:-38px; 
-   top:32px;   
-   background-position: 0px 0px;
-}
-*/
 .about--block1:before {
 	content: " ";  
     float: left;  
-    position: relative;  
+    position: absolute;  
     overflow: hidden;
    background: url(../image/sprite.png) 0px 0px  no-repeat;  
     height: 30px;  
-    width: 30px;
-   left:-38px; 
-   top:32px;   
+    width: 28px;
+   left:20px; 
+   top:88px;   
    background-position: 0px 0px;
 }
+
+@media (max-width:768px){
+.about--block1:before {
+   left:8px; 
+   top:76px;   
+
+}}
+
+
+@media (max-width:480px){
+.about--block1:before {
+   left:28px; 
+   top:76px;   
+
+}}
+
+@media (max-width:320px){
+.about--block1:before {
+   left:21px; 
+   top:5px;   
+ 
+}}
+
 
 .about--block2:before {
 	content: " ";  
     float: left;  
-    position: relative;  
+      position: absolute;   
     overflow: hidden;
    background: url(../image/sprite.png) 0px 0px  no-repeat;  
     height: 30px;  
-    width: 30px;
-   left:-38px; 
-   top:32px;   
-   background-position: -30px 0px;
+    width: 28px;
+   left:350px; 
+   top:88px;   
+   background-position: -28px 0px;
 }
+
+@media (max-width:768px){
+
+.about--block2:before {
+	 
+   left:267px; 
+   top:76px;   
+   background-position: 0px 0px;
+}}
+
+@media (max-width:480px){
+.about--block2:before {
+	  
+   left:28px; 
+   top:232px;   
+   
+}}
+@media (max-width:320px){
+.about--block2:before {
+   left:21px; 
+   top:5px;   
+ }}
+
+
 .about--block3:before {
 	content: " ";  
     float: left;  
-    position: relative;  
+      position: absolute;   
     overflow: hidden;
    background: url(../image/sprite.png) 0px 0px  no-repeat;  
     height: 30px;  
-    width: 30px;
-   left:-38px; 
-   top:32px;   
-   background-position: -60px 0px
+    width: 28px;
+   right:265px; 
+   top:88px;   
+   background-position: -62px 0px
 }
+
+@media (max-width:768px){
+.about--block3:before {
+	right:210px; 
+   top:78px;   
+   background-position: 0px 0px
+}}
+
+
+@media (max-width:480px){
+.about--block3:before {
+	  
+ left:28px; 
+   top:393px;   
+ 
+}}
+
+@media (max-width:320px){
+.about--block3:before {
+	  
+ left:21px; 
+   top:5px;   
+   
+}}
 
 /*.content2 > div.about:before:nth-of-type(1){
 	background-position: -50px 0 
@@ -754,7 +817,7 @@ padding-bottom: 39px;
 	padding: 0px 0px 0px 0px;
 	margin: 5px 0px 0px 0px;
 	height: 138px;
-	width: 224px;
+	width: 229px;
 	line-height: 24px;
 }
 
@@ -773,15 +836,16 @@ padding-bottom: 39px;
 @media (max-width:480px) {
 .about__napolnenie{
 	width:367px;
-	height: 78px;
+	height: 76px;
 	margin-top: 0px;
 	margin-bottom: 2px; 
  }}
 
 @media (max-width:320px) {
 .about__napolnenie{
-	width:248px;
-	margin-bottom: 6px; 
+	width:244px;
+	margin-bottom:7px;
+	height: 76px; 
  }}
 .about__ssylka{
 	text-decoration: none;
@@ -791,7 +855,7 @@ padding-bottom: 39px;
 	text-transform: uppercase;
 	font-size: 19px;
 	font-family: "league_gothicregular";
-	width: 59px;
+	width: 61px;
 	float: right;
 	padding-right: 0px;
 	padding: 0 0 0 0;
@@ -805,11 +869,13 @@ padding-bottom: 39px;
 @media(max-width: 480px){
 .about__ssylka{
 	margin-left:311px;
+	margin-top: 9px;
 	float: none;
 }}
 @media(max-width: 320px){
 .about__ssylka{
-	margin-left:171px;
+	margin-left:145px;
+	width: 77px;
 }}
 .about a:hover {
 	/*background-color: red;*/
@@ -1016,14 +1082,14 @@ padding-bottom: 39px;
 
 @media(max-width:480px) {
 .testimonial-text__napolnenie{
-	width: 365px;
+	width: 377px;
 	height: 201px;
 	margin-top: 5px;
-	line-height: 20px;
+	line-height: 23px;
  }}
  @media(max-width:320px) {
 .testimonial-text__napolnenie{
-		line-height: 23px;
+		line-height: 24px;
 		margin-top: 2px;
 		width: 205px;
 		height: 166px;
@@ -1047,42 +1113,24 @@ padding-bottom: 39px;
 
 @media(max-width:678px){
 .testimonial-text:before { 
-	content: " ";  
-    float: left;  
-    position: absolute;  
-   background: url(../image/client.png) 2px 2px  no-repeat;  
-    height: 100px;  
-    width: 100px;
-   left:-26px; 
-   /*top:35px;   */
- 	bottom:71px;
- 	right:100px;
- 	width: 60px;
- 	top:12px;
+	 left:-26px; 
+   	top:12px;
  }}
-
-/*@media(max-width:480px){
-.parent--testimonial:before { 
-	left:-33px; 
-   top:15px;   
- 	}}*/
 
 @media(max-width:480px){
 .testimonial-text:before { 
-	content: " ";  
-    float: left;  
-    position: absolute;  
-    z-index: 3;
-   background: url(../image/client.png) 2px 2px  no-repeat;  
-    height: 100px;  
-    width: 100px;
-   left:-26px; 
-   /*top:35px;   */
- 	bottom:71px;
- 	right:100px;
- 	width: 60px;
- 	top:12px;
+	 left:-26px; 
+   	top:12px;
  }}
+
+
+
+@media(max-width:320px){
+.testimonial-text:before { 
+	
+ 	top:18px;
+ }}
+
  .blog {
 	width:440px;
 	height: 298px;
@@ -1101,7 +1149,7 @@ padding-bottom: 39px;
 @media(max-width:480px) {
 .blog{
 	margin-left:73px;
-	margin-top:9px;
+	margin-top:19px;
 	width:343px;
 }}
 
@@ -1109,7 +1157,7 @@ padding-bottom: 39px;
 .blog{
 	margin-left:0px;
 	padding-left: 8px;
-		margin-top:22px;
+		margin-top:29px;
 }}
 
 
@@ -1118,7 +1166,7 @@ padding-bottom: 39px;
 	font-size: 29px;
 	text-transform: uppercase;
 	display: block;
-	margin-bottom:15px;
+	margin-bottom:5px;
 	margin-top:18px;  
 	color:#454545;
 }
@@ -1126,7 +1174,7 @@ padding-bottom: 39px;
 
 @media(max-width:768px){
 	.blog__zaglavie{margin-bottom:0px;
-		margin-top:8px;
+		margin-top:-8px;
 }}
 
 
@@ -1143,7 +1191,7 @@ blockquote {
 	width: 283px;
 	height:167px;
 }
-.blog__posty__napolnenie{
+.blog__napolnenie{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	margin-top:0px; 
@@ -1151,7 +1199,7 @@ blockquote {
 }
 
 @media(max-width:768px) {
-.blog__posty__napolnenie{
+.blog__napolnenie{
 	width:250px;
 	height: 26px;
 	overflow: hidden;
@@ -1159,32 +1207,47 @@ blockquote {
 	margin-top:1px; 
 }}
 
+
+@media(max-width:480px) {
+.blog__napolnenie{
+
+	height: 21px;
+	
+}}
+
 @media(max-width:320px) {
-.blog__posty__napolnenie{
+.blog__napolnenie{
 	width:248px;
-	height: 28px;
+	height: 23px;
 }}
 
 
-.blog__posty__napolnenie--bold{
+.blog__napolnenie--bold{
 	font-family: 'Passion One', cursive;
 	font-weight:900;
 	font-size: 19px;
 	margin-bottom: 0px; 
 		color:#454545;
+		margin-top:19px; 
+
 	/*background-color: yellow;*/
 }
 
  @media(max-width:768px) {
-.blog__posty__napolnenie--bold {
+.blog__napolnenie--bold {
 	margin-top:15px;
 	margin-bottom:0px  
 }}
+@media(max-width:480px) {
+.blog__napolnenie--bold {
+	margin-top:17px;
+	  
+}}
   @media(max-width:320px) {
-.blog__posty__napolnenie--bold {
-	width: 320px;
+.blog__napolnenie--bold {
+	width: 209px;
 	height: 24px;
-	
+	overflow: hidden;
 }}
 
 
@@ -1205,6 +1268,7 @@ blockquote {
 
 .blog__posty  li{
 	height: 45px;
+	padding-left: 16px
 }
 
 @media(max-width:768px) {
@@ -1213,28 +1277,51 @@ blockquote {
 
 }}
 
+@media(max-width:320px) {
+.blog__posty  li{
+	padding-left: 17px;
+
+}}
 
 
-.blog__posty__napolnenie--bold:before{
-	content: " ";
-	float: left;  
-    position: relative;  
-   background: url(../image/round_bokeh_1-top.png) 2px 1px  no-repeat;  
-    height: 50px;  
-    width: 70px;  
-}
-@media(max-width:320px){
-.blog__posty__napolnenie--bold:before{
+.blog__posty  li:before{
 	content: " ";
 	float: left;  
     position: relative; 
    background: url(../image/round_bokeh_1-top.png) 2px 1px  no-repeat;  
     height: 50px;  
     width: 50px;  
+    left: -16px;
+    top: -7px;
+
+}
+
+@media(max-width:768px) {
+.blog__posty  li:before{
+	
+    left: -10px;
+    top: -2px;
+
+}}
+@media(max-width:480px) {
+.blog__posty  li:before{
+	
+    left: -15px;
+    top: -3px;
+
 }}
 
 
-.blog__posty__readmore{
+@media(max-width:320px) {
+.blog__posty  li:before{
+	
+    left: -15px;
+    top: -2px;
+
+}}
+
+
+.blog__readmore{
 	float: right;
 	display: inline-block;
 	height: auto;
@@ -1243,16 +1330,17 @@ blockquote {
 	padding-right: 9px;
 }
 @media(max-width: 480px){
-.blog__posty__readmore{
+.blog__readmore{
 	padding-right: 3px;
+	padding-top: 31px;
 }}
 
 @media(max-width: 320px){
-.blog__posty__readmore{
+.blog__readmore{
 	padding-right: 65px;
 }}
 
-.blog__posty__readmore a {
+.blog__readmore a {
 	text-decoration: none;
 	display: inline-block;
 	color:#454545;
@@ -1350,21 +1438,22 @@ background:url(../image/black.png) 0 0 no-repeat;
 
 .logotip ul {
 	padding-left: 0px;
+	margin-top:20px; 
 }
 @media(max-width:768px) {
 .logotip  ul {
-	margin: 24px 0;
+	margin: 17px 0 24px 0;
 }}
 
 
 @media(max-width:480px) {
 .logotip  ul {
-	margin: 10px 0 31px 0;
+	margin: 4px 0 31px 0;
 }}
 
 @media(max-width:320px) {
 .logotip  ul {
-	margin: 10px 0 75px 0;
+	margin: 2px 0 75px 0;
 }}
 
 /*.logotip ul li {
@@ -1395,8 +1484,8 @@ background:url(../image/black.png) 0 0 no-repeat;
 
 @media(max-width:480px) {
 .logotip__cell{
-	padding-left: 15px;
-	padding-right: 40px;
+	padding-left: 25px;
+	padding-right: 29px;
 	padding-top: 26px;
 }}
 
@@ -1432,14 +1521,14 @@ background-color:#ececec;
 }
 
 @media(max-width: 768px){
-	.content4 {padding-top: 92px;
+	.content4 {padding-top: 88px;
 		width:768px;
 }}
 
 
 @media(max-width: 480px){
 .content4 {
-	padding-top: 78px;
+	padding-top: 75px;
 	padding-bottom: 40px;
 	width: 480px
 }}
@@ -1663,7 +1752,7 @@ padding: 2px 10px 5px 2px;*/
 .menu--bottom{
 	display: block;
 	margin-left:0px;
-	margin-top:40px;
+	margin-top:42px;
 }}
 
 
@@ -1754,7 +1843,7 @@ position: static;
 
 @media(max-width:480px) {
 .menu--bottom__cell a{
-	font-size: 17px;
+	font-size: 19px;
 	text-align: center;
 	color: white;
 }}
@@ -1794,7 +1883,7 @@ position: static;
 .prava	{
 display: block;
 margin: auto;
-margin-top:105px;
+margin-top:99px;
 float: none;
 margin-bottom:40px;
 }}
