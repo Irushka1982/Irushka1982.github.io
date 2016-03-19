@@ -2,14 +2,14 @@
 		    $('#search__poleotpravka').click(function(){ 
 
 function generirovanie(queryPic) {
-
+var slovo = $('.search__poletext').val();
 			$.ajax({
 				type: "GET",
 				dataType: "json",
 				cache: false,
-				url: 'http://api.pixplorer.co.uk/image?word=&amount=7&size=tb',
+				url: 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=tb',
 				success: function(data) {
-
+console.log(slovo);
 					var vstavka = tmpl($('#zapros').html(), data);
 
 					$('.grid').remove();
@@ -18,7 +18,7 @@ function generirovanie(queryPic) {
 					
 					$('.grid').masonry({
 				  itemSelector: '.grid-item',
-				  
+
 				  
 				});
 							
