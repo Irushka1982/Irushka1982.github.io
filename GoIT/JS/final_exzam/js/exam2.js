@@ -7,7 +7,7 @@ function generirovanie(queryPic) {
 				type: "GET",
 				dataType: "json",
 				cache: false,
-				url: 'http://api.pixplorer.co.uk/image?word=&amount=5&size=tb',
+				url: 'http://api.pixplorer.co.uk/image?word=&amount=7&size=tb',
 				success: function(data) {
 
 					var vstavka = tmpl($('#zapros').html(), data);
@@ -18,7 +18,8 @@ function generirovanie(queryPic) {
 					
 					$('.grid').masonry({
 				  itemSelector: '.grid-item',
-				  columnWidth: 150
+				  
+				  
 				});
 							
 			console.log(data);
