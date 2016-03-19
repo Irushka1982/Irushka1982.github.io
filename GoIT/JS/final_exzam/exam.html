@@ -13,7 +13,7 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<!--<script src="js/jquery-1.5.1.min.js"></script>-->
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
-	<script src="js/exam.js"></script>
+	<script src="js/exam2.js"></script>
 	<script src="js/masonry.pkgd.js"></script>
 	<script src="js/jquery.orbit-1.2.3.min.js"></script>
 	<script src="js/template.js"></script>
@@ -22,21 +22,30 @@
 <body>
 	<div class="shablon">
 
-<!-- шаблон вк варианту1  запроса из файла Js
+<script type="text/html" id = "zapros">
+		<div class="grid">
+			<% for (var i =0; i<images.length; i++) { %>
+				<div class="grid-item 
+				<% if ((i==5)||(i==4)){%> 
+					grid-item--width2  
+					<%}%> animated zoomIn" style = "background: url(<%=images[i].imageurl%>) center no-repeat; background-size: 100% 100%">
+					<span class="grid-item__text"><%=images[i].word%></span>
+				</div>
+						
+			<%}; %></div>
+	</script>
+<!-- шаблон к варианту2  запроса из файла Js
 <script type ="text/template" id = "template">
 		<div class="grid">
-			<% for (var i =0; i<data.length; i++) { %>
+			<% for (var i=0; i<data.length; i++) { %>
 				<div class="grid-item" 
 				<img src="<%= data[i].foto %>
 				</div>
 						
 			<%}; %></div>-->
 
-
-
-
   <!--
-шаблон к варианту 3 запроса из файла Js
+отказалась от этого шаблона 
   <script type ="text/template" id = "template">
 	  <div class = "grid">
 		  <%for(var i in data){%>
