@@ -13,15 +13,15 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<!--<script src="js/jquery-1.5.1.min.js"></script>-->
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
-	<script src="js/exam2.js"></script>
+	
 	<script src="js/masonry.pkgd.js"></script>
-	<script src="js/jquery.orbit-1.2.3.min.js"></script>
+	<!--<script src="js/jquery.orbit-1.2.3.min.js"></script>-->
 	<script src="js/template.js"></script>
+	<script src="js/exam2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="shablon">
-
 <script type="text/html" id = "zapros">
 		<div class="grid">
 			<% for (var i =0; i<images.length; i++) { %>
@@ -75,12 +75,15 @@
 			<h2 class="how-works">How Urlaubsglück works?</h2>
 			<div class="carusel1"> 
 				<ul>
-					<li>
+					<!--<li>
+
+
 						<div class="featured">
-							 <img src="image/desktop/slaider1D.png" alt="foto"/>
-						     <img src="image/desktop/slaider2D.png"  alt="foto" />
-						     <img src="image/desktop/slaider3D.png" alt="foto" />
+							 <img src="image/mobile/slider1M.png"  alt="foto">
+							 <img src="image/tabletka/slider1T.png"  alt="foto">
+							 <img src="image/desktop/slaider1D.png"  alt="foto">
 				   		 </div>
+					</li>
 				   	<!--этот блок будет повех карусели	
 				   	 <div class="block-text">
 								<span>step 1</span>
@@ -96,25 +99,14 @@
 								<span>step 1</span>
 								<h1>Sed leo enim, condimentum</h1>
 								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-				   		   </div>-->
-				   	</li>
-				   <li>
-			        	<div class="featured">
-						     <img src="image/desktop/slaider2D.png"  alt="foto" />
-						     <img src="image/desktop/slaider3D.png" alt="foto" />
-						      <img src="image/desktop/slaider1D.png" alt="foto" />
-					    </div>
-					</li>
-					<li>
-			            <div class="featured">
-						      <img src="image/mobile/slaider3M.png" alt="foto" />
-						     <img src="image/mobile/slaider2M.png"  alt="foto" />
-						      <img src="image/mobile/slider1M.png" alt="foto" />
-					    </div>
-					</li>
+				   		   </div>
+				   <img src="image/mobile/slider1M.png" 
+							 srcset="image/mobile/slider1M.png 300w, image/tabletka/slider1T.png 236w, image/desktop/slaider1D.png 300w" alt="foto"sizes="(max-width: 40em) calc(66.6vw - 4em), 100vw">
+				   -->
 				</ul>
 			</div>
 		</section>
+		
 		<section  id="wrapper2">
 			<h2 class="meet-partners">Meet a partner for your best holiday</h2>
 			<div class="persons">

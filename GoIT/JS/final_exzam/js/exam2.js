@@ -1,35 +1,39 @@
 	$(document).ready(function(){                          
+		   
+
+
+
 		    $('#search__poleotpravka').click(function(){ 
 
-function generirovanie(queryPic) {
-var slovo = $('.search__poletext').val();
-			$.ajax({
-				type: "GET",
-				dataType: "json",
-				cache: false,
-				url: 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=tb',
-				success: function(data) {
-console.log(slovo);
-					var vstavka = tmpl($('#zapros').html(), data);
+				function generirovanie(queryPic) {
+				var slovo = $('.search__poletext').val();
+							$.ajax({
+								type: "GET",
+								dataType: "json",
+								cache: false,
+								url: 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=tb',
+								success: function(data) {
+				console.log(slovo);
+									var vstavka = tmpl($('#zapros').html(), data);
 
-					$('.grid').remove();
+									$('.grid').remove();
 
-					$('#wrapper3').append(vstavka);
+									$('#wrapper3').append(vstavka);
+									
+									$('.grid').masonry({
+								  itemSelector: '.grid-item',
+
+								  
+								});
+											
+							console.log(data);
 					
-					$('.grid').masonry({
-				  itemSelector: '.grid-item',
+								}
+							});
+						}
 
-				  
+						generirovanie();
 				});
-							
-			console.log(data);
-	
-				}
-			});
-		}
-
-		generirovanie();
-});
 
 
  $(window).load(function() {
