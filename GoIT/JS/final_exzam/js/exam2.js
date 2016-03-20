@@ -37,8 +37,8 @@
 
 $(document).ready(function(){
   $('.bxslider').bxSlider({
-  	 slideWidth: 300,
-  	   minSlides: 1,
+  	 slideWidth: slide_width,
+  	   minSlides: slides,
   	    slideMargin: 5,
   	      auto: true,
   autoControls: true,

@@ -47,13 +47,35 @@ function View(model){
 		self.elements.listContainer.html(list);
 	};
 	init();
+
+	 /* show confirm edit btn
+  self.elements.listContainer.on('focus', '.item-input', function () {
+    $(this).siblings('.item-delete').fadeOut( 'fast', function () {
+      $(this).siblings('.item-edit').fadeIn('fast');
+    });
+    
+  });
+  self.elements.listContainer.on('focusout', '.item-input', function () {
+    $(this).siblings('.item-edit').fadeOut( 'fast', function () {
+      $(this).siblings('.item-delete').fadeIn('fast');
+    });
+  });*/
 }
+
+
+
+
+
+
 
 function Controller(model,view){
 	var self = this;
 
 	view.elements.addBtn.on('click', addItem);
 	view.elements.listContainer.on('click','.item-delete', removeItem);
+  view.elements.listContainer.on('focus', '.item-input', getItemValue);
+  view.elements.listContainer.on('click', '.item-edit', editItem);
+
 	function addItem(){
 		var newItem = view.elements.input.val();
 		model.addItem(newItem);
@@ -67,8 +89,21 @@ function Controller(model,view){
 		view.renderList(model.data);
 
 	}
+
+  /*function getItemValue () {
+    self.itemValue = $( this ).val();
+  }
+
+  function editItem () {
+    self.editedValue = $(this).siblings('input').val();
+    model.editItem(self.itemValue, self.editedValue);
+    view.renderList(model.data);
+  }
+*/
+
 	
 }
+
 $(function(){
 	var firstToDoList =  ['test 1', 'test 2', 'test 3'];
 var model = new Model(firstToDoList);

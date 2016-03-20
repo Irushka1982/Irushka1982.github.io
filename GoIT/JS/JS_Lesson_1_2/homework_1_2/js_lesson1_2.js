@@ -5,7 +5,7 @@ for (var i = 0; i < 5; i++ ) {
 }
 
 var name = prompt('Введите имя пользователя');
-   var isPresentInTheList = false;
+var isPresentInTheList = false;
 
     for (var i = 0; i < arr.length; i++){
      if ( arr[i] === name ){ 

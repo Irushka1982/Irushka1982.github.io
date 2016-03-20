@@ -86,8 +86,6 @@ $(function(){
 });
 
 
-
-
 var napolnenieLi = [
 	{
 		text: 'Я красивый',

@@ -21,7 +21,14 @@
 <script type="text/template" id="list-template">
 <% for (var i = 0; i < data.length; i++){ %>
 	
-	<li><%= data[i] %><span data-value="<%= data[i] %>"class="item-delete">x</span></li>
+	<li>
+<!--<input class="item-input" type="text" name="" value=<%= data[i] %>>-->
+	<%= data[i] %><span data-value="<%= data[i] %>"class="item-delete">x</span>
+
+<span class="item-edit">		
+				</span>
+	</li>
+
 	<% }; %>
 </script>
 	

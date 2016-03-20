@@ -43,6 +43,7 @@ localStorage.setItem('answerright', JSON.stringify(rightAnswer));
 var testAnswerRight = localStorage.getItem('answerright');
 testAnswerRight = JSON.parse(testAnswerRight);
 /*console.log(testAnswerRight);*/
+
 			$(document).on('click', '#button', function check() {
 				var count = 0;
 				

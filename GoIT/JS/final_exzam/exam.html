@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js">
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://github.com/WickyNilliams/enquire.js/raw/master/dist/enquire.min.js"></script>
 	<!--<script src="js/jquery-1.5.1.min.js"></script>-->
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 	
@@ -20,6 +21,20 @@
 	<script src="js/template.js"></script>
 	<script src="js/exam2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+slide_width = 200;
+slides = 1;
+if (typeof enquire != "undefined") { 
+	enquire.register("screen and (min-width: 768px)", function() {
+		slide_width = 300;
+		slides = 1;
+	});
+	enquire.register("screen and (min-width: 1440px)", function() {
+		slide_width = 1440;
+		slides = 3;
+	});
+}
+	</script>
 </head>
 <body>
 	<div class="shablon">
