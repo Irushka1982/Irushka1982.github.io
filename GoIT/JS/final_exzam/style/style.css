@@ -203,8 +203,8 @@ header {
         height: 402px; } }
 .block-text {
   width: 270px;
-  background-color: grey;
-  height: 174px; }
+  height: 174px;
+  position: absolute; }
   .block-text span {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
