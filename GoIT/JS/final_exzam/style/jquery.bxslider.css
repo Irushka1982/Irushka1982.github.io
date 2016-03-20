@@ -106,13 +106,14 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(image/controls.png) no-repeat 0 -32px;
+	left: 5px;
+	background: url(../image/left-arrow.png) no-repeat 0 0;
+	
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
-	background: url(image/controls.png) no-repeat -43px -32px;
+	right: 5px;
+	background: url(../image/right-arrow.png) no-repeat 0 0;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -128,8 +129,8 @@
 	top: 50%;
 	margin-top: -16px;
 	outline: 0;
-	width: 32px;
-	height: 32px;
+	width: 52px;
+	height: 62px;
 	text-indent: -9999px;
 	z-index: 9999;
 }
