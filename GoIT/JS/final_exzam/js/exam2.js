@@ -11,7 +11,7 @@
 								type: "GET",
 								dataType: "json",
 								cache: false,
-								url: 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=tb',
+								url: 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=m',
 								success: function(data) {
 				console.log(slovo);
 									var vstavka = tmpl($('#zapros').html(), data);

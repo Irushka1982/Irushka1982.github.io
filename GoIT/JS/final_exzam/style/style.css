@@ -204,7 +204,8 @@ header {
 .block-text {
   width: 270px;
   height: 174px;
-  position: absolute; }
+  position: absolute;
+  margin-top: 74px; }
   .block-text span {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
@@ -216,7 +217,8 @@ header {
     height: 20px;
     border-radius: 50px;
     background-color: #ff4e50;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 12px; }
   .block-text h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -226,7 +228,8 @@ header {
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
     font-size: 14px;
-    color: #ffffff; }
+    color: #ffffff;
+    width: 236px; }
 
 /*
 .featured {img{width:300px;
