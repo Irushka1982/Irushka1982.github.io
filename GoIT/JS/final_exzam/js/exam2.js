@@ -35,10 +35,16 @@
 						generirovanie();
 				});
 
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  	 slideWidth: 300,
+  	   minSlides: 1,
+  	    slideMargin: 5,
+  	      auto: true,
+  autoControls: true,
 
- $(window).load(function() {
-		      $('.featured').orbit();
-	   });
+  });
+});
 
 });
 /*

@@ -256,9 +256,9 @@ width: 450px;
  
     ul{
       height:402px;
-      li{
+      li{/*width:250px;*/
         display:inline-block;
-        height: 402px;
+        height: 300px;
       }
     }
   }
@@ -269,9 +269,10 @@ width: 450px;
   height:402px;
     ul{
       height:402px; 
-      width:940px;
+     /* width:940px;*/
       margin:0 0 0 0;
       li{
+        width: 300px;
         display:inline-block;
         height: 402px;
       }

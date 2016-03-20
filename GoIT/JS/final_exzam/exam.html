@@ -15,7 +15,8 @@
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 	
 	<script src="js/masonry.pkgd.js"></script>
-	<!--<script src="js/jquery.orbit-1.2.3.min.js"></script>-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<link href="style/jquery.bxslider.css" rel="stylesheet" />
 	<script src="js/template.js"></script>
 	<script src="js/exam2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,15 +75,76 @@
 		<section id="wrapper1">
 			<h2 class="how-works">How Urlaubsglück works?</h2>
 			<div class="carusel1"> 
-				<ul>
-
-						<!--<li>
-						<div class="featured">
-							 <img src="image/mobile/slider1M.png"  alt="foto">
-							 <img src="image/tabletka/slider1T.png"  alt="foto">
-							 <img src="image/desktop/slaider1D.png"  alt="foto">
-				   		 </div>
+				<ul class="bxslider">
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
 					</li>
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+				</ul>
+				<ul class="bxslider">
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+				</ul>
+				<ul class="bxslider">
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source srcset="image/desktop/slaider1D.png" media="(min-width: 1440px)">
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
+							<img srcset="image/mobile/slider1M.png" alt="foto">
+						</picture>
+					</li>
+				</ul>
+
 				   	<!--этот блок будет повех карусели	
 				   	 <div class="block-text">
 								<span>step 1</span>
@@ -102,7 +164,7 @@
 				   <img src="image/mobile/slider1M.png" 
 							 srcset="image/mobile/slider1M.png 300w, image/tabletka/slider1T.png 236w, image/desktop/slaider1D.png 300w" alt="foto"sizes="(max-width: 40em) calc(66.6vw - 4em), 100vw">
 				   -->
-				</ul>
+				
 			</div>
 		</section>
 		
