@@ -163,46 +163,24 @@ header {
 @media (min-width: 768px) {
   .how-works, .meet-partners, .discover, .discover2 {
     margin: 94px 0 20px 0px; } }
-/*
-@media(min-width: 768px) {
-  .featured img {
-    padding: 0 2em 0 2em;
-    width:100%;
-  }
-}
-@media(min-width: 1440px) {
-  .featured img {
-    padding: 0 2em 0 2em;
-    width:100%;
-  }
-}*/
-.carusel1 ul {
-  height: 740px; }
-  .carusel1 ul li {
-    display: inline-block;
-    height: 242px; }
+.carusel1 ul li {
+  display: inline-block; }
 
 @media (min-width: 768px) {
   .carusel1 ul {
-    height: 402px; }
+    /* height:402px;*/ }
     .carusel1 ul li {
       /*width:250px;*/
       display: inline-block;
-      height: 300px; } }
+      /*   height: 300px;*/ } }
 @media (min-width: 1440px) {
-  .carusel1 {
-    width: 950px;
-    height: 402px; }
-    .carusel1 ul {
-      height: 402px;
-      /* width:940px;*/
-      margin: 0 0 0 0; }
-      .carusel1 ul li {
-        width: 300px;
-        display: inline-block;
-        height: 402px; } }
+  .carusel1 ul {
+    /* width:940px;*/
+    margin: 0 0 0 0; }
+    .carusel1 ul li {
+      display: inline-block; } }
 .block-text {
-  width: 270px;
+  width: 250px;
   height: 174px;
   position: absolute;
   margin-top: 74px; }
@@ -231,18 +209,6 @@ header {
     color: #ffffff;
     width: 236px; }
 
-/*
-.featured {img{width:300px;
-height:auto;}}
-
-@media(min-width:768px) {
-.featured {img{width:237px;
-height:auto;}
-}}
-@media(min-width:1440px){
-.featured {img{width:300px;
-height:auto;}
-}}*/
 #wrapper2 {
   height: 1091px;
   text-align: center; }

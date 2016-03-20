@@ -21,22 +21,27 @@
 	<script src="js/template.js"></script>
 	<script src="js/exam2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<script>
-slide_width = 200;
+slide_width = 300;
 slides = 1;
 if (typeof enquire != "undefined") { 
 	enquire.register("screen and (min-width: 768px)", function() {
-		slide_width = 300;
+		slide_width = 237;
 		slides = 1;
 	});
 	enquire.register("screen and (min-width: 1440px)", function() {
-		slide_width = 1440;
-		slides = 3;
+		slide_width = 300;
+		slides = 1;
 	});
 }
+
+
 	</script>
 </head>
 <body>
+
+
 	<div class="shablon">
 <script type="text/html" id = "zapros">
 		<div class="grid">
@@ -50,28 +55,7 @@ if (typeof enquire != "undefined") {
 					
 			<%}; %></div>
 	</script>
-<!-- шаблон к варианту2  запроса из файла Js
-<script type ="text/template" id = "template">
-		<div class="grid">
-			<% for (var i=0; i<data.length; i++) { %>
-				<div class="grid-item" 
-				<img src="<%= data[i].foto %>
-				</div>
-						
-			<%}; %></div>-->
 
-  <!--
-отказалась от этого шаблона 
-  <script type ="text/template" id = "template">
-	  <div class = "grid">
-		  <%for(var i in data){%>
-			  <div class="grid-item">
-				  <img src="<%= data[i].foto %>
-				   class="grid--foto">
-          		</div>
-			<%}%>
-		</div>
-	</script>-->
 </div>
 	<section class="content">
 		<header><div class="enter">

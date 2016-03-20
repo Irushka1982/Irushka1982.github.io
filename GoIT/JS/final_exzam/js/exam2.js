@@ -35,7 +35,7 @@
 						generirovanie();
 				});
 
-$(document).ready(function(){
+
   $('.bxslider').bxSlider({
   	 slideWidth: slide_width,
   	   minSlides: slides,
@@ -44,50 +44,9 @@ $(document).ready(function(){
   autoControls: true,
 
   });
+
+
 });
-
-});
-/*
-есть ещё несколько вариантов:
-
-
-
-
-	2)	$(document).ready(function(){                          
-		    $('#search__poleotpravka').click(function(){ 
-		       $('.grid').empty();
-				$.getJSON('http://api.pixplorer.co.uk/image?word=cat&amount=5&size=l', 
-						function(data)
-						{console.log(data);
-						 этот код в консоли отображается значение Object {images: Array[5], status: "success", count: 5}
-		                      });
-			}); 
-	
-						$(function (func, data) {
-							if ($('.plitka').length === 0)
-
-							{
-								var div = $('<div/>',{
-							    	class: 'plitka',
-							    	html:'<div class="grid"></div>'
-							    });
-							    $('#wrapper3').append(div);
-
-							}
-
-								$.each(data.results, function(i, val){
-									        
-									var b = $('<div/>',{
-										class: 'grid-item',
-										html: '<img> +val' //в єтом коде не уверена
-									});		                      
-									$('.grid').append(b);
-										   
-									       });
-
-							});
-*/
-	
 
 
 /*а это пример кроссбраузерного запроса для ие8, нам ведь надо кросбраузерность делать
