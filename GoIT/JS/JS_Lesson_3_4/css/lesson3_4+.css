@@ -1,33 +1,45 @@
-
 label{
     display: block;
+	/*border:1px solid transparent;*/
 }
+/*label:after {
+	content:"";
+    display:table;
+    clear:both;
+}*/
+
 input[type=checkbox] {
    display: none;
 }
 
+/*input[type=checkbox] + label:before,
+input[type=checkbox]:checked + label:before {
+	
+}*/	
 input[type=checkbox] + label:before {
     content: ' ';
     text-align: center;
-    border: 1px solid black;
+   border: 1px solid black;
     width: 15px;
     height: 15px;
+   line-height:15px;
     display: block;
-    float: left;
-    line-height:15px;
+    float:left;
 }
 
 input[type=checkbox]:checked + label:before {
     content: '\2713';
     text-align: center;
+   border: 1px solid black;
     width: 15px;
     height: 15px;
+   line-height:15px;
     display: block;
-    border: 1px solid black;
-    line-height:15px;
+    float:left;
 }
-    input[type=submit]{
-    background-color: #cfe1f5;
+
+input[type=submit]{
+   	background-color: #cfe1f5;
     width: 325px; 
     height: 55px; 
     border: 1px solid black;
