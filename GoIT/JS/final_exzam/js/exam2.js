@@ -44,6 +44,7 @@ var slides = 1;
 
 $(function() {
         $(window).resize(function() {
+   	
       $('.bxslider').bxSlider({
   	 slideWidth: slide_width,
   	   minSlides: slides,
