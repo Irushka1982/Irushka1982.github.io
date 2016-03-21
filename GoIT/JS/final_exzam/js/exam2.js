@@ -55,7 +55,6 @@ if (typeof enquire != "undefined") {
         })
     });
 
-
   $('.bxslider').bxSlider({
   	 slideWidth: slide_width,
   	   minSlides: slides,
@@ -64,7 +63,6 @@ if (typeof enquire != "undefined") {
   autoControls: true,
 
   });
-
 
 
 });
