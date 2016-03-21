@@ -1,5 +1,11 @@
 	$(document).ready(function(){                          
-		   
+
+
+
+
+
+
+
 		    $('#search__poleotpravka').click(function(){ 
 
 				function generirovanie(queryPic) {
@@ -40,6 +46,23 @@
   autoControls: true,
 
   });
+
+ $(function() {
+        $(window).resize(function() {
+slide_width = 300;
+slides = 1;
+if (typeof enquire != "undefined") { 
+	enquire.register("screen and (min-width: 768px)", function() {
+		slide_width = 237;
+		slides = 1;
+	});
+	enquire.register("screen and (min-width: 1440px)", function() {
+		slide_width = 300;
+		slides = 1;
+	});
+}         
+        })
+    });
 
 
 });
