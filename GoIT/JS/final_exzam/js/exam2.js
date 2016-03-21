@@ -1,8 +1,5 @@
 	$(document).ready(function(){                          
 		   
-
-
-
 		    $('#search__poleotpravka').click(function(){ 
 
 				function generirovanie(queryPic) {
@@ -35,7 +32,6 @@
 						generirovanie();
 				});
 
-
   $('.bxslider').bxSlider({
   	 slideWidth: slide_width,
   	   minSlides: slides,
@@ -47,6 +43,7 @@
 
 
 });
+
 
 
 /*а это пример кроссбраузерного запроса для ие8, нам ведь надо кросбраузерность делать

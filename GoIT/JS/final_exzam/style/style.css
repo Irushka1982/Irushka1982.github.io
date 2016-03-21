@@ -183,7 +183,7 @@ header {
   width: 250px;
   height: 174px;
   position: absolute;
-  margin-top: 74px; }
+  margin-top: 65px; }
   .block-text span {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
@@ -225,18 +225,18 @@ header {
 @media (min-width: 768px) {
   .persons {
     width: 580px;
-    margin: 0 0 0 127px; } }
+    margin: 0 0 0 105px; } }
 @media (min-width: 1440px) {
   .persons {
     width: 950px;
-    margin: 0 0 9px -17px;
+    margin: 0 0 9px -32px;
     overflow: hidden; } }
 .partner {
   display: block;
   width: 215px;
   height: auto;
   text-align: center;
-  margin: 0px 0 23px 19px; }
+  margin: 0px 0 23px 27px; }
 
 @media (min-width: 768px) {
   .partner {
@@ -269,8 +269,8 @@ header {
   background: url(../image/sprite.png) 0px 0px no-repeat;
   height: 38px;
   width: 40px;
-  left: 164px;
-  top: 77px;
+  left: 159px;
+  top: 84px;
   bottom: 71px;
   right: 10px;
   z-index: 2;
@@ -283,8 +283,8 @@ header {
   background: url(../image/sprite.png) 0px 0px no-repeat;
   height: 38px;
   width: 40px;
-  left: 150px;
-  top: 80px;
+  left: 156px;
+  top: 84px;
   bottom: 71px;
   right: 10px;
   z-index: 2;
@@ -297,8 +297,8 @@ header {
   background: url(../image/sprite.png) 0px 0px no-repeat;
   height: 39px;
   width: 40px;
-  left: 164px;
-  top: 77px;
+  left: 156px;
+  top: 82px;
   bottom: 71px;
   right: 10px;
   z-index: 2;
@@ -311,8 +311,8 @@ header {
   background: url(../image/sprite.png) 0px 0px no-repeat;
   height: 40px;
   width: 42px;
-  left: 164px;
-  top: 77px;
+  left: 154px;
+  top: 84px;
   bottom: 71px;
   right: 10px;
   z-index: 2;
@@ -335,13 +335,14 @@ header {
   font-weight: bold;
   font-size: 14px;
   color: #333333;
-  margin: 11px 0 9px 11px; }
+  margin: 11px 0 9px 46px; }
 
 .partner__about, nav ul li a {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 14px;
-  color: #333333; }
+  color: #333333;
+  margin-left: 10px; }
 
 .other-button {
   width: 280px;
