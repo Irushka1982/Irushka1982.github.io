@@ -6,7 +6,40 @@
 
 
 
-		    $('#search__poleotpravka').click(function(){ 
+
+				function generirovanie(queryPic) {
+				
+							$.ajax({
+								type: "GET",
+								dataType: "json",
+								cache: false,
+								url: 'http://api.pixplorer.co.uk/image?word=&amount=7&size=tb',
+								success: function(data) {
+
+									var vstavka = tmpl($('#zapros').html(), data);
+
+									$('.grid').remove();
+
+									$('#wrapper3').append(vstavka);
+									
+									$('.grid').masonry({
+								  itemSelector: '.grid-item',
+
+								  
+								});
+											
+							console.log(data);
+					
+								}
+							});
+						}
+
+						generirovanie();
+				
+
+
+
+ $('#search__poleotpravka').click(function(){ 
 
 				function generirovanie(queryPic) {
 				var slovo = $('.search__poletext').val();
@@ -35,43 +68,14 @@
 							});
 						}
 
-						generirovanie();
+					generirovanie();
 				});
 
-		    /*
-var slide_width = 300;
-var slides = 1;
 
-
-
-$(function() {
-        $(window).resize(function() {
-   	
-
-if (typeof enquire != "undefined") { 
-
-slide_width = 273;
-		slides:1;
-
-	enquire.register("screen and (min-width: 768px)", function () {
-		
-
-	});
-	slide_width = 300;
-		slides:1;
-	enquire.register("screen and (min-width: 1440px)", function () {
-		
-	});
-}         
-        })
-    });
-*/
 
 
 $('.bxslider').bxSlider({
-  	/* slideWidth: slide_width,
-  	   minSlides: slides,
-  	    slideMargin: 5,*/
+ 
   	      auto: true,
   autoControls: true,
 
