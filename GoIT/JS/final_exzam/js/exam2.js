@@ -1,13 +1,5 @@
 	$(document).ready(function(){                          
-
-
-
-
-
-
-
-
-				function generirovanie(queryPic) {
+			function generirovanie(queryPic) {
 				
 							$.ajax({
 								type: "GET",
@@ -24,7 +16,6 @@
 									
 									$('.grid').masonry({
 								  itemSelector: '.grid-item',
-
 								  
 								});
 											
@@ -33,8 +24,7 @@
 								}
 							});
 						}
-
-						generirovanie();
+				generirovanie();
 				
 
 
@@ -58,7 +48,6 @@
 									
 									$('.grid').masonry({
 								  itemSelector: '.grid-item',
-
 								  
 								});
 											
@@ -73,10 +62,8 @@
 
 
 
-
 $('.bxslider').bxSlider({
- 
-  	      auto: true,
+   	      auto: true,
   autoControls: true,
 
   });
