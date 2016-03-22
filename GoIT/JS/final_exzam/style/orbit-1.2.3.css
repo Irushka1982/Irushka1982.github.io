@@ -161,13 +161,13 @@ div.slider-nav span {
     cursor: pointer; }
 
 div.slider-nav span.right {
-   /* background: url(../image/right-arrow.png) 0 0 no-repeat;*/
+    background: url(../image/right-arrow.png) 0 0 no-repeat;
     position: absolute;
     top:142px;
     right: -15px; }
 
 div.slider-nav span.left {
- /*  background: url(../image/left-arrow.png)0 0 no-repeat;*/
+    background: url(../image/left-arrow.png)0 0 no-repeat;
     top:142px;
     left: 5px; }
 

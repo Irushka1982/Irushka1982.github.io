@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -163,14 +164,30 @@ header {
 @media (min-width: 768px) {
   .how-works, .meet-partners, .discover, .discover2 {
     margin: 94px 0 20px 0px; } }
-.carusel1 ul li {
-  display: inline-block; }
+.bx-wrapper {
+  width: 100%;
+  height: auto; }
+
+@media (min-width: 768px) {
+  .bx-wrapper {
+    width: 30%; } }
+@media (min-width: 1440px) {
+  .bx-wrapper {
+    width: 30%; } }
+.carusel1 ul {
+  width: 299px;
+  height: 2402px; }
+  .carusel1 ul li {
+    width: 299px;
+    display: inline-block; }
 
 @media (min-width: 768px) {
   .carusel1 ul {
-    /* height:402px;*/ }
+    width: 328px;
+    height: 402px; }
     .carusel1 ul li {
       /*width:250px;*/
+      width: 328px;
       display: inline-block;
       /*   height: 300px;*/ } }
 @media (min-width: 1440px) {
@@ -569,5 +586,16 @@ nav {
 @media (min-width: 1440px) {
   .desighn_by {
     float: right; } }
+hr {
+  border: none;
+  /* ╨г╨▒╨╕╤А╨░╨╡╨╝ ╨│╤А╨░╨╜╨╕╤Ж╤Г */
+  background-color: red;
+  /* ╨ж╨▓╨╡╤В ╨╗╨╕╨╜╨╕╨╕ */
+  color: red;
+  /* ╨ж╨▓╨╡╤В ╨╗╨╕╨╜╨╕╨╕ ╨┤╨╗╤П IE6-7 */
+  height: 2px;
+  /* ╨в╨╛╨╗╤Й╨╕╨╜╨░ ╨╗╨╕╨╜╨╕╨╕ */
+  top: 20px;
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

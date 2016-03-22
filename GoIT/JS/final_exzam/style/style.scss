@@ -224,10 +224,24 @@ width: 450px;
 }}
 
 
+.bx-wrapper{width:100%;
+height:auto;}
+
+
+@media(min-width:768px) {
+  .bx-wrapper{width:30%}
+}
+
+@media(min-width:1440px) {
+  .bx-wrapper{width:30%}
+}
+
 
 .carusel1 {
-    ul{     
-      li{
+    ul{ width:299px;
+      height: 2402px;
+
+      li{width:299px;
         display:inline-block;
       }
   }
@@ -235,21 +249,21 @@ width: 450px;
 @media(min-width:768px){
 .carusel1 {
  
-    ul{
-     /* height:402px;*/
-      li{/*width:250px;*/
+    ul{width:328px;
+      height:402px;
+      li{/*width:250px;*/width:328px;
         display:inline-block;
      /*   height: 300px;*/
       }
     }
   }
 }
+
 @media(min-width:1440px){
 .carusel1 {
 
     ul{
-     
-     /* width:940px;*/
+      /* width:940px;*/
       margin:0 0 0 0;
       li{
       
@@ -805,3 +819,12 @@ nav{
 
 }
 
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+top:20px;position:absolute;
+
+   }

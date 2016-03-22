@@ -37,6 +37,8 @@
 
 						generirovanie();
 				});
+
+		    /*
 var slide_width = 300;
 var slides = 1;
 
@@ -45,31 +47,35 @@ var slides = 1;
 $(function() {
         $(window).resize(function() {
    	
-      $('.bxslider').bxSlider({
-  	 slideWidth: slide_width,
-  	   minSlides: slides,
-  	    slideMargin: 5,
-  	      auto: true,
-  autoControls: true,
-
-  });
-
 
 if (typeof enquire != "undefined") { 
-	enquire.register("screen and (min-width: 768px)", function () {
-		slide_width = 237;
+
+slide_width = 273;
 		slides:1;
 
+	enquire.register("screen and (min-width: 768px)", function () {
+		
+
 	});
-	enquire.register("screen and (min-width: 1440px)", function () {
-		slide_width = 300;
+	slide_width = 300;
 		slides:1;
+	enquire.register("screen and (min-width: 1440px)", function () {
+		
 	});
 }         
         })
     });
+*/
 
 
+$('.bxslider').bxSlider({
+  	/* slideWidth: slide_width,
+  	   minSlides: slides,
+  	    slideMargin: 5,*/
+  	      auto: true,
+  autoControls: true,
+
+  });
 });
 
 
