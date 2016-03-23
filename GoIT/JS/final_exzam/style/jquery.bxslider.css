@@ -17,7 +17,6 @@
 .bx-wrapper {
 	position: relative;
 	margin: 10px 0 0 10px;
-
 	padding: 0;
 	*zoom: 1;
 	display: block;
@@ -33,13 +32,13 @@
 height:240px;}
 
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
   .bx-viewport{width:30%;
     height: 373px;
    }
 }
 
-@media(min-width:1440px) {
+@media screen and (min-width:1440px) {
  .bx-viewport{width:30%;
    height: 367px;}
 }
@@ -50,13 +49,13 @@ height:240px;}
 }
 
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
   .bx-wrapper{width:30%;
     height: 374px;
 margin: 13px 14px 0 10px;}
 }
 
-@media(min-width:1440px) {
+@media screen and (min-width:1440px) {
   .bx-wrapper{width:30%;
     height: 367px;}
 }
@@ -95,7 +94,7 @@ margin: 13px 14px 0 10px;}
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	/*background: url(images/bx_loader.gif) center center no-repeat #fff;*/
 	height: 100%;
 	width: 100%;
 	position: absolute;

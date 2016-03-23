@@ -1,5 +1,5 @@
 	$(document).ready(function(){                          
-			function generirovanie(queryPic) {
+			function generirovanie(query) {
 				
 							$.ajax({
 								type: "GET",
@@ -31,7 +31,7 @@
 
  $('#search__poleotpravka').click(function(){ 
 
-				function generirovanie(queryPic) {
+				function generirovanie(query) {
 				var slovo = $('.search__poletext').val();
 							$.ajax({
 								type: "GET",
@@ -72,7 +72,7 @@ $('.bxslider').bxSlider({
 
 
 /*а это пример кроссбраузерного запроса для ие8, нам ведь надо кросбраузерность делать
-пока не смогла адаптировать под наш запрос
+
 		$(document).ready(function(){                          
 		    $('#search__poleotpravka').click(function(){ 
 
