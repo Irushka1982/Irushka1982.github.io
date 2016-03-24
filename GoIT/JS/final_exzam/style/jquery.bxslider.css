@@ -34,13 +34,13 @@ height:240px;}
 
 @media screen and (min-width:768px) {
   .bx-viewport{width:30%;
-    height: 373px;
+    height: 401px;
    }
 }
 
 @media screen and (min-width:1440px) {
  .bx-viewport{width:30%;
-   height: 367px;}
+   height: 400px;}
 }
 
 
@@ -51,13 +51,13 @@ height:240px;}
 
 @media screen and (min-width:768px) {
   .bx-wrapper{width:30%;
-    height: 374px;
+    height: 401px;
 margin: 13px 14px 0 10px;}
 }
 
 @media screen and (min-width:1440px) {
   .bx-wrapper{width:30%;
-    height: 367px;}
+    height: 400px;}
 }
 
 
@@ -187,7 +187,7 @@ margin: 13px 14px 0 10px;}
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -11px no-repeat;
+	/*background: url(images/controls.png) -86px -11px no-repeat;*/
 	margin: 0 3px;
 }
 

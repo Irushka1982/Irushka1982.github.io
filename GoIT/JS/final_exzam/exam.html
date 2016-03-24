@@ -3,22 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Exam</title>
-	<link rel="stylesheet" href="style/style.css">
+<!--[if !IE 8]>-->	<link rel="stylesheet" href="style/style.css"><!--<![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="style/style-ie.css"><![endif]-->
+
+
 	<!--шрифты-->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js">
 
 
-<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk="crossorigin="anonymous"></script><!--обрезает-->
+<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk="crossorigin="anonymous"></script>
 <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
 
 <!--<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>-->
 
 
 <script src="js/masonry.pkgd.min.js"></script>
-<!--[if gt IE 8]><!--><script src="js/masonry.pkgd.js"></script>-->
-<!--<![endif]-->
+
+
 	
 
 
@@ -28,16 +31,15 @@
 	<link href="style/jquery.bxslider.css" rel="stylesheet" />
 
 
-<!--CDN скрипт для загрузки изображений в ИЕ8
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script> -->
-<!--локальный скрипт для загрузки изображений в ИЕ8-->
-<!--[if gt IE 8]><!-->
-<script src="js/imagesloaded.pkgd.js"></script>--> <!--<![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
+
+<!--
+<script src="js/imagesloaded.pkgd.js"></script>-->
 
 
 
- 
- <script src="js/picturefill.min.js"></script><!--кроссбраузерности srcset--><!--IE8 отказывает-->
+ <!--[if gt IE 8]><!-->
+ <script src="js/picturefill.min.js"></script> <!--<![endif]-->
 
 	<script src="js/template.js"></script>
 
@@ -47,7 +49,7 @@
 
 	<!--локальный скрипт для медиа в ИЕ8  файл-->
 <!--[if gt IE 8]><!-->
-<!--<script src="respond/respond.min.js"></script>--><!--<![endif]-->
+<script src="respond/respond.min.js"></script><!--<![endif]-->
 <!--CDN скрипт для медиа  ИЕ8 ошибка сценария-->
   <!--[if gt IE 8]><!--><!-- <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>-->
  <!--<![endif]-->
@@ -56,25 +58,15 @@
 
 <!--CDN скрипт для медиа и отображения тегов штмл5 в ИЕ8-->
 <!--[if gt IE 8]><!-->
- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><!--<![endif]-->
+<!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>--><!--<![endif]-->
  <!--[if gt IE 8]><!-->
 <!--<script src="js/html5shiv.js"></script>--><!--<![endif]-->
-
-
-
-
-
-
-
-
-
 
 
 	<script src="js/exam2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
 	<div class="shablon">
 <script type="text/html" id = "zapros">
 		<div class="grid">
@@ -114,11 +106,10 @@
 								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							
-							<source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
+								<!--[if IE 8]><div><img src="image/mobile/slider1M.png" alt="foto"></div> <![endif]-->
+							<!--[if !IE 8]>--><source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
-								  
-							<img srcset="image/mobile/slider1M.png" alt="foto">
+							<img srcset="image/mobile/slider1M.png" alt="foto"><!--<![endif]-->
 						</picture>
 					</li>
 					<li>
@@ -128,10 +119,10 @@
 							<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 				   		</div>
 						<picture>
-						
-							<source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
+						<!--[if IE 8]><div><img src="image/mobile/slider2M.png" alt="foto"></div> <![endif]-->
+							<!--[if !IE 8]>--><source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider2M.png" alt="foto">
+							<img srcset="image/mobile/slider2M.png" alt="foto"><!--<![endif]-->
 						</picture>					
 					</li>
 					<li>
@@ -141,9 +132,10 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		   </div>
 						<picture>
-							<source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
+							<!--[if IE 8]><div><img src="image/mobile/slider3M.png" alt="foto"></div> <![endif]-->
+						<!--[if !IE 8]>--><source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider3M.png" alt="foto">
+							<img srcset="image/mobile/slider3M.png" alt="foto"><!--<![endif]-->
 						</picture>
 					</li>
 				</ul>			
@@ -155,9 +147,10 @@
 							<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 				   		</div>
 						<picture>
-							<source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
+							<!--[if IE 8]><div><img src="image/mobile/slider2M.png" alt="foto"></div> <![endif]-->
+							<!--[if !IE 8]>--><source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider2M.png" alt="foto">
+							<img srcset="image/mobile/slider2M.png" alt="foto"><!--<![endif]-->
 						</picture>
 					</li>
 					<li>
@@ -166,10 +159,12 @@
 							<h1>Sed leo enim, condimentum</h1>
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
+				   		
 						<picture>
-							<source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
+							<!--[if IE 8]><div><img src="image/mobile/slider3M.png" alt="foto"></div> <![endif]-->
+							<!--[if !IE 8]>--><source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider3M.png" alt="foto">
+							<img srcset="image/mobile/slider3M.png" alt="foto"><!--<![endif]-->
 						</picture>
 					</li>
 					<li>
@@ -179,9 +174,10 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							<source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
+							<!--[if IE 8]><div><img src="image/mobile/slider1M.png" alt="foto"></div> <![endif]-->
+							<!--[if !IE 8]>--><source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider1M.png" alt="foto">
+							<img srcset="image/mobile/slider1M.png" alt="foto"><!--<![endif]-->
 						</picture>
 					</li>					
 				</ul>
@@ -193,9 +189,10 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							<source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
+							<!--[if IE 8]><div><img src="image/mobile/slider3M.png" alt="foto"></div> <![endif]-->
+						<!--[if !IE 8]>--><source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider3M.png" alt="foto">
+							<img srcset="image/mobile/slider3M.png" alt="foto"><!--<![endif]-->
 						</picture>
 					</li>
 					<li>
@@ -205,9 +202,10 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							<source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
+							<!--[if IE 8]><div><img src="image/mobile/slider1M.png" alt="foto"></div> <![endif]-->
+							<!--[if !IE 8]>--><source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider1M.png" alt="foto">
+							<img srcset="image/mobile/slider1M.png" alt="foto"><!--<![endif]-->
 						</picture>
 					</li>
 					<li>
@@ -217,9 +215,10 @@
 							<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 				   		   </div>
 						<picture>
-							<source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
+							<!--[if IE 8]><div><img src="image/mobile/slider2M.png" alt="foto"></div> <![endif]-->
+						<!--[if !IE 8]>--><source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
 							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)">
-							<img srcset="image/mobile/slider2M.png" alt="foto">
+							<img srcset="image/mobile/slider2M.png" alt="foto"><!--<![endif]-->
 						</picture>					
 					</li>					
 				</ul>				

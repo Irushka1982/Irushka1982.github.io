@@ -1,4 +1,5 @@
-
+/* запрос. Хром, ФФ работают карусель и масонри. 
+ИЕ8, ИЕ9 карусель отображается, прокручивается, масонри не работает*/
 	$(document).ready(function(){                          
 			function generirovanie(query) {
 				
@@ -72,56 +73,12 @@ $('.bxslider').bxSlider({
 
 
 
-
-/* ----------а это рабочий код кроббраузерного запроса без обработчика на клик
-$(document).ready(function(){
-
-function getXmlHttp(){
-  var xmlhttp;
-  try {
-    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-  } catch (e) {
-    try {
-      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    } catch (E) {
-      xmlhttp = false;
-    }
-  }
-  if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
-    xmlhttp = new XMLHttpRequest();
-  }
-  return xmlhttp;
-}
-
-var xmlhttp = getXmlHttp()
-xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
-xmlhttp.send(null);
-if(xmlhttp.status == 200) {
-  var obj = eval('('+xmlhttp.responseText+')');
-console.log(obj);
-
-
-							var vstavka = tmpl($('#zapros').html(), obj);
-
-							$('.grid').remove();
-
-							$('#wrapper3').append(vstavka);
-							
-							$('.grid').masonry({
-						  itemSelector: '.grid-item',
-						  
-						});
-				
-				
-					
-getXmlHttp();
-
-};
-
-});*/
-
-/* а это кроссбраузерный рабочий запрос и обработчик и карусель
-$(document).ready(function(){  
+/* 
+ кроссбраузерный  запрос и обработчик и карусель
+Хром, ФФ работают карусель и масонри. 
+ИЕ8, ИЕ9 крусель не активируется, масонри не работает
+ */
+/*$(document).ready(function(){  
 
 
 function getXmlHttp(){
@@ -141,7 +98,7 @@ function getXmlHttp(){
   return xmlhttp;
 }
 
-var xmlhttp = getXmlHttp()
+var xmlhttp = getXmlHttp();
 xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=&amount=7&size=m', false);
 xmlhttp.send(null);
 if(xmlhttp.status == 200) {
@@ -204,20 +161,55 @@ getXmlHttp();
 };
 });
 
+
 $('.bxslider').bxSlider({
    	      auto: true,
   autoControls: true,
 
   });
-});
-	*/
-/*
-var xmlhttp = getXmlHttp();
- xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
- xmlhttp.send(null);
-var obj = eval('('+xmlhttp.responseText+')');
-		
-				$(function(obj) {
+});			*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------а это рабочий код кроббраузерного запроса без обработчика на клик
+$(document).ready(function(){
+
+function getXmlHttp(){
+  var xmlhttp;
+  try {
+    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  } catch (e) {
+    try {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (E) {
+      xmlhttp = false;
+    }
+  }
+  if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+    xmlhttp = new XMLHttpRequest();
+  }
+  return xmlhttp;
+}
+
+var xmlhttp = getXmlHttp()
+xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=black bg&amount=7&size=m', false);
+xmlhttp.send(null);
+if(xmlhttp.status == 200) {
+  var obj = eval('('+xmlhttp.responseText+')');
+console.log(obj);
+
 
 							var vstavka = tmpl($('#zapros').html(), obj);
 
@@ -229,55 +221,11 @@ var obj = eval('('+xmlhttp.responseText+')');
 						  itemSelector: '.grid-item',
 						  
 						});
-						
-					
-					});
-
-
-					
 				
-		getXmlHttp();
+				
+					
+getXmlHttp();
+
+};
 
 });*/
-/*
-
-
-			function getXmlHttp(query) {
-
-
-
-
-				
-							$.ajax({
-								type: "GET",
-								dataType: "json",
-								cache: false,
-								url: 'http://api.pixplorer.co.uk/image?word=&amount=7&size=tb',
-								success: function(data) {
-
-									var vstavka = tmpl($('#zapros').html(), data);
-
-									$('.grid').remove();
-
-									$('#wrapper3').append(vstavka);
-									
-									$('.grid').masonry({
-								  itemSelector: '.grid-item',
-								  
-								});
-											
-							console.log(data);
-					
-								}
-							});
-						}
-				generirovanie();
-
-
-
-
-
-
-*/
-
-			
