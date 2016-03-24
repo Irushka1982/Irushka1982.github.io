@@ -14,12 +14,12 @@
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!--	<script src="js/enquire.min.js"></script> не помню зачем подключала:)-->
 		<!--<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>-->
-<script src="js/respond.min.js"></script>
+
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>--><!--для медиа запросов в ИЕ8,отказывает-->
 	<script src="js/masonry.pkgd.min.js"></script><!--forIE и ФФ-->
 <!--<script src="js/masonry.pkgd.js"></script>-->
-
-	<script src="js/html5shiv.js"></script><!--плагин чтобы видеть html5в IE8-->
+<!--[if gt IE 8]><!-->
+	<script src="js/html5shiv.js"></script><!--<![endif]--><!--плагин чтобы видеть html5в IE8-->
 
 <!-- карусель-->
 	<script src="js/jquery.bxslider.min.js"></script>
@@ -34,6 +34,8 @@
 
 <!--	<script src="js/imagesloaded.pkgd.js"></script-->
 	<script src="js/template.js"></script>
+<!--[if gt IE 8]><!-->
+	<script src="respond/respond.min.js"></script> <!--<![endif]-->
 	<script src="js/exam2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
