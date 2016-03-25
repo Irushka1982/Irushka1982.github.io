@@ -31,6 +31,10 @@ header {
   margin: 21px 0 0 -6px;
   width: 90px; }
 
+
+
+
+
 .logo, .logo-nav {
   display: block;
   width: 200px;
@@ -82,7 +86,7 @@ header {
   margin: 34px 0 2px 0px;
    }
 
-
+.carusel1{margin-top: 250px;}
 .carusel1 ul {
   width: 299px;
   height: 2402px; }

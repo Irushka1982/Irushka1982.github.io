@@ -1,4 +1,4 @@
-/* запрос. Хром, ФФ работают карусель и масонри. 
+/* запрос № 1. Хром, ФФ работают карусель и масонри. 
 ИЕ8, ИЕ9 карусель отображается, прокручивается, масонри не работает*/
 	$(document).ready(function(){                          
 			function generirovanie(query) {
@@ -28,7 +28,6 @@
 						}
 				generirovanie();
 				
-
 
 
  $('#search__poleotpravka').click(function(){ 
@@ -74,12 +73,11 @@ $('.bxslider').bxSlider({
 
 
 /* 
- кроссбраузерный  запрос и обработчик и карусель
+запрос №2, кроссбраузерный  запрос и обработчик и карусель
 Хром, ФФ работают карусель и масонри. 
 ИЕ8, ИЕ9 крусель не активируется, масонри не работает
- */
-/*$(document).ready(function(){  
-
+ *//*
+$(document).ready(function(){  
 
 function getXmlHttp(){
   var xmlhttp;
@@ -103,7 +101,7 @@ xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=&amount=7&size=m', fa
 xmlhttp.send(null);
 if(xmlhttp.status == 200) {
   var obj = eval('('+xmlhttp.responseText+')');
-console.log(obj);
+
 
 
 							var vstavka = tmpl($('#zapros').html(), obj);
@@ -167,9 +165,8 @@ $('.bxslider').bxSlider({
   autoControls: true,
 
   });
-});			*/
-
-
+});			
+*/
 
 
 
