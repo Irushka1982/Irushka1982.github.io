@@ -176,15 +176,15 @@ header {
     width: 328px;
     height: 402px; }
     .carusel1 ul li {
-      /*width:250px;*/
       width: 328px;
-      display: inline-block;
-      /*   height: 300px;*/ } }
+      height: 402px;
+      display: inline-block; } }
 @media screen and (min-width: 1440px) {
   .carusel1 ul {
-    /* width:940px;*/
+    height: 400px;
     margin: 0 0 0 0; }
     .carusel1 ul li {
+      height: 400px;
       display: inline-block; } }
 .block-text {
   width: 220px;

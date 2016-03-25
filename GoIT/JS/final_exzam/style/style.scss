@@ -222,17 +222,6 @@ width: 450px;
 .how-works{
  margin: 94px 0 20px 0px;
 }}
-
-
-
-
-
-
-
-
-
-
-
 .carusel1 {
     ul{ width:299px;
       height: 2402px;
@@ -245,13 +234,12 @@ width: 450px;
 }
 @media screen and (min-width:768px){
 .carusel1 {
- 
-    ul{width:328px;
+     ul{width:328px;
       height:402px;
-      li{/*width:250px;*/width:328px;
+      li{width:328px;
+        height:402px;
         display:inline-block;
-     /*   height: 300px;*/
-      }
+           }
     }
   }
 }
@@ -260,16 +248,19 @@ width: 450px;
 .carusel1 {
 
     ul{
-      /* width:940px;*/
+     height:400px;
       margin:0 0 0 0;
       li{
-      
-        display:inline-block;
+      height: 400px;
+      display:inline-block;
       
       }
     }
   }
 }
+
+
+
 
 .block-text{
   width:220px;

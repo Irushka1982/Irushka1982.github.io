@@ -17,11 +17,11 @@ header {
   border: none;
   background: transparent;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat",  sans-serif;
   font-weight: bold;
   font-size: 14px;
   display: inline-block;
-  margin: 20px 0 0 58px;
+  margin: 20px 0 115px 58px;
   width: 90px;
   line-height: 30px; }
 
@@ -29,9 +29,9 @@ header {
   border-radius: 50px;
   border: 2px solid #ffffff;
   margin: 21px 0 0 -6px;
-  width: 90px; }
+  width: 90px; 
 
-
+}
 
 
 
@@ -50,7 +50,7 @@ header {
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
-  
+  text-align: center;
   margin: 0 0 7px 4px; }
 
 .subtitle {
@@ -60,8 +60,8 @@ header {
   font-size: 18px;
   text-align: center;
   display: block;
-  width: 215px;
-  margin: 0 0 14px 48px; }
+  width: 225px;
+  margin: 0 0 14px 74px; }
 
 .find_partner {
   color: #ffffff;
@@ -86,7 +86,7 @@ header {
   margin: 34px 0 2px 0px;
    }
 
-.carusel1{margin-top: 250px;}
+.carusel1{}
 .carusel1 ul {
   width: 299px;
   height: 2402px; }
@@ -131,7 +131,7 @@ header {
     margin: 0 0 10px 0; }
 
 #wrapper2 {
-  height: 1091px;
+  height: 1110px;
   text-align: center; }
 
 .persons {
@@ -280,7 +280,8 @@ nav {
 
 .discover, .discover2 {
   margin-top: 0;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  text-align: center; }
 
 .discover2 {
   margin: 0 0 40px 0; }
