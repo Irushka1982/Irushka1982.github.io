@@ -186,6 +186,19 @@ header {
     .carusel1 ul li {
       height: 400px;
       display: inline-block; } }
+/*
+@media screen and (min-width:768px) {
+  .bx-wrapper{width:30%;
+    height: 401px;
+margin: 13px 14px 0 10px;}
+}
+
+@media screen and (min-width:1440px) {
+  .bx-wrapper{width:30%;
+    height: 400px;}
+}
+
+*/
 .block-text {
   width: 220px;
   height: 174px;
