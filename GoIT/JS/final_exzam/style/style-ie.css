@@ -359,15 +359,18 @@ top: 227px;
 
 
 .search__poletext {
-
-  
-  
- width: 243px; 
-  height: 37px;
-     margin: 0 0 0 174px; }
-     .placeholder{color: #333333;
-  font-family: "Roboto", sans-serif;font-weight: 300;
-   font-size: middle;padding-top: 10px;padding-left: 10px; }
+ width: 243px;
+ height: 37px;
+ margin: 0 0 0 174px;
+}
+.placeholder{
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+   font-size: middle;
+   padding-top: 10px;
+   padding-left: 10px;
+}
 
 #search__poleotpravka {
   width: 163px; 
