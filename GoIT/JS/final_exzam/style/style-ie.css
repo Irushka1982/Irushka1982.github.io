@@ -73,7 +73,7 @@ margin: 46px 0 115px 0px;
 
 
 
-.title { width: 502px;
+.title { width: 520px;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -162,9 +162,9 @@ top: 227px;
     color: #ffffff;
     margin: 0 0 11px 0; }
   .block-text p {
-    font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    font-size: 14px;
+     font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: small;
     color: #ffffff;
     width: 219px; 
     margin: 0 0 10px 0; }
@@ -278,8 +278,8 @@ top: 227px;
 
 .partner__about {
   font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-  font-size: 14px;
+  font-weight: 300;
+  font-size: small;
   color: #333333;
   margin-left: 10px; }
 
@@ -344,10 +344,11 @@ top: 227px;
   margin: 0 0 29px 0; 
 }
 
-.interests {
+.interests { 
+  font-weight: 300;
+  font-size: medium;
   font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-  font-size: 18px;
+   color: #333333;
  margin: 0 0 37px 0; 
   text-align: center;}
 
