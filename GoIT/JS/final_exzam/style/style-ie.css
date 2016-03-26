@@ -42,7 +42,7 @@
     overflow: hidden;
     position: relative; border-radius: 50px;
   border: 2px solid #ffffff;
-border: none;
+
   background: transparent;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -359,13 +359,15 @@ top: 227px;
 
 
 .search__poletext {
-      display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-  font-size: 14px;
-width: 243px; 
+
+  
+  
+ width: 243px; 
   height: 37px;
      margin: 0 0 0 174px; }
+     .placeholder{color: #333333;
+  font-family: "Roboto", sans-serif;font-weight: 300;
+   font-size: middle;padding-top: 10px;padding-left: 10px; }
 
 #search__poleotpravka {
   width: 163px; 
