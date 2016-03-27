@@ -180,16 +180,6 @@ top: 227px;
 .persons {width: 950px; overflow: hidden;
  margin: 0 0 9px -32px;}
 
-
-.partner {float: left;
-  display: block;
-  width: 215px;
-  height: auto;
-  text-align: center;
-   margin: 0px 4px 23px 17px; }
-
-
-
 .meet-partners {font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -198,20 +188,71 @@ top: 227px;
  width: 466px;
  margin: 34px 0 31px 237px; }
 
+.partner {float: left;
+  display: block;
+  width: 215px;
+  height: auto;
+  text-align: center;
+   margin: 0px 4px 23px 17px; 
+  
+}
 
+/* код для пробы http://codepen.io/anon/pen/EKXodr
+.partner--sprite1{ position: relative;}
+.partner__foto{ position: relative;}
 .partner--sprite1:before {
-   z-index: -1;
+  z-index: -1;
+  content: " ";
+  float: left;
+  position: absolute;
+  background: url(../image/sprite.png) 0px 0px no-repeat;
+  height: 38px;
+  width: 40px;
+  left: 145px;
+  top: 84px;
+  bottom: 71px;
+  right: 10px; 
+  background-position: 0px 0px; }*/
+
+
+
+/* код для пробы http://codepen.io/anon/pen/aNwERM
+.partner--sprite1{
+  position:relative;
+  z-index:-1;
+}
+.partner__foto {
+    z-index: -1;
+}
+.partner--sprite1:before {
+z-index:10;
+  content: " ";
+  float: left;
+  position: absolute;
+  background: url(../image/sprite.png) 0px 0px no-repeat;
+  height: 38px;
+  width: 40px;
+  left: 145px;
+  top: 84px;
+  bottom: 71px;
+  right: 10px; 
+   background-position: 0px 0px; }
+*/
+
+
+.partner--sprite1:before
+ {
+
   content: " ";
   float: left;
   position: relative;
   background: url(../image/sprite.png) 0px 0px no-repeat;
   height: 38px;
   width: 40px;
-  left: 159px;
+  left: 145px;
   top: 84px;
   bottom: 71px;
-  right: 10px;
- 
+  right: 10px; 
   background-position: 0px 0px; }
 
 .partner--sprite2:before {
@@ -225,7 +266,7 @@ top: 227px;
   top: 84px;
   bottom: 71px;
   right: 10px;
-  z-index: -1;
+  z-index: 2;
   background-position: -38px 0px; }
 
 .partner--sprite3:before {
@@ -239,7 +280,7 @@ top: 227px;
   top: 82px;
   bottom: 71px;
   right: 10px;
-  z-index: -1;
+  z-index: 2;
   background-position: -79px 0px; }
 
 .partner--sprite4:before {
@@ -253,7 +294,7 @@ top: 227px;
   top: 84px;
   bottom: 71px;
   right: 10px;
-  z-index: 2;/*для єксперимента*/
+  z-index: 2;
   background-position: -119px 0px; }
 
 .partner--sprite1:hover:before {
