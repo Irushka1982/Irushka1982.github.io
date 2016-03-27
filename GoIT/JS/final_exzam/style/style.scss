@@ -501,7 +501,7 @@ p{width: 219px;
 }
 
 
-.other-button{
+#other-button{
   width:280px;
   height:40px;
   background-color:transparent;
@@ -513,14 +513,15 @@ p{width: 219px;
   font-size:14px;
   margin-top: 11px;
 }
+
 @media screen and (min-width:768px){
-  .other-button{
+  #other-button{
      width:192px;
      margin: 44px 0 0 0;
   }
 }
 @media screen and (min-width:1440px){
-   .other-button{
+   #other-button{
      width:195px;
      margin: auto;
           display: block;
@@ -619,13 +620,14 @@ nav{
 
 
 
-.grid-item__text{color:$color-white;
+.grid-item__text{
+  color:$color-white;
   text-align: center;
- /* margin-top:45px;*/
   display: block;
  font-family: $montserrat;
   font-weight:bold;
   font-size:22px;
+  padding-top:118px;
 }
 
 

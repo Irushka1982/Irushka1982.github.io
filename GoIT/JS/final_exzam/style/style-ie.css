@@ -142,7 +142,8 @@ margin: 46px 0 115px 0px;
   display: block;
 top: 227px;
     left: 11px;  }
-  .block-text span {
+
+.block-text span {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-size: 10px;
@@ -151,8 +152,9 @@ top: 227px;
     display: block;
     width: 70px;
     line-height: 20px;
+    border: 1px solid red;
     border-radius: 50px;
-    background-color: #ff4e50;
+    background: #ff4e50;
     text-align: center;
     margin: 0 0 5px 0; }
   .block-text h1 {
@@ -198,6 +200,7 @@ top: 227px;
 
 
 .partner--sprite1:before {
+   z-index: -1;
   content: " ";
   float: left;
   position: relative;
@@ -208,7 +211,7 @@ top: 227px;
   top: 84px;
   bottom: 71px;
   right: 10px;
-  z-index: 2;
+ 
   background-position: 0px 0px; }
 
 .partner--sprite2:before {
@@ -222,7 +225,7 @@ top: 227px;
   top: 84px;
   bottom: 71px;
   right: 10px;
-  z-index: 2;
+  z-index: -1;
   background-position: -38px 0px; }
 
 .partner--sprite3:before {
@@ -236,7 +239,7 @@ top: 227px;
   top: 82px;
   bottom: 71px;
   right: 10px;
-  z-index: 2;
+  z-index: -1;
   background-position: -79px 0px; }
 
 .partner--sprite4:before {
@@ -250,7 +253,7 @@ top: 227px;
   top: 84px;
   bottom: 71px;
   right: 10px;
-  z-index: 2;
+  z-index: 2;/*для єксперимента*/
   background-position: -119px 0px; }
 
 .partner--sprite1:hover:before {
@@ -283,7 +286,7 @@ top: 227px;
   color: #333333;
   margin-left: 10px; }
 
-.other-button {
+#other-button {
  width: 195px;
   height: 40px;
   background-color: transparent;
