@@ -239,10 +239,7 @@ z-index:10;
    background-position: 0px 0px; }
 */
 
-
-.partner--sprite1:before
- {
-
+.sprite--sprite1{
   content: " ";
   float: left;
   position: relative;
@@ -255,7 +252,12 @@ z-index:10;
   right: 10px; 
   background-position: 0px 0px; }
 
-.partner--sprite2:before {
+
+
+.partner--sprite1:before
+ 
+
+.sprite--sprite2 {
   content: " ";
   float: left;
   position: relative;
@@ -269,7 +271,7 @@ z-index:10;
   z-index: 2;
   background-position: -38px 0px; }
 
-.partner--sprite3:before {
+.sprite--sprite3 {
   content: " ";
   float: left;
   position: relative;
@@ -283,7 +285,7 @@ z-index:10;
   z-index: 2;
   background-position: -79px 0px; }
 
-.partner--sprite4:before {
+.sprite--sprite4 {
   content: " ";
   float: left;
   position: relative;
