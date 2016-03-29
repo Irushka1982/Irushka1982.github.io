@@ -543,7 +543,7 @@ height:1000px;
 
 #wrapper4{
   height:234px;
-  border-bottom: 2px solid $color-pink; 
+  
 }
 @media screen and (min-width:768px) {
 #wrapper4{
@@ -766,6 +766,24 @@ nav{
 
 
 
+.content-bottom{
+  height: 201px;
+  width: 320px;
+  border-top: 2px solid $color-pink; 
+}
+@media screen and (min-width:768px){
+.content-bottom{
+  width: 768px;
+ } 
+}
+
+@media screen and (min-width:1440px){
+.content-bottom{
+   width: 1440px;
+ }
+}
+
+
 
 nav{margin:auto;
     ul{margin-bottom:12px;
@@ -794,7 +812,15 @@ nav{
 }
 }
 @media screen and (min-width:1440px){
+  nav{width:950px}
 }
+
+
+
+
+
+
+
 
 
 .contacts{
@@ -848,11 +874,3 @@ nav{
 }
 
 
-
-hr {
-    border: none; /* Убираем границу */
-    background-color: red; /* Цвет линии */
-    color: red; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
-margin-bottom:10px;
-   }
