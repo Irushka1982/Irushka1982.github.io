@@ -299,18 +299,17 @@ z-index:10;
   z-index: 2;
   background-position: -119px 0px; }
 
-.partner--sprite1:hover:before {
+.sprite--sprite2:hover{
   background-position: 0px -43px; }
 
-.partner--sprite2:hover:before {
+.sprite--sprite2:hover{
   background-position: -38px -43px; }
 
-.partner--sprite3:hover:before {
+.sprite--sprite3:hover{
   background-position: -79px -42px; }
 
-.partner--sprite4:hover:before {
+.sprite--sprite4:hover{
   background-position: -119px -43px; }
-
 
 
 
@@ -349,7 +348,7 @@ z-index:10;
 
 #wrapper4 { width: 950px;
   height: 259px;
-  border-bottom: 2px solid #ff4e50; }
+   }
 
 
 
@@ -471,10 +470,15 @@ text-align: left;
   padding: 37px 0 0 0; 
   display: block; }*/
 
+.content-bottom{
+  height: 201px;
+  width: 1440px;
+  border: 2px solid black;
+}
 nav {
  margin-bottom: 12px;
  padding: 37px 0 0 0; margin: auto;
-  height: 200px;
+  width: 950px;
   }
   nav ul {display: block;
     margin-bottom: 12px;
