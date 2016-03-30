@@ -24,6 +24,18 @@ function Model(){
 
 		return self.data;
 	};
+  self.editItem = function (item, editedItem) {
+    var index = self.data.indexOf(item);
+
+    if (index === -1) {
+      return;
+    };
+
+    self.data.splice(index, 1, editedItem );
+
+    return self.data
+  }
+
 
 }
 
@@ -48,18 +60,6 @@ function View(model){
 	};
 	init();
 
-	 /* show confirm edit btn
-  self.elements.listContainer.on('focus', '.item-input', function () {
-    $(this).siblings('.item-delete').fadeOut( 'fast', function () {
-      $(this).siblings('.item-edit').fadeIn('fast');
-    });
-    
-  });
-  self.elements.listContainer.on('focusout', '.item-input', function () {
-    $(this).siblings('.item-edit').fadeOut( 'fast', function () {
-      $(this).siblings('.item-delete').fadeIn('fast');
-    });
-  });*/
 }
 
 
@@ -90,16 +90,13 @@ function Controller(model,view){
 
 	}
 
-  /*function getItemValue () {
-    self.itemValue = $( this ).val();
-  }
 
   function editItem () {
     self.editedValue = $(this).siblings('input').val();
     model.editItem(self.itemValue, self.editedValue);
     view.renderList(model.data);
   }
-*/
+
 
 	
 }

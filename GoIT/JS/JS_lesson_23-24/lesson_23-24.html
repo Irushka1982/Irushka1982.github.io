@@ -10,11 +10,14 @@
 <body>
 	<script type="text/template" id="wrapper-template">
 	<div class="wrapper">
-		<ul class="item-list"></ul>
-		<div class="controlls">
+		<div class="title">My todo list</div>
+<div class="controlls">
 			<input type="text" class="item-value">
 			<button class="item-add">Add</button>
 		</div>
+
+		<ol class="item-list"></ol>
+		
 	</div>
 	</script>
 
@@ -22,12 +25,10 @@
 <% for (var i = 0; i < data.length; i++){ %>
 	
 	<li>
-<!--<input class="item-input" type="text" name="" value=<%= data[i] %>>-->
-	<%= data[i] %><span data-value="<%= data[i] %>"class="item-delete">x</span>
+<input class="item-input" type="text" name="" value=<%= data[i] %>>
+	<input data-value="<%= data[i] %>"class="item-delete" value="Delete">
 
-<span class="item-edit">		
-				</span>
-	</li>
+<span class="item-edit"></span></li>
 
 	<% }; %>
 </script>
