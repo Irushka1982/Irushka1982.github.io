@@ -1,4 +1,16 @@
 $(document).ready(function(){
+$( '.poletext')
+  .mouseout(function() {
+$('.enter').animate ({opacity:0},10);
+  })
+  .mouseover(function() {
+    $('.enter').animate ({opacity:1},10);
+  });
+
+
+
+
+	
 $('html').keydown(function(eventObject){ 
   if (eventObject.keyCode == 13) { 
 $('.result').empty();
@@ -41,6 +53,13 @@ $.each(data.results, function(i, val){
 	       });
 
 }
+
+
+
+
+
+
+
 
 /*часть 2*/
 
