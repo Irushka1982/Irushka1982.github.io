@@ -3,29 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Exam</title>
-<!--[if !IE 8]><link rel="stylesheet" href="style/style.css"><![endif]-->
+<!--[if !IE 8]>--><link rel="stylesheet" href="style/style.css"> <!--<![endif]-->
 
 
-<!--стили для всего кроме ИЕ8-->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+
+<!--[if !IE 8]>--><link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<!--[if !IE 8]><script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk="crossorigin="anonymous"></script><![endif]-->
-<!--<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>-->
-<!--[if !IE 8]><script src="js/masonry.pkgd.min.js"></script><![endif]-->
-<!--[if !IE 8]><script src="js/jquery.bxslider.min.js"></script><![endif]-->
-<!--[if !IE 8]><link href="style/jquery.bxslider.css" rel="stylesheet" /><![endif]-->
-<!--[if !IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script><![endif]-->
-
-<!--[if !IE 8]><script src="js/picturefill.min.js"></script><![endif]-->
-<!--[if !IE 8]><script src="js/template.js"></script><![endif]-->
-<!--[if !IE 8]><script src="js/examfinal.js"></script><![endif]-->
-
-
+<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk="crossorigin="anonymous"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<link href="style/jquery.bxslider.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
+<script src="respond/respond.min.js"></script>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="js/picturefill.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/examfinal.js"></script><!--<![endif]-->
 
-<!--[if !IE 8]><script src="respond/respond.min.js"></script><![endif]-->
-<!--[if !IE 8]><script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script><![endif]-->
-<!--[if !IE 8]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+<!--<script src="js/picturefill.min.js"></script>
+<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+-->
+
+
 
 
 <!--<script src="js/html5shiv.js"></script>-->
@@ -40,7 +39,7 @@
 <script src="js/jquery.bxslider.min.js"></script>
 <link href="style/jquery.bxslider.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
-<script src="js/picturefill.min.js"></script><![endif]-->
+<script src="js/picturefill.min.js"></script> <![endif]-->
 <!--[if gt IE 8]><!--><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><!--<![endif]-->
 <!--[if IE 8]><script src="js/template.js"></script>
 <script src="js/examfinal.js"></script>	
@@ -55,7 +54,7 @@
 <script type="text/javascript">
 	$(function() {
     	if (window.PIE) {
-        	$('.find_partner, .enter__sign_up, #search__poleotpravka, #other-button, .step').each(function() {
+        	$('.find_partner, .enter__sign_up, #search__poleotpravka, #other-button .step').each(function() {
            	 PIE.attach(this);
         		});
     	}
@@ -191,7 +190,7 @@
 				</ul>				
 			</div><![endif]-->
 
-		<!--[if !IE 8]><div class="carusel1">
+			<!--[if !IE 8]>--><div class="carusel1">
 			<ul class="bxslider">
 					<li>
 						<div class="block-text">
@@ -200,9 +199,9 @@
 								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							 <![if IE 9]><video style="display: none;"><![endif]>
+							<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider1M.png" alt="foto">
 						</picture>
 					</li>
@@ -213,9 +212,9 @@
 							<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 				   		</div>
 						<picture>
-							 <![if IE 9]><video style="display: none;"><![endif]>
+							<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider2M.png" alt="foto">
 						</picture>					
 					</li>
@@ -226,9 +225,9 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		   </div>
 						<picture>
-						 <![if IE 9]><video style="display: none;"><![endif]>
+						<![if IE 9]><video style="display: none;"><![endif]>
 						<source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider3M.png" alt="foto">
 						</picture>
 					</li>
@@ -241,9 +240,9 @@
 							<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 				   		</div>
 						<picture>
-							 <![if IE 9]><video style="display: none;"><![endif]>
+							<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider2M.png" alt="foto">
 						</picture>
 					</li>
@@ -254,9 +253,9 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 				   		<picture>
-				   			 <![if IE 9]><video style="display: none;"><![endif]>
+				   			<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider3M.png" alt="foto">
 						</picture>
 					</li>
@@ -267,9 +266,9 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							 <![if IE 9]><video style="display: none;"><![endif]>
+							<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider1M.png" alt="foto">
 						</picture>
 					</li>					
@@ -282,9 +281,9 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							 <![if IE 9]><video style="display: none;"><![endif]>
+							<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider3D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider3T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider3M.png" alt="foto">
 						</picture>
 					</li>
@@ -295,9 +294,9 @@
 							<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
 				   		</div>
 						<picture>
-							 <![if IE 9]><video style="display: none;"><![endif]>
+							<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider1D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider1T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider1M.png" alt="foto">
 						</picture>
 					</li>
@@ -308,9 +307,9 @@
 							<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 				   		   </div>
 						<picture>
-							 <![if IE 9]><video style="display: none;"><![endif]>
+							<![if IE 9]><video style="display: none;"><![endif]>
 							<source srcset="image/desktop/slider2D.png" media="(min-width: 1440px)">
-							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)"> <![if IE 9]></video><![endif]>
+							<source srcset="image/tabletka/slider2T.png" media="(min-width: 768px)"><![if IE 9]></video><![endif]>
 							<img srcset="image/mobile/slider2M.png" alt="foto">
 						</picture>					
 					</li>					
