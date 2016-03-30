@@ -1,7 +1,7 @@
 function Model(){
 	var self = this; 
 
-	self.data = ['test 1', 'test 2', 'test 3'];
+	self.data = [];
 
 	self.addItem = function(item){
 		if (item.length === 0)	{
@@ -36,9 +36,7 @@ function Model(){
     return self.data
   }
 
-
 }
-
 
 function View(model){
 	var self = this;
@@ -61,11 +59,6 @@ function View(model){
 	init();
 
 }
-
-
-
-
-
 
 
 function Controller(model,view){
@@ -102,7 +95,7 @@ function Controller(model,view){
 }
 
 $(function(){
-	var firstToDoList =  ['test 1', 'test 2', 'test 3'];
+	var firstToDoList =  [];
 var model = new Model(firstToDoList);
 var view = new View(model);
 var controller = new Controller(model, view);

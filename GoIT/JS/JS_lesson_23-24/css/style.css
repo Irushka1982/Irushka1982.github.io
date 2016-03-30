@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding:0 }
+
+.wrapper{
+	width: 500px;
+	height:1000px;
+	margin: 20px auto;
+	border: 3px solid black;
+	display: block;
+}	
+.listtitle{
+	display: block;
+	height: 40px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 25px;
+	margin: 5px;
+}
+.controlls{
+	margin: 0 0 0 20px;
+}
+.item-value{
+	height:25px;
+	border: 2px solid black;
+	width: 250px;
+}
+.item-add{
+	height: 25px;
+	width: 50px;
+	background-color:transparent;
+	border: 2px solid black;
+ }
+ li{
+ 	margin:0 0 5px 20px;
+ }
+.item-list{
+	margin: 20px 0 0 0;
+}
+.item-input{
+	height: 20px;
+	padding-left: 5px;
+	width: 250px;
+}
+.item-delete{
+	height: 20px;
+	width: 70px;
+	text-align: center;
+}

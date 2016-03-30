@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lesson_23-24</title>
+	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="js/lesson_23-24.js"></script>
 	<script src="js/template.js"></script>
@@ -10,29 +11,25 @@
 <body>
 	<script type="text/template" id="wrapper-template">
 	<div class="wrapper">
-		<div class="title">My todo list</div>
-<div class="controlls">
-			<input type="text" class="item-value">
+		<div class="listtitle">My To-Do List</div>
+		<div class="controlls">
+			<input type="text" class="item-value" placeholder="My new task">
 			<button class="item-add">Add</button>
 		</div>
-
-		<ol class="item-list"></ol>
-		
+		<ol class="item-list"></ol>		
 	</div>
 	</script>
 
 <script type="text/template" id="list-template">
-<% for (var i = 0; i < data.length; i++){ %>
+<% for (var i = 0; i < data.length; i++){ %>	
 	
 	<li>
-<input class="item-input" type="text" name="" value=<%= data[i] %>>
-	<input data-value="<%= data[i] %>"class="item-delete" value="Delete">
-
-<span class="item-edit"></span></li>
+		<input class="item-input" type="text" name="" value=<%= data[i] %>>
+		<input data-value="<%= data[i] %>"class="item-delete" value="Delete">
+		<span class="item-edit"></span>
+	</li>
 
 	<% }; %>
-</script>
-	
-	
+</script>	
 </body>
 </html>
