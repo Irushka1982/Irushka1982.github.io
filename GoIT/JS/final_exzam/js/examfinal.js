@@ -1,4 +1,3 @@
-
 $(document).ready(function(){  
 
     function getXmlHttp(){
@@ -110,9 +109,6 @@ $(document).ready(function(){
                   }
                 });
               });
-
-
-
 
 });	
 
