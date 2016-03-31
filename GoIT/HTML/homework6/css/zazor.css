@@ -1,0 +1,599 @@
+body {
+	width: 913px;
+	height: 1311px;
+	margin: 0 43px;
+	font-family: Arial;
+}
+
+header {
+	overflow: hidden;
+	position: relative;
+	/*background: blue;*/
+	height: 53px;
+	padding-left: 8px;
+}
+
+.telefon {
+	/*background-color: red;*/
+	display:inline-block;
+	width: 304px;
+	margin-top: 15px;
+}
+
+.telefon:before {
+	content: " ";  
+     float: left;  
+    position: relative;  
+     background: url(../image/trubka.png) 2px 1px  no-repeat;  
+     height: 25px;  
+    width: 25px;  
+}  
+
+.telefon ul {
+/*	background-color: green;*/
+	padding: 3px;
+	margin: 0px;
+}
+
+.telefon li {
+	display:inline-block;
+	/*background-color: yellow;*/
+	color:#5e696d;
+}
+.telefon li {
+	width: 132px;
+}
+
+.forma {
+/*	background-color: green;*/
+	display:inline-block;
+	margin-top: 0px; height: 21px;
+}
+
+.forma ul {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6685+1,0c3357+100 */
+background: rgb(31,102,133); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(31,102,133,1) 1%, rgba(12,51,87,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(31,102,133,1) 1%,rgba(12,51,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(31,102,133,1) 1%,rgba(12,51,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6685', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+	
+	padding: 0px;
+	width: 496px;
+	margin: 0px;
+	border-radius: 4px;
+}
+
+.forma li {
+	display:inline-block;
+	/*background-color: yellow;*/
+	color: black;
+	height: 24px;
+	font-size: 14px;
+ }
+.forma li a {
+	color: #bfbfbf;
+}
+.forma input {
+	width: 112px;
+	/*background-color: green;*/
+	font-size: 11px;
+	border: none;
+	color: #bfbfbf;
+}
+.forma:before {
+	content: " ";  
+    float: left;  
+    position: relative;  
+    background: url(../image/chelovek.png) 2px 1px  no-repeat;  
+    height: 25px;  
+    width: 25px;  
+}
+.registratsiya:before {
+content: " ";  
+    float: left;  
+    position: relative;  
+    background: url(../image/ryska.png) 2px 1px  no-repeat;  
+    height: 25px;  
+    width: 12px; 
+    left:-4px; 
+    top:0px; 
+}
+.registratsiya {margin-right: 9px;}
+.forma li span {font-size: 12px;
+color: white;}
+
+.forma li a span {color: #bfbfbf;}
+
+.contact {
+/*	background-color: yellow;*/
+	display:inline-block;
+	margin-left: 12px; 
+}
+.contact ul {
+	/*background-color: green;*/
+	padding: 0px;
+	border: 1px solid #bdc4c7;
+	border-radius: 20px;
+	width: 76px;
+	height: 20px;
+	text-align: center;
+	margin: 0px;
+}
+.contact li {
+	display:inline-block;
+/*	background-color: red; */
+}
+.contact li a {color:#bfbfbf;}
+
+.banner {
+/*	background-color: red;*/
+	height: 236px;
+	display: inline-block;
+	clear: both;
+	margin-top:2px; 
+}
+.podbaner{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#505860+6,505860+15,020202+51 */
+background: rgb(80,88,96); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(80,88,96,1) 6%, rgba(80,88,96,1) 15%, rgba(2,2,2,1) 51%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(80,88,96,1) 6%,rgba(80,88,96,1) 15%,rgba(2,2,2,1) 51%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(80,88,96,1) 6%,rgba(80,88,96,1) 15%,rgba(2,2,2,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505860', endColorstr='#020202',GradientType=0 ); /* IE6-9 */	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+	height: 31px;
+margin-top:1px;
+}
+.menu {
+/*	background-color: green;*/
+	margin-left: 140px;
+	display: block;
+	/*padding-top: 4px;*/
+}
+.menu a {
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	text-transform: uppercase;
+	/*height: 25px;*/
+	padding: 0px;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+.menu a:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0c3357+100 */
+background: rgb(31,103,135); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+	text-decoration: none;
+	/*border: 1px solid red;*/
+	border-radius: 20px;
+	padding: 0px;
+}
+
+.menu ul {
+	/*background-color: red;*/
+	float: left;
+	padding-left:0px;
+	margin: 0px;
+	text-align: center;
+}
+.menu li {
+	width: 102px;
+	display: inline-block;
+	/*background-color: green;*/
+/*	padding-top: 5px;*/
+	/*padding-bottom: 5px;*/
+}
+.tovar {
+	/*background-color: green;*/
+	width: 244px;
+	float: right;
+	display: block;
+	margin-top:1px; 
+	padding-top: 2px;
+}
+.tovar:before {
+	content: " ";  
+    float: left;  
+    position: relative;  
+    background: url(../image/korzina.png) 2px 1px  no-repeat;  
+     height: 25px;  
+    width: 25px;
+    margin-left:10px; 
+}
+
+.tovar ul{
+	/*background-color: yellow;*/
+	padding: 0px;	
+	margin: 0px;
+}
+.tovar li {
+	color: white;
+	display: inline-block;
+}
+.tovar ul li span {
+	/*background-color: green;*/
+	font-size: 10px;
+	margin-left: 4px;
+}
+
+.tovar input {
+	border: none;
+	background-color: rgba(0,0,0,0);
+	padding-left: 10px;
+}
+.cyfratovar {
+	width:38px;
+	color:#0d5a8f;
+	padding-top: 3px;
+}
+.cyfrasumma{
+	width: 50px;
+	color:#0d5a8f;
+}
+.content{
+}
+.tryformy {
+	/*background-color: red;*/
+	clear: both;
+	margin-top:14px; 
+}
+.odyn{
+	height: 200px;
+	width: 415px;
+	height: 135px;
+	border: 1px solid black;
+	display: inline-block;
+	border-radius: 15px;
+	margin-right: 11px; 
+}
+.dva{
+	height: 200px;
+	width: 30%;
+	border: 1px solid black;
+	display: inline-block;
+	width: 193px;
+	height: 135px;
+	border-radius: 15px;
+	margin-right: 7px; 
+}	
+.try{
+	height: 200px;
+	width: 20%;
+	border: 1px solid black;
+	display: inline-block;
+	width: 249px;
+	height: 135px;
+	border-radius: 15px;
+}	
+.napoln{
+	overflow: hidden;
+	position: relative;
+/*	background-color: black;*/
+}
+.block-left {
+	/*background-color: yellow;*/
+	width: 191px;
+	display: block;
+	float: left;
+}
+
+.block-left a {
+	text-decoration: none;
+	color:#465961;
+}
+.block-left a:hover {
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: bold;
+	color:#0c3256;
+}
+.katalog {}
+.perechen-left{}
+.shyny-left{}
+.shyny-naimenovanie{}
+.shyny-naimenovanie ul{
+	padding-left: 50px;
+	margin-top:1px; 
+	margin-bottom:0px; 
+}
+.shyny-naimenovanie ul li{
+	list-style: circle;
+}	
+.shyny-naimenovanie ul li a	{
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.nazva {
+	width: 150px;
+	line-height: 26px;
+	/*background-color: red;*/
+	border: 1px solid #79878d;
+	border-radius: 14px;
+	text-align: left;
+	text-transform: uppercase;
+	color:#114165;
+	margin-top:0px; 
+	font-size: 14px;
+
+}
+.nazva:before {  
+    content: " ";  
+    float: left;  
+    position: relative;  
+   background: url(../image/bublik.png) 2px 2px  no-repeat;  
+    height: 25px;  
+    width: 25px;  
+}  
+
+   
+.spysok{
+	width: 179px;
+	line-height: 26px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 14px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-top:15px; 
+	font-size: 13px;
+	font-weight: bold;
+	color:#0c3256;
+	margin-bottom:12px; 
+}
+.spysok:before {
+	 content: " ";  
+    float: left;  
+    position: relative;  
+   background: url(../image/katalog.png) 2px 2px  no-repeat;  
+    height: 25px;  
+    width: 25px; 
+    left: -2px;
+ 
+   }
+
+
+
+
+.dysky-naimenovanie{}
+.dysky-naimenovanie ul{
+	padding-left: 50px;
+	margin: 0px;
+	}
+.dysky-naimenovanie ul li{
+	list-style: circle;
+
+}
+.dysky-naimenovanie ul li a{
+	font-size: 13px;
+	line-height: 25px;
+}
+			
+.bolty{}
+.bolty-naimenovanie{}
+.bolty-naimenovanie ul{
+	padding-left: 50px;
+	margin: 0px;
+}
+.bolty-naimenovanie ul li{
+	list-style: circle;
+}
+.bolty-naimenovanie ul li a{
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.blok-center {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e7e8+0,93a7b0+100 */
+background: rgb(229,231,232); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(229,231,232,1) 0%, rgba(147,167,176,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(229,231,232,1) 0%,rgba(147,167,176,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(229,231,232,1) 0%,rgba(147,167,176,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0',GradientType=0 ); /* IE6-9 */
+	width: 525px;
+	display: block;
+	float: left;	
+	margin-bottom:34px; 
+	padding-bottom: 23px;
+}
+.tovar-foto-shyna{
+	float: left;
+	text-align: center;
+	/*background-color:#c7d0d4;*/
+	margin: 1px;
+	padding: 0px 0px;
+	margin-top:20px; 
+	margin-left:20px;
+	margin-right:7px;  
+
+}
+
+
+.tovar-foto-shyna p{
+	color:#1f2528;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size: 13px;
+	line-height: 12px
+ }
+.tovar-foto-shyna span {
+	color: #206988;
+	font-size: 16px;
+font-weight: bold;
+line-height: 16px;}
+
+.tsena {
+	font-weight: bold;
+	font-style: italic;
+	line-height: 14px;
+}			
+.tovar-foto-shyna .tsena {
+	color:#114165;
+	padding-left: 6px;
+}
+
+
+.shynana {
+	width: 137px;
+	height: 130px;
+	background-color: white;
+	border: 1px solid #a4aeb1;
+	border-radius: 8px;
+}
+
+ img {
+ 	
+}
+span{}
+.block-right{
+	/*background-color:green;*/
+	width: 185px;
+	display: block;
+	float: left;
+}
+.block-right .spysok{
+	margin-left:9px; 
+}
+.brendy	{}
+.perechen-right{margin-left: 23px;}
+.perechen-right .nazva{width: 136px;}
+.shyny-right{}
+.brendy-naimenovanie{}
+.brendy-naimenovanie ul{
+	margin: 5px 0 19px 0;
+	color:#79878d;
+	padding-left: 5px;
+}
+.brendy-naimenovanie ul li{
+	list-style: none;
+}
+.brendy-naimenovanie label {font-size: 13px;}
+
+.dysky-right{}
+.dysky-naimenovanie-right label{font-size: 13px;}
+.dysky-naimenovanie-right ul{
+	padding-left: 5px;
+	color:#79878d;
+	margin-top:5px; 
+}
+.dysky-naimenovanie-right ul li{
+	list-style: none;
+}
+input[type="checkbox"] {
+	margin: 3px 15px 3px 4px;
+	width: 8px;	
+}
+input[type="radio"] {} 
+
+
+.vybrat{
+	padding-left: 12px;
+	padding-top: 10px;
+}					
+.vybrat input {
+	/*background: red;*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0c3357+100 */
+background: rgb(31,103,135); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+border: none;
+	border-radius: 14px;
+	color: white;
+	font-size: 11px;
+	/*width: 80px;*/
+	height: 25px;
+	text-transform: uppercase;
+	width: 81px;
+}
+					
+.logo {display: block;
+	clear: both;
+	/*background-color: blue;*/
+	text-align: center;
+	margin-bottom:16px; 
+}
+
+.logo ul{
+padding: 0px;
+margin: 0px;
+}
+.logo ul li{
+	display: inline-block;
+	/*background-color: yellow;*/
+}
+
+footer{
+	background-color: #213a4d;
+	clear: both;
+	/*padding: 20px 0px;*/
+	border: 1px solid #232d3f;
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+}
+.onas{
+	text-align: center;
+	padding-top: 6px;
+	padding-bottom: 3px;
+	/*background-color: green;*/
+	clear: both;
+}
+.onas ul{
+	padding: 0px;
+	margin: 0px;
+	margin-left:16px; 
+}
+.onas ul li{
+	display: inline-block;
+	font-size: 13px;
+	width: 81px;
+}
+.onas ul li:first-child {
+	;}
+
+.onas ul li:first-child:before {content:none;}
+
+.onas ul li:before {content: " ";  
+    float: left;  
+    position: relative;  
+   background: url(../image/ryska.png) 2px 2px  no-repeat;  
+    height: 22px;  
+    width: 10px; 
+    left: -2px;
+top:-4px;
+}
+
+.onas a {text-decoration: none;
+color: white;}
+.onas a:hover {color: #52abcb;}
+
+			
+.avtorskie-prava{
+/*	background-color: red;*/
+	text-align: center;
+	color:#7f4740;
+	
+}
+.avtorskie-prava span{font-size: 10px;}
+	
+
+
+
+
+
+
+
+
+
+
+
