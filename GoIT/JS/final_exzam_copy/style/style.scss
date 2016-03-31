@@ -8,20 +8,25 @@ $montserrat: 'Montserrat', sans-serif;
   padding:0;
 }
 
-body {
+.background {
     background:url(../image/mobile/backgroundM.png)0 0 no-repeat;
+    width: 100%;
+
 }
 
 @media screen and (min-width:768px) {
-body  {
-background:url(../image/tabletka/backgroundT.png)0 0 no-repeat;
+.background {
+   width: 100%;
+  
+   background:url(../image/tabletka/backgroundT.png)0 0 no-repeat;
 }}
-
 @media screen and (min-width:1440px) {
-body  {
-background:url(../image/desktop/backgroundD.png)0 0 no-repeat;
-}}
+.background {
+   width: 100%;
+   background:url(../image/desktop/backgroundD.png)0 0 no-repeat;
 
+
+}}
 
 .content{
 	width:320px;
@@ -623,7 +628,7 @@ nav{
 
 .discover2{
   @extend .discover;
-  margin: 0 0 40px 0;
+  margin: 0 0 11px 0;
 }
 @media screen and (min-width:768px) {
 .discover2{ margin: 0 0 29px 0;}
