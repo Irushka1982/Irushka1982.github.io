@@ -39,7 +39,7 @@ $(document).ready(function(){
     					
     getXmlHttp();
 
-    };
+    }
 
      $('#search__poleotpravka').click(function(){ 
 
@@ -60,7 +60,7 @@ $(document).ready(function(){
             return xmlhttp;
           }
           var slovo = $('.search__poletext').val();
-          var xmlhttp = getXmlHttp()
+          var xmlhttp = getXmlHttp();
           xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=m', false);
           xmlhttp.send(null);
           if(xmlhttp.status == 200) {
@@ -78,7 +78,7 @@ $(document).ready(function(){
   						});			
           					
           getXmlHttp();
-          };
+          }
     });
 
 
@@ -108,7 +108,7 @@ $(document).ready(function(){
                   if (input.val() == input.attr('placeholder')) {
                     input.val('');
                   }
-                })
+                });
               });
 
 
