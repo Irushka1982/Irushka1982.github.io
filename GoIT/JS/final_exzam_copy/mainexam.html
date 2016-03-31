@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Exam</title>
 
-
-
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
@@ -40,16 +38,18 @@
 <![endif]-->
 <script src="js/examfinal.js"></script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript">
 	$(function() {
     	if (window.PIE) {
-        	$('.find_partner, .enter__sign_up, #search__poleotpravka, #other-button, .step').each(function() {
+        	$('.find_partner, .enter__sign_up, #search__poleotpravka, #other-button').each(function() {
            	 PIE.attach(this);
         		});
     	}
 	});
 </script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="shablon">
@@ -287,19 +287,19 @@
 			<h2 class="meet-partners">Meet a partner for your best holiday</h2>
 			<div class="persons">
 				
-				<div class="partner partner--sprite1">
+				<div class="partner">
 					<img class="partner__foto"src="image/foto_bradley_man.png" alt="foto">
 					<div class="sprite sprite--sprite1"></div>
 					<p class="partner__name">Bradley Hunter</p>
 					<span class="partner__about">Based in Chicago. I love playing tennis and loud music.</span>
 				</div>
-				<div class="partner partner--sprite2">
+				<div class="partner">
 					<img class="partner__foto"src="image/foto_lucas.png" alt="foto">
-					<div class="sprite--sprite2"></div>
+					<div class="sprite sprite--sprite2"></div>
 					<p class="partner__name">Lucas Marsha</p>
 					<span class="partner__about">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</span>
 				</div>
-				<div class="partner partner--sprite3">
+				<div class="partner">
 					<img class="partner__foto"src="image/fotoheater.png" alt="foto">
 					<div class="sprite sprite--sprite3"></div>
 					<p class="partner__name">Heather Walker</p>
@@ -316,7 +316,7 @@
 		</section>
 		<section  id="wrapper3">
 			<h2 class="discover">Discover holiday activity ideas</h2>
-			<div class="plitka">
+			<div class="plitka"></div>
 		</section>
 		<section  id="wrapper4">
 			<hgroup>
@@ -328,7 +328,9 @@
 				<input id="search__poleotpravka" type="submit"  value="Search partners">
 			</div>
 		</section>
-		<nav>
+		</section>
+		<section class="content-bottom">
+				<nav>
 			<div class="logo-nav">URLAUBSGLÜCK</div>
 			<div class="menu">
 				<h2 class="contacts">Company</h2>
@@ -342,8 +344,9 @@
 			<h2 class="Partnerstitle">Partners</h2>
 			<div class="desighn_by"><img src="image/areto.png" alt="image"></div>
 		</nav>
-		</section>
-		<hr>	
+				
+			</section>
+		
 	
 	</body>
 </html>

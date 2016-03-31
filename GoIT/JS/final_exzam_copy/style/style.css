@@ -168,6 +168,7 @@ header {
   height: 2402px; }
   .carusel1 ul li {
     width: 299px;
+    height: 240px;
     display: inline-block; }
 
 @media screen and (min-width: 768px) {
@@ -185,13 +186,20 @@ header {
     .carusel1 ul li {
       height: 400px;
       display: inline-block; } }
-.carusel2 ul {
-  height: 400px;
-  margin: 0 0 0 0; }
-  .carusel2 ul li {
-    height: 400px;
-    display: inline-block; }
+/*
+.carusel2 {
 
+    ul{
+     height:400px;
+      margin:0 0 0 0;
+      li{
+      height: 400px;
+      display:inline-block;
+      
+      }
+    }
+  }
+*/
 /*
 @media screen and (min-width:768px) {
   .bx-wrapper{width:30%;
@@ -300,7 +308,7 @@ margin: 13px 14px 0 10px;}
 @media screen and (min-width: 1440px) {
   .meet-partners {
     margin: 34px 0 31px 237px; } }
-.partner--sprite1:before {
+.sprite--sprite1, .sprite--sprite2, .sprite--sprite3, .sprite--sprite4 {
   content: " ";
   float: left;
   position: relative;
@@ -314,58 +322,35 @@ margin: 13px 14px 0 10px;}
   z-index: 2;
   background-position: 0px 0px; }
 
-.partner--sprite2:before {
-  content: " ";
-  float: left;
-  position: relative;
-  background: url(../image/sprite.png) 0px 0px no-repeat;
-  height: 38px;
-  width: 40px;
+.sprite--sprite2 {
   left: 156px;
   top: 84px;
-  bottom: 71px;
-  right: 10px;
-  z-index: 2;
   background-position: -38px 0px; }
 
-.partner--sprite3:before {
-  content: " ";
-  float: left;
-  position: relative;
-  background: url(../image/sprite.png) 0px 0px no-repeat;
+.sprite--sprite3 {
   height: 39px;
   width: 40px;
   left: 156px;
   top: 82px;
-  bottom: 71px;
-  right: 10px;
-  z-index: 2;
   background-position: -79px 0px; }
 
-.partner--sprite4:before {
-  content: " ";
-  float: left;
-  position: relative;
-  background: url(../image/sprite.png) 0px 0px no-repeat;
+.sprite--sprite4 {
   height: 40px;
   width: 42px;
   left: 154px;
   top: 84px;
-  bottom: 71px;
-  right: 10px;
-  z-index: 2;
   background-position: -119px 0px; }
 
-.partner--sprite1:hover:before {
+.sprite--sprite1:hover, .sprite--sprite2:hover, .sprite--sprite3:hover, .sprite--sprite4:hover {
   background-position: 0px -43px; }
 
-.partner--sprite2:hover:before {
+.sprite--sprite2:hover {
   background-position: -38px -43px; }
 
-.partner--sprite3:hover:before {
+.sprite--sprite3:hover {
   background-position: -79px -42px; }
 
-.partner--sprite4:hover:before {
+.sprite--sprite4:hover {
   background-position: -119px -43px; }
 
 .partner__name, .contacts, .Partnerstitle {

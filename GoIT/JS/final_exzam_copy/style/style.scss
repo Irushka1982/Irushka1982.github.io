@@ -222,12 +222,14 @@ width: 450px;
 .how-works{
  margin: 94px 0 20px 0px;
 }}
+
 .carusel1 {
     ul{ width:299px;
       height: 2402px;
 
 
       li{width:299px;
+        height: 240px;
         display:inline-block;
       }
   }
@@ -258,7 +260,7 @@ width: 450px;
     }
   }
 }
-
+/*
 .carusel2 {
 
     ul{
@@ -271,7 +273,7 @@ width: 450px;
       }
     }
   }
-
+*/
 
 /*
 @media screen and (min-width:768px) {
@@ -294,7 +296,7 @@ margin: 13px 14px 0 10px;}
  display:block;
  top:71px;
  left:19px;
-          .step{
+          span{
           font-family: $montserrat;
           font-weight:normal;
           font-size:10px;
@@ -330,7 +332,7 @@ margin: 13px 14px 0 10px;}
       .block-text{
  top:227px;
  left:11px;
-.step{margin: 0 0 5px 0; 
+span{margin: 0 0 5px 0; 
          }
 p{width: 219px; 
       }
@@ -409,7 +411,7 @@ p{width: 219px;
 .meet-partners{margin: 34px 0 31px 237px;}
 
 }
-.partner--sprite1:before{
+.sprite--sprite1{
  content: " ";  
     float:left;  
     position: relative;  
@@ -424,62 +426,42 @@ p{width: 219px;
    background-position: 0px 0px;
 }
 
-.partner--sprite2:before{
- content: " ";  
-    float:left;  
-    position: relative;  
-   background: url(../image/sprite.png) 0px 0px  no-repeat;  
-     height: 38px;  
-    width: 40px;
+.sprite--sprite2{
+ @extend .sprite--sprite1;
    left:156px; 
    top:84px;   
-  bottom:71px;
-  right:10px;
-  z-index: 2;
    background-position: -38px 0px;
 }
-.partner--sprite3:before{
- content: " ";  
-    float:left;  
-    position: relative;  
-   background: url(../image/sprite.png) 0px 0px  no-repeat;  
-    height: 39px;  
+.sprite--sprite3{
+  @extend .sprite--sprite1;
+     height: 39px;  
     width: 40px;
    left:156px; 
    top:82px;   
-  bottom:71px;
-  right:10px;
-  z-index: 2;
-   background-position: -79px 0px;
+     background-position: -79px 0px;
 
 }
-.partner--sprite4:before{
- content: " ";  
-    float:left;  
-    position: relative;  
-   background: url(../image/sprite.png) 0px 0px  no-repeat;  
-    height: 40px;  
-    width: 42px;
+.sprite--sprite4{
+ @extend .sprite--sprite1;
+   height: 40px;  
+   width: 42px;
    left:154px; 
    top:84px;   
-  bottom:71px;
-  right:10px;
-  z-index: 2;
    background-position: -119px 0px;
 }
- .partner--sprite1:hover:before{
+ .sprite--sprite1:hover{
     background-position: 0px -43px;
 } 
 
-.partner--sprite2:hover:before{
+.sprite--sprite2:hover{
     background-position: -38px -43px;
 }
 
 
-.partner--sprite3:hover:before{
+.sprite--sprite3:hover{
     background-position: -79px -42px;
 }
-.partner--sprite4:hover:before{
+.sprite--sprite4:hover{
     background-position: -119px -43px;
 }
 
