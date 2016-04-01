@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exam</title>
+	<!--[if !IE 8]>-->
+
+	<link rel="stylesheet" href="style/style.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk="crossorigin="anonymous"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<link href="style/jquery.bxslider.css" rel="stylesheet" />
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/template.js"></script>
+	<!--<![endif]-->
+
+
+
+	<!--[if IE 8]>
+	<link rel="stylesheet" href="style/style-ie.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<link href="style/jquery.bxslider.css" rel="stylesheet"/>
+	<script src="js/template.js"></script>
+	<script src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/PIE.js"></script>
+	<![endif]-->
+
+	<script src="js/examfinal.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="shablon">
+		<script type="text/html" id = "zapros">
+				<div class="grid">
+					<% for (var i =0; i<images.length; i++) { %>
+						<div class="grid-item 
+						<% if ((i===4)||(i===5)){%>
+							grid-item--width2  
+							<%}%>" style = "background: url(<%=images[i].imageurl%>) center no-repeat; background-size:cover">
+							<span class="grid-item__text"><%=images[i].word%></span>
+						</div>
+					<%}; %>
+				</div>
+		</script>
+	</div>
+<div class="background">
+	<section class="content">
+			<header>
+				<div class="enter">
+					<input class="enter__log_in" type="submit" value="Log in">
+					<input class="enter__sign_up" type="submit" value="Sign up">
+				</div>
+				<div class="logo">URLAUBSGLÜCK</div>
+				<hgroup>
+					<h1 class="title">share your holiday dreams</h1>
+					<h2 class="subtitle">And find the perfect partner to fullfill it</h2>
+					<input class="find_partner" type="submit"  value="Find your holiday partner">
+				</hgroup>		
+			</header>
+			<section id="wrapper1">
+				<h2 class="how-works">How Urlaubsglück works?</h2>
+		<!--[if IE 8]><div class="carusel2">
+				<ul class="bxslider">
+						<li>
+							<div class="block-text">
+								<span class="step">step 1</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider1D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span class="step">step 2</span>
+								<h1>Morbi velit risus</h1>
+								<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider2D.png" alt="foto">
+							</picture>					
+						</li>
+						<li>
+							<div class="block-text">					 	<span class="step">step 3</span>
+							 	<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		   </div>
+							<picture>
+								<img src="image/desktop/slider3D.png" alt="foto"> 
+							</picture>
+						</li>
+					</ul>			
+					<ul class="bxslider">					
+						<li>
+							<div class="block-text">
+								<span class="step">step 2</span>
+								<h1>Morbi velit risus</h1>
+								<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider2D.png" alt="foto"> 
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span class="step">step 3</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+					   		<picture>
+								<img src="image/desktop/slider3D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span class="step">step 1</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider1D.png" alt="foto">
+							</picture>
+						</li>					
+					</ul>
+					<ul class="bxslider">
+						<li>
+							<div class="block-text">
+								<span class="step">step 3</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider3D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span class="step">step 1</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider1D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span class="step">step 2</span>
+								<h1>Morbi velit risus</h1>
+								<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+					   		   </div>
+							<picture>
+								<img src="image/desktop/slider2D.png" alt="foto">
+							</picture>					
+						</li>					
+					</ul>				
+				</div><![endif]-->
+
+			<div class="carusel1">
+				<ul class="bxslider">
+						<li>
+							<div class="block-text">
+									<span>step 1</span>
+									<h1>Sed leo enim, condimentum</h1>
+									<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider1D.png" alt="foto">				
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span>step 2</span>
+								<h1>Morbi velit risus</h1>
+								<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider2D.png" alt="foto">
+							</picture>					
+						</li>
+						<li>
+							<div class="block-text">					
+							 	<span>step 3</span>
+							 	<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		   </div>
+							<picture>
+								<img src="image/desktop/slider3D.png" alt="foto">
+							</picture>
+						</li>
+					</ul>			
+					<ul class="bxslider">					
+						<li>
+							<div class="block-text">
+								<span>step 2</span>
+								<h1>Morbi velit risus</h1>
+								<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider2D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span>step 3</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+					   		<picture>
+								<img src="image/desktop/slider3D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span>step 1</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>
+							<img src="image/desktop/slider1D.png" alt="foto">
+							</picture>
+						</li>					
+					</ul>
+					<ul class="bxslider">
+						<li>
+							<div class="block-text">
+								<span>step 3</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>							
+								<img src="image/desktop/slider3D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span>step 1</span>
+								<h1>Sed leo enim, condimentum</h1>
+								<p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec oncus a leo sit amet facilisis.</p>
+					   		</div>
+							<picture>
+								<img src="image/desktop/slider1D.png" alt="foto">
+							</picture>
+						</li>
+						<li>
+							<div class="block-text">
+								<span>step 2</span>
+								<h1>Morbi velit risus</h1>
+								<p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+					   		   </div>
+							<picture>
+								<img src="image/desktop/slider2D.png" alt="foto">
+							</picture>					
+						</li>					
+					</ul>				
+				</div>
+			</section>		
+			<section  id="wrapper2">
+				<h2 class="meet-partners">Meet a partner for your best holiday</h2>
+				<div class="persons">				
+					<div class="partner">
+						<img class="partner__foto"src="image/foto_bradley_man.png" alt="foto">
+						<div class="partner__sprite--sprite1"></div>
+						<p class="partner__name">Bradley Hunter</p>
+						<span class="partner__about">Based in Chicago. I love playing tennis and loud music.</span>
+					</div>
+					<div class="partner">
+						<img class="partner__foto"src="image/foto_lucas.png" alt="foto">
+						<div class="partner__sprite--sprite2"></div>
+						<p class="partner__name">Lucas Marsha</p>
+						<span class="partner__about">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</span>
+					</div>
+					<div class="partner">
+						<img class="partner__foto"src="image/fotoheater.png" alt="foto">
+						<div class="partner__sprite--sprite3"></div>
+						<p class="partner__name">Heather Walker</p>
+						<span class="partner__about">I'm a happy person that loves cats and climbing on mountains.</span>
+					</div>
+					<div class="partner">
+						<img class="partner__foto"src="image/foto_bradley_girl.png" alt="foto">
+						<div class="partner__sprite--sprite4"></div>
+						<p class="partner__name">Bradley Hunter</p>
+						<span class="partner__about">Based in Chicago. I love playing tennis and loud music.</span>
+					</div>				
+				</div>
+				<button id="other-button">See other partners</button>
+			</section>
+			<section  id="wrapper3">
+				<h2 class="discover">Discover holiday activity ideas</h2>
+				<div class="plitka"></div>
+			</section>
+			<section  id="wrapper4">
+				<hgroup>
+					<h2 class="discover2">Discover holiday activity ideas</h2>
+				    <h3 class="interests">Hi! What are your holiday interests?</h3>
+				<hgroup>
+				<div class="search">
+					<input class="search__poletext" type="text"  placeholder="Enter your interests">
+					<input id="search__poleotpravka" type="submit"  value="Search partners">
+				</div>
+			</section>
+		</section>
+		<section class="content-bottom">
+			<nav>
+				<div class="logo-nav">URLAUBSGLÜCK</div>
+				<div class="menu">
+					<h2 class="contacts">Company</h2>
+					<ul class="aboutus">
+						<li class="aboutus__cell"><a href="#">About</a></li>
+						<li class="aboutus__cell"><a href="">Contacts</a></li>
+						<li class="aboutus__cell"><a href="">Press</a></li>
+						<li class="aboutus__cell"><a href="">Blog</a></li>
+					</ul>
+				</div>
+					<h2 class="Partnerstitle">Partners</h2>
+				<div class="desighn_by">
+					<img src="image/areto.png" alt="image">
+				</div>
+			</nav>				
+		</section>
+	</div>
+</body>
+</html>
