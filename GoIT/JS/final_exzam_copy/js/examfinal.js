@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-      
+
     $(function() {
           if (window.PIE) {
               $('.enter__sign_up, #search__poleotpravka, #other-button').each(function() {
@@ -51,6 +51,7 @@ $(document).ready(function(){
 
      $('#search__poleotpravka').click(function(){ 
 
+          
           function getXmlHttp(){
             var xmlhttp;
             try {
@@ -68,6 +69,7 @@ $(document).ready(function(){
             return xmlhttp;
           }
           var slovo = $('.search__poletext').val();
+
           var xmlhttp = getXmlHttp();
           xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=m', false);
           xmlhttp.send(null);
@@ -87,6 +89,8 @@ $(document).ready(function(){
           					
           getXmlHttp();
           }
+
+$('.search__poletext').val(' ')
     });
 
 

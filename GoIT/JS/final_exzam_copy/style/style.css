@@ -189,33 +189,6 @@ header {
     .carusel1 ul li {
       height: 400px;
       display: inline-block; } }
-/*
-.carusel2 {
-
-    ul{
-     height:400px;
-      margin:0 0 0 0;
-      li{
-      height: 400px;
-      display:inline-block;
-      
-      }
-    }
-  }
-*/
-/*
-@media screen and (min-width:768px) {
-  .bx-wrapper{width:30%;
-    height: 401px;
-margin: 13px 14px 0 10px;}
-}
-
-@media screen and (min-width:1440px) {
-  .bx-wrapper{width:30%;
-    height: 400px;}
-}
-
-*/
 .block-text {
   width: 220px;
   height: 174px;
@@ -311,7 +284,7 @@ margin: 13px 14px 0 10px;}
 @media screen and (min-width: 1440px) {
   .meet-partners {
     margin: 34px 0 31px 237px; } }
-.sprite--sprite1, .sprite--sprite2, .sprite--sprite3, .sprite--sprite4 {
+.partner__sprite--sprite1, .partner__sprite--sprite2, .partner__sprite--sprite3, .partner__sprite--sprite4 {
   content: " ";
   float: left;
   position: relative;
@@ -325,35 +298,32 @@ margin: 13px 14px 0 10px;}
   z-index: 2;
   background-position: 0px 0px; }
 
-.sprite--sprite2 {
+.partner__sprite--sprite2 {
   left: 156px;
-  top: 84px;
   background-position: -38px 0px; }
 
-.sprite--sprite3 {
+.partner__sprite--sprite3 {
   height: 39px;
   width: 40px;
   left: 156px;
-  top: 82px;
   background-position: -79px 0px; }
 
-.sprite--sprite4 {
+.partner__sprite--sprite4 {
   height: 40px;
   width: 42px;
   left: 154px;
-  top: 84px;
   background-position: -119px 0px; }
 
-.sprite--sprite1:hover, .sprite--sprite2:hover, .sprite--sprite3:hover, .sprite--sprite4:hover {
+.partner__sprite--sprite1:hover, .partner__sprite--sprite2:hover, .partner__sprite--sprite3:hover, .partner__sprite--sprite4:hover {
   background-position: 0px -43px; }
 
-.sprite--sprite2:hover {
+.partner__sprite--sprite2:hover {
   background-position: -38px -43px; }
 
-.sprite--sprite3:hover {
+.partner__sprite--sprite3:hover {
   background-position: -79px -42px; }
 
-.sprite--sprite4:hover {
+.partner__sprite--sprite:hover {
   background-position: -119px -43px; }
 
 .partner__name, .contacts, .Partnerstitle {
@@ -427,19 +397,9 @@ nav {
   display: block;
   border: 1px solid red; }
 
-.grid-item--width2 {
-  width: 300px;
-  height: 120px;
-  margin: 5px 5px 5px 5px; }
-
 @media screen and (min-width: 768px) {
   .grid-item {
     width: 236px;
-    height: 309px;
-    margin: 3px 5px 20px 12px; } }
-@media screen and (min-width: 768px) {
-  .grid-item--width2 {
-    width: 487px;
     height: 309px;
     margin: 3px 5px 20px 12px; } }
 @media screen and (min-width: 1440px) {
@@ -447,6 +407,16 @@ nav {
     width: 300px;
     height: 309px;
     margin: 9px 5px 9px 10px; } }
+.grid-item--width2 {
+  width: 300px;
+  height: 120px;
+  margin: 5px 5px 5px 5px; }
+
+@media screen and (min-width: 768px) {
+  .grid-item--width2 {
+    width: 487px;
+    height: 309px;
+    margin: 3px 5px 20px 12px; } }
 @media screen and (min-width: 1440px) {
   .grid-item--width2 {
     width: 610px;
