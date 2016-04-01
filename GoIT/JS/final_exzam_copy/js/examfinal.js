@@ -1,5 +1,13 @@
 
-$(document).ready(function(){  
+$(document).ready(function(){
+      
+    $(function() {
+          if (window.PIE) {
+              $('.enter__sign_up, #search__poleotpravka, #other-button').each(function() {
+                 PIE.attach(this);
+                });
+          }
+      });
 
     function getXmlHttp(){
       var xmlhttp;

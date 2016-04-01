@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0; }
 
-  body {
+  .background {
     background: url(../image/desktop/backgroundD.png) 0 0 no-repeat; }
 
 
@@ -161,9 +161,13 @@ top: 227px;
     color: #ffffff;
     margin: 0 0 11px 0; }
   .block-text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+    /*
      font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: small;
+  font-size: small;*/
     color: #ffffff;
     width: 219px; 
     margin: 0 0 10px 0; }
@@ -319,8 +323,11 @@ z-index:10;
 
 .partner__about {
   font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+ /* font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: small;
+  font-size: small;*/
   color: #333333;
   margin-left: 10px; }
 
