@@ -12,11 +12,8 @@
     var originalRect = calcRect(el);
     var styles = {
       position: 'fixed',
-      top: requiredTop + 'px',
-    
-      width: originalRect.width + 'px'
-      
-    }
+      top: requiredTop + 'px' 
+          }
     var originalStyles = {}
     requiredOriginalStyles.forEach(function(key) {
       originalStyles[key] = el.style[key];
@@ -45,10 +42,8 @@
     var rect = el.getBoundingClientRect();
     var windowScroll = getWindowScroll()
     return {
-
       top: rect.top + windowScroll.top,
-      width: rect.width,
-      height: rect.height
+          height: rect.height
     }
   }
 
