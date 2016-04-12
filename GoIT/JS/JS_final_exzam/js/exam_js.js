@@ -28,7 +28,7 @@ $(document).ready(function(){
     }
 
     var xmlhttp = getXmlHttp();
-    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=&amount=7&size=m', false);
+    xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?amount=7&size=tb', false);
     xmlhttp.send(null);
     if(xmlhttp.status == 200) {
       var obj = eval('('+xmlhttp.responseText+')');
@@ -72,7 +72,7 @@ $(document).ready(function(){
           var slovo = $('.search__poletext').val();
 
           var xmlhttp = getXmlHttp();
-          xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=m', false);
+          xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?word=' + slovo +'&amount=7&size=tb', false);
           xmlhttp.send(null);
           if(xmlhttp.status == 200) {
             var obj = eval('('+xmlhttp.responseText+')');
