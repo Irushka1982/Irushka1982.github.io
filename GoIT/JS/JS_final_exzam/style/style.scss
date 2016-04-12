@@ -641,23 +641,28 @@ nav{
   font-family:$roboto;
   font-weight:lighter;
   font-size:18px;
-  margin: 0 0 17px 20px;
+/*  margin: 0 0 17px 20px;*/
+  padding:0 0 17px 0;
+  margin: auto;
+  display:block;
+  width: 300px;
 }
 @media screen and (min-width:768px){
 .interests{
   text-align:center;
-  margin: 0 0 37px 0;
+  padding: 0 0 37px 0;
 }}
 
 
 .search{
   text-align:center;
   width:310px;
-  margin: 0 0 0 18px;
+ /* margin: 0 0 0 18px;*/
+ margin:auto;
 }
 @media screen and (min-width:768px) {
 .search{text-align:center;
-  margin: 0 0 0 5px;
+  /*margin: 0 0 0 5px;*/
   width:760px;
 }}
 
@@ -707,25 +712,28 @@ nav{
 .logo-nav{
   @extend .logo;
   color:$color-pink;
-  font-size: 16px;
-  margin:19px 0 11px 90px;
+  font-size: 16px;width:139px;
+  /*margin:19px 0 11px 90px;*/
+ padding:19px 0 11px 0px;
+ margin:auto;
+   
 }
 @media screen and (min-width:768px){
 .logo-nav{
   display:block;
   float:left;
-  width:200px;
-  margin:0 0 0 40px;
+  
+  /*margin:0 0 0 40px;*/
 }}
 @media screen and (min-width:1440px){
 .logo-nav{ 
-  margin:0 0 0 0;
+/*  margin:0 0 0 0;*/
 }}
 
 
 
 .menu{
-  width:320px;
+  /*width:320px;*/
   text-align:center;
   margin:0 0 0 0; 
 }
@@ -742,22 +750,23 @@ nav{
 
 .content-bottom{
   height: 201px;
-  width: 320px;
+  /*width: 320px;*/
   border-top: 2px solid $color-pink; 
 }
 @media screen and (min-width:768px){
 .content-bottom{
-  width: 768px;
+ /* width: 768px;*/
 }}
 
 @media screen and (min-width:1440px){
 .content-bottom{
-   width: 1440px;
+  /* width: 1440px;*/
  }}
 
 
 
 nav{margin:auto;
+
     ul{margin-bottom:12px;
       li{display:inline-block;
         width: 51px;
@@ -769,7 +778,7 @@ nav{margin:auto;
     }
 
 @media screen and (min-width:768px) {
-nav{  
+nav{ width:768px; 
   ul{
     margin-bottom:12px;
     width: 120px;
@@ -800,7 +809,8 @@ nav{
 
 .Partnerstitle{
   @extend .partner__name;
-  margin:0 0 0 128px; 
+  margin:auto; 
+  width: 65px
 }
 @media screen and (min-width:768px) {
 .Partnerstitle{
@@ -812,13 +822,17 @@ nav{
 
 
 .desighn_by{
-  margin:32px 0 0 105px;
+  padding:32px 0 0 0;
+  margin: auto;
+  /*margin:32px 0 0 105px;*/
   display:block;
-  float:left;
+  /*float:left;*/
+  width:116px;
 }
 @media screen and (min-width:768px) {
 .desighn_by{
-  margin:4px 0 0 0;
+ padding:4px 0 0 0;
+  /*margin:4px 0 0 0;*/
   display:inline-block;
 }}
 
