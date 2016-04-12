@@ -80,7 +80,9 @@ header {
 .logo, .logo-nav {
   display: block;
   width: 200px;
-  margin: 0 0 27px 74px;
+  /*  margin:0 0 27px 74px;*/
+  margin: auto;
+  padding: 0 0 27px 0;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -90,11 +92,12 @@ header {
   .logo, .logo-nav {
     float: left;
     display: inline-block;
-    margin: 46px 0 144px 49px;
+    /* margin:46px 0 144px 49px;*/
+    padding: 46px 0 144px 0;
     width: 450px; } }
 @media screen and (min-width: 1440px) {
   .logo, .logo-nav {
-    margin: 46px 0 115px 0px;
+    padding: 46px 0 115px 0px;
     width: 320px; } }
 .title {
   color: #ffffff;
@@ -121,16 +124,18 @@ header {
   text-align: center;
   display: block;
   width: 215px;
-  margin: 0 0 14px 48px; }
+  padding: 0 0 14px 0px;
+  margin: auto;
+  /*  margin:0 0 14px 48px;*/ }
 
 @media screen and (min-width: 768px) {
   .subtitle {
     font-size: 24px;
     width: 403px;
-    margin: 0 0 32px 176px; } }
+    padding: 0 0 32px 0; } }
 @media screen and (min-width: 1440px) {
   .subtitle {
-    margin: 0 0 32px 256px; } }
+    padding: 0 0 32px 0; } }
 .find_partner {
   color: #ffffff;
   border: transparent;
@@ -141,7 +146,9 @@ header {
   font-size: 14px;
   line-height: 36px;
   width: 278px;
-  margin: 0 0 0 20px; }
+  /*margin: 0 0 0 20px;*/
+  margin: auto;
+  display: block; }
 
 @media screen and (min-width: 768px) {
   .find_partner {
