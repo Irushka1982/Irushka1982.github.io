@@ -39,7 +39,9 @@ header {
     position: relative; } }
 .enter {
   display: block;
-  margin-bottom: 115px; }
+  padding-bottom: 115px;
+  /*margin-bottom:115px;*/
+  margin: auto; }
 
 @media screen and (min-width: 768px) {
   .enter {
@@ -106,16 +108,21 @@ header {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 7px 4px; }
+  padding: 0 0 7px 0;
+  /*  margin:0 0 7px 4px;*/
+  margin: auto;
+  clear: both; }
 
 @media screen and (min-width: 768px) {
   .title {
-    margin: 0 0 22px 132px;
+    padding: 0 0 22px 0;
+    /*margin:0 0 22px 132px;*/
     font-size: 52px;
     width: 502px; } }
 @media screen and (min-width: 1440px) {
   .title {
-    margin: 213px 0 22px 222px; } }
+    padding: 213px 0 22px 0;
+    /*  margin:213px 0 22px 222px;*/ } }
 .subtitle {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -152,11 +159,12 @@ header {
 
 @media screen and (min-width: 768px) {
   .find_partner {
-    margin: 0 0 0 269px;
+    padding: 0 0 0 0;
+    /*margin: 0 0 0 269px;*/
     width: 225px; } }
 @media screen and (min-width: 1440px) {
   .find_partner {
-    margin: 0 0 0 359px; } }
+    /*margin: 0 0 0 359px;*/ } }
 #wrapper1 {
   height: 780px; }
 
@@ -250,16 +258,19 @@ header {
   #wrapper2 {
     height: 467px; } }
 .persons {
+  width: 100%;
   margin: auto; }
 
 @media screen and (min-width: 768px) {
   .persons {
-    width: 580px;
-    margin: 0 0 0 105px; } }
+    /* width: 580px;
+      margin: 0 0 0 105px;*/
+    padding: 0; } }
 @media screen and (min-width: 1440px) {
   .persons {
-    width: 950px;
-    margin: 0 0 9px -32px;
+    /*width: 950px;*/
+    padding: 0 0 9px 0;
+    /*    margin: 0 0 9px -32px;*/
     overflow: hidden; } }
 .partner {
   display: block;
@@ -276,8 +287,10 @@ header {
   .partner {
     margin: 0px 4px 23px 17px; } }
 .meet-partners {
-  width: 264px;
-  margin: 34px 0 14px 24px; }
+  padding: 34px 0 14px 0px;
+  /*width: 264px;*/
+  /* margin: 34px 0 14px 24px;*/
+  margin: auto; }
 
 @media screen and (min-width: 768px) {
   .meet-partners {
@@ -285,13 +298,15 @@ header {
     font-weight: bold;
     font-size: 22px;
     color: #333333;
-    margin: 34px 0 2px 0px;
+    /* margin: 34px 0 2px 0px;*/
     text-align: center;
-    width: 466px;
-    margin: 34px 0 31px 148px; } }
+    /* width: 466px;*/
+    /* margin: 34px 0 31px 148px;*/
+    padding: 34px 0 31px 0px; } }
 @media screen and (min-width: 1440px) {
   .meet-partners {
-    margin: 34px 0 31px 237px; } }
+    /*margin: 34px 0 31px 237px;*/
+    padding: 34px 0 31px 0; } }
 .partner__sprite--sprite1, .partner__sprite--sprite2, .partner__sprite--sprite3, .partner__sprite--sprite4 {
   content: " ";
   float: left;

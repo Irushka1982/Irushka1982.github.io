@@ -61,7 +61,9 @@ header {
 
 .enter{
   display:block;
-  margin-bottom:115px;
+   padding-bottom:115px;
+  /*margin-bottom:115px;*/
+    margin: auto;
 }
 @media screen and (min-width:768px){
 .enter {
@@ -147,17 +149,22 @@ width: 450px;
   font-size: 30px;
   text-transform: uppercase;
   text-align:center;
-  margin:0 0 7px 4px;
+  padding:0 0 7px 0;
+/*  margin:0 0 7px 4px;*/
+margin:auto;
+  clear: both;
 }
 @media screen and (min-width:768px) {
 .title{
-  margin:0 0 22px 132px;
+  padding:0 0 22px 0;
+  /*margin:0 0 22px 132px;*/
   font-size: 52px; 
   width:502px;
 }}
 @media screen and (min-width:1440px){
 .title{
-  margin:213px 0 22px 222px;
+  padding:213px 0 22px 0;
+/*  margin:213px 0 22px 222px;*/
 }}
 
 
@@ -205,12 +212,14 @@ width: 450px;
 
 @media screen and (min-width:768px){
   .find_partner{
-    margin: 0 0 0 269px;
+    padding:0 0 0 0;
+    /*margin: 0 0 0 269px;*/
     width: 225px;
 }}
 @media screen and (min-width:1440px){
  .find_partner{
-  margin: 0 0 0 359px;
+
+  /*margin: 0 0 0 359px;*/
 }}
 
 
@@ -349,17 +358,22 @@ width: 450px;
 
 
 
-.persons{
+.persons{ width: 100%;
   margin: auto;
 }
 @media screen and (min-width:768px) {
 .persons{
-  width: 580px;
-  margin: 0 0 0 105px;
+ 
+ /* width: 580px;
+   margin: 0 0 0 105px;*/
+   padding:0;
+
 }}
 @media screen and (min-width:1440px){
-  .persons{width: 950px;
-    margin: 0 0 9px -32px;
+  .persons{
+    /*width: 950px;*/
+    padding: 0 0 9px 0;
+/*    margin: 0 0 9px -32px;*/
     overflow: hidden;
 }}
 
@@ -385,8 +399,10 @@ width: 450px;
 
 .meet-partners{
   @extend .how-works;
-  width: 264px;
-  margin: 34px 0 14px 24px;
+padding: 34px 0 14px 0px;
+  /*width: 264px;*/
+ /* margin: 34px 0 14px 24px;*/
+ margin:auto;
 }
 @media screen and (min-width:768px) {
 .meet-partners{
@@ -394,13 +410,14 @@ width: 450px;
   font-weight:bold;
   font-size:22px;
   color:$color-grey;
-  margin: 34px 0 2px 0px;
+ /* margin: 34px 0 2px 0px;*/
   text-align: center;
-  width: 466px;
-  margin: 34px 0 31px 148px;
+ /* width: 466px;*/
+ /* margin: 34px 0 31px 148px;*/
+  padding:34px 0 31px 0px;
 }}
 @media screen and (min-width:1440px){
-.meet-partners{margin: 34px 0 31px 237px;}
+.meet-partners{/*margin: 34px 0 31px 237px;*/padding: 34px 0 31px 0;}
 }
 
 .partner__sprite--sprite1{
