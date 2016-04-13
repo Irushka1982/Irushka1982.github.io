@@ -8,21 +8,34 @@ $montserrat: 'Montserrat', sans-serif;
   padding:0;
 }
 
-.background {
+/*.background {
     background:url(../image/mobile/backgroundM.png)0 0 no-repeat;
     background-size:100% 540px;
 }
 
 @media screen and (min-width:768px) {
 .background {
-     background-size:100% 700px;
-     background:url(../image/tabletka/backgroundT.png)0 0 no-repeat;
+       background:url(../image/tabletka/backgroundT.png)0 0 no-repeat;
+        background-size:100% 700px;
 }}
 @media screen and (min-width:1440px) {
 .background {
       background:url(../image/desktop/backgroundD.png)0 0 no-repeat;
    background-size:100% 700px;
 }}
+*/
+.background {
+   background:url(../image/desktop/backgroundD.png)0 0 no-repeat;
+    background-position:48% -5%;
+       }
+
+@media screen and (min-width:768px) {
+.background {  background-position:10% 0%;
+}}
+@media screen and (min-width:1440px) {
+.background {  background-position:0% 0%;background-size:100% 700px;
+}}
+
 
 .content{
 	width:100%;
