@@ -197,27 +197,27 @@ header {
 @media screen and (min-width: 768px) {
   .how-works, .meet-partners, .discover, .discover2 {
     margin: 94px 0 20px 0px; } }
-.carusel1 ul {
+.carousel ul {
   width: 299px;
   height: 2402px; }
-  .carusel1 ul li {
+  .carousel ul li {
     width: 299px;
     height: 240px;
     display: inline-block; }
 
 @media screen and (min-width: 768px) {
-  .carusel1 ul {
+  .carousel ul {
     width: 328px;
     height: 402px; }
-    .carusel1 ul li {
+    .carousel ul li {
       width: 328px;
       height: 402px;
       display: inline-block; } }
 @media screen and (min-width: 1440px) {
-  .carusel1 ul {
+  .carousel ul {
     height: 400px;
     margin: 0 0 0 0; }
-    .carusel1 ul li {
+    .carousel ul li {
       height: 400px;
       display: inline-block; } }
 .block-text {
@@ -263,18 +263,20 @@ header {
     .block-text p {
       width: 219px; } }
 #wrapper2 {
-  height: 1091px;
+  height: auto;
+  /*height:1091px;*/
   text-align: center; }
 
 @media screen and (min-width: 768px) {
   #wrapper2 {
-    height: 725px; } }
+    /*height:725px;*/ } }
 @media screen and (min-width: 1440px) {
   #wrapper2 {
-    height: 467px; } }
+    /* height:467px;*/ } }
 .persons {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  overflow: hidden; }
 
 @media screen and (min-width: 768px) {
   .persons {
@@ -285,22 +287,30 @@ header {
   .persons {
     /*width: 950px;*/
     padding: 0 0 9px 0;
-    /*    margin: 0 0 9px -32px;*/
-    overflow: hidden; } }
+    /*    margin: 0 0 9px -32px;*/ } }
 .partner {
   display: block;
-  width: 215px;
+  width: 237px;
   height: auto;
   text-align: center;
-  margin: 0px 0 23px 27px; }
+  /*margin:0px 0 23px 27px;*/
+  margin: auto;
+  float: left;
+  padding: 0 0 23px 0px; }
 
-@media screen and (min-width: 768px) {
-  .partner {
-    float: left;
-    margin: 0px 25px 23px 19px; } }
-@media screen and (min-width: 1440px) {
-  .partner {
-    margin: 0px 4px 23px 17px; } }
+ /*
+@media screen and (min-width:768px) {
+.partner{
+
+/*  margin:0px 25px 23px 19px;
+padding:0 0 23px 0px;
+
+}}*/
+/*@media screen and (min-width:1440px){
+ .partner{
+  margin:0px 4px 23px 17px;
+  padding:0px 0px 23px 0px;
+}}*/
 .meet-partners {
   padding: 34px 0 14px 0px;
   /*width: 264px;*/
@@ -376,7 +386,10 @@ header {
   font-weight: lighter;
   font-size: 14px;
   color: #333333;
-  margin-left: 10px; }
+  /*  margin-left:10px;*/
+  display: block;
+  width: 200px;
+  margin: auto; }
 
 #other-button {
   width: 280px;
@@ -400,11 +413,12 @@ header {
     margin: auto;
     display: block; } }
 #wrapper3 {
-  height: 1000px; }
+  /*height:1000px;	*/
+  height: auto; }
 
 @media screen and (min-width: 768px) {
   #wrapper3 {
-    height: 1126px; } }
+    /*height:1126px;*/ } }
 @media screen and (min-width: 1440px) {
   #wrapper3 {
     width: 950px; } }

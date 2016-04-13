@@ -258,7 +258,7 @@ margin:auto;
 }}
 
 
-.carusel1 {
+.carousel {
     ul{
       width:299px;
       height: 2402px;
@@ -271,7 +271,7 @@ margin:auto;
     }
 }
 @media screen and (min-width:768px){
-.carusel1 {
+.carousel {
      ul{
       width:328px;
       height:402px;
@@ -285,8 +285,9 @@ margin:auto;
   }
 }
 
+
 @media screen and (min-width:1440px){
-.carusel1 {
+.carousel {
     ul{
       height:400px;
       margin:0 0 0 0;
@@ -356,16 +357,17 @@ margin:auto;
 
 
 #wrapper2{
-  height:1091px;
+  height: auto;
+  /*height:1091px;*/
   text-align:center;
 }
 @media screen and (min-width:768px) {
 #wrapper2{
-  height:725px;
+  /*height:725px;*/
 }}
 @media screen and (min-width:1440px) {
 #wrapper2{
-  height:467px;
+ /* height:467px;*/
 }}
 
 
@@ -373,6 +375,7 @@ margin:auto;
 
 .persons{ width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 @media screen and (min-width:768px) {
 .persons{
@@ -387,27 +390,33 @@ margin:auto;
     /*width: 950px;*/
     padding: 0 0 9px 0;
 /*    margin: 0 0 9px -32px;*/
-    overflow: hidden;
+   
 }}
 
 
 
 .partner{
   display: block;
-  width:215px;
+  width:237px;
   height:auto;
   text-align:center;
-  margin:0px 0 23px 27px;
-}
+  /*margin:0px 0 23px 27px;*/
+  margin: auto; 
+  float:left;
+  padding:0 0 23px 0px;
+}/*
 @media screen and (min-width:768px) {
 .partner{
-  float:left;
-  margin:0px 25px 23px 19px;
-}}
-@media screen and (min-width:1440px){
+
+/*  margin:0px 25px 23px 19px;
+padding:0 0 23px 0px;
+
+}}*/
+/*@media screen and (min-width:1440px){
  .partner{
   margin:0px 4px 23px 17px;
-}}
+  padding:0px 0px 23px 0px;
+}}*/
 
 
 .meet-partners{
@@ -496,7 +505,10 @@ padding: 34px 0 14px 0px;
   font-weight:lighter;
   font-size:14px;
   color:$color-grey;
-  margin-left:10px;
+/*  margin-left:10px;*/
+  display: block;
+  width: 200px;
+  margin: auto; 
 }
 
 
@@ -530,11 +542,11 @@ padding: 34px 0 14px 0px;
 
 
 #wrapper3{
-height:1000px;	
+/*height:1000px;	*/height:auto;
 }
 @media screen and (min-width:768px) {
 #wrapper3{
-  height:1126px;
+  /*height:1126px;*/
   }}
 @media screen and (min-width:1440px){
   #wrapper3{

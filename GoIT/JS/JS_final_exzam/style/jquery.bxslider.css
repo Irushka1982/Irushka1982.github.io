@@ -27,7 +27,7 @@
 }*/
 
 /*Это стили для ФФ, Хрома и ИЕ9*/
-.carusel1 .bx-wrapper {
+.carousel .bx-wrapper {
 	position: relative;
 	margin: 10px 0 0 10px;
 	padding: 0;
@@ -39,14 +39,14 @@
 }
 
 @media screen and (min-width:768px) {
-.carusel1 .bx-wrapper{width:30%;
+.carousel .bx-wrapper{width:30%;
     height: 401px;
 margin: 13px 14px 0 10px;
 }
 }
 
 @media screen and (min-width:1440px) {
- .carusel1 .bx-wrapper{width:30%;
+ .carousel .bx-wrapper{width:30%;
     height: 400px;
 }
 }
