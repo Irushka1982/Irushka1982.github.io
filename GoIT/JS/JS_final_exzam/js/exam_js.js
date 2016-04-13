@@ -29,6 +29,7 @@ $(document).ready(function(){
 
     var xmlhttp = getXmlHttp();
     xmlhttp.open('GET', 'http://api.pixplorer.co.uk/image?amount=7&size=tb', false);
+  
     xmlhttp.send(null);
     if(xmlhttp.status == 200) {
       var obj = eval('('+xmlhttp.responseText+')');
