@@ -1,0 +1,486 @@
+$color-blue: #248cec;
+$color-yellow: #f4b60d;
+$color-fongrey: #2a2d32;
+$color-white: white;
+$light-grey: #9e9e9e;
+$font-nav:  'Ubuntu Condensed', sans-serif;
+$font-title: 'Ubuntu', sans-serif;
+$font-article: 'Ubuntu', sans-serif;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.content1{
+	overflow:hidden;
+	position:relative;
+	width:1160px;
+	margin:auto;
+}
+header{
+	overflow:hidden;
+	position:relative;
+	width:1160px;
+	margin:auto;
+}
+
+.logo {
+	float:left;
+	margin: 24px 0px 0px 50px;
+}
+
+.logo:before {
+	content: " ";  
+    float:left;  
+    position: absolute;  
+    overflow: hidden;
+    background: url(../image/logo.png)no-repeat;  
+    height: 40px;  
+    width: 50px;
+    left:0px;
+    top:28px;   
+   background-position: 0px 0px;
+}
+
+.logo__title {
+	color: $light-grey;
+	font-family: $font-title;
+	font-size: 30px;
+}
+.logo__subtitle{
+	font-family: $font-nav;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 11px;
+	color: $color-fongrey;
+}
+
+.socialnetwork .twitter{
+	background-position: -32px 0px;
+}
+
+.socialnetwork .twitter:hover{
+	background-position: -32px -28px;
+}
+.socialnetwork .rss{
+	background-position: -64px 0px;
+}
+
+.socialnetwork .rss:hover{
+	background-position: -64px -28px;
+}
+.socialnetwork .linkedin{
+	background-position: -96px 0px;
+}
+.socialnetwork .linkedin:hover{
+	background-position: -96px -28px;
+}
+
+.socialnetwork .skype{
+	background-position: -128px 0px;
+}
+.socialnetwork .skype:hover{
+	background-position: -128px -28px;
+}
+
+.socialnetwork{
+	margin-top:30px;
+	overflow:hidden;
+		ul{
+			float:right;
+			li{
+				float:left;
+				list-style: none;
+					a{
+					display:block;
+					height: 30px;
+					width: 32px;
+					background: url(../image/spr.png) 0 0 no-repeat;
+					}
+				}
+			}		
+		a:hover{background-position: 0 -28px}
+}
+
+nav {
+	width:1160px;
+	margin:auto;
+	position:relative;
+	height:55px;
+	background-color:$color-fongrey;
+	margin-top:30px;
+}
+.menu {
+	float:left;
+	margin-bottom: 37px;
+		li{
+			display:inline-block;
+			list-style: none;
+			width: 126px;
+			border: 2px solid black;
+			margin:0px -3px; 
+		}
+		li:hover{
+			background:$color-blue;
+			color:$color-white;
+		}
+		a{
+			display:block;
+		color:$color-white;
+			font-family: $font-nav;
+			font-size: 11px;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align:center;
+			line-height: 51px;
+			cursor:pointer;
+		}
+		a:hover{color:$color-yellow;
+		background:$color-fongrey;}
+}
+#forma {
+	float:right;
+	height:40px;
+	width:200px;
+	background:url(../image/lupa.png) 0 0 no-repeat #35383c;
+	background-position:90% 50%;
+	border:2px solid black;
+	margin:8px 7px 0 0;
+	padding:2px;
+}
+.contentslider {
+	margin-bottom: 83px;
+}
+.slider {
+	width:1200px;
+	height:584px;
+	margin:auto;
+}
+
+.build{
+	width:320px;
+	height:200px;
+	content:"";
+	position:absolute;
+	background:url(../image/build.png) 0 0 no-repeat;
+	top:210px;
+	left:40px;
+	z-index:2;
+}
+
+.advantage{
+	display:inline-block;
+	height:163px;
+	width:380px;
+	padding-bottom:91px;
+}
+.advantage__number{
+	display:block;
+	float:left;
+}
+
+.advantage__article {
+	display:block;
+	float:left;
+	width:239px;
+	padding-left:30px;
+}
+.advantage__title--icon1 {
+	padding-top:44px;
+	padding-bottom:16px;
+}
+.advantage__title--icon2 {
+	@extend .advantage__title--icon1;
+}
+
+.advantage__title--icon3 {
+	@extend .advantage__title--icon1;
+}
+
+.advantage__title--icon1:before {
+	content: " ";  
+    float: left;  
+    position: absolute;  
+    overflow: hidden;
+   background: url(../image/settings.png)no-repeat;  
+    height: 40px;  
+    width: 50px;
+   left:97px; 
+   top:581px;   
+   background-position: 0px 0px;
+}
+
+.advantage__title--icon2:before {
+	@extend .advantage__title--icon1:before;
+	 background: url(../image/params.png)no-repeat;  
+    left:503px; 
+}
+
+.advantage__title--icon3:before {
+	@extend .advantage__title--icon1:before;
+	 background: url(../image/truck.png)no-repeat;  
+    left:880px; 
+}
+.advantage__text{
+	padding-bottom:0px;
+	color:$light-grey;
+}
+
+.advantage__readmore{
+	color:$color-fongrey;
+	text-decoration:none;
+	font-weight:bold;
+	display:block;
+	width:120px;
+}
+.advantage__readmore:hover{
+	color: $color-blue;
+}
+
+.advantage__readmore:after{
+	content:"";
+	background: url(../image/strelochka.png) 0 0 no-repeat;  
+	background-position:right;
+	position:absolute;
+	width:30px;
+	height:15px;
+}
+
+.wrapper2{
+	background-color: $color-fongrey;
+}
+
+.content2{
+	@extend .content1;
+	height:500px;	
+}
+.servis {
+	padding-top:50px;
+	font-size:25px;
+	color: $color-white;
+	margin-bottom:45px;
+}
+.picture__hover {
+	width:256px;
+	height:256px;
+	margin-left:16px;
+	display:none;
+	content:"";
+	position:absolute;
+	opacity:0.5;
+	background: url(../image/plusforhover.png) no-repeat $color-blue;
+	background-position:center;
+}
+.picture {
+	display:block;
+	float:left;
+	width:290px;
+	height:300px;
+	text-align:center;
+}
+
+.picture:hover .picture__hover {
+	display:block;
+}
+.picture:hover .picture__caption{
+	color:$color-yellow;
+}
+.picture__caption{
+	display:block;
+	padding-bottom:50px;
+	font-size:18px;
+	color: $color-white;
+}
+
+.wrapper3{
+	background-color: #f7f7f7;
+}
+.content3 {
+	@extend .content1;
+	height:540px;	
+}
+
+.news-block {
+	width:600px;
+	float:left;
+	padding-right:0px;
+}
+
+.todaynews {
+	width:565px;
+}
+.Latestnews{
+	display:inline-block;
+	padding:64px 0px 45px 0px;
+	font-size:24px;
+}
+.image-for-news__jan23 {
+	display: inline-block;
+	width:170px;
+}
+.image-for-news__jan21{
+	display: inline-block;
+	width:170px;
+}
+.news {
+	display:inline-block;
+	width:376px;
+	padding-left:11px;
+	a{
+		color:$color-blue;
+		text-decoration: none;
+	}
+}
+.Latestnews{
+	color:$color-fongrey;
+}
+.news__text{
+	color: $light-grey;
+}
+.news__title{
+	color:$color-fongrey;
+}
+.news__subtitle{
+	color: $light-grey;
+}
+.accordion-block{
+	@extend .news-block;
+	width:500px;
+}
+
+.bannersplace {
+	@extend .Latestnews
+}
+.accordion__title{
+	display:block;
+	width:501px;
+	height:40px;
+	font-family:$font-title;
+	text-transform:uppercase;
+	background: url(../image/plus.png) $color-white 3% 50% no-repeat;
+	padding-left:41px;
+	margin-bottom:5px;
+	border:1px solid #f7f7f7;
+	line-height:41px;
+}
+
+.accordion__title span{
+	display:block;
+	padding-left:10px;
+	border-left:2px solid #f7f7f7;
+}
+
+
+.accordactive{
+	 background: url(../image/minus.png) $color-yellow no-repeat;
+	 background-position:2% 50%;
+}
+
+.accordion__text{
+	width:500px;
+	padding:20px;
+	color:$light-grey;
+	display:none;
+}
+
+.content4 {
+	@extend .content1;
+	height:240px;
+}
+
+.brand{
+	padding:90px 0px;
+	li{
+		display:inline-block;
+		list-style: none;
+		width:170px;
+		text-align: center;
+	}
+}
+
+.wrapper5{
+	background-color: $color-fongrey;
+}
+.content5 {
+	@extend .content1;
+	height:290px;	
+	padding:50px  0px 0px 0px;
+}
+
+footer {
+	background-color: #35383c;
+}
+.contacts {
+	@extend .content1;
+	height:60px;	
+	padding:0px;
+}
+
+
+.about{
+	width:280px;
+	float:left;
+}
+
+.about__title{
+	padding-bottom:50px;
+	font-family:$font-title;
+	text-transform:uppercase;
+	color:$color-white;
+	font-weight:bold;
+}
+.about__menu{
+	li{list-style:none;
+		width:250px;
+		height: 36px;
+		border-bottom:1px solid $light-grey;
+	}
+		li:last-child{border-bottom:none;}
+		a{
+			color: $light-grey;
+			text-decoration: none;
+			display: block;
+			padding-top:10px;
+		}
+		a:hover{color: $color-blue;}
+}
+
+.address {
+	display:inline-block;
+	padding-right:20px;
+	color: $light-grey;
+	padding-left:20px;
+	padding-top:15px	
+}
+.address:before {
+@extend .advantage__title--icon1:before;
+	height: 25px;
+	width: 25px;
+	left:5px;
+	top:13px;
+	background: url(../image/location.png)no-repeat;  
+}
+.telephon {
+	@extend .address;
+}
+.telephon:before {
+	@extend .advantage__title--icon1:before; 
+   left:350px; 
+    background: url(../image/phone.png)no-repeat;  
+}
+
+
+.mail{
+	@extend .address;
+}
+.mail:before {
+	@extend .advantage__title--icon1:before; 
+	left:519px; 
+    background: url(../image/mail.png)no-repeat;  
+}
+
+
+.copyright{
+	@extend .address;
+	float:right;
+}
