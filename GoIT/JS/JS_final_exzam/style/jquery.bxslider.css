@@ -59,18 +59,18 @@ margin: 13px 14px 0 10px;
 }
 
 .bx-viewport{
-	width:100%;
+	width:300px;
 height:240px;
 border-radius:6px;}
 
 @media screen and (min-width:768px) {
-.bx-viewport{width:30%;
+.bx-viewport{/*width:30%;*/width:300px;
     height: 401px;
    }
 }
 
 @media screen and (min-width:1440px) {
-.bx-viewport{width:30%;
+.bx-viewport{/*width:30%;*/width:300px;
    height: 400px;}
 }
 

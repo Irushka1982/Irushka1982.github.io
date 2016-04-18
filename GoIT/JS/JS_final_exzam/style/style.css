@@ -619,7 +619,8 @@ nav {
   nav {
     width: 950px; } }
 .contacts {
-  margin: 0 0 0 0; }
+  width: 100px;
+  margin: auto; }
 
 @media screen and (min-width: 768px) {
   .contacts {

@@ -821,8 +821,8 @@ nav{ width:768px;
   nav{width:950px;}
 }
 
-.contacts{
-  margin:0 0 0 0;
+.contacts{ width:100px;
+  margin:auto;
   @extend .partner__name;
 }
 @media screen and (min-width:768px) {
