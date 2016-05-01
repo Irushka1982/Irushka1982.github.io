@@ -237,11 +237,12 @@ margin:auto;
 
 
 #wrapper1{
-	height:780px;
+ height:auto; overflow: hidden;
 	}
 @media screen and (min-width:768px) {
 #wrapper1{
-  height:522px;
+  
+ 
 }}
 
 .how-works{

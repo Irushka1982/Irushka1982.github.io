@@ -181,11 +181,9 @@ header {
   .find_partner {
     /*margin: 0 0 0 359px;*/ } }
 #wrapper1 {
-  height: 780px; }
+  height: auto;
+  overflow: hidden; }
 
-@media screen and (min-width: 768px) {
-  #wrapper1 {
-    height: 522px; } }
 .how-works, .meet-partners, .discover, .discover2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
