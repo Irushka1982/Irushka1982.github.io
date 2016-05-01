@@ -59,18 +59,19 @@ margin: 13px 14px 0 10px;
 }
 
 .bx-viewport{
-	width:300px;
+	width:300px !important;
 height:240px;
-border-radius:6px;}
+border-radius:6px;
+margin: auto;}
 
 @media screen and (min-width:768px) {
-.bx-viewport{/*width:30%;*/width:280px;
+.bx-viewport{/*width:30%;*/width:280px !important;
     height: 401px;
    }
 }
 
 @media screen and (min-width:1440px) {
-.bx-viewport{/*width:30%;*/width:280px;
+.bx-viewport{/*width:30%;*/width:280px !important;
    height: 400px;}
 }
 

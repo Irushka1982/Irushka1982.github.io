@@ -13,8 +13,8 @@ var isPresentInTheList = false;
      if ( arr[i] === name ){ 
      	isPresentInTheList = true;          
      	} 
-if(name === null) {isPresentInTheList = false};
-     	break;
+if(name === null) {break};
+     	
 }
 
 

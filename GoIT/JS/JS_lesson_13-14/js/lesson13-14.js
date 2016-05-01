@@ -69,6 +69,7 @@ testAnswerRight = JSON.parse(testAnswerRight);
 			var allCheckedCheckboxes = $('input[type="checkbox"]:checked'); 
 			$(allCheckedCheckboxes).removeAttr('checked');
 			$('.modalgood, .modalbad').hide();
+			
 
 			});
 
