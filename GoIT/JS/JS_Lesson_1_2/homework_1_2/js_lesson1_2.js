@@ -1,8 +1,10 @@
 
 var arr = [];
+
 for (var i = 0; i < 5; i++ ) {
 	arr[i] = prompt('enter name');
-	if(arr[i] === null) {break};
+	if(arr[i] === null) {break}
+		;
 }
 
 var name = prompt('Введите имя пользователя');
