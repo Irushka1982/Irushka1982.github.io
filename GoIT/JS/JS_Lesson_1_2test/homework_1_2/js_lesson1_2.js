@@ -27,4 +27,5 @@ if (isPresentInTheList){
  }else{
  alert( 'Ошибка' );
 }
-});
+})
+();
