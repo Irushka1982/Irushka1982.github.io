@@ -741,12 +741,15 @@ nav{
 
 nav{margin:auto;
 
-    ul{margin-bottom:12px;
+    ul{padding-bottom:12px;margin: auto;
       li{display:inline-block;
-        width: 51px;
+        width: 60px;
+       /* margin: auto; */
         a{
           @extend .partner__about;
-          text-decoration:none}
+          text-decoration:none;
+          width: 60px;
+        }
         }
       }
     }
@@ -754,10 +757,10 @@ nav{margin:auto;
 @media screen and (min-width:768px) {
 nav{ width:768px; 
   ul{
-    margin-bottom:12px;
-    width: 120px;
+    width: 100px;
+    margin:0px; 
     li{
-      display:block;width:100px; 
+      display:block;width:60px; 
       a{
         display:block;
         line-height: 23px;
